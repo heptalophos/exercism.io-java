@@ -29,19 +29,19 @@ public class RnaTranscriptionTest {
         Assert.assertEquals("C", rnaTranscription.transcribe("G"));
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testRnaTranscriptionOfThymineIsAdenine() {
         Assert.assertEquals("A", rnaTranscription.transcribe("T"));
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testRnaTranscriptionOfAdenineIsUracil() {
         Assert.assertEquals("U", rnaTranscription.transcribe("A"));
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testRnaTranscription() {
         Assert.assertEquals("UGCACCAGAAUU", rnaTranscription.transcribe("ACGTGGTCTTAA"));
