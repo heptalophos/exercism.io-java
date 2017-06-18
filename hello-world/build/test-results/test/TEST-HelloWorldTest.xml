@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HelloWorldTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-05-28T10:45:25" hostname="Chris-THINK" time="0.007">
-  <properties/>
-  <testcase name="helloNoName" classname="HelloWorldTest" time="0.004"/>
-  <testcase name="helloSampleName" classname="HelloWorldTest" time="0.001"/>
-  <testcase name="helloAnotherSampleName" classname="HelloWorldTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
