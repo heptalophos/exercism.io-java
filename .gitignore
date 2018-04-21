@@ -1,7 +1,15 @@
 .classpath
 .project
+.vscode/*
 .vscode/
+.gradle/*
 .gradle/
+/../.settings/*
+/../bin/*
+/../.gradle
+/../.classpath
+/../.project
+/../build*
 /../.settings/
 /../bin/
 /../.gradle
