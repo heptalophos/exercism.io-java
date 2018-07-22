@@ -8,6 +8,9 @@ bin/
 bin/*
 /bin/
 build/
+.settings
+.solution.json
+/.solution.json
 /../.settings/*
 /../bin/*
 /../.gradle
