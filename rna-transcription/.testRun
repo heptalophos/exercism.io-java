@@ -1,0 +1,23 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+RnaTranscriptionTest > testRnaTranscriptionOfThymineIsAdenine PASSED
+
+RnaTranscriptionTest > testRnaTranscription PASSED
+
+RnaTranscriptionTest > testRnaTranscriptionOfCytosineIsGuanine PASSED
+
+RnaTranscriptionTest > testRnaTranscriptionOfGuanineIsCytosine PASSED
+
+RnaTranscriptionTest > testRnaTranscriptionOfEmptyDnaIsEmptyRna PASSED
+
+RnaTranscriptionTest > testRnaTranscriptionOfAdenineIsUracil PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 23.755 secs

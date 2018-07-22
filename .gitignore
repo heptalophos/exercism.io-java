@@ -4,6 +4,10 @@
 .vscode/
 .gradle/*
 .gradle/
+bin/
+bin/*
+/bin/
+build/
 /../.settings/*
 /../bin/*
 /../.gradle

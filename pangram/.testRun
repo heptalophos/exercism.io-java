@@ -1,0 +1,33 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+PangramCheckerTest > panagramInAlphabetOtherThanAsciiIsNotRecognizedAsPangram PASSED
+
+PangramCheckerTest > pangramWithMixedCaseAndPunctuationIsRecognizedAsPangram PASSED
+
+PangramCheckerTest > pangramWithNumbersIsRecognizedAsPangram PASSED
+
+PangramCheckerTest > phraseMissingCharacterXIsNotPangram PASSED
+
+PangramCheckerTest > pangramWithNonAsciiCharactersIsRecognizedAsPangram PASSED
+
+PangramCheckerTest > pangramWithUnderscoresIsRecognizedAsPangram PASSED
+
+PangramCheckerTest > upperAndLowerCaseVersionsOfTheSameCharacterShouldNotBeCountedSeparately PASSED
+
+PangramCheckerTest > pangramWithOnlyLowerCaseLettersIsRecognizedAsPangram PASSED
+
+PangramCheckerTest > phraseWithMissingLettersReplacedByNumbersIsNotPangram PASSED
+
+PangramCheckerTest > anotherPhraseMissingCharacterXIsNotPangram PASSED
+
+PangramCheckerTest > emptySentenceIsNotPangram PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 23.746 secs

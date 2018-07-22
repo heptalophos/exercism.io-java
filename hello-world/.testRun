@@ -1,0 +1,11 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+BUILD SUCCESSFUL
+
+Total time: 19.198 secs
