@@ -1,6 +1,4 @@
-// import com.google.guava.Stream;
-import com.codepoetics.protonpack.StreamUtils;
-import java.util.stream.Stream;
+import java.util.stream.IntStream;
 
 public class Hamming {
 
@@ -19,12 +17,12 @@ public class Hamming {
         if (leftStrand.length() != rightStrand.length())
             throw new IllegalArgumentException("leftStrand and rightStrand must be of equal length.");
 
-        Stream<Character> leftStream = leftStrand.chars().mapToObj(i -> (char) i);
-        Stream<Character> rightStream = rightStrand.chars().mapToObj(i -> (char) i);
+        char[]  left = leftStrand.toCharArray();
+        char[]  right = rightStrand.toCharArray();
 
-        return StreamUtils
-               .zip(leftStream, rightStream, (left, right) -> left.equals(right) ? 0 : 1)
+        return IntStream
+               .range(0, Math.min(left.length, right.length))
+               .mapToObj(i -> left[i] == right[i] ? 0 : 1)
                .reduce(0, Integer::sum);
     }
-
 }
