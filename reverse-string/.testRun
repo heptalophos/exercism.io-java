@@ -1,0 +1,21 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+ReverseStringTest > testAWord PASSED
+
+ReverseStringTest > testAnEmptyString PASSED
+
+ReverseStringTest > testACapitalizedWord PASSED
+
+ReverseStringTest > testASentenceWithPunctuation PASSED
+
+ReverseStringTest > testAPalindrome PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 23.137 secs
