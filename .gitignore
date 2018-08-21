@@ -6,6 +6,7 @@ bin/
 bin/*
 /bin/
 build/
+.classpath
 .settings
 .solution.json
 /.solution.json
