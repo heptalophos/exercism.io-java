@@ -5,7 +5,8 @@ import java.math.BigInteger;
 public class Gigasecond {
 
     private final LocalDateTime date;
-    private static final Long GIGASEC = BigInteger.valueOf(10).pow(9).longValue();
+    // private static final Long GIGASEC = BigInteger.valueOf(10).pow(9).longValue();
+    private static final int GIGASEC = 1_000_000_000;
 
     public Gigasecond(LocalDate birthDate) {
         this(birthDate.atStartOfDay());
