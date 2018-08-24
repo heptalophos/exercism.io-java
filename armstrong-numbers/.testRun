@@ -1,0 +1,27 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+ArmstrongNumbersTest > threeDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest > sevenDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest > noTwoDigitArmstrongNumbers PASSED
+
+ArmstrongNumbersTest > singleDigitsAreArmstrongNumbers PASSED
+
+ArmstrongNumbersTest > sevenDigitNumberIsArmstrongNumber PASSED
+
+ArmstrongNumbersTest > fourDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest > fourDigitNumberIsArmstrongNumber PASSED
+
+ArmstrongNumbersTest > threeDigitNumberIsArmstrongNumber PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 30.678 secs
