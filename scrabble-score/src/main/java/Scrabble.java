@@ -25,8 +25,6 @@ public class Scrabble {
         return word
                .toUpperCase()
                .chars()
-               .map(ch -> letterScore.getOrDefault(ch, 0))
-               .reduce(0, (a, b) -> a + b);
+               .reduce(0, (a, b) -> a + letterScore.get(b));
     }
-
 }
