@@ -1,0 +1,29 @@
+:compileJava UP-TO-DATE
+:processResources NO-SOURCE
+:classes UP-TO-DATE
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+DifferenceOfSquaresCalculatorTest > testDifferenceOfSquaresUpToHundred PASSED
+
+DifferenceOfSquaresCalculatorTest > testSquareOfSumUpToOne PASSED
+
+DifferenceOfSquaresCalculatorTest > testSquareOfSumUpToHundred PASSED
+
+DifferenceOfSquaresCalculatorTest > testDifferenceOfSquaresUpToOne PASSED
+
+DifferenceOfSquaresCalculatorTest > testSumOfSquaresUpToHundred PASSED
+
+DifferenceOfSquaresCalculatorTest > testSquareOfSumUpToFive PASSED
+
+DifferenceOfSquaresCalculatorTest > testDifferenceOfSquaresUpToFive PASSED
+
+DifferenceOfSquaresCalculatorTest > testSumOfSquaresUpToOne PASSED
+
+DifferenceOfSquaresCalculatorTest > testSumOfSquaresUpToFive PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 33.617 secs
