@@ -27,3 +27,14 @@ DifferenceOfSquaresCalculatorTest > testSumOfSquaresUpToFive PASSED
 BUILD SUCCESSFUL
 
 Total time: 33.617 secs
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 19.358 secs
