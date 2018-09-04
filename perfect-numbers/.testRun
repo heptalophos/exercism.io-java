@@ -1,0 +1,37 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+NaturalNumberTest > testThatNonNegativeIntegerIsRejected PASSED
+
+NaturalNumberTest > testSmallAbundantNumberIsClassifiedCorrectly PASSED
+
+NaturalNumberTest > testMediumAbundantNumberIsClassifiedCorrectly PASSED
+
+NaturalNumberTest > testLargeAbundantNumberIsClassifiedCorrectly PASSED
+
+NaturalNumberTest > testSmallestPrimeDeficientNumberIsClassifiedCorrectly PASSED
+
+NaturalNumberTest > testSmallestNonPrimeDeficientNumberIsClassifiedCorrectly PASSED
+
+NaturalNumberTest > testThatOneIsCorrectlyClassifiedAsDeficient PASSED
+
+NaturalNumberTest > testSmallPerfectNumberIsClassifiedCorrectly PASSED
+
+NaturalNumberTest > testThatNegativeIntegerIsRejected PASSED
+
+NaturalNumberTest > testLargePerfectNumberIsClassifiedCorrectly PASSED
+
+NaturalNumberTest > testLargeDeficientNumberIsClassifiedCorrectly PASSED
+
+NaturalNumberTest > testMediumDeficientNumberIsClassifiedCorrectly PASSED
+
+NaturalNumberTest > testMediumPerfectNumberIsClassifiedCorrectly PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 19.958 secs
