@@ -1,0 +1,39 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+PhoneNumberTest > invalidWhen9Digits PASSED
+
+PhoneNumberTest > invalidWhenMoreThan11Digits PASSED
+
+PhoneNumberTest > invalidWhen11DigitsDoesNotStartWith1 PASSED
+
+PhoneNumberTest > invalidWithLetters PASSED
+
+PhoneNumberTest > cleansNumbersWithMultipleSpaces PASSED
+
+PhoneNumberTest > cleansTheNumber PASSED
+
+PhoneNumberTest > validWhen11DigitsAndStartingWith1 PASSED
+
+PhoneNumberTest > invalidWithPunctuations PASSED
+
+PhoneNumberTest > cleansNumbersWithDots PASSED
+
+PhoneNumberTest > validWhen11DigitsAndStartingWith1EvenWithPunctuation PASSED
+
+PhoneNumberTest > invalidIfAreaCodeStartsWith0 PASSED
+
+PhoneNumberTest > invalidIfAreaCodeStartsWith1 PASSED
+
+PhoneNumberTest > invalidIfExchangeCodeStartsWith0 PASSED
+
+PhoneNumberTest > invalidIfExchangeCodeStartsWith1 PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 40.594 secs
