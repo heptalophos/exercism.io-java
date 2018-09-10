@@ -1,0 +1,33 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+HandshakeCalculatorTest > testReversingASingleActionYieldsTheSameAction PASSED
+
+HandshakeCalculatorTest > testThatInput1YieldsAWink PASSED
+
+HandshakeCalculatorTest > testReversingNoActionsYieldsNoActions PASSED
+
+HandshakeCalculatorTest > testThatInput8YieldsAJump PASSED
+
+HandshakeCalculatorTest > testThatInput4YieldsACloseYourEyes PASSED
+
+HandshakeCalculatorTest > testInputThatYieldsAllActions PASSED
+
+HandshakeCalculatorTest > testThatInput2YieldsADoubleBlink PASSED
+
+HandshakeCalculatorTest > testInputThatYieldsAllActionsReversed PASSED
+
+HandshakeCalculatorTest > testAnInputThatYieldsTwoReversedActions PASSED
+
+HandshakeCalculatorTest > testAnInputThatYieldsTwoActions PASSED
+
+HandshakeCalculatorTest > testThatInput0YieldsNoActions PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.929 secs
