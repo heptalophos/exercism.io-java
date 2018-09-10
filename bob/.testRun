@@ -1,0 +1,61 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+BobTest > forcefulQuestions PASSED
+
+BobTest > shoutingWithSpecialCharacters PASSED
+
+BobTest > saySomething PASSED
+
+BobTest > statementContainingQuestionMark PASSED
+
+BobTest > nonLettersWithQuestion PASSED
+
+BobTest > nonQuestionEndingWithWhiteSpace PASSED
+
+BobTest > askingANumericQuestion PASSED
+
+BobTest > shoutingWithNoExclamationMark PASSED
+
+BobTest > endingWithWhiteSpace PASSED
+
+BobTest > prolongedSilence PASSED
+
+BobTest > startingWithWhitespace PASSED
+
+BobTest > alternateSilence PASSED
+
+BobTest > questionWithOnlyNumbers PASSED
+
+BobTest > talkingForcefully PASSED
+
+BobTest > multipleLineQuestion PASSED
+
+BobTest > prattlingOn PASSED
+
+BobTest > shouting PASSED
+
+BobTest > askingAQuestion PASSED
+
+BobTest > otherWhiteSpace PASSED
+
+BobTest > onlyNumbers PASSED
+
+BobTest > shoutingNumbers PASSED
+
+BobTest > shoutingGibberish PASSED
+
+BobTest > askingGibberish PASSED
+
+BobTest > usingAcronymsInRegularSpeech PASSED
+
+BobTest > silence PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.983 secs
