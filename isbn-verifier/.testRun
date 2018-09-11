@@ -1,0 +1,43 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+IsbnVerifierTest > isbnWithoutCheckDigit PASSED
+
+IsbnVerifierTest > invalidCharacterInIsbn PASSED
+
+IsbnVerifierTest > emptyIsbn PASSED
+
+IsbnVerifierTest > validIsbnNumberWithCheckDigitOfTen PASSED
+
+IsbnVerifierTest > checkDigitIsACharacterOtherThanX PASSED
+
+IsbnVerifierTest > tooLongIsbnAndNoDashes PASSED
+
+IsbnVerifierTest > xIsOnlyValidAsACheckDigit PASSED
+
+IsbnVerifierTest > inputIsNineCharacters PASSED
+
+IsbnVerifierTest > isbnWithoutSeparatingDashesAndXAsCheckDigit PASSED
+
+IsbnVerifierTest > tooLongIsbn PASSED
+
+IsbnVerifierTest > validIsbnNumber PASSED
+
+IsbnVerifierTest > isbnWithoutCheckDigitAndDashes PASSED
+
+IsbnVerifierTest > validIsbnWithoutSeparatingDashes PASSED
+
+IsbnVerifierTest > checkDigitOfXShouldNotBeUsedForZero PASSED
+
+IsbnVerifierTest > invalidIsbnCheckDigit PASSED
+
+IsbnVerifierTest > invalidCharactersAreNotIgnored PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 6.695 secs
