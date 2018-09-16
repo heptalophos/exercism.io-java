@@ -9,11 +9,11 @@ class HandshakeCalculator {
 
     public List<Signal> calculateHandshake(int number) {
 
-        if ((0x1 & number) > 0) actions.add(Signal.WINK);
-        if ((0x2 & number) > 0) actions.add(Signal.DOUBLE_BLINK) ;
-        if ((0x4 & number) > 0) actions.add(Signal.CLOSE_YOUR_EYES);
-        if ((0x8 & number) > 0) actions.add(Signal.JUMP);
-        if ((0x10 & number) > 0) Collections.reverse(actions);
+        if ((0b00001 & number) != 0) actions.add(Signal.WINK);
+        if ((0b00010 & number) != 0) actions.add(Signal.DOUBLE_BLINK) ;
+        if ((0b00100 & number) != 0) actions.add(Signal.CLOSE_YOUR_EYES);
+        if ((0b01000 & number) != 0) actions.add(Signal.JUMP);
+        if ((0b10000 & number) != 0) Collections.reverse(actions);
         
         return actions;
     }
