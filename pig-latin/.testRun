@@ -1,0 +1,55 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+PigLatinTranslatorTest > testYtTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testYAsSecondLetterInTwoLetterWord PASSED
+
+PigLatinTranslatorTest > testAWholePhrase PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithQWithoutAFollowingU PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithA PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithE PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithI PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithK PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithO PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithP PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithU PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithX PASSED
+
+PigLatinTranslatorTest > testYTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testQuAndAPrecedingConsonantTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithVowelAndFollowedByQu PASSED
+
+PigLatinTranslatorTest > testThTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testXrTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testSchTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testChTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testYTreatedLikeAVowelAtTheEndOfAConsonantCluster PASSED
+
+PigLatinTranslatorTest > testQuTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testThrTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.75 secs
