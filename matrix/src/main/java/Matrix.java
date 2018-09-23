@@ -1,34 +1,27 @@
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 class Matrix {
 
-    private final List<List<Integer>> matrix;
+    private final int matrix[][];
 
     Matrix(String matrixAsString) {
-        matrix = Arrays.asList(matrixAsString.split("\n"))
-                       .stream()
-                       .map( row -> Arrays.asList(row.split(" "))
-                                          .stream()
-                                          .map(x -> Integer.parseInt(x))
-                                          .collect(Collectors.toList())
-                       )
-                       .collect(Collectors.toList());
+        matrix = Stream.of(matrixAsString.split("\\n"))
+                       .map(row -> Stream.of(row.split("\\s"))
+                                         .mapToInt(Integer::valueOf)
+                                         .toArray())
+                       .toArray(int[][]::new);
     }
 
     int[] getRow(int rowNumber) {
-        return matrix.get(rowNumber)
-                     .stream()
-                     .mapToInt(x -> x.intValue())
-                     .toArray();
+        return matrix[rowNumber];
     }
 
     int[] getColumn(int columnNumber) {
-        return matrix.stream()
-                     .map(row -> row.get(columnNumber))
-                     .mapToInt(x -> x.intValue())
+        return Arrays.stream(matrix)
+                     .map(row -> row[columnNumber])
+                     .mapToInt(Integer::intValue)
                      .toArray();
     }
 }
