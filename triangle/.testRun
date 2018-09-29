@@ -1,0 +1,98 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+TriangleTest > verySmallTrianglesCanBeEquilateral PASSED
+
+TriangleTest > isoscelesTrianglesHaveLastTwoSidesEqual PASSED
+
+TriangleTest > trianglesWithOneUnequalSideAreNotEquilateral PASSED
+
+TriangleTest > scaleneTrianglesHaveNoEqualSides PASSED
+
+TriangleTest > trianglesWithNoEqualSidesAreNotEquilateral PASSED
+
+TriangleTest > isoscelesTrianglesHaveFirstAndLastSidesEqual PASSED
+
+TriangleTest > isoscelesTrianglesMustHaveAtLeastTwoEqualSides PASSED
+
+TriangleTest > testSidesThatViolateTriangleInequalityAreNotScaleneEvenIfTheyAreAllDifferent PASSED
+
+TriangleTest > trianglesWithAllSidesEqualAreNotScalene PASSED
+
+TriangleTest > trianglesWithOneUnequalSideAreNotScalene PASSED
+
+TriangleTest > equilateralTrianglesHaveEqualSides PASSED
+
+TriangleTest > testSidesThatViolateTriangleInequalityAreNotIsoscelesEvenIfTwoAreEqual PASSED
+
+TriangleTest > trianglesWithNoSizeAreIllegal PASSED
+
+TriangleTest > isoscelesTrianglesHaveTwoFirstSidesEqual PASSED
+
+TriangleTest > verySmallTrianglesCanBeIsosceles PASSED
+
+TriangleTest > isoscelesTrianglesCanHaveAllSidesEqual PASSED
+
+TriangleTest > verySmallTrianglesCanBeScalene PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 21.362 secs
+
+
+## With added degenerate case tests 
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+TriangleTest > verySmallTrianglesCanBeEquilateral PASSED
+
+TriangleTest > isoscelesTrianglesHaveLastTwoSidesEqual PASSED
+
+TriangleTest > trianglesWithOneUnequalSideAreNotEquilateral PASSED
+
+TriangleTest > scaleneTrianglesHaveNoEqualSides PASSED
+
+TriangleTest > trianglesWithNoEqualSidesAreNotEquilateral PASSED
+
+TriangleTest > isoscelesTrianglesHaveFirstAndLastSidesEqual PASSED
+
+TriangleTest > isoscelesTrianglesMustHaveAtLeastTwoEqualSides PASSED
+
+TriangleTest > testSidesThatViolateTriangleInequalityAreNotScaleneEvenIfTheyAreAllDifferent PASSED
+
+TriangleTest > trianglesWithAllSidesEqualAreNotScalene PASSED
+
+TriangleTest > trianglesWithOneUnequalSideAreNotScalene PASSED
+
+TriangleTest > degenerateTriangleIsNotScaleneEvenIfAllSidesAreDifferent PASSED
+
+TriangleTest > equilateralTrianglesHaveEqualSides PASSED
+
+TriangleTest > testSidesThatViolateTriangleInequalityAreNotIsoscelesEvenIfTwoAreEqual PASSED
+
+TriangleTest > trianglesWithNoSizeAreIllegal PASSED
+
+TriangleTest > isoscelesTrianglesHaveTwoFirstSidesEqual PASSED
+
+TriangleTest > verySmallTrianglesCanBeIsosceles PASSED
+
+TriangleTest > isoscelesTrianglesCanHaveAllSidesEqual PASSED
+
+TriangleTest > degenerateTriangleIsNotIsoscelesEvenIfTwoSidesAreEqual PASSED
+
+TriangleTest > verySmallTrianglesCanBeScalene PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 7.811 secs

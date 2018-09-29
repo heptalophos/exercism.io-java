@@ -1,5 +1,5 @@
 import org.junit.Test;
-import org.junit.Ignore;
+// import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 
@@ -18,7 +18,7 @@ public class TriangleTest {
         assertTrue(triangle.isEquilateral());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void trianglesWithOneUnequalSideAreNotEquilateral() throws TriangleException {
         Triangle triangle = new Triangle(2, 3, 2);
@@ -26,7 +26,7 @@ public class TriangleTest {
         assertFalse(triangle.isEquilateral());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void trianglesWithNoEqualSidesAreNotEquilateral() throws TriangleException {
         Triangle triangle = new Triangle(5, 4, 6);
@@ -34,14 +34,14 @@ public class TriangleTest {
         assertFalse(triangle.isEquilateral());
     }
     
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void trianglesWithNoSizeAreIllegal() throws TriangleException {
         expectedException.expect(TriangleException.class);
         new Triangle(0, 0, 0);
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void verySmallTrianglesCanBeEquilateral() throws TriangleException {
         Triangle triangle = new Triangle(0.5, 0.5, 0.5);
@@ -49,7 +49,7 @@ public class TriangleTest {
         assertTrue(triangle.isEquilateral());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void isoscelesTrianglesHaveLastTwoSidesEqual() throws TriangleException {
         Triangle triangle = new Triangle(3, 4, 4);
@@ -57,7 +57,7 @@ public class TriangleTest {
         assertTrue(triangle.isIsosceles());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void isoscelesTrianglesHaveTwoFirstSidesEqual() throws TriangleException {
         Triangle triangle = new Triangle(4, 4, 3);
@@ -65,7 +65,7 @@ public class TriangleTest {
         assertTrue(triangle.isIsosceles());
     }
     
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void isoscelesTrianglesHaveFirstAndLastSidesEqual() throws TriangleException {
         Triangle triangle = new Triangle(4, 3, 4);
@@ -73,7 +73,7 @@ public class TriangleTest {
         assertTrue(triangle.isIsosceles());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void isoscelesTrianglesCanHaveAllSidesEqual() throws TriangleException {
         Triangle triangle = new Triangle(4, 4, 4);
@@ -81,7 +81,7 @@ public class TriangleTest {
         assertTrue(triangle.isIsosceles());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void isoscelesTrianglesMustHaveAtLeastTwoEqualSides() throws TriangleException {
         Triangle triangle = new Triangle(2, 3, 4);
@@ -89,14 +89,14 @@ public class TriangleTest {
         assertFalse(triangle.isIsosceles());
     }
     
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testSidesThatViolateTriangleInequalityAreNotIsoscelesEvenIfTwoAreEqual() throws TriangleException {
         expectedException.expect(TriangleException.class);
         new Triangle(1, 1, 3);
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void verySmallTrianglesCanBeIsosceles() throws TriangleException {
         Triangle triangle = new Triangle(0.5, 0.4, 0.5);
@@ -104,7 +104,7 @@ public class TriangleTest {
         assertTrue(triangle.isIsosceles());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void scaleneTrianglesHaveNoEqualSides() throws TriangleException {
         Triangle triangle = new Triangle(5, 4, 6);
@@ -112,7 +112,7 @@ public class TriangleTest {
         assertTrue(triangle.isScalene());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void trianglesWithAllSidesEqualAreNotScalene() throws TriangleException {
         Triangle triangle = new Triangle(4, 4, 4);
@@ -120,26 +120,38 @@ public class TriangleTest {
         assertFalse(triangle.isScalene());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void trianglesWithOneUnequalSideAreNotScalene() throws TriangleException {
         Triangle triangle = new Triangle(4, 4, 3);
-
         assertFalse(triangle.isScalene());
     }
-    
-    @Ignore("Remove to run test")
+
+    // @Ignore("Remove to run test")
+    @Test
+    public void verySmallTrianglesCanBeScalene() throws TriangleException {
+        Triangle triangle = new Triangle(0.5, 0.4, 0.6);
+        assertTrue(triangle.isScalene());
+    }
+
+    // @Ignore("Remove to run test")
     @Test
     public void testSidesThatViolateTriangleInequalityAreNotScaleneEvenIfTheyAreAllDifferent() throws TriangleException {
         expectedException.expect(TriangleException.class);
         new Triangle(7, 3, 2);
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
-    public void verySmallTrianglesCanBeScalene() throws TriangleException {
-        Triangle triangle = new Triangle(0.5, 0.4, 0.6);
+    public void degenerateTriangleIsNotIsoscelesEvenIfTwoSidesAreEqual() throws TriangleException {
+        expectedException.expect(TriangleException.class);
+        new Triangle(2, 2, 4);
+    }
 
-        assertTrue(triangle.isScalene());
+    // @Ignore("Remove to run test")
+    @Test
+    public void degenerateTriangleIsNotScaleneEvenIfAllSidesAreDifferent() throws TriangleException {
+        expectedException.expect(TriangleException.class);
+        new Triangle(2, 3, 5);
     }
 }
