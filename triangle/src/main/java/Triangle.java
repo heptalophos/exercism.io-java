@@ -14,7 +14,7 @@ class Triangle {
                           || side1 + side3 == side2;
         boolean isTriangle = positiveSides && triangleInequality && !degenerate;
         if ( !isTriangle ) {
-            throw new TriangleException();
+            throw new TriangleException("Invalid triangle");
         }
         uniqSides = Stream.of(side1, side2, side3).distinct().count();
     }
