@@ -1,0 +1,21 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+NucleotideCounterTest > testDnaStringHasOneNucleotide PASSED
+
+NucleotideCounterTest > testDnaStringHasMultipleNucleotide PASSED
+
+NucleotideCounterTest > testEmptyDnaStringHasNoNucleotides PASSED
+
+NucleotideCounterTest > testDnaStringHasInvalidNucleotides PASSED
+
+NucleotideCounterTest > testRepetitiveSequenceWithOnlyGuanine PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 6.017 secs
