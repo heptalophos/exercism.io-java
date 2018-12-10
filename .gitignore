@@ -9,7 +9,7 @@ build/
 .classpath
 .settings
 .project
-.solution.json
+# .solution.json
 /.solution.json
 /../.settings/*
 /../bin/*
