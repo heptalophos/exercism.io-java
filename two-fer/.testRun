@@ -15,6 +15,8 @@ TwoferTest > anotherNameGiven PASSED
 BUILD SUCCESSFUL
 
 Total time: 1 mins 2.651 secs
+
+
 :compileJava
 :processResources NO-SOURCE
 :classes
