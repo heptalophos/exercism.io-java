@@ -21,7 +21,7 @@ public class Hamming {
         char[]  right = rightStrand.toCharArray();
 
         return IntStream
-               .range(0, Math.min(left.length, right.length))
+               .range(0, left.length)
                .mapToObj(i -> left[i] == right[i] ? 0 : 1)
                .reduce(0, Integer::sum);
     }
