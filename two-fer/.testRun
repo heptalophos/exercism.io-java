@@ -15,6 +15,9 @@ TwoferTest > anotherNameGiven PASSED
 BUILD SUCCESSFUL
 
 Total time: 1 mins 2.651 secs
+
+
+
 :compileJava
 :processResources NO-SOURCE
 :classes
@@ -32,3 +35,24 @@ TwoferTest > anotherNameGiven PASSED
 BUILD SUCCESSFUL
 
 Total time: 26.902 secs
+
+
+:compileJava UP-TO-DATE
+:processResources NO-SOURCE
+:classes UP-TO-DATE
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+TwoferTest > noNameGiven PASSED
+
+TwoferTest > aNameGiven PASSED
+
+TwoferTest > anotherNameGiven PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 6.379 secs
+
+
