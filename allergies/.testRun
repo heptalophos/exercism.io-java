@@ -1,0 +1,37 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+AllergiesTest > isAllergicToEggsAndShellfish PASSED
+
+AllergiesTest > isAllergicToLotsOfStuff PASSED
+
+AllergiesTest > isAllergicToJustEggs PASSED
+
+AllergiesTest > allergicToStrawberriesButNotPeanuts PASSED
+
+AllergiesTest > ignoreNonAllergenScoreParts PASSED
+
+AllergiesTest > noAllergiesMeansNotAllergicToAnything PASSED
+
+AllergiesTest > isAllergicToJustPeanuts PASSED
+
+AllergiesTest > isAllergicToEggsAndPeanuts PASSED
+
+AllergiesTest > allergicToEggsInAdditionToOtherStuff PASSED
+
+AllergiesTest > allergicToEggs PASSED
+
+AllergiesTest > isAllergicToEverything PASSED
+
+AllergiesTest > isAllergicToJustStrawberries PASSED
+
+AllergiesTest > noAllergies PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.257 secs
