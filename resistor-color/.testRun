@@ -1,0 +1,19 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+ResistorColorTest > testWhiteColorCode PASSED
+
+ResistorColorTest > testColors PASSED
+
+ResistorColorTest > testBlackColorCode PASSED
+
+ResistorColorTest > testOrangeColorCode PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.277 secs
