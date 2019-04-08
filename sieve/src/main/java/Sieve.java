@@ -1,27 +1,33 @@
 import java.util.List;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.stream.IntStream;
 import java.util.stream.Collectors;
 
 class Sieve {
 
-    private List<Integer> primes = new ArrayList<Integer>();
+    private List<Integer> primes;
 
-    private static boolean isPrime(int num) {
-        return IntStream.rangeClosed(2, (int)Math.sqrt(num))
-                        .filter(x -> (x & 0x1) != 0)
-                        .allMatch(x -> num % x != 0);    
-    } 
+    public Sieve(int limit) {
 
-    // Sieve(int maxPrime) {
-    //     primes = IntStream.rangeClosed(2, maxPrime)
-    //                       .filter(x -> isPrime(x)).boxed()
-    //                       .collect(Collectors.toList());
-    // }
+        boolean[] notPrime = new boolean[limit + 1];
 
-    public List<Integer> getPrimes(int limit) {
-        return IntStream.rangeClosed(2, limit)
-                        .filter(x -> isPrime(x)).boxed()
-                        .collect(Collectors.toList());
+        Arrays.fill(notPrime, false);
+
+        for (int p = 2; p * p <=limit; p++) {
+            if (!notPrime[p]) {
+                for (int i = p * p; i <= limit; i += p) {
+                    notPrime[i] = true;
+                }
+            }
+        }
+        
+        primes = IntStream.rangeClosed(2, limit)
+                          .filter(x -> !notPrime[x])
+                          .boxed()
+                          .collect(Collectors.toList());
+    }
+
+    public List<Integer> getPrimes() {
+        return primes;
     }
 }
