@@ -24,4 +24,4 @@ build/
 /../.project
 /../build
 /../../../.keep
-cleanup.*
+cleanup.ps1
