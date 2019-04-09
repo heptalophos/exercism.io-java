@@ -11,6 +11,14 @@ class Sieve {
 
         boolean[] notPrime = new boolean[limit + 1];
 
+        // IntStream.rangeClosed(2, (int) Math.sqrt(lim))
+        //          .filter(x -> !notPrime[x])
+        //          .flatMap(x -> Stream.iterate(x * x, m -> m <= lim, m -> m + x)) 
+        //  // this works in java9 but not in java 8
+        //          .forEach(x -> notPrime[x] = true);
+        // // Also .flatMap(x -> Stream.iterate(x * x, m -> m + x).takeWhile(m -> m <= lim))
+        // // only works in java9 yet, so: 
+
         Arrays.fill(notPrime, false);
 
         for (int p = 2; p * p <=limit; p++) {
