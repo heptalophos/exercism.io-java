@@ -1,0 +1,21 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+SieveTest > findFirstPrime PASSED
+
+SieveTest > noPrimesUnder2 PASSED
+
+SieveTest > findPrimesUpTo1000 PASSED
+
+SieveTest > limitIsPrime PASSED
+
+SieveTest > findPrimesUpTo10 PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 14.45 secs
