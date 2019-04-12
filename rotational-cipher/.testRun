@@ -1,0 +1,31 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+RotationalCipherTest > rotateCapitalLetters PASSED
+
+RotationalCipherTest > rotateNumbers PASSED
+
+RotationalCipherTest > rotatePunctuation PASSED
+
+RotationalCipherTest > rotateAllLetters PASSED
+
+RotationalCipherTest > rotateSingleCharacterBy0 PASSED
+
+RotationalCipherTest > rotateSingleCharacterBy1 PASSED
+
+RotationalCipherTest > rotateSingleCharacterBy13 PASSED
+
+RotationalCipherTest > rotateSingleCharacterBy26 PASSED
+
+RotationalCipherTest > rotateSpaces PASSED
+
+RotationalCipherTest > rotateSingleCharacterWithWrapAround PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 11.923 secs
