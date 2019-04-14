@@ -22,6 +22,6 @@ class RotationalCipher {
         return data.chars()
                    .mapToObj(x -> shift(x))
                    .map(x -> x.toString())
-                   .collect(Collectors.reducing("", (x, y) -> x + "" + y));
+                   .collect(Collectors.reducing("", (acc, x) -> acc + "" + x));
     }
 }
