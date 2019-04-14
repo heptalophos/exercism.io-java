@@ -1,0 +1,25 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+DartsTest > testDartLandsOnBorderBetweenMiddleAndInnerCircles PASSED
+
+DartsTest > testDartLandsInTheInnerCircle PASSED
+
+DartsTest > testDartOutsideTarget PASSED
+
+DartsTest > testDartLandsOnMiddleOfCircle PASSED
+
+DartsTest > testDartLandsInOuterCircle PASSED
+
+DartsTest > testDartLandsOnBorderOfTarget PASSED
+
+DartsTest > testDartLandsInBorderBetweenOuterAndMiddleCircles PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 10.815 secs
