@@ -1,0 +1,51 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+RomanNumeralsTest > test3000ToRomanNumberMMM PASSED
+
+RomanNumeralsTest > test9ToRomanNumberIX PASSED
+
+RomanNumeralsTest > test575ToRomanNumberDLXXV PASSED
+
+RomanNumeralsTest > test49ToRomanNumberXLIX PASSED
+
+RomanNumeralsTest > test1ToRomanNumberI PASSED
+
+RomanNumeralsTest > test48ToRomanNumberXLVIII PASSED
+
+RomanNumeralsTest > test3ToRomanNumberIII PASSED
+
+RomanNumeralsTest > test6ToRomanNumberVI PASSED
+
+RomanNumeralsTest > test911ToRomanNumberCMXI PASSED
+
+RomanNumeralsTest > test1024ToRomanNumberMXXIV PASSED
+
+RomanNumeralsTest > test59ToRomanNumberLIX PASSED
+
+RomanNumeralsTest > test5ToRomanNumberV PASSED
+
+RomanNumeralsTest > test27ToRomanNumberXXVII PASSED
+
+RomanNumeralsTest > test141ToRomanNumberCXLI PASSED
+
+RomanNumeralsTest > test4ToRomanNumberIV PASSED
+
+RomanNumeralsTest > test163ToRomanNumberCLXIII PASSED
+
+RomanNumeralsTest > test93ToRomanNumberXCIII PASSED
+
+RomanNumeralsTest > test2ToRomanNumberII PASSED
+
+RomanNumeralsTest > test402ToRomanNumberCDII PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 29.101 secs
+
+
