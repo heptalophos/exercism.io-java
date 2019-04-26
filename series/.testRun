@@ -1,0 +1,31 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+SeriesTest > slicesOfTwo PASSED
+
+SeriesTest > sliceLengthNegative PASSED
+
+SeriesTest > slicesOfTwoOverlap PASSED
+
+SeriesTest > slicesOfLongSeries PASSED
+
+SeriesTest > slicesOfOneFromOne PASSED
+
+SeriesTest > slicesOfOneFromTwo PASSED
+
+SeriesTest > sliceLengthZero PASSED
+
+SeriesTest > sliceLengthIsToolarge PASSED
+
+SeriesTest > slicesIncludeDuplicates PASSED
+
+SeriesTest > emptySeries PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 4.202 secs

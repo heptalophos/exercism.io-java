@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Collectors;
 
@@ -10,23 +11,11 @@ public class Series {
         this.numberString = numberString;
     }
 
-    // public List<Integer> digits() {
-    //     return numberString.chars()
-    //                        .mapToObj(x -> (char) x)
-    //                        .map(Character::getNumericValue)
-    //                        .collect(Collectors.toList());
-    // }
-
-    public List<List<Integer>> slices(int n) {
-        if (n > numberString.length()) throw new IllegalArgumentException();
-        char[] digits = numberString.toCharArray();
-        return IntStream.range(0, numberString.length())
-                        .mapToObj(x -> IntStream.range(x, x + n)
-                                                .boxed()
-                                                .map(i -> digits[i])
-                                                .map(Character::getNumericValue)
-                                                .collect(Collectors.toList()))
+    public List<String> slices(int subLen) {
+        if (subLen <= 0) throw new IllegalArgumentException("Slice size is too small.");
+        if (subLen > numberString.length()) throw new IllegalArgumentException("Slice size is too big.");
+        return IntStream.rangeClosed(0, numberString.length() - subLen)
+                        .mapToObj(x -> numberString.substring(x, x + subLen))
                         .collect(Collectors.toList());
-
     }
 }
