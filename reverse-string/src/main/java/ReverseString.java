@@ -1,9 +1,11 @@
-public class ReverseString {
+import java.util.stream.IntStream;
 
+public class ReverseString {
+   
     public static String reverse(String inputString) {
-        return !inputString.equals("") ? 
-               reverse(inputString.substring(1)) + inputString.charAt(0) : 
-               inputString;
+        return IntStream.range(0, inputString.length())
+                        .map(i -> inputString.charAt(inputString.length() - i - 1))
+                        .collect(StringBuilder::new, (acc, c) -> acc.append((char)c), StringBuilder::append)
+                        .toString();
     }
-  
 }
