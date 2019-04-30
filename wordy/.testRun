@@ -41,3 +41,17 @@ WordProblemSolverTest > testAdditionThenMultiplication PASSED
 BUILD SUCCESSFUL
 
 Total time: 18.824 secs
+
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 25.963 secs
