@@ -1,0 +1,39 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+QueenAttackCalculatorTest > testNullPositionsNotAllowed PASSED
+
+QueenAttackCalculatorTest > testCreateQueenMustHaveColumnOnBoard PASSED
+
+QueenAttackCalculatorTest > testCreateQueenMustHavePositiveRow PASSED
+
+QueenAttackCalculatorTest > testCreateQueenMustHavePositiveColumn PASSED
+
+QueenAttackCalculatorTest > testCreateQueenWithAValidPosition PASSED
+
+QueenAttackCalculatorTest > testQueensCanAttackOnTheSameColumn PASSED
+
+QueenAttackCalculatorTest > testCreateQueenMustHaveRowOnBoard PASSED
+
+QueenAttackCalculatorTest > testQueensCanAttackOnThirdDiagonal PASSED
+
+QueenAttackCalculatorTest > testQueensCanAttackOnSecondDiagonal PASSED
+
+QueenAttackCalculatorTest > testQueensCanAttackOnTheSameRow PASSED
+
+QueenAttackCalculatorTest > testQueensCanAttackOnFourthDiagonal PASSED
+
+QueenAttackCalculatorTest > testQueensMustNotOccupyTheSameSquare PASSED
+
+QueenAttackCalculatorTest > testQueensCanAttackOnFirstDiagonal PASSED
+
+QueenAttackCalculatorTest > testQueensCannotAttack PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 5.811 secs
