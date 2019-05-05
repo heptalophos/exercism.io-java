@@ -1,0 +1,37 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+RunLengthEncodingTest > decodeWithOnlySingleValues PASSED
+
+RunLengthEncodingTest > decodeWithMixedValues PASSED
+
+RunLengthEncodingTest > decodeWithLowercaseValues PASSED
+
+RunLengthEncodingTest > encodeThenDecode PASSED
+
+RunLengthEncodingTest > encodeWithNoSingleValues PASSED
+
+RunLengthEncodingTest > encodeWithMixedValues PASSED
+
+RunLengthEncodingTest > encodeWithLowercaseValues PASSED
+
+RunLengthEncodingTest > encodeWithWhitespaceValues PASSED
+
+RunLengthEncodingTest > decodeWithNoSingleValues PASSED
+
+RunLengthEncodingTest > decodeEmpty PASSED
+
+RunLengthEncodingTest > encodeWithOnlySingleValues PASSED
+
+RunLengthEncodingTest > decodeWithWhitespaceValues PASSED
+
+RunLengthEncodingTest > encodeEmpty PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 4.005 secs

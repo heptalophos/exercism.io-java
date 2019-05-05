@@ -16,7 +16,7 @@ class LargestSeriesProductCalculator {
 
     long calculateLargestProductForSeriesLength(int numberOfDigits) {
         
-        if (input.length() < numberOfDigits) {
+        if (numberOfDigits > input.length()) {
             throw new IllegalArgumentException("Series length must be less than or equal to the length of the string to search.");
         }
 
