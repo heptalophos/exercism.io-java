@@ -25,3 +25,49 @@ ArmstrongNumbersTest > threeDigitNumberIsArmstrongNumber PASSED
 BUILD SUCCESSFUL
 
 Total time: 30.678 secs
+
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+ArmstrongNumbersTest > threeDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest > sevenDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest > noTwoDigitArmstrongNumbers PASSED
+
+ArmstrongNumbersTest > singleDigitsAreArmstrongNumbers PASSED
+
+ArmstrongNumbersTest > sevenDigitNumberIsArmstrongNumber PASSED
+
+ArmstrongNumbersTest > fourDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest > fourDigitNumberIsArmstrongNumber PASSED
+
+ArmstrongNumbersTest > threeDigitNumberIsArmstrongNumber PASSED
+
+ArmstrongNumbersTest2 > threeDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest2 > noTwoDigitArmstrongNumbers2 PASSED
+
+ArmstrongNumbersTest2 > sevenDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest2 > singleDigitsAreArmstrongNumbers2 PASSED
+
+ArmstrongNumbersTest2 > sevenDigitNumberIsArmstrongNumber PASSED
+
+ArmstrongNumbersTest2 > fourDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest2 > fourDigitNumberIsArmstrongNumber PASSED
+
+ArmstrongNumbersTest2 > threeDigitNumberIsArmstrongNumber PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 6.04 secs
