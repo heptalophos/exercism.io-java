@@ -1,0 +1,73 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+ComplexNumberTest > testConjugationOfNumberWithRealAndImaginaryParts PASSED
+
+ComplexNumberTest > testExponentialOfZero PASSED
+
+ComplexNumberTest > testConjugationOfPurelyRealNumber PASSED
+
+ComplexNumberTest > testDivisionWithRealAndImaginaryParts PASSED
+
+ComplexNumberTest > testAdditionWithPurelyImaginaryNumbers PASSED
+
+ComplexNumberTest > testExponentialOfPurelyRealNumber PASSED
+
+ComplexNumberTest > testImaginaryPartOfNumberWithRealAndImaginaryParts PASSED
+
+ComplexNumberTest > testAbsoluteValueOfPositivePurelyRealNumber PASSED
+
+ComplexNumberTest > testExponentialOfNumberWithRealAndImaginaryParts PASSED
+
+ComplexNumberTest > testMultiplicationWithPurelyRealNumbers PASSED
+
+ComplexNumberTest > testAbsoluteValueOfNumberWithRealAndImaginaryParts PASSED
+
+ComplexNumberTest > testMultiplicationWithPurelyImaginaryNumbers PASSED
+
+ComplexNumberTest > testRealPartOfPurelyRealNumber PASSED
+
+ComplexNumberTest > testImaginaryUnitExhibitsDefiningProperty PASSED
+
+ComplexNumberTest > testDivisionWithPurelyRealNumbers PASSED
+
+ComplexNumberTest > testAdditionWithRealAndImaginaryParts PASSED
+
+ComplexNumberTest > testAbsoluteValueOfNegativePurelyRealNumber PASSED
+
+ComplexNumberTest > testRealPartOfPurelyImaginaryNumber PASSED
+
+ComplexNumberTest > testImaginaryPartOfPurelyRealNumber PASSED
+
+ComplexNumberTest > testSubtractionWithRealAndImaginaryParts PASSED
+
+ComplexNumberTest > testSubtractionWithPurelyImaginaryNumbers PASSED
+
+ComplexNumberTest > testConjugationOfPurelyImaginaryNumber PASSED
+
+ComplexNumberTest > testSubtractionWithPurelyRealNumbers PASSED
+
+ComplexNumberTest > testExponentialOfPurelyImaginaryNumber PASSED
+
+ComplexNumberTest > testDivisionWithPurelyImaginaryNumbers PASSED
+
+ComplexNumberTest > testRealPartOfNumberWithRealAndImaginaryParts PASSED
+
+ComplexNumberTest > testAbsoluteValueOfPurelyImaginaryNumberWithPositiveImaginaryPart PASSED
+
+ComplexNumberTest > testAdditionWithPurelyRealNumbers PASSED
+
+ComplexNumberTest > testMultiplicationWithRealAndImaginaryParts PASSED
+
+ComplexNumberTest > testAbsoluteValueOfPurelyImaginaryNumberWithNegativeImaginaryPart PASSED
+
+ComplexNumberTest > testImaginaryPartOfPurelyImaginaryNumber PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.625 secs
