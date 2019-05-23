@@ -21,3 +21,29 @@ ProverbTest > fourPiecesModernizedProverb PASSED
 BUILD SUCCESSFUL
 
 Total time: 3.556 secs
+
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+ProverbTest > shortChainOfConsequences PASSED
+
+ProverbTest > fullProverb PASSED
+
+ProverbTest > zeroWordsAreGiven PASSED
+
+ProverbTest > singlePieceOfProverb PASSED
+
+ProverbTest > twoPiecesOfProverb PASSED
+
+ProverbTest > fourPiecesModernizedProverb PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 1.182 secs
