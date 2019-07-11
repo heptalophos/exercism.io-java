@@ -1,0 +1,21 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+PrimeCalculatorTest > testUndefinedPrime PASSED
+
+PrimeCalculatorTest > testSixthPrime PASSED
+
+PrimeCalculatorTest > testFirstPrime PASSED
+
+PrimeCalculatorTest > testSecondPrime PASSED
+
+PrimeCalculatorTest > testBigPrime PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.987 secs
