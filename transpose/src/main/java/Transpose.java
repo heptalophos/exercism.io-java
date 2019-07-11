@@ -8,28 +8,27 @@ import java.util.stream.IntStream;
 
 public class Transpose {
 
-	private static List<String> normalize(List<String> input, int i) {
+	private static List<String> normalize(List<String> strings, int match) {
 
-		List<String> rowz = input;
-
-		int len = rowz.size() - 1;
+		int i = strings.size() - 1;
 		
-        for (; len >= 0; --len) {
-			String str = rowz.get(len);
-        	Matcher m = Pattern.compile("\\s+$").matcher(str);
-            if (m.find(i)) {
-				i = m.start();
-				rowz.set(len, str.substring(0, i));
+        for (; i >= 0; --i) {
+
+			String str = strings.get(i);
+			
+			Matcher m = Pattern.compile("\\s+$").matcher(str);
+			
+			if (m.find(match)) {
+				match = m.start();
+				strings.set(i, str.substring(0, match));
 			} else {
 				break;
 			}
 		}
-		return rowz;
+		return strings;
     }
 
     public String transpose(final String input) {
-
-        if (input == "") return "";
 
 		List<String> rows = Arrays.stream(input.split("\n"))
 								  .collect(Collectors.toList());
