@@ -11,13 +11,12 @@ public class Transpose {
 	private static List<String> normalize(List<String> strings, int match) {
 
 		int i = strings.size() - 1;
-		
+
         for (; i >= 0; --i) {
 
 			String str = strings.get(i);
-			
 			Matcher m = Pattern.compile("\\s+$").matcher(str);
-			
+	
 			if (m.find(match)) {
 				match = m.start();
 				strings.set(i, str.substring(0, match));
@@ -38,14 +37,14 @@ public class Transpose {
 						 	.max()
 						 	.orElse(0);
 
-		List<String> tRows = IntStream
-							 .range(0, maxRowLen)
-							 .mapToObj(i -> rows.stream()
-                                           		.map(row -> i >= row.length() ? " " :
-                                                       		Character.toString(row.charAt(i)))
-							               		.collect(Collectors.joining("")))
-							 .collect(Collectors.toList());
+		List<String> transposedRows = IntStream.range(0, maxRowLen)
+									  .mapToObj(i -> rows
+									  				 .stream()
+                           		   					 .map(row -> i >= row.length() ? " " :
+                                       		   				  Character.toString(row.charAt(i)))
+						           					 .collect(Collectors.joining("")))
+									  .collect(Collectors.toList());
 							 
-		return String.join("\n", normalize(tRows, 0));
+		return String.join("\n", normalize(transposedRows, 0));
     }
 }

@@ -132,3 +132,16 @@ TransposeTest > triangle PASSED
 BUILD SUCCESSFUL
 
 Total time: 3.155 secs
+
+
+:compileJava UP-TO-DATE
+:processResources NO-SOURCE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 2.128 secs
