@@ -1,0 +1,147 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test
+
+TransposeTest > secondLineLongerThanFirstLine PASSED
+
+TransposeTest > simple PASSED
+
+TransposeTest > square PASSED
+
+TransposeTest > firstLineLongerThanSecondLine PASSED
+
+TransposeTest > twoCharactersInARow PASSED
+
+TransposeTest > singleLine PASSED
+
+TransposeTest > rectangle PASSED
+
+TransposeTest > mixedLineLength FAILED
+    org.junit.ComparisonFailure: expected:<...i
+    lnnn
+    ogge
+    n e.
+    glr[
+    ei 
+    snl
+    tei
+     .n
+    l e
+    i .
+    n
+    e]
+    .> but was:<...i
+    lnnn
+    ogge
+    n e.
+    glr[ 
+    ei  
+    snl 
+    tei 
+     .n 
+    l e 
+    i . 
+    n   
+    e   ]
+    .>
+        at org.junit.Assert.assertEquals(Assert.java:115)
+        at org.junit.Assert.assertEquals(Assert.java:144)
+        at TransposeTest.mixedLineLength(TransposeTest.java:158)
+
+TransposeTest > emptyString PASSED
+
+TransposeTest > twoCharactersInAColumn PASSED
+
+TransposeTest > triangle PASSED
+:test FAILED
+
+BUILD FAILED
+
+Total time: 3.441 secs
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test
+
+TransposeTest > secondLineLongerThanFirstLine PASSED
+
+TransposeTest > simple PASSED
+
+TransposeTest > square PASSED
+
+TransposeTest > firstLineLongerThanSecondLine PASSED
+
+TransposeTest > twoCharactersInARow PASSED
+
+TransposeTest > singleLine PASSED
+
+TransposeTest > rectangle PASSED
+
+TransposeTest > mixedLineLength PASSED
+
+TransposeTest > emptyString PASSED
+
+TransposeTest > twoCharactersInAColumn PASSED
+
+TransposeTest > triangle PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 5.183 secs
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+TransposeTest > secondLineLongerThanFirstLine PASSED
+
+TransposeTest > simple PASSED
+
+TransposeTest > square PASSED
+
+TransposeTest > firstLineLongerThanSecondLine PASSED
+
+TransposeTest > twoCharactersInARow PASSED
+
+TransposeTest > singleLine PASSED
+
+TransposeTest > rectangle PASSED
+
+TransposeTest > mixedLineLength PASSED
+
+TransposeTest > emptyString PASSED
+
+TransposeTest > twoCharactersInAColumn PASSED
+
+TransposeTest > triangle PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.155 secs
+
+
+:compileJava UP-TO-DATE
+:processResources NO-SOURCE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 2.128 secs
