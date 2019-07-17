@@ -1,0 +1,83 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+RationalTest > testReduceARationalNumberWithANegativeDenominatorToLowestTerms PASSED
+
+RationalTest > testSubtractTwoNegativeRationalNumbers PASSED
+
+RationalTest > testRaiseANegativeRationalNumberToAPositiveIntegerPower PASSED
+
+RationalTest > testMultiplyARationalNumberByZero PASSED
+
+RationalTest > testAbsoluteValueOfAPositiveRationalNumberWithNegativeNumeratorAndDenominator PASSED
+
+RationalTest > testAbsoluteValueOfANegativeRationalNumber PASSED
+
+RationalTest > testAddARationalNumberToItsAdditiveInverse PASSED
+
+RationalTest > testRaiseZeroToAnIntegerPower PASSED
+
+RationalTest > testReduceOneToLowestTerms PASSED
+
+RationalTest > testMultiplyARationalNumberByItsReciprocal PASSED
+
+RationalTest > testDivideAPositiveRationalNumberByANegativeRationalNumber PASSED
+
+RationalTest > testReduceANegativeRationalNumberToLowestTerms PASSED
+
+RationalTest > testRaiseOneToAnIntegerPower PASSED
+
+RationalTest > testAddTwoPositiveRationalNumbers PASSED
+
+RationalTest > testDivideTwoPositiveRationalNumbers PASSED
+
+RationalTest > testAddAPositiveRationalNumberAndANegativeRationalNumber PASSED
+
+RationalTest > testRaiseARealNumberToAPositiveRationalNumber PASSED
+
+RationalTest > testDivideARationalNumberByOne PASSED
+
+RationalTest > testSubtractARationalNumberFromItself PASSED
+
+RationalTest > testMultiplyTwoPositiveRationalNumbers PASSED
+
+RationalTest > testAbsoluteValueOfZero PASSED
+
+RationalTest > testRaiseARealNumberToANegativeRationalNumber PASSED
+
+RationalTest > testReduceAPositiveRationalNumberToLowestTerms PASSED
+
+RationalTest > testMultiplyANegativeRationalNumberByAPositiveRationalNumber PASSED
+
+RationalTest > testSubtractTwoPositiveRationalNumbers PASSED
+
+RationalTest > testMultiplyARationalNumberByOne PASSED
+
+RationalTest > testAbsoluteValueOfANegativeRationalNumberWithNegativeDenominator PASSED
+
+RationalTest > testAddTwoNegativeRationalNumbers PASSED
+
+RationalTest > testDivideTwoNegativeRationalNumbers PASSED
+
+RationalTest > testRaiseAPositiveRationalNumberToAPositiveIntegerPower PASSED
+
+RationalTest > testAbsoluteValueOfAPositiveRationalNumber PASSED
+
+RationalTest > testMultiplyTwoNegativeRationalNumbers PASSED
+
+RationalTest > testRaiseAPositiveRationalNumberToThePowerOfZero PASSED
+
+RationalTest > testReduceAnIntegerToLowestTerms PASSED
+
+RationalTest > testSubtractAPositiveRationalNumberAndANegativeRationalNumber PASSED
+
+RationalTest > testReduceZeroToLowestTerms PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.713 secs
