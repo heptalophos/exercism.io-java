@@ -1,6 +1,6 @@
 import java.util.stream.Collectors;
 
-class RotationalCipher {
+public class RotationalCipher {
 
     private final int shiftKey;
 
@@ -9,19 +9,21 @@ class RotationalCipher {
         this.shiftKey = shiftKey ;
     }
 
-    private char shift(int ch) {
-        
-        int alpha = ch < 'a' ? 'A' : 'a';
+    private char shift(char ch) {
 
-        return (!Character.isAlphabetic(ch)) ? (char) ch :
-               (char) (alpha + ((ch - alpha + shiftKey) % 26)) ;
+        if (!Character.isAlphabetic((int) ch))
+            return ch;
+        
+        int base = Character.isLowerCase(ch) ? 'a' : 'A';
+
+        return (char) (base + ((int) ch - base + shiftKey) % 26);
     }
 
     public String rotate(String data) {
         
         return data.chars()
-                   .mapToObj(x -> shift(x))
+                   .mapToObj(x -> shift((char) x))
                    .map(x -> x.toString())
-                   .collect(Collectors.reducing("", (acc, x) -> acc + "" + x));
+                   .collect(Collectors.joining(""));
     }
 }
