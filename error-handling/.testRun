@@ -1,0 +1,33 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+ErrorHandlingTest > testThrowIllegalArgumentExceptionWithDetailMessage PASSED
+
+ErrorHandlingTest > testReturnOptionalInstance PASSED
+
+ErrorHandlingTest > testThrowCustomUncheckedException PASSED
+
+ErrorHandlingTest > testThrowCustomCheckedExceptionWithDetailMessage PASSED
+
+ErrorHandlingTest > testThrowCustomUncheckedExceptionWithDetailMessage PASSED
+
+ErrorHandlingTest > testThrowIllegalArgumentException PASSED
+
+ErrorHandlingTest > testThrowAnyUncheckedException PASSED
+
+ErrorHandlingTest > testThrowAnyCheckedExceptionWithDetailMessage PASSED
+
+ErrorHandlingTest > testThrowAnyCheckedException PASSED
+
+ErrorHandlingTest > testThrowAnyUncheckedExceptionWithDetailMessage PASSED
+
+ErrorHandlingTest > testThrowCustomCheckedException PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 28.923 secs
