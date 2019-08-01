@@ -33,15 +33,11 @@ public class Atbash {
     }
 
     public static String encode (String phrase) {
-        
         return invert(phrase)
                .replaceAll(".{5}(?=.)", "$0 ");
-
     }
 
     public static String decode (String phrase) {
-
         return invert(phrase);
-
     }
 }
