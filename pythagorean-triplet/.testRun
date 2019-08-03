@@ -1,0 +1,26 @@
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+PythagoreanTripletTest > tripletsWhoseSumIs1000 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs1001 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs108 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs840 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs12 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs90 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs30000 PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 27.982 secs
