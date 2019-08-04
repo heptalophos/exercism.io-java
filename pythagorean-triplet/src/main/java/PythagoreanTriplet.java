@@ -11,6 +11,14 @@ public class PythagoreanTriplet {
         this.sideB = b;
         this.sideC = c;
     }
+
+    public int calculateSum() {
+        return sideA + sideB + sideC;
+    }
+
+    public boolean isPythagorean() {
+        return sideA * sideA + sideB * sideB == sideC * sideC;
+    }
  
     public static PythagoreanTripletGen makeTripletsList() {
         return new PythagoreanTripletGen();
