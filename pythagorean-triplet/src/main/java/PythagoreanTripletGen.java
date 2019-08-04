@@ -4,11 +4,12 @@ import java.util.stream.Collectors;
 
 public class PythagoreanTripletGen {
 
-    private int minFactor;
+    private int minFactor = 2;
+    private int maxFactor;
     private int sumTo;
 
     PythagoreanTripletGen withFactorsLessThanOrEqualTo(int val) {
-        minFactor = val;
+        maxFactor = val;
         return this;
     }
 
@@ -19,21 +20,22 @@ public class PythagoreanTripletGen {
 
     public List<PythagoreanTriplet> build() {
         return IntStream
-              .rangeClosed(1, minFactor / 2)
+              .rangeClosed(minFactor, maxFactor / 2)
               .boxed()
-              .flatMap(sideA-> IntStream
-                           .rangeClosed(sideA+ 1, (minFactor - sideA) / 2)
-                           .filter(sideB -> sideB != sideA )
-                           .boxed()
-                           .flatMap(sideB -> IntStream
-                                        .of(sumTo - (sideA + sideB))
-                                        .filter(sideC -> sideC != sideB)
-                                        .filter(sideC -> 
-                                            sideA * sideA + sideB * sideB == sideC * sideC)
-                                        .mapToObj(sideC -> 
-                                            new PythagoreanTriplet(sideA, sideB, sideC))
-                                   )
-                      )
+              .flatMap(sideA -> 
+                        IntStream
+                        .range(sideA + 1, maxFactor - sideA)
+                        .boxed()
+                        .flatMap(sideB -> 
+                                    IntStream
+                                    .of(sumTo - sideA - sideB)
+                                    .boxed()
+                                    .map(sideC -> new PythagoreanTriplet(sideA, 
+                                                                         sideB, 
+                                                                         sideC))
+                                    .filter(PythagoreanTriplet::isPythagorean)
+                                    .filter(triplet -> sumTo == triplet.calculateSum() 
+                                                       || sumTo == 0)))
               .collect(Collectors.toList());
     }
 }
