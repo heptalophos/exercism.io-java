@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.Set;
+import java.util.HashSet ;
 import java.util.stream.Stream;
 import java.util.stream.IntStream;
 import java.util.stream.Collectors;
@@ -10,17 +11,17 @@ import java.util.Optional;
 class Matrix {
 
     private final List<List<Integer>> matrix;
-    private final int rows;
-    private final int cols;
+    private final List<Integer> rowsMax;
+    private final List<Integer> colsMin;
 
     Matrix(List<List<Integer>> values) {
-        matrix = values;
-        if (!matrix.isEmpty()) {
-            rows = matrix.size();
-            cols = matrix.get(0).size();
-        } else {
-            rows = cols = 0;
-        }
+        int rows = values.size();
+        int cols = rows > 0 ? values.get(0).size() : 0;
+        
+        colsMin = IntStream.range(0, cols)
+                           .map(x -> IntStream0, rows)
+                                    )
+
     }
 
     Set<MatrixCoordinate> getSaddlePoints() {
