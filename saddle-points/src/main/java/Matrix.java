@@ -20,7 +20,7 @@ class Matrix {
         
         colsMin = IntStream.range(0, cols)
                            .map(x -> IntStream0, rows)
-                                    )
+                                )
 
     }
 
