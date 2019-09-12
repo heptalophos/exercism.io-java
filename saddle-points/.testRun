@@ -1,0 +1,70 @@
+:compileJava UP-TO-DATE
+:processResources NO-SOURCE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test
+
+MatrixTest > testCanIdentifyMultipleSaddlePointsInAColumn FAILED
+    java.lang.AssertionError: expected:<[Row: 2, Column: 2, Row: 1, Column: 2, Row: 3, Column: 2]> but was:<[Row: 1, Column: 1, Row: 0, Column: 1, Row: 2, Column: 1]>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:118)
+        at org.junit.Assert.assertEquals(Assert.java:144)
+        at MatrixTest.testCanIdentifyMultipleSaddlePointsInAColumn(MatrixTest.java:62)
+
+MatrixTest > testCanIdentifyThatEmptyMatrixHasNoSaddlePoints PASSED
+
+MatrixTest > testCanIdentifySaddlePointInBottomRightCorner FAILED
+    java.lang.AssertionError: expected:<[Row: 3, Column: 3]> but was:<[Row: 2, Column: 2]>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:118)
+        at org.junit.Assert.assertEquals(Assert.java:144)
+        at MatrixTest.testCanIdentifySaddlePointInBottomRightCorner(MatrixTest.java:94)
+
+MatrixTest > testCanIdentifyMultipleSaddlePointsInARow FAILED
+    java.lang.AssertionError: expected:<[Row: 2, Column: 2, Row: 2, Column: 3, Row: 2, Column: 1]> but was:<[Row: 1, Column: 1, Row: 1, Column: 2, Row: 1, Column: 0]>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:118)
+        at org.junit.Assert.assertEquals(Assert.java:144)
+        at MatrixTest.testCanIdentifyMultipleSaddlePointsInARow(MatrixTest.java:80)
+
+MatrixTest > testCanIdentifySaddlePointsInANonSquareMatrix FAILED
+    java.lang.AssertionError: expected:<[Row: 1, Column: 1, Row: 1, Column: 3]> but was:<[Row: 0, Column: 0]>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:118)
+        at org.junit.Assert.assertEquals(Assert.java:144)
+        at MatrixTest.testCanIdentifySaddlePointsInANonSquareMatrix(MatrixTest.java:110)
+
+MatrixTest > testCanIdentifyThatSaddlePointsInASingleRowMatrixAreThoseWithMaximumValue FAILED
+    java.lang.AssertionError: expected:<[Row: 1, Column: 2, Row: 1, Column: 4]> but was:<[]>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:118)
+        at org.junit.Assert.assertEquals(Assert.java:144)
+        at MatrixTest.testCanIdentifyThatSaddlePointsInASingleRowMatrixAreThoseWithMaximumValue(MatrixTest.java:143)
+
+MatrixTest > testCanIdentifyLackOfSaddlePointsWhenThereAreNone PASSED
+
+MatrixTest > testCanIdentifySingleSaddlePoint FAILED
+    java.lang.AssertionError: expected:<[Row: 2, Column: 1]> but was:<[Row: 1, Column: 0]>
+        at org.junit.Assert.fail(Assert.java:88)
+        at org.junit.Assert.failNotEquals(Assert.java:834)
+        at org.junit.Assert.assertEquals(Assert.java:118)
+        at org.junit.Assert.assertEquals(Assert.java:144)
+        at MatrixTest.testCanIdentifySingleSaddlePoint(MatrixTest.java:20)
+
+MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMinimumValue FAILED
+    java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+        at java.util.Collections$SingletonList.get(Collections.java:4815)
+        at Matrix.<init>(Matrix.java:73)
+        at MatrixTest.testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMinimumValue(MatrixTest.java:116)
+:test FAILED
+
+BUILD FAILED
+
+Total time: 7.6 secs
