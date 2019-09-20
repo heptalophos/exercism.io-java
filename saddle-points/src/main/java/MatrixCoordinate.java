@@ -34,8 +34,6 @@ public class MatrixCoordinate implements Comparable<MatrixCoordinate> {
     @Override
     public int compareTo(MatrixCoordinate o) {
         int rowComparison = Integer.compare(row, o.row);
-        return (rowComparison == 0) ? 
-               Integer.compare(col, o.col) : 
-               rowComparison;
+        return (rowComparison == 0) ? Integer.compare(col, o.col) : rowComparison;
     }
 }
