@@ -1,0 +1,41 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+BeerSongTest > singFirstTwoVerses PASSED
+
+BeerSongTest > singEntireSong PASSED
+
+BeerSongTest > singLastGenericVerse PASSED
+
+BeerSongTest > singLastThreeVerses PASSED
+
+BeerSongTest > singFirstVerse PASSED
+
+BeerSongTest > verseWithOneBottle PASSED
+
+BeerSongTest > verseWithTwoBottles PASSED
+
+BeerSongTest > verseWithZeroBottles PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 9.91 secs
+
+
+
+:compileJava UP-TO-DATE
+:processResources NO-SOURCE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 1.973 secs

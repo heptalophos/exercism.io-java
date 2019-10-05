@@ -49,8 +49,8 @@ class Matrix {
     }
 
     private boolean saddlePoint(MatrixCoordinate p) {
-        return matrix.get(p.row).get(p.col) >= maxRow.get(p.row)
-            && matrix.get(p.row).get(p.col) <= minCol.get(p.col);
+        return matrix.get(p.row()).get(p.col()) >= maxRow.get(p.row())
+            && matrix.get(p.row()).get(p.col()) <= minCol.get(p.col());
     } 
 }
 

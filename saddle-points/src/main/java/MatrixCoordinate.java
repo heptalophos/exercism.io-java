@@ -1,10 +1,21 @@
 public class MatrixCoordinate implements Comparable<MatrixCoordinate> {
-    final int row;
-    final int col;
+
+    private final int row;
+    private final int col;
 
     MatrixCoordinate(final int row, final int col) {
         this.row = row - 1;
         this.col = col - 1;
+    }
+
+    // Modified MatrixCoordinate, define public getters for row and col
+    
+    public int row() {
+        return row;
+    }
+
+    public int col() {
+        return col;
     }
 
     @Override
