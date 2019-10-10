@@ -29,6 +29,7 @@ class Matrix {
                                              .min(Integer::compareTo)
                                              .get())
                               .collect(Collectors.toList());
+                              
             return IntStream
                 .range(0, matrix.size())
                 .boxed()
