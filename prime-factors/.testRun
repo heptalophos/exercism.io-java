@@ -1,0 +1,25 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+PrimeFactorsCalculatorTest > testProductOfPrimes PASSED
+
+PrimeFactorsCalculatorTest > testCubeOfAPrime PASSED
+
+PrimeFactorsCalculatorTest > testNoFactors PASSED
+
+PrimeFactorsCalculatorTest > testProductOfPrimesAndNonPrimes PASSED
+
+PrimeFactorsCalculatorTest > testPrimeNumber PASSED
+
+PrimeFactorsCalculatorTest > testSquareOfAPrime PASSED
+
+PrimeFactorsCalculatorTest > testFactorsIncludingALargePrime PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 2.433 secs
