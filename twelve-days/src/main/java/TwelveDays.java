@@ -23,14 +23,14 @@ class TwelveDays {
                           "four Calling Birds,",
                           "three French Hens,",
                           "two Turtle Doves, and",
-                          "a Partridge in a Pear Tree.\n");
+                          "a Partridge in a Pear Tree.");
 
     String verse(int verseNumber) {
         return String.format("On the %s day of Christmas my true love gave to me: %s", 
                              dayXmas.get(verseNumber - 1),
                              IntStream.range(12 - verseNumber, 12)
                                       .boxed()
-                                      .map(i -> gifts.get(i))
+                                      .map(gifts::get)
                                       .collect(Collectors.joining(" ")));
     }
 

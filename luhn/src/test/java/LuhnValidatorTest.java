@@ -1,16 +1,16 @@
-// import org.junit.Ignore;
+import org.junit.Ignore;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class LuhnValidatorTest {
     private LuhnValidator luhnValidator;
 
     @Before
     public void setUp() {
-      luhnValidator = new LuhnValidator();
+        luhnValidator = new LuhnValidator();
     }
 
     @Test
@@ -56,8 +56,20 @@ public class LuhnValidatorTest {
 
     // @Ignore("Remove to run test")
     @Test
-    public void testStringsContainingNonDigitInvalid() {
-        assertFalse(luhnValidator.isValid("055a 444 285"));
+    public void testValidNumberWithAnEvenNumberOfDigits() {
+        assertTrue(luhnValidator.isValid("095 245 88"));
+    }
+
+    // @Ignore("Remove to run test")
+    @Test
+    public void testValidNumberWithAnOddNumberOfSpaces() {
+        assertTrue(luhnValidator.isValid("234 567 891 234"));
+    }
+
+    // @Ignore("Remove to run test")
+    @Test
+    public void testValidStringsWithANonDigitAtEndInvalid() {
+        assertFalse(luhnValidator.isValid("059a"));
     }
 
     // @Ignore("Remove to run test")
@@ -69,7 +81,7 @@ public class LuhnValidatorTest {
     // @Ignore("Remove to run test")
     @Test
     public void testStringContainingSymbolsInvalid() {
-        assertFalse(luhnValidator.isValid("055£ 444$ 285"));
+        assertFalse(luhnValidator.isValid("055# 444$ 285"));
     }
 
     // @Ignore("Remove to run test")
@@ -86,13 +98,20 @@ public class LuhnValidatorTest {
 
     // @Ignore("Remove to run test")
     @Test
-    public void testDigit9ConvertedToOutput9() {
+    public void testDigitNineConvertedToOutputNine() {
         assertTrue(luhnValidator.isValid("091"));
+    }
+
+
+    // @Ignore("Remove to run test")
+    @Test
+    public void testUsingASCIIValueForNonDoubledNonDigitNotAllowed() {
+        assertFalse(luhnValidator.isValid("055b 444 285"));
     }
 
     // @Ignore("Remove to run test")
     @Test
-    public void testStringsWithNonDigitsInvalid() {
+    public void testUsingASCIIValueForDoubledNonDigitNotAllowed() {
         assertFalse(luhnValidator.isValid(":9"));
     }
 
