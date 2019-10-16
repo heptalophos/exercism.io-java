@@ -1,0 +1,41 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+TwelveDaysTest > testVerseEight PASSED
+
+TwelveDaysTest > testVerseSeven PASSED
+
+TwelveDaysTest > testVerseThree PASSED
+
+TwelveDaysTest > testVerseOne PASSED
+
+TwelveDaysTest > testVerseSix PASSED
+
+TwelveDaysTest > testVerseTen PASSED
+
+TwelveDaysTest > testVerseTwo PASSED
+
+TwelveDaysTest > testVerseFive PASSED
+
+TwelveDaysTest > testVerseFour PASSED
+
+TwelveDaysTest > testVerseNine PASSED
+
+TwelveDaysTest > testVerseEleven PASSED
+
+TwelveDaysTest > testVerseTwelve PASSED
+
+TwelveDaysTest > testFirstThreeVerses PASSED
+
+TwelveDaysTest > testSingWholeSong PASSED
+
+TwelveDaysTest > testFourthToSixthVerses PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 7.431 secs
