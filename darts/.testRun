@@ -23,3 +23,44 @@ DartsTest > testDartLandsInBorderBetweenOuterAndMiddleCircles PASSED
 BUILD SUCCESSFUL
 
 Total time: 10.815 secs
+
+
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+DartsTest > exactlyOnCentre PASSED
+
+DartsTest > onTheInnerCircle PASSED
+
+DartsTest > justWithinTheInnerCircle PASSED
+
+DartsTest > justWithinTheMiddleCirlce PASSED
+
+DartsTest > asymmetricPositionBetweenTheInnerAndMiddleCircles PASSED
+
+DartsTest > nearTheCentre PASSED
+
+DartsTest > missedTarget PASSED
+
+DartsTest > justOutsideTheOuterCircle PASSED
+
+DartsTest > justOutsideTheMiddleCircle PASSED
+
+DartsTest > onTheMiddleCircle PASSED
+
+DartsTest > onTheOuterCircle PASSED
+
+DartsTest > justWithinTheOuterCirlce PASSED
+
+DartsTest > justOutsideTheInnerCircle PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 8.128 secs
