@@ -11,10 +11,12 @@ class SumOfMultiples {
     }
 
     int getSum() {
-        return IntStream.range(1, number)
-                        .filter(n -> IntStream.of(set)
-                                              .filter(i -> i != 0)
-                                              .anyMatch(i -> n % i == 0))
-                        .sum();
+        return IntStream
+               .range(1, number)
+               .filter(n -> 
+                          IntStream.of(set)
+                                   .filter(i -> i != 0)
+                                   .anyMatch(i -> n % i == 0))
+               .sum();
     }
 }
