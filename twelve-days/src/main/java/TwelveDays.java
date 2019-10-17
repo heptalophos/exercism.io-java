@@ -23,7 +23,7 @@ class TwelveDays {
                           "four Calling Birds,",
                           "three French Hens,",
                           "two Turtle Doves, and",
-                          "a Partridge in a Pear Tree.");
+                          "a Partridge in a Pear Tree.\n");
 
     String verse(int verseNumber) {
         return String.format("On the %s day of Christmas my true love gave to me: %s", 
