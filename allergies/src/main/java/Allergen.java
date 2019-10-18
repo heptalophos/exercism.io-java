@@ -14,7 +14,7 @@ enum Allergen {
         this.score = score;
     }
 
-    public int getScore() {
+    int getScore() {
         return score;
     }
 }

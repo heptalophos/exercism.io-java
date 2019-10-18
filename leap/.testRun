@@ -1,0 +1,29 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+LeapTest > testYearDivBy100NotDivBy3IsNotLeapYear PASSED
+
+LeapTest > testYearDivBy2NotDivBy4InCommonYear PASSED
+
+LeapTest > testYearDivBy400InLeapYear PASSED
+
+LeapTest > testYearNotDivBy4InCommonYear PASSED
+
+LeapTest > testYearDivBy4NotDivBy100InLeapYear PASSED
+
+LeapTest > testYearDivBy400NotDivBy125IsLeapYear PASSED
+
+LeapTest > testYearDivBy100NotDivBy400InCommonYear PASSED
+
+LeapTest > testYearDivBy200NotDivBy400InCommonYear PASSED
+
+LeapTest > testYearDivBy4And5InLeapYear PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 36.148 secs

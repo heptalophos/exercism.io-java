@@ -18,6 +18,7 @@ public final class QueenAttackCalculator {
     boolean canQueensAttackOneAnother() {
         int deltaRank = Math.abs(white.rank() - black.rank());
         int deltaFile = Math.abs(white.file() - black.file());
-        return deltaRank == 0 || deltaFile == 0 || deltaRank / deltaFile == 1 ;
+        return deltaRank * deltaFile == 0 || 
+               deltaRank / deltaFile == 1 ;
     }
 }
