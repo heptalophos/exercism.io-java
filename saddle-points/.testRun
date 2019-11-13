@@ -131,3 +131,35 @@ Total time: 4.105 secs
 
 
 
+
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+MatrixTest > testCanIdentifyMultipleSaddlePointsInAColumn PASSED
+
+MatrixTest > testCanIdentifyThatEmptyMatrixHasNoSaddlePoints PASSED
+
+MatrixTest > testCanIdentifySaddlePointInBottomRightCorner PASSED
+
+MatrixTest > testCanIdentifyMultipleSaddlePointsInARow PASSED
+
+MatrixTest > testCanIdentifySaddlePointsInANonSquareMatrix PASSED
+
+MatrixTest > testCanIdentifyThatSaddlePointsInASingleRowMatrixAreThoseWithMaximumValue PASSED
+
+MatrixTest > testCanIdentifyLackOfSaddlePointsWhenThereAreNone PASSED
+
+MatrixTest > testCanIdentifySingleSaddlePoint PASSED
+
+MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMinimumValue PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 15.785 secs
