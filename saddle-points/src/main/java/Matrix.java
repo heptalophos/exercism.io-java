@@ -11,10 +11,9 @@ class Matrix {
     private List<Integer> minCol;
 
     Matrix(List<List<Integer>> values) {
+        
         matrix = values;
-    }
 
-    public Set<MatrixCoordinate> getSaddlePoints() {
         if (!matrix.isEmpty()) {
             maxRow = matrix.stream()
                            .map(val -> val.stream()
@@ -29,7 +28,16 @@ class Matrix {
                                              .min(Integer::compareTo)
                                              .get())
                               .collect(Collectors.toList());
-                              
+        }
+        else {
+            maxRow = Collections.emptyList();
+            minCol = Collections.emptyList();
+        }
+    }
+
+    public Set<MatrixCoordinate> getSaddlePoints() {
+        
+        if (!matrix.isEmpty()) {
             return IntStream
                 .range(0, matrix.size())
                 .boxed()
@@ -44,14 +52,15 @@ class Matrix {
     }
 
     private List<Integer> getRow(int row) {
+
         return matrix.stream()
                      .map(r -> r.get(row))
                      .collect(Collectors.toList());
     }
 
     private boolean saddlePoint(MatrixCoordinate p) {
-        return matrix.get(p.row()).get(p.col()) >= maxRow.get(p.row())
-            && matrix.get(p.row()).get(p.col()) <= minCol.get(p.col());
+
+        return maxRow.get(p.row()) == minCol.get(p.col());
     } 
 }
 
