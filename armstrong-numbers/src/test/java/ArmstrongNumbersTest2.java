@@ -76,5 +76,4 @@ public class ArmstrongNumbersTest2 {
         
         assertFalse(armstrongNumbers.isArmstrongNumber(input));
     }
-
 }

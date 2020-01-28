@@ -31,6 +31,9 @@ ScrabbleScoreTest > testAMediumValuableWord PASSED
 BUILD SUCCESSFUL
 
 Total time: 43.626 secs
+
+
+
 :compileJava
 :processResources NO-SOURCE
 :classes
@@ -64,3 +67,39 @@ ScrabbleScoreTest > testAMediumValuableWord PASSED
 BUILD SUCCESSFUL
 
 Total time: 25.105 secs
+
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+ScrabbleScoreTest > testAShortValuableWord PASSED
+
+ScrabbleScoreTest > testEntireAlphabetAvailable PASSED
+
+ScrabbleScoreTest > testAUpperCaseLetter PASSED
+
+ScrabbleScoreTest > testALongMixCaseWord PASSED
+
+ScrabbleScoreTest > testAEnglishLikeWord PASSED
+
+ScrabbleScoreTest > testAValuableLetter PASSED
+
+ScrabbleScoreTest > testALowerCaseLetter PASSED
+
+ScrabbleScoreTest > testAMediumWord PASSED
+
+ScrabbleScoreTest > testAnEmptyInput PASSED
+
+ScrabbleScoreTest > testAShortWord PASSED
+
+ScrabbleScoreTest > testAMediumValuableWord PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 21.344 secs
