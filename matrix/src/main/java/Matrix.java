@@ -15,12 +15,12 @@ class Matrix {
     }
 
     int[] getRow(int rowNumber) {
-        return matrix[rowNumber];
+        return matrix[rowNumber - 1];
     }
 
     int[] getColumn(int columnNumber) {
         return Arrays.stream(matrix)
-                     .map(row -> row[columnNumber])
+                     .map(row -> row[columnNumber - 1])
                      .mapToInt(Integer::intValue)
                      .toArray();
     }
