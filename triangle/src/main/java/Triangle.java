@@ -17,9 +17,12 @@ class Triangle {
                           || side2 + side3 == side1
                           || side1 + side3 == side2;
 
-        if (!positiveSides) throw new TriangleException("All sides of a triangle should be positive.");
-        if (!triangleInequality)  throw new TriangleException("Not valid triangle. Triangle Inequality doesn't hold.");
-        if (degenerate)  throw new TriangleException("Degenerate triangle.");
+        if (!positiveSides) 
+            throw new TriangleException("All sides of a triangle should be positive.");
+        if (!triangleInequality)  
+            throw new TriangleException("Triangle Inequality doesn't hold.");
+        if (degenerate)  
+            throw new TriangleException("Degenerate triangle.");
 
         uniqSides = Stream.of(side1, side2, side3).distinct().count();
     }
