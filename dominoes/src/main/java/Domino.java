@@ -15,16 +15,30 @@ class Domino {
     int getRight() {
     	return this.right;
     }
+
+    Domino reversed() {
+        return new Domino(right, left);
+    }
     
     @Override
     public boolean equals(Object o) {
     	Domino otherDomino = (Domino) o;
-    	return (this.getLeft() == otherDomino.getLeft() && this.getRight() == otherDomino.getRight()) ||
-    			(this.getLeft() == otherDomino.getRight() && this.getRight() == otherDomino.getLeft());
+        return (this.getLeft() == otherDomino.getLeft() 
+                && 
+                this.getRight() == otherDomino.getRight()) 
+               ||
+               (this.getLeft() == otherDomino.getRight() 
+                && 
+                this.getRight() == otherDomino.getLeft());
     }
     
     @Override
     public int hashCode() {
     	return Objects.hash(left, right);
     }
+
+    @Override
+	public String toString() {
+		return "[" + this.getLeft() + "|" + this.getRight() + "]";
+	}
 }

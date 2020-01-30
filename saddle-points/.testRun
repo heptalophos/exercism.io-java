@@ -131,9 +131,6 @@ Total time: 4.105 secs
 
 
 
-
-
-
 :compileJava
 :processResources NO-SOURCE
 :classes
@@ -162,4 +159,4 @@ MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMin
 
 BUILD SUCCESSFUL
 
-Total time: 15.785 secs
+Total time: 4.652 secs
