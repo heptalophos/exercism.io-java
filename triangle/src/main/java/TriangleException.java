@@ -1,4 +1,10 @@
 class TriangleException extends Exception {
 
-    TriangleException(String message) {}
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public TriangleException(String string) {
+	}
 }
