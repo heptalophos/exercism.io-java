@@ -1,9 +1,9 @@
 {
-    "track": "java",
-    "exercise": "acronym",
-    "id": "91c35890a7a0493086352f30c08d0e07",
-    "url": "https://exercism.io/tracks/java/exercises/acronym/solutions/91c35890a7a0493086352f30c08d0e07",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
+  "track": "java",
+  "exercise": "acronym",
+  "id": "91c35890a7a0493086352f30c08d0e07",
+  "url": "https://exercism.io/tracks/java/exercises/acronym/solutions/91c35890a7a0493086352f30c08d0e07",
+  "handle": "heptalophos",
+  "is_requester": true,
+  "auto_approve": false
 }
