@@ -19,3 +19,35 @@ AcronymTest > punctuation PASSED
 BUILD SUCCESSFUL
 
 Total time: 4.678 secs
+
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+AcronymTest > underscoreEmphasis PASSED
+
+AcronymTest > lowercaseWords PASSED
+
+AcronymTest > apostrophes PASSED
+
+AcronymTest > basic PASSED
+
+AcronymTest > veryLongAbbreviation PASSED
+
+AcronymTest > nonAcronymAllCapsWord PASSED
+
+AcronymTest > consecutiveDelimiters PASSED
+
+AcronymTest > punctuationWithoutWhitespace PASSED
+
+AcronymTest > punctuation PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 6.23 secs

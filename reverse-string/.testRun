@@ -43,3 +43,29 @@ ReverseStringTest > testAPalindrome PASSED
 BUILD SUCCESSFUL
 
 Total time: 4.802 secs
+
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+ReverseStringTest > testAWord PASSED
+
+ReverseStringTest > testAnEmptyString PASSED
+
+ReverseStringTest > testACapitalizedWord PASSED
+
+ReverseStringTest > testASentenceWithPunctuation PASSED
+
+ReverseStringTest > testAPalindrome PASSED
+
+ReverseStringTest > testAnEvenSizedWord PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 6.716 secs
