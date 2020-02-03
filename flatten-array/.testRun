@@ -1,0 +1,23 @@
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+FlattenerTest > testSixLevelsOfNestingWithNulls PASSED
+
+FlattenerTest > testASingleLevelOfNestingWithNoNulls PASSED
+
+FlattenerTest > testFlatListIsPreserved PASSED
+
+FlattenerTest > testFiveLevelsOfNestingWithNoNulls PASSED
+
+FlattenerTest > testNestedListsFullOfNullsOnly PASSED
+
+FlattenerTest > testSixLevelsOfNestingWithNoNulls PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.687 secs
