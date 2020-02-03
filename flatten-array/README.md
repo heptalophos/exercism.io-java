@@ -10,7 +10,6 @@ input: [1,[2,3,null,4],[null],5]
 
 output: [1,2,3,4,5]
 
-
 # Tips
 
 Since this exercise has difficulty 5 it doesn't come with any starter implementation.
