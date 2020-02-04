@@ -3,11 +3,10 @@ public class Bob {
     public String hey (String greeting) {
         final String response;
         greeting = greeting.trim();
-        response = silent(greeting) ? "Fine. Be that way!" :
+        response = silent(greeting)   ? "Fine. Be that way!"                :
                    emphatic(greeting) ? "Calm down, I know what I'm doing!" :
-                   shouting(greeting) ? "Whoa, chill out!" :
-                   querying(greeting) ? "Sure." : 
-                   "Whatever.";
+                   shouting(greeting) ? "Whoa, chill out!"                  :
+                   querying(greeting) ? "Sure." : "Whatever.";
         return response;
     }
 
