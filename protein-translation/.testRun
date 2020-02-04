@@ -55,3 +55,63 @@ ProteinTranslatorTest > testCysteineRnaSequence2 PASSED
 BUILD SUCCESSFUL
 
 Total time: 40.119 secs
+
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+ProteinTranslatorTest > testTryptophanRnaSequence1 PASSED
+
+ProteinTranslatorTest > testTranslationOfRnaToProteinList PASSED
+
+ProteinTranslatorTest > testMethionineRnaSequence PASSED
+
+ProteinTranslatorTest > testTranslationStopsIfStopCodonInMiddle1 PASSED
+
+ProteinTranslatorTest > testTranslationStopsIfStopCodonInMiddle2 PASSED
+
+ProteinTranslatorTest > testTyrosineRnaSequence1 PASSED
+
+ProteinTranslatorTest > testTyrosineRnaSequence2 PASSED
+
+ProteinTranslatorTest > testTranslationStopsIfStopCodonAtEnd1 PASSED
+
+ProteinTranslatorTest > testTranslationStopsIfStopCodonAtEnd2 PASSED
+
+ProteinTranslatorTest > testLeucineRnaSequence1 PASSED
+
+ProteinTranslatorTest > testLeucineRnaSequence2 PASSED
+
+ProteinTranslatorTest > testStopRnaSequence1 PASSED
+
+ProteinTranslatorTest > testStopRnaSequence2 PASSED
+
+ProteinTranslatorTest > testStopRnaSequence3 PASSED
+
+ProteinTranslatorTest > testPhenylalanineRnaSequence1 PASSED
+
+ProteinTranslatorTest > testPhenylalanineRnaSequence2 PASSED
+
+ProteinTranslatorTest > testSerineRnaSequence1 PASSED
+
+ProteinTranslatorTest > testSerineRnaSequence2 PASSED
+
+ProteinTranslatorTest > testSerineRnaSequence3 PASSED
+
+ProteinTranslatorTest > testSerineRnaSequence4 PASSED
+
+ProteinTranslatorTest > testTranslationStopsIfStopCodonAtBeginning PASSED
+
+ProteinTranslatorTest > testCysteineRnaSequence1 PASSED
+
+ProteinTranslatorTest > testCysteineRnaSequence2 PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 4.997 secs
