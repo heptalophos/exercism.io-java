@@ -7,7 +7,9 @@ public final class QueenAttackCalculator {
 
         if (black == null || white == null) 
             throw new IllegalArgumentException("You must supply valid positions for both Queens.");
-        if (white.rank() == black.rank() && white.file() == black.file())
+        if (white.rank() == black.rank() 
+            && 
+            white.file() == black.file())
             throw new IllegalArgumentException("Queens cannot occupy the same position.");
 
         this.white = white;
