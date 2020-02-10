@@ -3,11 +3,17 @@ class IsbnVerifier {
     boolean isValid(String stringToVerify) {
         
         String normal = stringToVerify.replace("-", "");
+        
         int sum = 0; 
+        
         if (normal.length() != 10) { return false; }
-        for (int i = 0, j = 10; i < normal.length() - 1; i++, j--) {
+        
+        for (int i = 0, j = 10; 
+             i < normal.length() - 1; 
+             i++, j--) {
             if (Character.isDigit(normal.charAt(i))) {
-                sum += Character.getNumericValue(normal.charAt(i)) * j;
+                sum += 
+                    j * Character.getNumericValue(normal.charAt(i));
             } else { 
                 return false;
             }
@@ -18,7 +24,9 @@ class IsbnVerifier {
                 return false;
             }
         }
-        sum += checkDig == 'X' ? 10 : Character.getNumericValue(checkDig) ;
+        sum += checkDig == 'X' ? 
+                            10 : 
+                            Character.getNumericValue(checkDig);
         return sum % 11 == 0;
     }
 

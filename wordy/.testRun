@@ -55,3 +55,68 @@ Total time: 18.824 secs
 BUILD SUCCESSFUL
 
 Total time: 25.963 secs
+
+
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test
+
+WordProblemSolverTest > testSingleMultiplication PASSED
+
+WordProblemSolverTest > testMultipleDivisions PASSED
+
+WordProblemSolverTest > testUnknownOperation PASSED
+
+WordProblemSolverTest > testJustANumber PASSED
+
+WordProblemSolverTest > testSingleDivision PASSED
+
+WordProblemSolverTest > testAdditionThenSubtraction PASSED
+
+WordProblemSolverTest > testNoOperandsOrOperators PASSED
+
+WordProblemSolverTest > testMissingAnOperand PASSED
+
+WordProblemSolverTest > testSingleAdditionWithNegativeNumbers PASSED
+
+WordProblemSolverTest > testMultipleAdditions PASSED
+
+WordProblemSolverTest > testTwoOperationsInARow FAILED
+    java.lang.AssertionError
+
+WordProblemSolverTest > testSubtractionThenAddition PASSED
+
+WordProblemSolverTest > testPrefixNotation FAILED
+    java.lang.AssertionError
+
+WordProblemSolverTest > testMultipleSubtractions PASSED
+
+WordProblemSolverTest > testPostfixNotation FAILED
+    java.lang.AssertionError
+
+WordProblemSolverTest > testMultipleMultiplications PASSED
+
+WordProblemSolverTest > testSingleSubtraction PASSED
+
+WordProblemSolverTest > testSingleAddition1 PASSED
+
+WordProblemSolverTest > testSingleAddition2 PASSED
+
+WordProblemSolverTest > testTwoNumbersAfterOperation PASSED
+
+WordProblemSolverTest > testNonMathQuestion PASSED
+
+WordProblemSolverTest > testSingleAdditionOfLargeNumbers PASSED
+
+WordProblemSolverTest > testAdditionThenMultiplication PASSED
+:test FAILED
+
+BUILD FAILED
+
+Total time: 3.247 secs

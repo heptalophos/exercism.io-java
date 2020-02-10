@@ -27,3 +27,33 @@ SpaceAgeTest > ageOnNeptune PASSED
 BUILD SUCCESSFUL
 
 Total time: 4.496 secs
+
+
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+SpaceAgeTest > ageOnSaturn PASSED
+
+SpaceAgeTest > ageOnUranus PASSED
+
+SpaceAgeTest > ageOnJupiter PASSED
+
+SpaceAgeTest > ageOnMercury PASSED
+
+SpaceAgeTest > ageOnEarth PASSED
+
+SpaceAgeTest > ageOnVenus PASSED
+
+SpaceAgeTest > ageOnMars PASSED
+
+SpaceAgeTest > ageOnNeptune PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 4.214 secs
