@@ -6,18 +6,10 @@ public class RnaTranscription {
 
         for (char c : dnaStrand.toCharArray()) {
             switch (c) {
-                case 'A':
-                    sb.append('U');
-                    break;
-                case 'G':
-                    sb.append('C');
-                    break;
-                case 'C':
-                    sb.append('G');
-                    break;
-                case 'T':
-                    sb.append('A');
-                    break;
+                case 'A': sb.append('U'); break;
+                case 'G': sb.append('C'); break;
+                case 'C': sb.append('G'); break;
+                case 'T': sb.append('A'); break;
             }
         }
         return sb.toString();
