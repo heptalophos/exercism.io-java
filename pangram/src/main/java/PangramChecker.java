@@ -4,21 +4,21 @@ import java.util.stream.IntStream;
 public class PangramChecker {
 
     private static IntPredicate containsLetter(String sentence) {
-        return alph -> sentence.toLowerCase()
+        return alpha -> sentence
+                        .toLowerCase()
                         .chars()
-                        .filter(letter -> letter == alph)
+                        .filter(letter -> letter == alpha)
                         .findFirst()
                         .isPresent();
     }
 
     private static boolean allAlphabetLetters(String sentence) {
-        return IntStream.rangeClosed('a', 'z').allMatch(containsLetter(sentence));
+        return IntStream.rangeClosed('a', 'z')
+                        .allMatch(containsLetter(sentence));
     }
 
-    public static boolean isPangram(String sentence) {
+    public boolean isPangram(String sentence) {
         return allAlphabetLetters(sentence);
     }
 
 }
-
-
