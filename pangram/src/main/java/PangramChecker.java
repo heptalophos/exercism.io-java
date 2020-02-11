@@ -17,7 +17,7 @@ public class PangramChecker {
                         .allMatch(containsLetter(sentence));
     }
 
-    public static boolean isPangram(String sentence) {
+    public boolean isPangram(String sentence) {
         return allAlphabetLetters(sentence);
     }
 
