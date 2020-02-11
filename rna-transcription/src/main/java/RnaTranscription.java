@@ -1,6 +1,6 @@
 public class RnaTranscription {
     
-    public static String transcribe(String dnaStrand) {
+    public String transcribe(String dnaStrand) {
         
         StringBuilder sb = new StringBuilder();
 
