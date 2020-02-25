@@ -1,10 +1,9 @@
 import java.util.Iterator;
 import java.util.stream.Stream;
-import java.util.NoSuchElementException;
 
 public class WordProblemSolver {
 
-    static final String errorMessage = 
+    static final String EMsg = 
             "I'm sorry, I don't understand the question!";
 
     private char lexOp (String op) {
@@ -13,7 +12,7 @@ public class WordProblemSolver {
             case "minus": return '-';
             case "multiplied": return '*';
             case "divided": return '/';
-            default: throw new IllegalArgumentException(errorMessage);
+            default: throw new IllegalArgumentException(EMsg);
         }
     }
 
@@ -29,43 +28,36 @@ public class WordProblemSolver {
 
     public int solve(String question) {
 
+        String onToken = 
+            "[^0-9+-|plus|minus|multiplied|divided]+";
+
+        Iterator<String> tokens = 
+            Stream
+            .of(question.replaceAll("What is ", "")
+                        .replaceAll(" by ", " ")
+                        .replaceAll("\\?$", "")
+                        .split(onToken))
+            .filter(x -> x.length() > 0)
+            .iterator();
+
         try {
 
-            Iterator<Integer> numbers = 
-                Stream.of(question.split("[^0-9+-]+"))
-                      .filter(x -> x.length() > 0)
-                      .mapToInt(Integer::parseInt)
-                      .iterator();
+            int result = 
+                Integer.parseInt(tokens.next());
 
-            Iterator<Character> operations = 
-                Stream.of(question.replaceAll("What is ", "")
-                                  .replaceAll(" by ", "")
-                                  .split("[^plus|minus|multiplied|divided]"))
-                      .filter(x -> x.length() > 0)
-                      .map(x -> lexOp(x))
-                      .iterator();
-           
-            int result = numbers.next();
-
-            if (!numbers.hasNext() && operations.hasNext()) {
-                throw new IllegalArgumentException(errorMessage);
-             } else if (!numbers.hasNext()) {
+            if (!tokens.hasNext())
                return result;
-             }
-        
-            while (numbers.hasNext()) {
-                if (operations.hasNext()) {
-                    result = applyOp(result, 
-                                 operations.next(), 
-                                 numbers.next());
-                } else {
-                    throw new IllegalArgumentException(errorMessage);
-                }
-            }
-            return result;
+
+            do {
+                result = 
+                    applyOp(result, lexOp(tokens.next()), 
+                            Integer.parseInt(tokens.next()));
+                } while (tokens.hasNext());
+                
+                return result;
         }
-        catch (NoSuchElementException e) {
-            throw new IllegalArgumentException(errorMessage);
+        catch (Exception e) {
+            throw new IllegalArgumentException(EMsg);
         }
     }
 }
