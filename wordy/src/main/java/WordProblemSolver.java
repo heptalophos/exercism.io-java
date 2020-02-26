@@ -52,7 +52,7 @@ public class WordProblemSolver {
                 result = 
                     applyOp(result, lexOp(tokens.next()), 
                             Integer.parseInt(tokens.next()));
-                } while (tokens.hasNext());
+            } while (tokens.hasNext());
                 
                 return result;
         }
