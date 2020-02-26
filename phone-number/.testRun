@@ -37,3 +37,56 @@ PhoneNumberTest > invalidIfExchangeCodeStartsWith1 PASSED
 BUILD SUCCESSFUL
 
 Total time: 40.594 secs
+
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test
+
+PhoneNumberTest > invalidWhen9Digits PASSED
+
+PhoneNumberTest > invalidIfAreaCodeStartsWith0OnValid11DigitNumber PASSED
+
+PhoneNumberTest > invalidIfAreaCodeStartsWith1OnValid11DigitNumber PASSED
+
+PhoneNumberTest > invalidWhenMoreThan11Digits PASSED
+
+PhoneNumberTest > invalidIfExchangeCodeStartsWith0OnValid11DigitNumber PASSED
+
+PhoneNumberTest > invalidIfExchangeCodeStartsWith1OnValid11DigitNumber PASSED
+
+PhoneNumberTest > invalidWhen11DigitsDoesNotStartWith1 PASSED
+
+PhoneNumberTest > invalidWithLetters PASSED
+
+PhoneNumberTest > cleansNumbersWithMultipleSpaces PASSED
+
+PhoneNumberTest > cleansTheNumber PASSED
+
+PhoneNumberTest > validWhen11DigitsAndStartingWith1 PASSED
+
+PhoneNumberTest > invalidWithPunctuations PASSED
+
+PhoneNumberTest > cleansNumbersWithDots PASSED
+
+PhoneNumberTest > validWhen11DigitsAndStartingWith1EvenWithPunctuation PASSED
+
+PhoneNumberTest > invalidIfAreaCodeStartsWith0 PASSED
+
+PhoneNumberTest > invalidIfAreaCodeStartsWith1 PASSED
+
+PhoneNumberTest > invalidIfExchangeCodeStartsWith0 PASSED
+
+PhoneNumberTest > invalidIfExchangeCodeStartsWith1 PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 6.947 secs
