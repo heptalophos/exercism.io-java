@@ -70,3 +70,48 @@ AnagramTest > testEliminateAnagramsWithSameChecksum PASSED
 BUILD SUCCESSFUL
 
 Total time: 4.02 secs
+
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+AnagramTest > testCaseInsensitiveWhenBothAnagramAndSubjectStartWithUpperCaseLetter PASSED
+
+AnagramTest > testEliminateAnagramSubsets PASSED
+
+AnagramTest > testAnagramMustUseAllLettersExactlyOnce PASSED
+
+AnagramTest > testIdenticalWordRepeatedIsNotAnagram PASSED
+
+AnagramTest > testDetectsMultipleAnagramsWithDifferentCase PASSED
+
+AnagramTest > testWordsOtherThanThemselvesCanBeAnagrams PASSED
+
+AnagramTest > testDetectMultipleAnagramsForLongerWord PASSED
+
+AnagramTest > testDetectMultipleAnagrams PASSED
+
+AnagramTest > testWordsAreNotAnagramsOfThemselvesCaseInsensitive PASSED
+
+AnagramTest > testCaseInsensitiveWhenSubjectStartsWithUpperCaseLetter PASSED
+
+AnagramTest > testCaseInsensitiveWhenAnagramStartsWithUpperCaseLetter PASSED
+
+AnagramTest > testDetectLongerAnagram PASSED
+
+AnagramTest > testNoMatches PASSED
+
+AnagramTest > testEliminateAnagramsWithSameChecksum PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 4.036 secs

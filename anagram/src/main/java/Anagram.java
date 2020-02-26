@@ -4,18 +4,9 @@ import java.util.List;
 
 
 public class Anagram {
+
     private String anagram;
     private final char[] normalized;
-
-    private boolean duplicate(String s) {
-        return this.anagram.equalsIgnoreCase(s);
-    }
-
-    private char [] normalize(String s) {
-        char[] chars = s.toLowerCase().toCharArray();
-        Arrays.sort(chars);
-        return chars;
-    }
 
     public Anagram(String anagram) {
         this.anagram = anagram;
@@ -23,16 +14,34 @@ public class Anagram {
     } 
 
     public List<String> match(List<String> candidates) {
+        
         List<String> anagrams = new ArrayList<String>();
 
-        // char[] aChars = this.anagram.toLowerCase().toCharArray();
         for (String word: candidates) {
-            char[] wChars = word.toLowerCase().toCharArray();
+            char[] wChars = 
+                word.toLowerCase().toCharArray();
+
             Arrays.sort(wChars);
-            if (!duplicate(word) && Arrays.equals(normalized, normalize(word)))
-                anagrams.add(word);
+            
+            if (!duplicate(word) && normal(word))
+                   anagrams.add(word);
         }
         return anagrams; 
+    }
+
+    private boolean duplicate(String s) {
+        return anagram.equalsIgnoreCase(s);
+    }
+
+    private char [] normalize(String s) {
+        char[] chars = 
+            s.toLowerCase().toCharArray();
+        Arrays.sort(chars);
+        return chars;
+    }
+
+    private boolean normal(String s) {
+        return Arrays.equals(normalized, normalize(s));
     }
 
 }
