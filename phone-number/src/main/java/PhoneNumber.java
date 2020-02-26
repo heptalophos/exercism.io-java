@@ -1,45 +1,71 @@
 public class PhoneNumber {
 
-    private String phoneNumber;
+    private final String phoneNumber;
+
+    private static final String[] errors = {
+            "letters not permitted",
+            "punctuations not permitted",
+            "incorrect number of digits",
+            "more than 11 digits",
+            "11 digits must start with 1",
+            "area code cannot start with zero",
+            "area code cannot start with one", 
+            "exchange code cannot start with zero",
+            "exchange code cannot start with one"
+    };
 
     public PhoneNumber(String strNumber) {
+        
         this.phoneNumber = validate(strNumber);
     }
     
     public String getNumber() {
+        
         return phoneNumber;
     }
 
     private String validate(String number) {
-        StringBuilder num = new StringBuilder();
-        String strNumber;
-        char digit;
-        for (int i = 0; i < number.length(); i++) {
-            digit = number.charAt(i);
-            if (digit >= '0' && digit <= '9') {
-                num.append(digit);
-            } 
-            if ((digit >= 'a' && digit <= 'z') || digit == '@' || digit == ':' || digit == '!' ) {
-                throw new IllegalArgumentException("Illegal character in phone number. " 
-                + "Only digits, spaces, parentheses, hyphens or dots accepted.");
-            }
-        }
-        strNumber = num.toString();
-        if (strNumber.length() == 11 && strNumber.charAt(0) == '1') {
-            strNumber = strNumber.substring(1);                        
-        } else if (strNumber.length() == 11) {
-            throw new IllegalArgumentException("Can only have 11 digits if number starts with '1'");
-        }
-        if (strNumber.length() != 10) {
-            throw new IllegalArgumentException("Number must be 10 or 11 digits");
-        }
-        if (strNumber.startsWith("0") || strNumber.startsWith("1")) {
-            throw new IllegalArgumentException("Illegal Area Or Exchange Code. "
-                    + "Only 2-9 are valid digits");
-        } else if (strNumber.charAt(3) == '0' || strNumber.charAt(3) == '1') {
-            throw new IllegalArgumentException("Illegal Area Or Exchange Code. "
-                    + "Only 2-9 are valid digits");
-        } 
-        return strNumber;
+    
+        if (number.codePoints()
+                  .anyMatch(Character::isAlphabetic))
+            throw new IllegalArgumentException(errors[0]);
+
+        if (number.codePoints()
+                  .anyMatch(c -> "@:!".contains(""+(char)c)))
+            throw new IllegalArgumentException(errors[1]); 
+        
+        String sanitized = 
+            number.codePoints()
+                  .filter(Character::isDigit)
+                  .collect(StringBuilder::new,
+                           StringBuilder::appendCodePoint,
+                           StringBuilder::append)
+                  .toString();
+
+        if (sanitized.length() < 10)
+            throw new IllegalArgumentException(errors[2]);
+        
+        if (sanitized.length() > 11)
+            throw new IllegalArgumentException(errors[3]);
+
+        if (sanitized.length() == 11) 
+            if (sanitized.charAt(0) != '1')
+                throw new IllegalArgumentException(errors[4]);
+            else 
+                sanitized = sanitized.substring(1);
+
+        if (sanitized.charAt(0) == '0')
+            throw new IllegalArgumentException(errors[5]);
+      
+        if (sanitized.charAt(0) == '1')
+            throw new IllegalArgumentException(errors[6]);
+
+        if (sanitized.charAt(3) == '0')
+            throw new IllegalArgumentException(errors[7]);
+
+        if (sanitized.charAt(3) == '1')
+            throw new IllegalArgumentException(errors[8]);
+
+        return sanitized;
     } 
 }
