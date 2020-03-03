@@ -27,3 +27,45 @@ IsogramCheckerTest > testDuplicatedCharacterInTheMiddleIsNotIsogram PASSED
 BUILD SUCCESSFUL
 
 Total time: 3.093 secs
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+IsogramCheckerTest > testDuplicateEndAlphabet PASSED
+
+IsogramCheckerTest > testIsogramWithDuplicatedHyphen PASSED
+
+IsogramCheckerTest > testIsogramWithDuplicatedCharAfterHyphen PASSED
+
+IsogramCheckerTest > testCaseInsensitive PASSED
+
+IsogramCheckerTest > testLowercaseIsogram PASSED
+
+IsogramCheckerTest > testNotIsogram PASSED
+
+IsogramCheckerTest > testMadeUpNameThatIsAnIsogram PASSED
+
+IsogramCheckerTest > testEmptyString PASSED
+
+IsogramCheckerTest > testIsogramWithHyphen PASSED
+
+IsogramCheckerTest > testSameFirstAndLast PASSED
+
+IsogramCheckerTest > testDuplicatMixedCase PASSED
+
+IsogramCheckerTest > testMediumLongIsogram PASSED
+
+IsogramCheckerTest > testDuplicatedCharacterInTheMiddleIsNotIsogram PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 15.607 secs
