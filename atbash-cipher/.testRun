@@ -78,3 +78,47 @@ AtbashTest > testDecodeASentence PASSED
 BUILD SUCCESSFUL
 
 Total time: 11.498 secs
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+AtbashTest > testEncodeYes PASSED
+
+AtbashTest > testDecodeWithNoSpaces PASSED
+
+AtbashTest > testEncodeMindBlowingly PASSED
+
+AtbashTest > testEncodeNo PASSED
+
+AtbashTest > testDecodeWithTooManySpaces PASSED
+
+AtbashTest > testEncodeAllTheLetters PASSED
+
+AtbashTest > testEncodeOmgInCapital PASSED
+
+AtbashTest > testDecodeNumbers PASSED
+
+AtbashTest > testDecodeExercism PASSED
+
+AtbashTest > testEncodeDeepThought PASSED
+
+AtbashTest > testDecodeAllTheLetters PASSED
+
+AtbashTest > testEncodeNumbers PASSED
+
+AtbashTest > testEncodeOmgWithSpaces PASSED
+
+AtbashTest > testDecodeASentence PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 8.926 secs
