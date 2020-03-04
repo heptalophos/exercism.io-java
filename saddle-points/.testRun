@@ -160,3 +160,37 @@ MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMin
 BUILD SUCCESSFUL
 
 Total time: 4.652 secs
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+MatrixTest > testCanIdentifyMultipleSaddlePointsInAColumn PASSED
+
+MatrixTest > testCanIdentifyThatEmptyMatrixHasNoSaddlePoints PASSED
+
+MatrixTest > testCanIdentifySaddlePointInBottomRightCorner PASSED
+
+MatrixTest > testCanIdentifyMultipleSaddlePointsInARow PASSED
+
+MatrixTest > testCanIdentifySaddlePointsInANonSquareMatrix PASSED
+
+MatrixTest > testCanIdentifyThatSaddlePointsInASingleRowMatrixAreThoseWithMaximumValue PASSED
+
+MatrixTest > testCanIdentifyLackOfSaddlePointsWhenThereAreNone PASSED
+
+MatrixTest > testCanIdentifySingleSaddlePoint PASSED
+
+MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMinimumValue PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 7.086 secs
