@@ -7,24 +7,32 @@ class Triangle {
     private final long ISOSCELES = 2;
     private final long SCALENE = 3;
 
+    private static final String[] tExceptions = {
+        "All sides of a triangle should be positive.",
+        "Triangle Inequality doesn't hold.",
+        "Degenerate triangle."
+    };
 
-    Triangle(double side1, double side2, double side3) throws TriangleException {
-        boolean positiveSides = side1 > 0 && side2 > 0 && side3 > 0;
-        boolean triangleInequality = side1 + side2 >= side3 
-                                  && side2 + side3 >= side1 
-                                  && side1 + side3 >= side2;  
-        boolean degenerate = side1 + side2 == side3
-                          || side2 + side3 == side1
-                          || side1 + side3 == side2;
+
+    Triangle(double s1, double s2, double s3) throws TriangleException {
+        boolean positiveSides = s1 > 0 && s2 > 0 && s3 > 0;
+
+        boolean triangleInequality = s1 + s2 >= s3 
+                                  && s2 + s3 >= s1 
+                                  && s1 + s3 >= s2;  
+        
+        boolean degenerate = s1 + s2 == s3
+                          || s2 + s3 == s1
+                          || s1 + s3 == s2;
 
         if (!positiveSides) 
-            throw new TriangleException("All sides of a triangle should be positive.");
+            throw new TriangleException(tExceptions[0]);
         if (!triangleInequality)  
-            throw new TriangleException("Triangle Inequality doesn't hold.");
+            throw new TriangleException(tExceptions[1]);
         if (degenerate)  
-            throw new TriangleException("Degenerate triangle.");
+            throw new TriangleException(tExceptions[2]);
 
-        uniqSides = Stream.of(side1, side2, side3).distinct().count();
+        uniqSides = Stream.of(s1, s2, s3).distinct().count();
     }
 
     boolean isEquilateral() {
