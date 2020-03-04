@@ -15,19 +15,23 @@ class Matrix {
         matrix = values;
 
         if (!matrix.isEmpty()) {
-            maxRow = matrix.stream()
-                           .map(val -> val.stream()
-                                          .max(Integer::compareTo)
-                                          .get())
-                           .collect(Collectors.toList());
-            minCol = IntStream.range(0, matrix.get(0).size())
-                              .mapToObj(this::getRow)
-                              .collect(Collectors.toList())
-                              .stream()
-                              .map(val -> val.stream()
-                                             .min(Integer::compareTo)
-                                             .get())
-                              .collect(Collectors.toList());
+            maxRow = matrix
+                     .stream()
+                     .map(val -> val
+                                 .stream()
+                                 .max(Integer::compareTo)
+                                 .get())
+                     .collect(Collectors.toList());
+            minCol = IntStream
+                    .range(0, matrix.get(0).size())
+                    .mapToObj(this::getRow)
+                    .collect(Collectors.toList())
+                    .stream()
+                    .map(val -> val
+                                .stream()
+                                .min(Integer::compareTo)
+                                .get())
+                    .collect(Collectors.toList());
         }
         else {
             maxRow = Collections.emptyList();
@@ -39,23 +43,25 @@ class Matrix {
         
         if (!matrix.isEmpty()) {
             return IntStream
-                .range(0, matrix.size())
-                .boxed()
-                .flatMap(r -> 
-                            IntStream.range(0, matrix.get(0).size())
-                                     .mapToObj(x -> 
-                                        new MatrixCoordinate(r + 1, x + 1)))
-                .filter(this::saddlePoint)
-                .collect(Collectors.toSet());
+                   .range(0, matrix.size())
+                   .boxed()
+                   .flatMap(r -> 
+                            IntStream
+                            .range(0, matrix.get(0).size())
+                            .mapToObj(x -> 
+                               new MatrixCoordinate(r + 1, x + 1)))
+                   .filter(this::saddlePoint)
+                   .collect(Collectors.toSet());
         }
         return Collections.emptySet();
     }
 
     private List<Integer> getRow(int row) {
 
-        return matrix.stream()
-                     .map(r -> r.get(row))
-                     .collect(Collectors.toList());
+        return matrix
+               .stream()
+               .map(r -> r.get(row))
+               .collect(Collectors.toList());
     }
 
     private boolean saddlePoint(MatrixCoordinate p) {
