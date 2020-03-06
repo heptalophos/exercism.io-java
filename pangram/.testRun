@@ -102,3 +102,39 @@ PangramCheckerTest > caseInsensitivePhraseIsNotPangram PASSED
 BUILD SUCCESSFUL
 
 Total time: 3.202 secs
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+PangramCheckerTest > perfectLowerCasePhraseIsPangram PASSED
+
+PangramCheckerTest > phraseWithNumbersIsPangram PASSED
+
+PangramCheckerTest > phraseWithUnderscoresIsPangram PASSED
+
+PangramCheckerTest > phraseWithOnlyLowerCaseIsPangram PASSED
+
+PangramCheckerTest > phraseMissingCharacterXIsNotPangram PASSED
+
+PangramCheckerTest > phraseMissingCharacterHIsNotPangram PASSED
+
+PangramCheckerTest > phraseWithMissingLettersReplacedByNumbersIsNotPangram PASSED
+
+PangramCheckerTest > emptySentenceIsNotPangram PASSED
+
+PangramCheckerTest > phraseWithMixedCaseAndPunctuationIsPangram PASSED
+
+PangramCheckerTest > caseInsensitivePhraseIsNotPangram PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 4.405 secs

@@ -7,11 +7,13 @@ class Matrix {
     private final int matrix[][];
 
     Matrix(String matrixAsString) {
-        matrix = Stream.of(matrixAsString.split("\\n"))
-                       .map(row -> Stream.of(row.split("\\s"))
-                                         .mapToInt(Integer::valueOf)
-                                         .toArray())
-                       .toArray(int[][]::new);
+        matrix = 
+            Stream.of(matrixAsString.split("\\n"))
+                  .map(row -> Stream
+                             .of(row.split("\\s"))
+                             .mapToInt(Integer::valueOf)
+                             .toArray())
+                  .toArray(int[][]::new);
     }
 
     int[] getRow(int rowNumber) {

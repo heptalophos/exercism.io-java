@@ -53,7 +53,11 @@ class DnDCharacter {
     }
 
     public int ability() {
-        return IntStream.range(0, 4).map(x -> rollDice()).sorted().limit(3).sum();
+        return IntStream.range(0, 4)
+                        .map(x -> rollDice())
+                        .sorted()
+                        .limit(3)
+                        .sum();
     }
 
     public int modifier(int input) {
