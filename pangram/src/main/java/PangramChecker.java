@@ -12,13 +12,13 @@ public class PangramChecker {
                         .isPresent();
     }
 
-    private static boolean allAlphabetLetters(String sentence) {
+    private static boolean entireAlphabet(String sentence) {
         return IntStream.rangeClosed('a', 'z')
                         .allMatch(containsLetter(sentence));
     }
 
     public boolean isPangram(String sentence) {
-        return allAlphabetLetters(sentence);
+        return entireAlphabet(sentence);
     }
 
 }
