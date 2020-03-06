@@ -84,3 +84,35 @@ MatrixTest > extractRowFromNonSquareMatrixTest PASSED
 BUILD SUCCESSFUL
 
 Total time: 9.462 secs
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+MatrixTest > extractRowFromOneNumberMatrixTest PASSED
+
+MatrixTest > extractRowFromDiffWidthsMatrixTest PASSED
+
+MatrixTest > extractColumnFromNonSquareMatrixTest PASSED
+
+MatrixTest > extractColumnFromDiffWidthsMatrixTest PASSED
+
+MatrixTest > extractColumnMatrixTest PASSED
+
+MatrixTest > extractRowFromMatrixTest PASSED
+
+MatrixTest > extractColumnFromOneNumberMatrixTest PASSED
+
+MatrixTest > extractRowFromNonSquareMatrixTest PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 9.305 secs
