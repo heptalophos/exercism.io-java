@@ -13,7 +13,8 @@ class IsbnVerifier {
              i++, j--) {
             if (Character.isDigit(normal.charAt(i))) {
                 sum += 
-                    j * Character.getNumericValue(normal.charAt(i));
+                    j * Character
+                        .getNumericValue(normal.charAt(i));
             } else { 
                 return false;
             }
@@ -26,7 +27,8 @@ class IsbnVerifier {
         }
         sum += checkDig == 'X' ? 
                             10 : 
-                            Character.getNumericValue(checkDig);
+                            Character
+                            .getNumericValue(checkDig);
         return sum % 11 == 0;
     }
 

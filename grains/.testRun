@@ -69,3 +69,41 @@ GrainsTest > totalNumberOfGrainsOnABoard PASSED
 BUILD SUCCESSFUL
 
 Total time: 12.519 secs
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+GrainsTest > countAtSquare16 PASSED
+
+GrainsTest > countAtSquare32 PASSED
+
+GrainsTest > countAtSquare64 PASSED
+
+GrainsTest > errorOnExcessiveBoardSize PASSED
+
+GrainsTest > errorOnNegativeBoardSize PASSED
+
+GrainsTest > countAtSquare1 PASSED
+
+GrainsTest > countAtSquare2 PASSED
+
+GrainsTest > countAtSquare3 PASSED
+
+GrainsTest > countAtSquare4 PASSED
+
+GrainsTest > errorOnNullBoardSize PASSED
+
+GrainsTest > totalNumberOfGrainsOnABoard PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 5.522 secs

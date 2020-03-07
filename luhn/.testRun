@@ -39,3 +39,55 @@ LuhnValidatorTest > testDigit9ConvertedToOutput9 PASSED
 BUILD SUCCESSFUL
 
 Total time: 5.857 secs
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+LuhnValidatorTest > testSimpleValidSINReversedRemainsValid PASSED
+
+LuhnValidatorTest > testValidNumberWithAnOddNumberOfSpaces PASSED
+
+LuhnValidatorTest > testValidCanadianSINValid PASSED
+
+LuhnValidatorTest > testMoreThanSingleZeroValid PASSED
+
+LuhnValidatorTest > testStringContainingSymbolsInvalidJavaTrackSpecific PASSED
+
+LuhnValidatorTest > testSimpleValidSINReversedBecomesInvalid PASSED
+
+LuhnValidatorTest > testSingleZeroIsInvalid PASSED
+
+LuhnValidatorTest > testInvalidCanadianSINInvalid PASSED
+
+LuhnValidatorTest > testStringContainingPunctuationInvalid PASSED
+
+LuhnValidatorTest > testUsingASCIIValueForNonDoubledNonDigitNotAllowed PASSED
+
+LuhnValidatorTest > testValidStringsWithANonDigitAtEndInvalid PASSED
+
+LuhnValidatorTest > testValidNumberWithAnEvenNumberOfDigits PASSED
+
+LuhnValidatorTest > testDigitNineConvertedToOutputNine PASSED
+
+LuhnValidatorTest > testSingleSpaceWithZeroInvalid PASSED
+
+LuhnValidatorTest > testSingleDigitStringInvalid PASSED
+
+LuhnValidatorTest > testStringContainingSymbolsInvalid PASSED
+
+LuhnValidatorTest > testInvalidCreditCardInvalid PASSED
+
+LuhnValidatorTest > testUsingASCIIValueForDoubledNonDigitNotAllowed PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.515 secs
