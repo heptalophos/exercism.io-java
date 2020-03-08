@@ -23,13 +23,17 @@ class Domino {
     @Override
     public boolean equals(Object o) {
     	Domino otherDomino = (Domino) o;
-        return (this.getLeft() == otherDomino.getLeft() 
-                && 
-                this.getRight() == otherDomino.getRight()) 
+        return ( this.getLeft() == 
+                 otherDomino.getLeft() 
+                 && 
+                 this.getRight() == 
+                 otherDomino.getRight()) 
                ||
-               (this.getLeft() == otherDomino.getRight() 
-                && 
-                this.getRight() == otherDomino.getLeft());
+               ( this.getLeft() == 
+                 otherDomino.getRight() 
+                 && 
+                 this.getRight() == 
+                 otherDomino.getLeft());
     }
     
     @Override
@@ -39,6 +43,7 @@ class Domino {
 
     @Override
 	public String toString() {
-		return "[" + this.getLeft() + "|" + this.getRight() + "]";
+        return "[" + this.getLeft() + "|" + 
+                this.getRight() + "]";
 	}
 }
