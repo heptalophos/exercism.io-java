@@ -5,10 +5,11 @@ import java.util.stream.Stream;
 public final class Flattener {
 
     public List <?> flatten(List<?> listOfLists) {
-        return listOfLists.stream()
-                          .filter(o -> o != null)
-                          .flatMap(this::flatten)
-                          .collect(Collectors.toList());
+        return listOfLists
+               .stream()
+               .filter(o -> o != null)
+               .flatMap(this::flatten)
+               .collect(Collectors.toList());
     }
 
     private Stream<?> flatten(Object element) {
