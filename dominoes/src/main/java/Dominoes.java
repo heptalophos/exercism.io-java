@@ -4,6 +4,9 @@ import java.util.List;
 
 public class Dominoes {
 
+    private final String NOT_FOUND =
+                        "No domino chain found.";
+
     public List<Domino> formChain(List<Domino> dominoes) 
                         throws ChainNotFoundException {
         if (dominoes.isEmpty()) 
@@ -11,14 +14,19 @@ public class Dominoes {
         List<Domino> chain = new ArrayList<>();
         chain.add(dominoes.get(0));
         findChain(chain, 
-                  new ArrayList<>(dominoes.subList(1, dominoes.size())));
+                  new ArrayList<>(dominoes
+                                  .subList(1, 
+                                           dominoes.size())));
         return chain;
     }
 
-    private void findChain(List<Domino> chain, List<Domino> dominoes) 
+    private void findChain(List<Domino> chain, 
+                           List<Domino> dominoes) 
                  throws ChainNotFoundException {
         List<Domino> candidates = 
-            candidates(chain.get(chain.size() - 1).getRight(), dominoes);
+            candidates(chain.get(chain.size() - 1)
+                            .getRight(), 
+                       dominoes);
         for (Domino candidate : candidates) {
             dominoes.remove(candidate);
             chain.add(candidate);
@@ -30,12 +38,14 @@ public class Dominoes {
                 dominoes.add(candidate);
             }
         }
-        if (chain.get(0).getLeft() != chain.get(chain.size() - 1).getRight()
+        if (chain.get(0).getLeft() != 
+            chain.get(chain.size() - 1).getRight()
             || !dominoes.isEmpty())
-            throw new ChainNotFoundException("No domino chain found.");            
+            throw new ChainNotFoundException(NOT_FOUND);            
     }
 
-    private List<Domino> candidates(int target, List<Domino> dominoes) {
+    private List<Domino> candidates(int target, 
+                                    List<Domino> dominoes) {
         List<Domino> candidates = new ArrayList<>();
         for (Domino candidate : dominoes) {
             if (candidate.getLeft() == target) 
