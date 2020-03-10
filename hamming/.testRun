@@ -85,3 +85,51 @@ HammingTest > testCompleteDistanceInSmallStrand PASSED
 BUILD SUCCESSFUL
 
 Total time: 3.529 secs
+
+
+
+=================================================================================
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+HammingTest > testNonUniqueCharacterInFirstStrand PASSED
+
+HammingTest > testSameNucleotidesInDifferentPositions PASSED
+
+HammingTest > testCompleteDistanceInSingleNucleotideStrand PASSED
+
+HammingTest > testNoDistanceBetweenEmptyStrands PASSED
+
+HammingTest > testNoDistanceBetweenShortIdenticalStrands PASSED
+
+HammingTest > testSmallDistanceInSmallStrand PASSED
+
+HammingTest > testNoDistanceBetweenLongIdenticalStrands PASSED
+
+HammingTest > testNonUniqueCharacterInSecondStrand PASSED
+
+HammingTest > testSmallDistanceInMediumStrand PASSED
+
+HammingTest > testLargeDistanceInOffByOneStrand PASSED
+
+HammingTest > testLargeDistanceInPermutedStrand PASSED
+
+HammingTest > testValidatesFirstStrandNotLonger PASSED
+
+HammingTest > testSmallDistanceInLongStrand PASSED
+
+HammingTest > testValidatesSecondStrandNotLonger PASSED
+
+HammingTest > testCompleteDistanceInSmallStrand PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 5.921 secs
