@@ -6,22 +6,22 @@ public class Hamming {
     private final String NOT_EQ = 
         "leftStrand and rightStrand must be of equal length.";
 
-    public Hamming(String leftStr, String rightStr) {
+    public Hamming(String leftStrand, String rightStrand) {
         hammingDistance = 
-            computeHamming(leftStr, rightStr);
+            computeHamming(leftStrand, rightStrand);
     }
 
     int getHammingDistance() {
         return hammingDistance;
     }
 
-    int computeHamming(String leftStr, String rightStr) {
+    int computeHamming(String leftStrand, String rightStrand) {
 
-        if (leftStr.length() != rightStr.length())
+        if (leftStrand.length() != rightStrand.length())
             throw new IllegalArgumentException(NOT_EQ);
 
-        char[]  left = leftStr.toCharArray();
-        char[]  right = rightStr.toCharArray();
+        char[]  left = leftStrand.toCharArray();
+        char[]  right = rightStrand.toCharArray();
 
         return IntStream
                .range(0, left.length)
