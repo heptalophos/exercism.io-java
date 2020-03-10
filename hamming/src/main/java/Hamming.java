@@ -3,22 +3,25 @@ import java.util.stream.IntStream;
 public class Hamming {
 
     private final int hammingDistance;
+    private final String NOT_EQ = 
+        "leftStrand and rightStrand must be of equal length.";
 
-    public Hamming(String leftStrand, String rightStrand) {
-        hammingDistance = computeHamming(leftStrand, rightStrand);
+    public Hamming(String leftStr, String rightStr) {
+        hammingDistance = 
+            computeHamming(leftStr, rightStr);
     }
 
     int getHammingDistance() {
         return hammingDistance;
     }
 
-    private int computeHamming(String leftStrand, String rightStrand) {
+    int computeHamming(String leftStr, String rightStr) {
 
-        if (leftStrand.length() != rightStrand.length())
-            throw new IllegalArgumentException("leftStrand and rightStrand must be of equal length.");
+        if (leftStr.length() != rightStr.length())
+            throw new IllegalArgumentException(NOT_EQ);
 
-        char[]  left = leftStrand.toCharArray();
-        char[]  right = rightStrand.toCharArray();
+        char[]  left = leftStr.toCharArray();
+        char[]  right = rightStr.toCharArray();
 
         return IntStream
                .range(0, left.length)
