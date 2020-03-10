@@ -45,6 +45,8 @@ RaindropConverterTest > soundFor15IsPlingPlangAsItHasFactors3And5 PASSED
 BUILD SUCCESSFUL
 
 Total time: 26.781 secs
+
+
 :compileJava
 :processResources NO-SOURCE
 :classes
@@ -92,3 +94,55 @@ RaindropConverterTest > soundFor15IsPlingPlangAsItHasFactors3And5 PASSED
 BUILD SUCCESSFUL
 
 Total time: 20.385 secs
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+RaindropConverterTest > soundFor27IsPlingAsItHasFactor3 PASSED
+
+RaindropConverterTest > soundFor14IsPlongAsItHasFactor7 PASSED
+
+RaindropConverterTest > soundFor7IsPlong PASSED
+
+RaindropConverterTest > soundFor9IsPlingAsItHasFactor3 PASSED
+
+RaindropConverterTest > soundFor35IsPlangPlongAsItHasFactors5And7 PASSED
+
+RaindropConverterTest > noSoundFor2Cubed PASSED
+
+RaindropConverterTest > soundFor5IsPlang PASSED
+
+RaindropConverterTest > soundFor21IsPlingPlongAsItHasFactors3And7 PASSED
+
+RaindropConverterTest > soundFor25IsPlangAsItHasFactor5 PASSED
+
+RaindropConverterTest > soundFor105IsPlingPlangPlongAsItHasFactors3And5And7 PASSED
+
+RaindropConverterTest > soundFor1Is1 PASSED
+
+RaindropConverterTest > soundFor10IsPlangAsItHasFactor5 PASSED
+
+RaindropConverterTest > soundFor49IsPlongAsItHasFactor7 PASSED
+
+RaindropConverterTest > soundFor3IsPling PASSED
+
+RaindropConverterTest > noSoundFor52 PASSED
+
+RaindropConverterTest > soundFor6IsPlingAsItHasFactor3 PASSED
+
+RaindropConverterTest > soundFor3125IsPlangAsItHasFactor5 PASSED
+
+RaindropConverterTest > soundFor15IsPlingPlangAsItHasFactors3And5 PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 6.056 secs
