@@ -66,9 +66,11 @@ ScrabbleScoreTest > testAMediumValuableWord PASSED
 
 BUILD SUCCESSFUL
 
-Total time: 25.105 secs
+Total time: 21.344 secs
 
 
+
+>gradle test
 
 :compileJava
 :processResources NO-SOURCE
@@ -102,4 +104,4 @@ ScrabbleScoreTest > testAMediumValuableWord PASSED
 
 BUILD SUCCESSFUL
 
-Total time: 21.344 secs
+Total time: 12.131 secs
