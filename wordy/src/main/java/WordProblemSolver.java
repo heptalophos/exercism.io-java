@@ -54,7 +54,7 @@ public class WordProblemSolver {
                             Integer.parseInt(tokens.next()));
             } while (tokens.hasNext());
                 
-                return result;
+            return result;
         }
         catch (Exception e) {
             throw new IllegalArgumentException(EMsg);
