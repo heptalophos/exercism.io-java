@@ -3,31 +3,31 @@ import java.util.HashMap;
 public class Scrabble {
 
     private final String word;
-    private static final HashMap<Integer, Integer> Scores = 
+    private static final HashMap<Integer, Integer> SCORES = 
             new HashMap<>('Z' - 'A');
 
     static {
         "AEIOULNRST".chars()
                     .forEach(letter -> 
-                                Scores.put(letter, 1));
+                                SCORES.put(letter, 1));
         "DG".chars()
             .forEach(letter -> 
-                        Scores.put(letter, 2));
+                        SCORES.put(letter, 2));
         "BCMP".chars()
               .forEach(letter -> 
-                            Scores.put(letter, 3));
+                            SCORES.put(letter, 3));
         "FHVWY".chars()
                .forEach(letter -> 
-                            Scores.put(letter, 4));
+                            SCORES.put(letter, 4));
         "K".chars()
            .forEach(letter -> 
-                        Scores.put(letter, 5));
+                        SCORES.put(letter, 5));
         "JX".chars()
             .forEach(letter -> 
-                        Scores.put(letter, 8));
+                        SCORES.put(letter, 8));
         "QZ".chars()
             .forEach(letter -> 
-                        Scores.put(letter, 10));
+                        SCORES.put(letter, 10));
     }
 
     public Scrabble(String word) {
@@ -40,6 +40,6 @@ public class Scrabble {
                .toUpperCase()
                .chars()
                .reduce(0, (a, b) -> 
-                            a + Scores.get(b));
+                            a + SCORES.get(b));
     }
 }
