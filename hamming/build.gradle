@@ -7,13 +7,14 @@ repositories {
 }
 
 dependencies {
+  // compile "com.google.guava:guava:23.5-jre"
+  // compile "com.codepoetics:protonpack:1.8"
   testCompile "junit:junit:4.12"
 }
 
 test {
   testLogging {
-    exceptionFormat = 'short'
-    showStandardStreams = true
+    exceptionFormat = 'full'
     events = ["passed", "failed", "skipped"]
   }
 }
