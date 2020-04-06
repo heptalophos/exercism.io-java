@@ -3,29 +3,38 @@ import java.util.stream.IntStream;
 public class Hamming {
 
     private final int hammingDistance;
-    private final String NOT_EQ = 
+    private static final String NOT_SAME_LENGTH = 
         "leftStrand and rightStrand must be of equal length.";
+    private static final String LEFT_STRAND_EMPTY =    
+                    "left strand must not be empty.";
+    private static final String RIGHT_STRAND_EMPTY =
+                    "right strand must not be empty.";
 
     public Hamming(String leftStrand, String rightStrand) {
+
+        if (leftStrand.isEmpty() && !rightStrand.isEmpty())
+        throw new IllegalArgumentException(LEFT_STRAND_EMPTY);
+
+        if (rightStrand.isEmpty() && !leftStrand.isEmpty())
+        throw new IllegalArgumentException(RIGHT_STRAND_EMPTY);
+
+        if (leftStrand.length() != rightStrand.length())
+        throw new IllegalArgumentException(NOT_SAME_LENGTH);
+        
         hammingDistance = 
-            computeHamming(leftStrand, rightStrand);
+                computeHamming(leftStrand, rightStrand);
     }
 
     int getHammingDistance() {
+        
         return hammingDistance;
     }
 
-    int computeHamming(String leftStrand, String rightStrand) {
+    int computeHamming(String left, String right) {
 
-        if (leftStrand.length() != rightStrand.length())
-            throw new IllegalArgumentException(NOT_EQ);
-
-        char[]  left = leftStrand.toCharArray();
-        char[]  right = rightStrand.toCharArray();
-
-        return IntStream
-               .range(0, left.length)
-               .mapToObj(i -> left[i] == right[i] ? 0 : 1)
-               .reduce(0, Integer::sum);
+        return (int) IntStream
+               .range(0, left.length())
+               .filter(i -> left.charAt(i) != right.charAt(i))
+               .count();
     }
 }

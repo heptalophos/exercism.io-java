@@ -133,3 +133,85 @@ HammingTest > testCompleteDistanceInSmallStrand PASSED
 BUILD SUCCESSFUL
 
 Total time: 5.921 secs
+
+
+
+=================================================================================
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+HammingTest > testNonUniqueCharacterInFirstStrand PASSED
+
+HammingTest > testSameNucleotidesInDifferentPositions PASSED
+
+HammingTest > testCompleteDistanceInSingleNucleotideStrand PASSED
+
+HammingTest > testNoDistanceBetweenEmptyStrands PASSED
+
+HammingTest > testNoDistanceBetweenShortIdenticalStrands PASSED
+
+HammingTest > testSmallDistanceInSmallStrand PASSED
+
+HammingTest > testNoDistanceBetweenLongIdenticalStrands PASSED
+
+HammingTest > testNonUniqueCharacterInSecondStrand PASSED
+
+HammingTest > testSmallDistanceInMediumStrand PASSED
+
+HammingTest > testLargeDistanceInOffByOneStrand PASSED
+
+HammingTest > testLargeDistanceInPermutedStrand PASSED
+
+HammingTest > testValidatesFirstStrandNotLonger PASSED
+
+HammingTest > testSmallDistanceInLongStrand PASSED
+
+HammingTest > testValidatesSecondStrandNotLonger PASSED
+
+HammingTest > testCompleteDistanceInSmallStrand PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 7.206 secs
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+HammingTest > testCompleteDistanceInSingleLetterDifferentStrands PASSED
+
+HammingTest > testNoDistanceBetweenEmptyStrands PASSED
+
+HammingTest > testNoDistanceBetweenShortIdenticalStrands PASSED
+
+HammingTest > testDisallowLeftEmptyStrand PASSED
+
+HammingTest > testDistanceInLongIdenticalStrands PASSED
+
+HammingTest > testDisallowRightEmptyStrand PASSED
+
+HammingTest > testDistanceInLongDifferentStrands PASSED
+
+HammingTest > testValidatesFirstStrandNotLonger PASSED
+
+HammingTest > testValidatesSecondStrandNotLonger PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 5.338 secs
