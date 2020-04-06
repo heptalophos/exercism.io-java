@@ -13,3 +13,5 @@
 /../.project
 .project
 cleanup.*
+.fake
+.ionide
