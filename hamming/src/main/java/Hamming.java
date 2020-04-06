@@ -16,7 +16,7 @@ public class Hamming {
         throw new IllegalArgumentException(LEFT_STR_EMPTY);
 
         if (rightStrand.isEmpty() && !leftStrand.isEmpty())
-            throw new IllegalArgumentException(RIGHT_STR_EMPTY);
+        throw new IllegalArgumentException(RIGHT_STR_EMPTY);
 
         if (leftStrand.length() != rightStrand.length())
         throw new IllegalArgumentException(NOT_SAME_LENGTH);
