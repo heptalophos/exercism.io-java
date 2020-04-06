@@ -3,13 +3,22 @@ import java.util.stream.IntStream;
 public class Hamming {
 
     private final int hammingDistance;
-    private final String NOT_EQ = 
-        "leftStrand and rightStrand must be of equal length.";
+    private static final String[] errors = { 
+        "left strand must not be empty.",
+        "right strand must not be empty.",
+        "leftStrand and rightStrand must be of equal length."       
+    };
 
     public Hamming(String leftStrand, String rightStrand) {
 
+        if (leftStrand.isEmpty() && !rightStrand.isEmpty())
+            throw new IllegalArgumentException(errors[0]);
+
+        if (rightStrand.isEmpty() && !leftStrand.isEmpty())
+            throw new IllegalArgumentException(errors[1]);
+
         if (leftStrand.length() != rightStrand.length())
-            throw new IllegalArgumentException(NOT_EQ);
+            throw new IllegalArgumentException(errors[2]);
         
         hammingDistance = 
             computeHamming(leftStrand, rightStrand);
@@ -22,10 +31,9 @@ public class Hamming {
 
     int computeHamming(String left, String right) {
 
-        return IntStream
+        return (int) IntStream
                .range(0, left.length())
-               .mapToObj(i -> left.charAt(i) == right.charAt(i)
-                              ? 0 : 1)
-               .reduce(0, Integer::sum);
+               .filter(i -> left.charAt(i) != right.charAt(i))
+               .count();
     }
 }
