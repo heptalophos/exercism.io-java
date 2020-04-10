@@ -1,0 +1,47 @@
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+BracketCheckerTest > testPairedWithWhitespace PASSED
+
+BracketCheckerTest > testPairedAndWrongNestedBrackets PASSED
+
+BracketCheckerTest > testWrongOrderedBrackets PASSED
+
+BracketCheckerTest > testUnopenedClosingBracket PASSED
+
+BracketCheckerTest > testComplexLatexExpression PASSED
+
+BracketCheckerTest > testSimpleNestedBrackets PASSED
+
+BracketCheckerTest > testUnpairedAndNestedBrackets PASSED
+
+BracketCheckerTest > testTooManyClosingBrackets PASSED
+
+BracketCheckerTest > testWrongClosingBracket PASSED
+
+BracketCheckerTest > testPairedAndIncompleteBrackets PASSED
+
+BracketCheckerTest > testEmptyString PASSED
+
+BracketCheckerTest > testPartiallyPairedBrackets PASSED
+
+BracketCheckerTest > testMathExpression PASSED
+
+BracketCheckerTest > testPairedSquareBrackets PASSED
+
+BracketCheckerTest > testPairedAndNestedBrackets PASSED
+
+BracketCheckerTest > testUnpairedBrackets PASSED
+
+BracketCheckerTest > testSeveralPairedBrackets PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 5.376 secs
