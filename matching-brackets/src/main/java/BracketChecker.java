@@ -1,10 +1,28 @@
-/*
+public class BracketChecker {
+    
+    private final String bracketsOnly;
+    
+    public BracketChecker(String input) {
+        bracketsOnly = 
+            input
+            .replaceAll("[^\\[\\]\\{\\}\\(\\)]+", "");
+    }
 
-Since this exercise has a difficulty of > 4 it doesn't come
-with any starter implementation.
-This is so that you get to practice creating classes and methods
-which is an important part of programming in Java.
+    public boolean areBracketsMatchedAndNestedCorrectly() {
 
-Please remove this comment when submitting your solution.
+        String brackets  = bracketsOnly;         
+        String pairedOff = bracketsOnly
+                           .replaceAll("\\(\\)", "")
+                           .replaceAll("\\{\\}", "")
+                           .replaceAll("\\[\\]", "");
 
-*/
+        while (pairedOff.length() < brackets.length()) {
+            brackets  = pairedOff;
+            pairedOff = pairedOff
+                        .replaceAll("\\(\\)", "")
+                        .replaceAll("\\{\\}", "")
+                        .replaceAll("\\[\\]", "");
+        }
+        return pairedOff.isEmpty();
+    }
+ }
