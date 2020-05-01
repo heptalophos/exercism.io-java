@@ -56,5 +56,6 @@ Once you get a test passing, you can enable the next one by removing the
 
 
 ## Submitting Incomplete Solutions
+
 It's possible to submit an incomplete solution so you can see how others have
 completed the exercise.
