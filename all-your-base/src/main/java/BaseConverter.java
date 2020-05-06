@@ -1,10 +1,9 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class BaseConverter {
 
-    private int decimal;
+    private int inputNumber;
+
     private final String BASE_INVALID =
                     "Bases must be at least 2.";
     private final String DIGIT_OVER_BASE =
@@ -27,10 +26,10 @@ public class BaseConverter {
             throw new IllegalArgumentException(DIGIT_BELOW_ZERO);
         }
 
-        this.decimal = 0;
+        this.inputNumber = 0;
         int power = 1; 
         for (int i = digits.length - 1; i >= 0; i--) {
-            this.decimal += digits[i] * power;
+            this.inputNumber += digits[i] * power;
             power *= inBase; 
         }
     }
@@ -41,23 +40,28 @@ public class BaseConverter {
             throw new IllegalArgumentException(BASE_INVALID);
         }
 
-        int number = this.decimal;
+        int number = this.inputNumber;
         
-        // if (number == 0)
-        //     return null;
+        if (number == 0)
+            return new int[]{0};
 
-        List<Integer> representation = new ArrayList<>();
+        int numDigits = 0;
         while (number > 0) {
-            representation.add(0, outBase % number);
             number /= outBase;
+            numDigits++;
         }
-        if (number == 0) {
-            representation.add(0);
-        }
-        return representation
-               .stream()
-               .mapToInt(i -> i)
-               .toArray();
+
+        number = this.inputNumber;
+        
+        int[] representation = new int[numDigits];
+        int index = numDigits - 1;
+        while (number > 0) {
+            representation[index--] = 
+                number % outBase;
+            number /= outBase;
+        } 
+
+        return representation;
     }   
 
 }
