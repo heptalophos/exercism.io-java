@@ -1,0 +1,53 @@
+> gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+BaseConverterTest > testSingleDecimalToBinary PASSED
+
+BaseConverterTest > testDecimalToBinary PASSED
+
+BaseConverterTest > testFirstBaseIsOne PASSED
+
+BaseConverterTest > testBinaryToSingleDecimal PASSED
+
+BaseConverterTest > testFirstBaseIsZero PASSED
+
+BaseConverterTest > testLeadingZeros PASSED
+
+BaseConverterTest > testTrinaryToHexadecimal PASSED
+
+BaseConverterTest > testHexadecimalToTrinary PASSED
+
+BaseConverterTest > testSecondBaseIsZero PASSED
+
+BaseConverterTest > testEmptyDigits PASSED
+
+BaseConverterTest > testSingleZero PASSED
+
+BaseConverterTest > testBinaryToMultipleDecimal PASSED
+
+BaseConverterTest > testSecondBaseIsNegative PASSED
+
+BaseConverterTest > test15BitInteger PASSED
+
+BaseConverterTest > testSingleBitOneToDecimal PASSED
+
+BaseConverterTest > testInvalidPositiveDigit PASSED
+
+BaseConverterTest > testMultipleZeros PASSED
+
+BaseConverterTest > testNegativeDigit PASSED
+
+BaseConverterTest > testFirstBaseIsNegative PASSED
+
+BaseConverterTest > testSecondBaseIsOne PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 4.398 secs
