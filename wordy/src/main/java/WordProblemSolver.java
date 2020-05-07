@@ -27,10 +27,8 @@ public class WordProblemSolver {
     }
 
     public int solve(String question) {
-
         String onToken = 
             "[^0-9+-|plus|minus|multiplied|divided]+";
-
         Iterator<String> tokens = 
             Stream
             .of(question.replaceAll("What is ", "")
@@ -39,22 +37,17 @@ public class WordProblemSolver {
                         .split(onToken))
             .filter(x -> x.length() > 0)
             .iterator();
-
         try {
-
             int result = 
                 Integer.parseInt(tokens.next());
-
             if (!tokens.hasNext())
                return result;
-
             do {
                 result = 
                     applyOp(result, lexOp(tokens.next()), 
                             Integer.parseInt(tokens.next()));
-            } while (tokens.hasNext());
-                
-            return result;
+                } while (tokens.hasNext());
+                return result;
         }
         catch (Exception e) {
             throw new IllegalArgumentException(EMsg);
