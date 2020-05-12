@@ -8,7 +8,8 @@ class Grains {
     BigInteger grainsOnSquare(final int square) {
 
         if (square < 1 || square > 64) {
-            throw new IllegalArgumentException(error);
+            throw 
+                new IllegalArgumentException(error);
         }
 
         return BigInteger.ONE
