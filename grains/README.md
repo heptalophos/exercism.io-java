@@ -1,4 +1,4 @@
-## Grains
+# Grains
 
 Calculate the number of grains of wheat on a chessboard given that the number
 on each square doubles.
@@ -41,8 +41,6 @@ terminal:
 ```sh
 $ gradle test
 ```
-
-> Use `gradlew.bat` if you're on Windows
 
 In the test suites all tests but the first have been skipped.
 
