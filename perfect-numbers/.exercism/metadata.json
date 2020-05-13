@@ -1,9 +1,9 @@
 {
-    "track":"java",
-    "exercise":"perfect-numbers",
-    "id":"a9b9c60045634436aa6f5c8410c55fea",
-    "url":"https://exercism.io/tracks/java/exercises/perfect-numbers/solutions/a9b9c60045634436aa6f5c8410c55fea",
-    "handle":"heptalophos",
-    "is_requester":true,
-    "auto_approve":false
+  "track": "java",
+  "exercise": "perfect-numbers",
+  "id": "a9b9c60045634436aa6f5c8410c55fea",
+  "url": "https://exercism.io/tracks/java/exercises/perfect-numbers/solutions/a9b9c60045634436aa6f5c8410c55fea",
+  "handle": "heptalophos",
+  "is_requester": true,
+  "auto_approve": false
 }

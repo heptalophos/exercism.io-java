@@ -117,3 +117,19 @@ NaturalNumberTest > testMediumPerfectNumberIsClassifiedCorrectly PASSED
 BUILD SUCCESSFUL
 
 Total time: 5.428 secs
+
+
+
+>gradlew test
+
+:compileJava UP-TO-DATE
+:processResources NO-SOURCE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 4.962 secs

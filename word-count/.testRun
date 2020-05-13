@@ -1,0 +1,39 @@
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test
+
+WordCountTest > handlesExpandedLists PASSED
+
+WordCountTest > withQuotations PASSED
+
+WordCountTest > normalizeCase PASSED
+
+WordCountTest > multipleSpacesNotDetectedAsAWord PASSED
+
+WordCountTest > countOneOfEachWord PASSED
+
+WordCountTest > handlesCrampedLists PASSED
+
+WordCountTest > withApostrophes PASSED
+
+WordCountTest > countOneWord PASSED
+
+WordCountTest > alternatingWordSeperatorsNotDetectedAsAWord PASSED
+
+WordCountTest > substringsFromTheBeginning PASSED
+
+WordCountTest > multipleOccurrencesOfAWord PASSED
+
+WordCountTest > includeNumbers PASSED
+
+WordCountTest > ignorePunctuation PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 3.857 secs
