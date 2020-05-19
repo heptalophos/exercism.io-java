@@ -1,31 +1,6 @@
 :compileJava
 :processResources NO-SOURCE
 :classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
-
-CollatzCalculatorTest > testCorrectNumberOfStepsWhenBothStepTypesAreNeeded PASSED
-
-CollatzCalculatorTest > testAVeryLargeInput PASSED
-
-CollatzCalculatorTest > testZeroIsConsideredInvalidInput PASSED
-
-CollatzCalculatorTest > testCorrectNumberOfStepsWhenAllStepsAreDivisions PASSED
-
-CollatzCalculatorTest > testZeroStepsRequiredWhenStartingFrom1 PASSED
-
-CollatzCalculatorTest > testNegativeIntegerIsConsideredInvalidInput PASSED
-
-BUILD SUCCESSFUL
-
-Total time: 27.481 secs
-
-
-:compileJava
-:processResources NO-SOURCE
-:classes
 :compileTestJava UP-TO-DATE
 :processTestResources NO-SOURCE
 :testClasses UP-TO-DATE
@@ -46,3 +21,47 @@ CollatzCalculatorTest > testNegativeIntegerIsConsideredInvalidInput PASSED
 BUILD SUCCESSFUL
 
 Total time: 19.546 secs
+
+
+
+>gradle test
+
+:compileJava UP-TO-DATE
+:processResources NO-SOURCE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 2.074 secs
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava
+:processTestResources NO-SOURCE
+:testClasses
+:test
+
+CollatzCalculatorTest > testCorrectNumberOfStepsWhenBothStepTypesAreNeeded PASSED
+
+CollatzCalculatorTest > testAVeryLargeInput PASSED
+
+CollatzCalculatorTest > testZeroIsConsideredInvalidInput PASSED
+
+CollatzCalculatorTest > testCorrectNumberOfStepsWhenAllStepsAreDivisions PASSED
+
+CollatzCalculatorTest > testZeroStepsRequiredWhenStartingFrom1 PASSED
+
+CollatzCalculatorTest > testNegativeIntegerIsConsideredInvalidInput PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 4.99 secs
