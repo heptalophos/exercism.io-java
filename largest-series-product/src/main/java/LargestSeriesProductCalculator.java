@@ -15,18 +15,22 @@ class LargestSeriesProductCalculator {
             "Series length must be non-negative."});
 
     LargestSeriesProductCalculator(String inputNumber) {
-        if (!inputNumber.chars().allMatch(Character::isDigit)) {
-            throw new IllegalArgumentException(errors.get(0));
+        if (!inputNumber.chars()
+                        .allMatch(Character::isDigit)) {
+            throw 
+                new IllegalArgumentException(errors.get(0));
         }
         this.input = inputNumber;
     }
 
     long calculateLargestProductForSeriesLength(int numDigits) {  
         if (numDigits > input.length()) {
-            throw new IllegalArgumentException(errors.get(1));
+            throw 
+                new IllegalArgumentException(errors.get(1));
         }
         if (numDigits < 0) {
-            throw new IllegalArgumentException(errors.get(2));
+            throw 
+                new IllegalArgumentException(errors.get(2));
         }
         OptionalLong max = 
             IntStream
