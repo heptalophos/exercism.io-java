@@ -1,9 +1,12 @@
 class CollatzCalculator {
 
-    public int computeStepCount(int start) {
+    private static final String ERR =
+                "Only natural numbers are allowed";
+
+    public int computeStepCount(final int start) {
         
         if (start <= 0)
-            throw new IllegalArgumentException("Only natural numbers are allowed");
+            throw new IllegalArgumentException(ERR);
        
         return computeStepCount(start, 0);
     }
@@ -14,7 +17,9 @@ class CollatzCalculator {
 
         steps += 1;
         
-        start = start % 2 == 0 ? start / 2 : (3 * start) + 1;
+        start = start % 2 == 0 ? 
+                start / 2 : 
+                (3 * start) + 1;
 
         return computeStepCount(start, steps);
     }
