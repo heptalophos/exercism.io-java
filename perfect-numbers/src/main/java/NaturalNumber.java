@@ -3,14 +3,14 @@ import java.util.stream.IntStream;
 class NaturalNumber {
 
     private final int number;
-    private static final String exception = 
+    private static final String eXception = 
         "You must supply a natural number (positive integer)";
 
     public NaturalNumber (int number) {
         
         if (number <= 0) 
             throw 
-                new IllegalArgumentException(exception);
+                new IllegalArgumentException(eXception);
         this.number = number;
     }
 
