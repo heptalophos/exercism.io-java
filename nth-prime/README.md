@@ -24,8 +24,6 @@ terminal:
 $ gradle test
 ```
 
-> Use `gradlew.bat` if you're on Windows
-
 In the test suites all tests but the first have been skipped.
 
 Once you get a test passing, you can enable the next one by removing the
@@ -36,5 +34,6 @@ Once you get a test passing, you can enable the next one by removing the
 A variation on Problem 7 at Project Euler [http://projecteuler.net/problem=7](http://projecteuler.net/problem=7)
 
 ## Submitting Incomplete Solutions
+
 It's possible to submit an incomplete solution so you can see how others have
 completed the exercise.
