@@ -10,11 +10,12 @@ class PrimeCalculator {
 
     public int nth(int nth) {
         
-        return IntStream.iterate(2, i -> i + 1)
-                        .filter(PrimeCalculator::isPrime)
-                        .limit(nth)
-                        .max()
-                        .orElseThrow(() -> 
-                            new IllegalArgumentException("bad_arg"));
+        return IntStream
+               .iterate(2, i -> i + 1)
+               .filter(PrimeCalculator::isPrime)
+               .limit(nth)
+               .max()
+               .orElseThrow(() -> 
+                    new IllegalArgumentException("bad_arg"));
     }
 }
