@@ -19,3 +19,29 @@ PrimeCalculatorTest > testBigPrime PASSED
 BUILD SUCCESSFUL
 
 Total time: 3.987 secs
+
+
+
+>gradle test
+
+:compileJava
+:processResources NO-SOURCE
+:classes
+:compileTestJava UP-TO-DATE
+:processTestResources NO-SOURCE
+:testClasses UP-TO-DATE
+:test
+
+PrimeCalculatorTest > testUndefinedPrime PASSED
+
+PrimeCalculatorTest > testSixthPrime PASSED
+
+PrimeCalculatorTest > testFirstPrime PASSED
+
+PrimeCalculatorTest > testSecondPrime PASSED
+
+PrimeCalculatorTest > testBigPrime PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 5.758 secs
