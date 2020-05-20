@@ -4,8 +4,9 @@ class PrimeCalculator {
 
     private static boolean isPrime(int n) {
 
-        return IntStream.rangeClosed(2, (int) Math.sqrt(n))
-                        .allMatch(x -> n % x != 0);
+        return IntStream
+               .rangeClosed(2, (int) Math.sqrt(n))
+               .allMatch(x -> n % x != 0);
     }
 
     public int nth(int nth) {
