@@ -14,8 +14,7 @@ class PrimeCalculator {
                         .filter(PrimeCalculator::isPrime)
                         .limit(nth)
                         .max()
-                        .orElseThrow(
-                            () -> 
-                               new IllegalArgumentException("bad_arg"));
+                        .orElseThrow(() -> 
+                            new IllegalArgumentException("bad_arg"));
     }
 }
