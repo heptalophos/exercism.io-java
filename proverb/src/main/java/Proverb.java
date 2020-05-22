@@ -24,12 +24,12 @@ public class Proverb {
 
         return IntStream
                .range(1, words.length)
-               .mapToObj(i -> String.format(premises, 
-                                            words[i - 1], 
-                                            words[i]))
-               .reduce("", 
-                       (line, stanza) -> line + stanza
-                      ) + epilogue ;
+               .mapToObj(i -> 
+                         String.format(premises, 
+                                       words[i - 1], 
+                                       words[i]))
+               .reduce("", (line, stanza) -> 
+                            line + stanza) + epilogue ;
     }
 
 }
