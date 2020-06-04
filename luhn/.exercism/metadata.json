@@ -1,9 +1,9 @@
 {
-  "track": "java",
-  "exercise": "luhn",
-  "id": "17843b0a9559454a8cfa77d0e10232fa",
-  "url": "https://exercism.io/my/solutions/17843b0a9559454a8cfa77d0e10232fa",
-  "handle": "heptalophos",
-  "is_requester": true,
-  "auto_approve": false
+    "track": "java",
+    "exercise": "luhn",
+    "id": "17843b0a9559454a8cfa77d0e10232fa",
+    "url": "https://exercism.io/tracks/java/exercises/luhn/solutions/17843b0a9559454a8cfa77d0e10232fa",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
 }
