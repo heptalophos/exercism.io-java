@@ -7,12 +7,12 @@ import java.util.stream.Collectors;
 public class Series {
 
     public final String numberString;
+    
+    private static final String TOO_SMALL = 
+                            "Slice size is too small.";
 
-    private static final List<String> errors =
-        Arrays.asList(new String[] {
-            "Slice size is too small.",
-            "Slice size is too big."
-        });
+    private static final String TOO_BIG = 
+                            "Slice size is too big.";
 
     public Series(String numberString){
         this.numberString = numberString;
@@ -20,9 +20,9 @@ public class Series {
 
     public List<String> slices(int subLen) {
         if (subLen <= 0) 
-            throw new IllegalArgumentException(errors.get(0));
+            throw new IllegalArgumentException(TOO_SMALL);
         if (subLen > numberString.length()) 
-            throw new IllegalArgumentException(errors.get(1));
+            throw new IllegalArgumentException(TOO_BIG);
         return IntStream
                .rangeClosed(0, numberString.length() - subLen)
                .mapToObj(x -> 
