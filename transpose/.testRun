@@ -64,40 +64,6 @@ BUILD FAILED
 Total time: 3.441 secs
 
 
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava UP-TO-DATE
-:processTestResources NO-SOURCE
-:testClasses UP-TO-DATE
-:test
-
-TransposeTest > secondLineLongerThanFirstLine PASSED
-
-TransposeTest > simple PASSED
-
-TransposeTest > square PASSED
-
-TransposeTest > firstLineLongerThanSecondLine PASSED
-
-TransposeTest > twoCharactersInARow PASSED
-
-TransposeTest > singleLine PASSED
-
-TransposeTest > rectangle PASSED
-
-TransposeTest > mixedLineLength PASSED
-
-TransposeTest > emptyString PASSED
-
-TransposeTest > twoCharactersInAColumn PASSED
-
-TransposeTest > triangle PASSED
-
-BUILD SUCCESSFUL
-
-Total time: 5.183 secs
-
 
 :compileJava
 :processResources NO-SOURCE
@@ -145,39 +111,6 @@ Total time: 3.155 secs
 BUILD SUCCESSFUL
 
 Total time: 2.128 secs
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
-
-TransposeTest > secondLineLongerThanFirstLine PASSED
-
-TransposeTest > simple PASSED
-
-TransposeTest > square PASSED
-
-TransposeTest > firstLineLongerThanSecondLine PASSED
-
-TransposeTest > twoCharactersInARow PASSED
-
-TransposeTest > singleLine PASSED
-
-TransposeTest > rectangle PASSED
-
-TransposeTest > mixedLineLength PASSED
-
-TransposeTest > emptyString PASSED
-
-TransposeTest > twoCharactersInAColumn PASSED
-
-TransposeTest > triangle PASSED
-
-BUILD SUCCESSFUL
-
-Total time: 5.083 secs
 
 
 
@@ -216,3 +149,45 @@ TransposeTest > triangle PASSED
 BUILD SUCCESSFUL
 
 Total time: 30.149 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+TransposeTest > secondLineLongerThanFirstLine PASSED
+
+TransposeTest > simple PASSED
+
+TransposeTest > square PASSED
+
+TransposeTest > firstLineLongerThanSecondLine PASSED
+
+TransposeTest > twoCharactersInARow PASSED
+
+TransposeTest > singleLine PASSED
+
+TransposeTest > rectangle PASSED
+
+TransposeTest > mixedLineLength PASSED
+
+TransposeTest > emptyString PASSED
+
+TransposeTest > twoCharactersInAColumn PASSED
+
+TransposeTest > triangle PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 7s
+3 actionable tasks: 3 executed
