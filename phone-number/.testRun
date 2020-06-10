@@ -90,3 +90,59 @@ PhoneNumberTest > invalidIfExchangeCodeStartsWith1 PASSED
 BUILD SUCCESSFUL
 
 Total time: 6.947 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+PhoneNumberTest > invalidWhen9Digits PASSED
+
+PhoneNumberTest > invalidIfAreaCodeStartsWith0OnValid11DigitNumber PASSED
+
+PhoneNumberTest > invalidIfAreaCodeStartsWith1OnValid11DigitNumber PASSED
+
+PhoneNumberTest > invalidWhenMoreThan11Digits PASSED
+
+PhoneNumberTest > invalidIfExchangeCodeStartsWith0OnValid11DigitNumber PASSED
+
+PhoneNumberTest > invalidIfExchangeCodeStartsWith1OnValid11DigitNumber PASSED
+
+PhoneNumberTest > invalidWhen11DigitsDoesNotStartWith1 PASSED
+
+PhoneNumberTest > invalidWithLetters PASSED
+
+PhoneNumberTest > cleansNumbersWithMultipleSpaces PASSED
+
+PhoneNumberTest > cleansTheNumber PASSED
+
+PhoneNumberTest > validWhen11DigitsAndStartingWith1 PASSED
+
+PhoneNumberTest > invalidWithPunctuations PASSED
+
+PhoneNumberTest > cleansNumbersWithDots PASSED
+
+PhoneNumberTest > validWhen11DigitsAndStartingWith1EvenWithPunctuation PASSED
+
+PhoneNumberTest > invalidIfAreaCodeStartsWith0 PASSED
+
+PhoneNumberTest > invalidIfAreaCodeStartsWith1 PASSED
+
+PhoneNumberTest > invalidIfExchangeCodeStartsWith0 PASSED
+
+PhoneNumberTest > invalidIfExchangeCodeStartsWith1 PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 21s
+3 actionable tasks: 3 executed
