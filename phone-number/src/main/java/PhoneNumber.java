@@ -15,17 +15,14 @@ public class PhoneNumber {
     };
 
     public PhoneNumber(String strNumber) {
-        
         this.phoneNumber = validate(strNumber);
     }
     
     public String getNumber() {
-        
         return phoneNumber;
     }
 
     private String validate(String number) {
-    
         if (number.codePoints()
                   .anyMatch(Character::isAlphabetic))
             throw new IllegalArgumentException(errors[0]);
