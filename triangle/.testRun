@@ -45,6 +45,7 @@ BUILD SUCCESSFUL
 Total time: 21.362 secs
 
 
+
 ## With added degenerate case tests 
 
 :compileJava
@@ -151,15 +152,17 @@ Total time: 4.09 secs
 
 
 
+
 >gradle test
 
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
 
 TriangleTest > verySmallTrianglesCanBeEquilateral PASSED
 
@@ -199,6 +202,9 @@ TriangleTest > secondTriangleInequalityViolation PASSED
 
 TriangleTest > verySmallTrianglesCanBeScalene PASSED
 
-BUILD SUCCESSFUL
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5/userguide/command_line_interface.html#sec:command_line_warnings
 
-Total time: 4.631 secs
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
