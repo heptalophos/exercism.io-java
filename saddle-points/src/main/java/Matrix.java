@@ -49,7 +49,8 @@ class Matrix {
                             IntStream
                             .range(0, matrix.get(0).size())
                             .mapToObj(x -> 
-                               new MatrixCoordinate(r + 1, x + 1)))
+                               new MatrixCoordinate(r + 1, 
+                                                    x + 1)))
                    .filter(this::saddlePoint)
                    .collect(Collectors.toSet());
         }

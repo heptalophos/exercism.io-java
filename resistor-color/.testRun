@@ -17,3 +17,33 @@ ResistorColorTest > testOrangeColorCode PASSED
 BUILD SUCCESSFUL
 
 Total time: 3.277 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :compileTestJava
+
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+ResistorColorTest > testWhiteColorCode PASSED
+
+ResistorColorTest > testColors PASSED
+
+ResistorColorTest > testBlackColorCode PASSED
+
+ResistorColorTest > testOrangeColorCode PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 8s
+3 actionable tasks: 3 executed
