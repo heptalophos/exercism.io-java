@@ -19,3 +19,34 @@ SieveTest > findPrimesUpTo10 PASSED
 BUILD SUCCESSFUL
 
 Total time: 14.45 secs
+
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+SieveTest > findFirstPrime PASSED
+
+SieveTest > noPrimesUnder2 PASSED
+
+SieveTest > findPrimesUpTo1000 PASSED
+
+SieveTest > limitIsPrime PASSED
+
+SieveTest > findPrimesUpTo10 PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 19s
+3 actionable tasks: 3 executed
