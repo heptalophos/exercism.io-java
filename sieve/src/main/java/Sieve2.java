@@ -3,11 +3,11 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 import java.util.stream.Collectors;
 
-class Sieve {
+class Sieve2 {
 
     private List<Integer> primes;
 
-    public Sieve(int limit) {
+    public Sieve2(int limit) {
 
         boolean[] notPrime = new boolean[limit + 1];
 
