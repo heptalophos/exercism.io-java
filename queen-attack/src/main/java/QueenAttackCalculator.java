@@ -5,7 +5,6 @@ public final class QueenAttackCalculator {
 
     private final Queen white;
     private final Queen black;
-    
     private final List<String> errors =
         Arrays.asList(new String[]{
             "You must supply valid positions for both Queens.", 
