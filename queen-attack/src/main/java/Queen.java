@@ -6,13 +6,6 @@ public final class Queen {
     static final int MINPOS = 0;
     static final int MAXPOS = 7;
 
-    // with java9 and beyond:
-    // private final List<String> errors = List.of ( 
-    //         "Queen position must have positive row.", 
-    //         "Queen position must have positive column.",
-    //         "Queen position must have row <= 7.",
-    //         "Queen position must have column <= 7.");
-
     private final List<String> errors = 
         Arrays.asList(new String[]{
             "Queen position must have positive row.", 
