@@ -81,3 +81,96 @@ RationalTest > testReduceZeroToLowestTerms PASSED
 BUILD SUCCESSFUL
 
 Total time: 3.713 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+RationalTest > testReduceARationalNumberWithANegativeDenominatorToLowestTerms PASSED
+
+RationalTest > testSubtractTwoNegativeRationalNumbers PASSED
+
+RationalTest > testRaiseANegativeRationalNumberToAPositiveIntegerPower PASSED
+
+RationalTest > testMultiplyARationalNumberByZero PASSED
+
+RationalTest > testAbsoluteValueOfAPositiveRationalNumberWithNegativeNumeratorAndDenominator PASSED
+
+RationalTest > testAbsoluteValueOfANegativeRationalNumber PASSED
+
+RationalTest > testAddARationalNumberToItsAdditiveInverse PASSED
+
+RationalTest > testRaiseZeroToAnIntegerPower PASSED
+
+RationalTest > testReduceOneToLowestTerms PASSED
+
+RationalTest > testMultiplyARationalNumberByItsReciprocal PASSED
+
+RationalTest > testDivideAPositiveRationalNumberByANegativeRationalNumber PASSED
+
+RationalTest > testReduceANegativeRationalNumberToLowestTerms PASSED
+
+RationalTest > testRaiseOneToAnIntegerPower PASSED
+
+RationalTest > testAddTwoPositiveRationalNumbers PASSED
+
+RationalTest > testDivideTwoPositiveRationalNumbers PASSED
+
+RationalTest > testAddAPositiveRationalNumberAndANegativeRationalNumber PASSED
+
+RationalTest > testRaiseARealNumberToAPositiveRationalNumber PASSED
+
+RationalTest > testDivideARationalNumberByOne PASSED
+
+RationalTest > testSubtractARationalNumberFromItself PASSED
+
+RationalTest > testMultiplyTwoPositiveRationalNumbers PASSED
+
+RationalTest > testAbsoluteValueOfZero PASSED
+
+RationalTest > testRaiseARealNumberToANegativeRationalNumber PASSED
+
+RationalTest > testReduceAPositiveRationalNumberToLowestTerms PASSED
+
+RationalTest > testMultiplyANegativeRationalNumberByAPositiveRationalNumber PASSED
+
+RationalTest > testSubtractTwoPositiveRationalNumbers PASSED
+
+RationalTest > testMultiplyARationalNumberByOne PASSED
+
+RationalTest > testAbsoluteValueOfANegativeRationalNumberWithNegativeDenominator PASSED
+
+RationalTest > testAddTwoNegativeRationalNumbers PASSED
+
+RationalTest > testDivideTwoNegativeRationalNumbers PASSED
+
+RationalTest > testRaiseAPositiveRationalNumberToAPositiveIntegerPower PASSED
+
+RationalTest > testAbsoluteValueOfAPositiveRationalNumber PASSED
+
+RationalTest > testMultiplyTwoNegativeRationalNumbers PASSED
+
+RationalTest > testRaiseAPositiveRationalNumberToThePowerOfZero PASSED
+
+RationalTest > testReduceAnIntegerToLowestTerms PASSED
+
+RationalTest > testSubtractAPositiveRationalNumberAndANegativeRationalNumber PASSED
+
+RationalTest > testReduceZeroToLowestTerms PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+
+BUILD SUCCESSFUL in 6s
+3 actionable tasks: 3 executed
