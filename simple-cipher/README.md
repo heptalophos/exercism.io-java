@@ -55,7 +55,6 @@ out. So "aaaa" is not an ideal key. But if we set the key to "dddd", we
 would get the same thing as the Caesar Cipher.
 
 ## Step 3
-
 The weakest link in any cipher is the human being. Let's make your
 substitution cipher a little more fault tolerant by providing a source
 of randomness and ensuring that the key contains only lowercase letters.
@@ -64,7 +63,6 @@ If someone doesn't submit a key at all, generate a truly random key of
 at least 100 alphanumeric characters in length.
 
 ## Extensions
-
 Shift ciphers work by making the text slightly odd, but are vulnerable
 to frequency analysis. Substitution ciphers help that, but are still
 very vulnerable when the key is short or if spaces are preserved. Later
@@ -79,7 +77,6 @@ on Wikipedia][dh] for one of the first implementations of this scheme.
 [dh]: http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 
 # Tips
-
 This exercise has three test classes: SimpleCipherStepOneTest.java, SimpleCipherStepTwoTest.java and SimpleCipherStepThreeTest.java.
 
 To run only one test class (e.g. in this example SimpleCipherStepOneTest.java):
@@ -88,7 +85,6 @@ $ gradle test --tests *StepOne*
 ```
 
 ## Setup
-
 Go through the setup instructions for Java to install the necessary
 dependencies:
 
