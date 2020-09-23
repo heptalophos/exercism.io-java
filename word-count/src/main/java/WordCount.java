@@ -19,9 +19,10 @@ public class WordCount {
                         .split("\\s+");
 
         for (int i = 0; i < words.length; i++) {
-            String w = words[i];
-            if (w.startsWith("'") && w.endsWith("'")) 
-                words[i] = w.replaceAll("'","");
+            words[i] = 
+                words[i]
+                .replaceAll("^\\p{Punct}+|\\p{Punct}+$",
+                            "");
         }
 
         return Stream
