@@ -5,10 +5,10 @@ public class Proverb {
     private final String[] words;
 
     private static final String premises = 
-            "For want of a %s the %s was lost.\n";
+                "For want of a %s the %s was lost.\n";
     
     private static final String conclusion = 
-            "And all for the want of a %s.";
+                    "And all for the want of a %s.";
 
     Proverb(String[] words) {
         this.words = words;
@@ -29,7 +29,8 @@ public class Proverb {
                                        words[i - 1], 
                                        words[i]))
                .reduce("", (line, stanza) -> 
-                            line + stanza) + epilogue ;
+                            line + stanza) 
+               + epilogue ;
     }
 
 }

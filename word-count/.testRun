@@ -37,3 +37,49 @@ WordCountTest > ignorePunctuation PASSED
 BUILD SUCCESSFUL
 
 Total time: 3.857 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :test
+
+WordCountTest > handlesExpandedLists PASSED
+
+WordCountTest > withQuotations PASSED
+
+WordCountTest > normalizeCase PASSED
+
+WordCountTest > multipleSpacesNotDetectedAsAWord PASSED
+
+WordCountTest > countOneOfEachWord PASSED
+
+WordCountTest > handlesCrampedLists PASSED
+
+WordCountTest > withApostrophes PASSED
+
+WordCountTest > countOneWord PASSED
+
+WordCountTest > alternatingWordSeperatorsNotDetectedAsAWord PASSED
+
+WordCountTest > substringsFromTheBeginning PASSED
+
+WordCountTest > multipleOccurrencesOfAWord PASSED
+
+WordCountTest > includeNumbers PASSED
+
+WordCountTest > ignorePunctuation PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 9s
+3 actionable tasks: 2 executed, 1 up-to-date

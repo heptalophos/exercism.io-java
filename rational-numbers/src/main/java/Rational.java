@@ -24,34 +24,42 @@ class Rational {
     }
     
     public Rational add(Rational r) {
-        return new Rational(numerator * r.denominator + r.numerator * denominator, 
+        return new Rational(numerator * r.denominator 
+                            + r.numerator * denominator, 
                             denominator * r.denominator);
     }
 
     public Rational subtract(Rational r) {
-        return new Rational(numerator * r.denominator - r.numerator * denominator, 
+        return new Rational(numerator * r.denominator - 
+                            r.numerator * denominator, 
                             denominator * r.denominator);
     }
 
     public Rational multiply(Rational r) {
-		return new Rational(numerator * r.numerator, denominator * r.denominator);
+        return new Rational(numerator * r.numerator, 
+                            denominator * r.denominator);
 	}
     
     public Rational divide(Rational r) {
-		return new Rational(numerator * r.denominator, denominator * r.numerator);
+        return new Rational(numerator * r.denominator, 
+                            denominator * r.numerator);
     }
     
     public Rational abs() {
-		return new Rational(Math.abs(numerator), Math.abs(denominator));
+        return new Rational(Math.abs(numerator), 
+                            Math.abs(denominator));
     }
     
     public Rational pow(int exponent) {
-        return new Rational((int) Math.pow(this.numerator, Math.abs(exponent)), 
-                            (int) Math.pow(this.denominator, Math.abs(exponent)));
+        return new Rational((int) Math.pow(this.numerator, 
+                                           Math.abs(exponent)), 
+                            (int) Math.pow(this.denominator, 
+                                           Math.abs(exponent)));
     }
 
     public double exp(double base) {
-		return Math.pow(Math.pow(base, 1.0 / denominator), numerator);
+        return Math.pow(Math.pow(base, 1.0 / denominator), 
+                                 numerator);
 	}
 
     private static int gcd(int n1, int n2) {
@@ -60,12 +68,15 @@ class Rational {
 
     @Override
     public String toString() {
-        return String.format("%d/%d", this.getNumerator(), this.getDenominator());
+        return String.format("%d/%d", 
+                             this.getNumerator(), 
+                             this.getDenominator());
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (obj == null || !this.getClass().isAssignableFrom(obj.getClass())) {
+        if (obj == null || 
+           !this.getClass().isAssignableFrom(obj.getClass())) {
             return false;
         }
 
