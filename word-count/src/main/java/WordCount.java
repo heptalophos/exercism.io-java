@@ -12,25 +12,18 @@ public class WordCount {
         if (sentence == null || sentence.isEmpty())
             return Collections.emptyMap();
         
-        String[] words = sentence
-                        .replaceAll("[^\\w\\d']+", " ")
-                        .trim()
-                        .toLowerCase()
-                        .split("\\s+");
-
-        for (int i = 0; i < words.length; i++) {
-            words[i] = 
-                words[i]
-                .replaceAll("^\\p{Punct}+|\\p{Punct}+$",
-                            "");
-        }
-
         return Stream
-              .of(words)
+              .of(sentence
+                  .replaceAll("[^\\w\\d']+", " ")
+                  .trim()
+                  .toLowerCase()
+                  .split("\\s+"))
+              .map(w -> w.replaceAll("^\\p{Punct}+|\\p{Punct}+$", 
+                                     ""))
               .collect(Collectors.groupingBy(
-                            Function.identity(), 
-                            Collectors.collectingAndThen(
-                                Collectors.counting(), 
-                                Long::intValue)));
+                                    Function.identity(), 
+                                    Collectors.collectingAndThen(
+                                    Collectors.counting(), 
+                                    Long::intValue)));
     }
 }
