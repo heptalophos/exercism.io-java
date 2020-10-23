@@ -10,7 +10,6 @@ class School {
     private Map<Integer, List<String>> roster;
 
     public School() {
-        // roster = new HashMap<Integer, List<String>>();
         roster = new HashMap<>();
     }
 
@@ -25,7 +24,6 @@ class School {
     public void add(String name, Integer grade) {
         List<String> names = roster.containsKey(grade) ?
                              roster.get(grade) :
-                            //  new ArrayList<String>();
                              new ArrayList<>();
         names.add(name);
         names.sort(Comparator.naturalOrder());
