@@ -10,17 +10,23 @@ class School {
     private Map<Integer, List<String>> roster;
 
     public School() {
-        roster = new HashMap<Integer, List<String>>();
+        // roster = new HashMap<Integer, List<String>>();
+        roster = new HashMap<>();
     }
 
-    public Map<Integer, List<String>> roster() {
-        return roster;
+    public List<String> roster() {
+        List<String> students = new ArrayList<>();
+        for (int grade : roster.keySet()) {
+            students.addAll(roster.get(grade));
+        }
+        return students;
     }
 
     public void add(String name, Integer grade) {
         List<String> names = roster.containsKey(grade) ?
                              roster.get(grade) :
-                            new ArrayList<String>();
+                            //  new ArrayList<String>();
+                             new ArrayList<>();
         names.add(name);
         names.sort(Comparator.naturalOrder());
         roster.put(grade, names);
