@@ -18,12 +18,13 @@ public class WordCount {
                   .trim()
                   .toLowerCase()
                   .split("\\s+"))
-              .map(w -> w.replaceAll("^\\p{Punct}+|\\p{Punct}+$", 
-                                     ""))
+              .map(w -> 
+                   w.replaceAll("^\\p{Punct}+|\\p{Punct}+$", 
+                                ""))
               .collect(Collectors.groupingBy(
-                                    Function.identity(), 
-                                    Collectors.collectingAndThen(
-                                    Collectors.counting(), 
-                                    Long::intValue)));
+                                Function.identity(), 
+                                Collectors.collectingAndThen(
+                                Collectors.counting(), 
+                                Long::intValue)));
     }
 }

@@ -208,3 +208,61 @@ See https://docs.gradle.org/6.5/userguide/command_line_interface.html#sec:comman
 
 BUILD SUCCESSFUL in 2s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+TriangleTest > verySmallTrianglesCanBeEquilateral PASSED
+
+TriangleTest > isoscelesTrianglesHaveLastTwoSidesEqual PASSED
+
+TriangleTest > trianglesWithOneUnequalSideAreNotEquilateral PASSED
+
+TriangleTest > scaleneTrianglesHaveNoEqualSides PASSED
+
+TriangleTest > trianglesWithNoEqualSidesAreNotEquilateral PASSED
+
+TriangleTest > isoscelesTrianglesHaveFirstAndLastSidesEqual PASSED
+
+TriangleTest > mayNotViolateTriangleInequality PASSED
+
+TriangleTest > firstTriangleInequalityViolation PASSED
+
+TriangleTest > twoSidesEqualAreNotScalene PASSED
+
+TriangleTest > thirdTriangleInequalityViolation PASSED
+
+TriangleTest > allSidesEqualAreNotScalene PASSED
+
+TriangleTest > equilateralTrianglesHaveEqualSides PASSED
+
+TriangleTest > trianglesWithNoSizeAreIllegal PASSED
+
+TriangleTest > isoscelesTrianglesHaveTwoFirstSidesEqual PASSED
+
+TriangleTest > equilateralTrianglesAreAlsoIsosceles PASSED
+
+TriangleTest > verySmallTrianglesCanBeIsosceles PASSED
+
+TriangleTest > noSidesAreEqualCantBeIsoceles PASSED
+
+TriangleTest > secondTriangleInequalityViolation PASSED
+
+TriangleTest > verySmallTrianglesCanBeScalene PASSED
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.6.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
