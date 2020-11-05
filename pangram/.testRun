@@ -138,3 +138,43 @@ PangramCheckerTest > caseInsensitivePhraseIsNotPangram PASSED
 BUILD SUCCESSFUL
 
 Total time: 4.405 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+PangramCheckerTest > perfectLowerCasePhraseIsPangram PASSED
+
+PangramCheckerTest > phraseWithNumbersIsPangram PASSED
+
+PangramCheckerTest > phraseWithUnderscoresIsPangram PASSED
+
+PangramCheckerTest > phraseWithOnlyLowerCaseIsPangram PASSED
+
+PangramCheckerTest > phraseMissingCharacterXIsNotPangram PASSED
+
+PangramCheckerTest > phraseMissingCharacterHIsNotPangram PASSED
+
+PangramCheckerTest > phraseWithMissingLettersReplacedByNumbersIsNotPangram PASSED
+
+PangramCheckerTest > emptySentenceIsNotPangram PASSED
+
+PangramCheckerTest > phraseWithMixedCaseAndPunctuationIsPangram PASSED
+
+PangramCheckerTest > caseInsensitivePhraseIsNotPangram PASSED
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.6.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
