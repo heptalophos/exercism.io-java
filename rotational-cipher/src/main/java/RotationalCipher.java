@@ -16,7 +16,8 @@ public class RotationalCipher {
         
         int base = Character.isLowerCase(ch) ? 'a' : 'A';
 
-        return (char) (base + ((int) ch - base + shiftKey) % 26);
+        return (char) (base + 
+                       ((int) ch - base + shiftKey) % 26);
     }
 
     public String rotate(String data) {
