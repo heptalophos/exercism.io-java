@@ -8,7 +8,8 @@ import java.util.stream.IntStream;
 
 public class Transpose {
 
-	private static List<String> normalize(List<String> strings, int match) {
+	private static List<String> normalize(List<String> strings, 
+										  int match) {
 
 		int i = strings.size() - 1;
 
