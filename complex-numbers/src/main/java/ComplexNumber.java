@@ -3,7 +3,8 @@ public class ComplexNumber {
     private final double real;
     private final double imag;
 
-    public ComplexNumber(final double real, final double imag) {
+    public ComplexNumber(final double real, 
+                         final double imag) {
         this.real = real;
         this.imag = imag;
     }
@@ -17,26 +18,33 @@ public class ComplexNumber {
     }
 
     public double abs() {
-        return Math.sqrt(Math.pow(real, 2) + Math.pow(imag, 2));
+        return Math.sqrt(Math.pow(real, 2) + 
+                         Math.pow(imag, 2));
     }
 
     public ComplexNumber add(ComplexNumber c) {
-        return new ComplexNumber(real + c.real, imag + c.imag); 
+        return new ComplexNumber(real + c.real, 
+                                 imag + c.imag); 
     }
     
     public ComplexNumber minus(ComplexNumber c) {
-        return new ComplexNumber(real - c.real, imag - c.imag); 
+        return new ComplexNumber(real - c.real, 
+                                 imag - c.imag); 
     }
 
     public ComplexNumber times(ComplexNumber c) {
-        double rx = real, ix = imag, ry = c.real, iy = c.imag;
-        return new ComplexNumber(rx * ry - ix * iy, rx * iy + ry * ix);
+        double rx = real, ix = imag, 
+               ry = c.real, iy = c.imag;
+        return new ComplexNumber(rx * ry - ix * iy, 
+                                 rx * iy + ry * ix);
     }
 
     public ComplexNumber div(ComplexNumber c) {
-        double rx = real, ix = imag, ry = c.real, iy = c.imag;
+        double rx = real, ix = imag, 
+               ry = c.real, iy = c.imag;
         double d = Math.pow(c.abs(), 2);
-        return new ComplexNumber((rx * ry + ix * iy) / d, (ix * ry - rx * iy) / d);
+        return new ComplexNumber((rx * ry + ix * iy) / d, 
+                                 (ix * ry - rx * iy) / d);
     }
 
     public ComplexNumber conjugate() {
@@ -44,8 +52,8 @@ public class ComplexNumber {
       }
 
     public ComplexNumber exponentialOf() {
-        return new ComplexNumber(Math.exp(real) * Math.cos(imag), 
-                                 Math.sin(imag) * Math.cos(imag));
-      }
-    
+        return 
+            new ComplexNumber(Math.exp(real) * Math.cos(imag), 
+                              Math.sin(imag) * Math.cos(imag));
+      }   
 }
