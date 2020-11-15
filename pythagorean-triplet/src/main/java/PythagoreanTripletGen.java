@@ -8,7 +8,7 @@ public class PythagoreanTripletGen {
     private int maxFactor;
     private int sumTo;
 
-    PythagoreanTripletGen withFactorsLessThanOrEqualTo(int val) {
+    PythagoreanTripletGen withFactorsLessThanOrEqualTo(int val){
         maxFactor = val;
         return this;
     }
@@ -23,19 +23,23 @@ public class PythagoreanTripletGen {
               .rangeClosed(minFactor, maxFactor / 2)
               .boxed()
               .flatMap(sideA -> 
+                    IntStream
+                    .range(sideA + 1, maxFactor - sideA)
+                    .boxed()
+                    .flatMap(sideB -> 
                         IntStream
-                        .range(sideA + 1, maxFactor - sideA)
+                        .of(sumTo - sideA - sideB)
                         .boxed()
-                        .flatMap(sideB -> 
-                                    IntStream
-                                    .of(sumTo - sideA - sideB)
-                                    .boxed()
-                                    .map(sideC -> new PythagoreanTriplet(sideA, 
-                                                                         sideB, 
-                                                                         sideC))
-                                    .filter(PythagoreanTriplet::isPythagorean)
-                                    .filter(triplet -> sumTo == triplet.calculateSum() 
-                                                       || sumTo == 0)))
+                        .map(sideC -> 
+                             new PythagoreanTriplet(sideA, 
+                                                    sideB, 
+                                                    sideC))
+                        .filter(
+                            PythagoreanTriplet::isPythagorean)
+                        .filter(triplet -> 
+                                sumTo == triplet
+                                         .calculateSum() 
+                               || sumTo == 0)))
               .collect(Collectors.toList());
     }
 }
