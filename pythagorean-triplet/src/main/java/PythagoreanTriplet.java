@@ -26,7 +26,8 @@ public class PythagoreanTriplet {
     
     @Override
     public boolean equals(Object that) {
-        if (that == null || !(that instanceof PythagoreanTriplet)) 
+        if (that == null || 
+            !(that instanceof PythagoreanTriplet)) 
             return false;
         return sideA == ((PythagoreanTriplet) that).sideA &&
                sideB == ((PythagoreanTriplet) that).sideB &&
