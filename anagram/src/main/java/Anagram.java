@@ -9,13 +9,16 @@ public class Anagram {
     private final char[] normalized;
 
     public Anagram(String anagram) {
-        this.anagram = anagram;
-        this.normalized = normalize(anagram);
+        this.anagram = 
+            anagram;
+        this.normalized = 
+            normalize(anagram);
     } 
 
     public List<String> match(List<String> candidates) {
         
-        List<String> anagrams = new ArrayList<String>();
+        List<String> anagrams = 
+            new ArrayList<String>();
 
         for (String word: candidates) {
             char[] wChars = 
