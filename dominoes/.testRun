@@ -73,3 +73,48 @@ DominoesTest > threeElementsTest PASSED
 BUILD SUCCESSFUL
 
 Total time: 10.97 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+DominoesTest > cantBeChainedTest PASSED
+
+DominoesTest > needBacktrackTest PASSED
+
+DominoesTest > singletonInputSingletonOutput PASSED
+
+DominoesTest > nineElementsTest PASSED
+
+DominoesTest > separateLoopsTest PASSED
+
+DominoesTest > disconnectedDoubleLoopTest PASSED
+
+DominoesTest > singletonCantBeChainedTest PASSED
+
+DominoesTest > disconnectedSingleIsolatedTest PASSED
+
+DominoesTest > emtpyInputEmptyOutputTest PASSED
+
+DominoesTest > canReverseDominoesTest PASSED
+
+DominoesTest > disconnectedSimpleTest PASSED
+
+DominoesTest > threeElementsTest PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
