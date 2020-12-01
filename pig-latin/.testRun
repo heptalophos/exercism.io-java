@@ -53,3 +53,67 @@ PigLatinTranslatorTest > testThrTreatedLikeAConsonantAtTheBeginningOfAWord PASSE
 BUILD SUCCESSFUL
 
 Total time: 3.75 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+PigLatinTranslatorTest > testYAsSecondLetterInTwoLetterWord PASSED
+
+PigLatinTranslatorTest > testAWholePhrase PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithQWithoutAFollowingU PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithA PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithE PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithI PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithK PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithO PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithP PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithU PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithX PASSED
+
+PigLatinTranslatorTest > testYTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testQuAndAPrecedingConsonantTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testWordBeginningWithVowelAndFollowedByQu PASSED
+
+PigLatinTranslatorTest > testThTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testSchTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testChTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testYTreatedLikeAVowelAtTheEndOfAConsonantCluster PASSED
+
+PigLatinTranslatorTest > testYtTreatedLikeAVowelAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testQuTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testThrTreatedLikeAConsonantAtTheBeginningOfAWord PASSED
+
+PigLatinTranslatorTest > testXrTreatedLikeAVowelAtTheBeginningOfAWord PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
