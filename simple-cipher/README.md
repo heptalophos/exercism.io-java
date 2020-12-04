@@ -79,6 +79,7 @@ on Wikipedia][dh] for one of the first implementations of this scheme.
 [dh]: http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 
 # Tips
+
 This exercise has three test classes: SimpleCipherStepOneTest.java, SimpleCipherStepTwoTest.java and SimpleCipherStepThreeTest.java.
 
 To run only one test class (e.g. in this example SimpleCipherStepOneTest.java):
