@@ -1,9 +1,9 @@
 {
-  "track": "java",
-  "exercise": "simple-cipher",
-  "id": "83b1588c3b59439eb2d83536e84bbddf",
-  "url": "https://exercism.io/tracks/java/exercises/simple-cipher/solutions/83b1588c3b59439eb2d83536e84bbddf",
-  "handle": "heptalophos",
-  "is_requester": true,
-  "auto_approve": false
+    "track": "java",
+    "exercise": "simple-cipher",
+    "id": "83b1588c3b59439eb2d83536e84bbddf",
+    "url": "https://exercism.io/tracks/java/exercises/simple-cipher/solutions/83b1588c3b59439eb2d83536e84bbddf",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
 }
