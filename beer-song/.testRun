@@ -39,3 +39,39 @@ Total time: 9.91 secs
 BUILD SUCCESSFUL
 
 Total time: 1.973 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+BeerSongTest > singFirstTwoVerses PASSED
+
+BeerSongTest > singEntireSong PASSED
+
+BeerSongTest > singLastGenericVerse PASSED
+
+BeerSongTest > singLastThreeVerses PASSED
+
+BeerSongTest > singFirstVerse PASSED
+
+BeerSongTest > verseWithOneBottle PASSED
+
+BeerSongTest > verseWithTwoBottles PASSED
+
+BeerSongTest > verseWithZeroBottles PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
