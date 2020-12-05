@@ -35,9 +35,10 @@ class Cipher {
         return IntStream.range(0, txt.length())
                         .mapToObj(i -> 
                                   shift(txt.charAt(i), i, dir))
-                        .collect(StringBuilder::new,
-                                 StringBuilder::appendCodePoint,
-                                 StringBuilder::append)
+                        .collect(
+                            StringBuilder::new,
+                            StringBuilder::appendCodePoint,
+                            StringBuilder::append)
                         .toString();
     }
 
