@@ -112,7 +112,7 @@ public class PalindromeCalculatorTest {
         checkPalindromeWithFactorsMatchesExpected(expected, expectedValue, palindromes, palindromes.firstKey());
     }
 
-    // @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void smallestPalindromeFromQuadDigitFactors() {
         List<List<Integer>> expected = Collections.unmodifiableList(
@@ -128,7 +128,7 @@ public class PalindromeCalculatorTest {
         checkPalindromeWithFactorsMatchesExpected(expected, expectedValue, palindromes, palindromes.firstKey());
     }
 
-    // @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void largestPalindromeFromQuadDigitFactors() {
         List<List<Integer>> expected = Collections.unmodifiableList(
