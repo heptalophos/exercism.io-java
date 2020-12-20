@@ -12,18 +12,18 @@ public class PalindromeCalculator {
             }
 
         final List<Long> palindromes = 
-                palindromeProducts(min, max)
-                .stream()
-                .collect(Collectors.toList());
+                        palindromeProducts(min, max)
+                        .stream()
+                        .collect(Collectors.toList());
         
         if (palindromes.isEmpty()) {
             return new TreeMap<>();
         }
 
         final long first = 
-            palindromes.get(0);
+                    palindromes.get(0);
         final long last = 
-            palindromes.get(palindromes.size() - 1);
+                    palindromes.get(palindromes.size() - 1);
 
         return new TreeMap<>(
             Map.of(first, factors(first, min, max),
