@@ -41,3 +41,45 @@ BUILD SUCCESSFUL in 4s
 3 actionable tasks: 3 executed
 
 
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :test
+
+PalindromeCalculatorTest > largestPalindromeFromSingleDigitFactors PASSED
+
+PalindromeCalculatorTest > errorLargestMinIsMoreThanMax PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromTripleDigitFactors PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromQuadDigitFactors PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromTripleDigitFactors PASSED
+
+PalindromeCalculatorTest > errorSmallestMinIsMoreThanMax PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromDoubleDigitFactors PASSED
+
+PalindromeCalculatorTest > emtpyResultSmallestNoPalindromeInRange PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromQuadDigitFactors PASSED
+
+PalindromeCalculatorTest > emptyResultLargestNoPalindromeInRange PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromSingleDigitFactors PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromDoubleDigitFactors PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 31s
+3 actionable tasks: 2 executed, 1 up-to-date
