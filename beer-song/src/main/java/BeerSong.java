@@ -31,10 +31,10 @@ public class BeerSong {
                        " no more bottles of beer on the wall.";
             default:
                 return format(
-                         "Take one down and pass it around,"+
-                         " %1$d bottle%2$s of beer on the wall.", 
-                         bottles - 1, bottles != 2 ? "s" : ""
-                       );
+                        "Take one down and pass it around,"+
+                    " %1$d bottle%2$s of beer on the wall.", 
+                        bottles - 1, bottles != 2 ? "s" : ""
+                        );
         }
     }
 
