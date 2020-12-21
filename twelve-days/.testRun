@@ -83,3 +83,103 @@ TwelveDaysTest > testFourthToSixthVerses PASSED
 BUILD SUCCESSFUL
 
 Total time: 6.842 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+TwelveDaysTest > testVerseEight PASSED
+
+TwelveDaysTest > testVerseSeven PASSED
+
+TwelveDaysTest > testVerseThree PASSED
+
+TwelveDaysTest > testVerseOne PASSED
+
+TwelveDaysTest > testVerseSix PASSED
+
+TwelveDaysTest > testVerseTen PASSED
+
+TwelveDaysTest > testVerseTwo PASSED
+
+TwelveDaysTest > testVerseFive PASSED
+
+TwelveDaysTest > testVerseFour PASSED
+
+TwelveDaysTest > testVerseNine PASSED
+
+TwelveDaysTest > testVerseEleven PASSED
+
+TwelveDaysTest > testVerseTwelve PASSED
+
+TwelveDaysTest > testFirstThreeVerses PASSED
+
+TwelveDaysTest > testSingWholeSong PASSED
+
+TwelveDaysTest > testFourthToSixthVerses PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+TwelveDaysTest > testVerseEight PASSED
+
+TwelveDaysTest > testVerseSeven PASSED
+
+TwelveDaysTest > testVerseThree PASSED
+
+TwelveDaysTest > testVerseOne PASSED
+
+TwelveDaysTest > testVerseSix PASSED
+
+TwelveDaysTest > testVerseTen PASSED
+
+TwelveDaysTest > testVerseTwo PASSED
+
+TwelveDaysTest > testVerseFive PASSED
+
+TwelveDaysTest > testVerseFour PASSED
+
+TwelveDaysTest > testVerseNine PASSED
+
+TwelveDaysTest > testVerseEleven PASSED
+
+TwelveDaysTest > testVerseTwelve PASSED
+
+TwelveDaysTest > testFirstThreeVerses PASSED
+
+TwelveDaysTest > testSingWholeSong PASSED
+
+TwelveDaysTest > testFourthToSixthVerses PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed

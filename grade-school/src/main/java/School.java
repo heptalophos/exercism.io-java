@@ -1,8 +1,9 @@
+import static java.util.Comparator.naturalOrder;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.ArrayList;
-import java.util.Comparator;
 
 
 class School {
@@ -21,16 +22,19 @@ class School {
     }
 
     public void add(String name, Integer grade) {
-        List<String> names = roster.containsKey(grade) ?
-                             roster.get(grade) :
-                             new ArrayList<>();
+        List<String> names = 
+            roster.containsKey(grade) ?
+            roster.get(grade) :
+            new ArrayList<>();
+        
         names.add(name);
-        names.sort(Comparator.naturalOrder());
+        names.sort(naturalOrder());
         roster.put(grade, names);
     }
 
     List<String> grade(Integer grade) {
-        return roster.getOrDefault(grade, new ArrayList<>());
+        return roster
+               .getOrDefault(grade, new ArrayList<>());
     }
 
 }

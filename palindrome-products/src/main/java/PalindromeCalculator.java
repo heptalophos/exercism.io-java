@@ -3,63 +3,71 @@ import java.util.stream.*;
 
 public class PalindromeCalculator {
 
-    SortedMap<Long, List<List<Integer>>> 
-        getPalindromeProductsWithFactors(int lo, int hi) {
-            if (lo > hi) {
+    public SortedMap<Long, List<List<Integer>>> 
+        getPalindromeProductsWithFactors(int min, int max) {
+            if (min > max) {
                 throw new IllegalArgumentException(
                         "invalid input: min must be <= max"
                 );
             }
 
-        final var palindromes = products(lo, hi)
-                                .stream()
-                                .filter(PalindromeCalculator::isPalindrome)
-                                .collect(Collectors.toList());
+        final List<Long> palindromes = 
+                        palindromeProducts(min, max)
+                        .stream()
+                        .collect(Collectors.toList());
         
         if (palindromes.isEmpty()) {
             return new TreeMap<>();
         }
 
-        final var min = palindromes.get(0);
-        final var max = palindromes.get(palindromes.size() - 1);
+        final long first = 
+                    palindromes.get(0);
+        final long last = 
+                    palindromes.get(palindromes.size() - 1);
 
         return new TreeMap<>(
-            Map.of(min, factors(min, lo, hi),
-                   max, factors(max, lo, hi))
+            Map.of(first, factors(first, min, max),
+                   last, factors(last, min, max))
         );
     }
 
-    private List<Long> products(long lo, long hi) {
+    private List<Long> palindromeProducts(long min, long max) {
         return LongStream
-               .rangeClosed(lo, hi)
+               .rangeClosed(min, max)
                .flatMap(x -> LongStream
-                             .rangeClosed(lo, hi)
-                             .map(i -> x * i))
+                             .rangeClosed(min, max)
+                             .map(i -> x * i)
+                             .filter(i -> isPalindrome(i))                             )
                .distinct()
                .sorted()
                .boxed()
                .collect(Collectors.toList());
     }
 
-    private List<List<Integer>> factors(long num, int lo, int hi) {
-        return LongStream
-               .rangeClosed(lo, hi)
-               .filter(x -> num % x == 0)
-               .filter(x -> num / x >= lo && num / x <= hi)
-               .mapToInt(x -> (int) x)
-               .boxed()
-               .map( x -> Stream.of(x, (int) num / x)
-                                .sorted()
-                                .collect(Collectors.toList()))
-               .distinct()
-               .collect(Collectors.toList());
+    private List<List<Integer>> 
+        factors(long num, int min, int max) {
+            return LongStream
+                   .rangeClosed(min, max)
+                   .filter(x -> num / x >= min && 
+                                num / x <= max)
+                   .filter(x -> num % x == 0)
+                   .mapToInt(x -> (int) x)
+                   .boxed()
+                   .map( x -> Stream.of(x, (int) num / x)
+                                   .sorted()
+                                   .collect(Collectors
+                                            .toList()))
+                   .distinct()
+                   .collect(Collectors.toList());
     }
 
-    private static boolean isPalindrome(long x) {
+    private boolean isPalindrome(long num) {
         return String
-               .valueOf(x)
-               .equals(new StringBuilder(String.valueOf(x))
-                       .reverse()
-                       .toString());
+               .valueOf(num)
+               .equals(
+                   new StringBuilder(String.valueOf(num))
+                   .reverse()
+                   .toString()
+                );
     }
 }
