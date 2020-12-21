@@ -1,3 +1,5 @@
+import static java.lang.String.format;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -26,12 +28,15 @@ class TwelveDays {
                           "a Partridge in a Pear Tree.\n");
 
     String verse(int verseNumber) {
-        return String.format("On the %s day of Christmas my true love gave to me: %s", 
-                             dayXmas.get(verseNumber - 1),
-                             IntStream.range(12 - verseNumber, 12)
-                                      .boxed()
-                                      .map(gifts::get)
-                                      .collect(Collectors.joining(" ")));
+        return format(
+            "On the %s day of Christmas" + 
+            " my true love gave to me: %s", 
+            dayXmas.get(verseNumber - 1),
+            IntStream.range(12 - verseNumber, 12)
+                     .boxed()
+                     .map(gifts::get)
+                     .collect(Collectors.joining(" "))
+            );
     }
 
     String verses(int startVerse, int endVerse) {
