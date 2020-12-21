@@ -1,3 +1,5 @@
+import static java.lang.String.format;
+
 public class BeerSong {
 
     private String premise(int bottles) {
@@ -10,11 +12,11 @@ public class BeerSong {
                 return "1 bottle of beer on the wall,"+
                        " 1 bottle of beer.";
             default:
-                return 
-                    String.format(
-                        "%1$d bottles of beer on the wall,"+
-                        " %1$d bottles of beer.", 
-                        bottles);
+                return format(
+                            "%1$d bottles of beer on the wall,"+
+                            " %1$d bottles of beer.", 
+                            bottles
+                        );
         }
     }
 
@@ -28,11 +30,11 @@ public class BeerSong {
                 return "Take it down and pass it around,"+
                        " no more bottles of beer on the wall.";
             default:
-                return 
-                    String.format(
-                        "Take one down and pass it around,"+
-                        " %1$d bottle%2$s of beer on the wall.", 
-                        bottles - 1, bottles != 2 ? "s" : "");
+                return format(
+                         "Take one down and pass it around,"+
+                         " %1$d bottle%2$s of beer on the wall.", 
+                         bottles - 1, bottles != 2 ? "s" : ""
+                       );
         }
     }
 
