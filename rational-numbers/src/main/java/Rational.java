@@ -1,4 +1,4 @@
-class Rational {
+public class Rational {
 
     private int numerator;
     private int denominator;
@@ -76,13 +76,14 @@ class Rational {
     @Override
     public boolean equals(Object obj) {
         if (obj == null || 
-           !this.getClass().isAssignableFrom(obj.getClass())) {
+           !this.getClass()
+                .isAssignableFrom(obj.getClass())) {
             return false;
         }
 
         Rational other = (Rational) obj;
-        return this.getNumerator() == other.getNumerator()
-            && this.getDenominator() == other.getDenominator();
+        return this.getNumerator() == other.getNumerator() && 
+               this.getDenominator() == other.getDenominator();
     }
 
     @Override

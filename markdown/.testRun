@@ -1,0 +1,43 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+MarkdownTest > normalTextAsAParagraph PASSED
+
+MarkdownTest > withH1HeaderLevel PASSED
+
+MarkdownTest > normalItalicsAndBoldText PASSED
+
+MarkdownTest > withH2HeaderLevel PASSED
+
+MarkdownTest > markdownSymbolsInTheParagraphTextShouldNotBeInterpreted PASSED
+
+MarkdownTest > withH6HeaderLevel PASSED
+
+MarkdownTest > unorderedLists PASSED
+
+MarkdownTest > aLittleBitOfEverything PASSED
+
+MarkdownTest > markdownSymbolsInTheListItemTextShouldNotBeInterpreted PASSED
+
+MarkdownTest > markdownSymbolsInTheHeaderShouldNotBeInterpreted PASSED
+
+MarkdownTest > markdownUnorderedListsCloseProperlyWithPrecedingAndFollowingLines PASSED
+
+MarkdownTest > boldText PASSED
+
+MarkdownTest > italics PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
