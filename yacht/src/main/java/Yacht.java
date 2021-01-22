@@ -3,7 +3,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 class Yacht {
 
@@ -15,9 +14,6 @@ class Yacht {
         this.dice = dice;
         this.yachtCategory = yachtCategory;
         this.occurenceCount = 
-            // IntStream
-            // .of(this.dice)
-            // .mapToObj(Integer::new)
             Arrays
             .stream(dice)
             .boxed()
