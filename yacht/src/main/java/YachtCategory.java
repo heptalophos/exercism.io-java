@@ -1,5 +1,4 @@
 enum YachtCategory {
-
     YACHT,
     ONES,
     TWOS,
@@ -12,5 +11,4 @@ enum YachtCategory {
     LITTLE_STRAIGHT,
     BIG_STRAIGHT,
     CHOICE
-
 }
