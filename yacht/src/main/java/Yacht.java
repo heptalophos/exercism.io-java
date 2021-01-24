@@ -1,8 +1,10 @@
 import java.util.Arrays;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+
+import static java.util.function.Function.identity;
+import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.counting;
 
 class Yacht {
 
@@ -17,11 +19,8 @@ class Yacht {
             Arrays
             .stream(dice)
             .boxed()
-            .collect(Collectors
-                     .groupingBy(
-                           Function.identity(),
-                           Collectors.counting()
-                    ));
+            .collect(groupingBy(identity(), 
+                                counting()));
     }
 
     int score() {
@@ -57,36 +56,39 @@ class Yacht {
                            .intValue();
             }
             case CHOICE -> {
-                int res = 0;
-                for (Map.Entry<Integer, Long> d : occurenceCount.entrySet())
-                    res += d.getKey() * d.getValue();
-                return res;
+                int total = 0;
+                for (Map.Entry<Integer, Long> 
+                     d : occurenceCount.entrySet())
+                    total += d.getKey() * d.getValue();
+                return total;
             }
             case FULL_HOUSE -> {
-                int res = 0;
-                if (occurenceCount.isEmpty() || occurenceCount.size() != 2 || 
+                int total = 0;
+                if (occurenceCount.size() != 2 || 
                     occurenceCount.containsValue(1L)) {
-                        return res;
+                        return 0;
                     }
-                for (Map.Entry<Integer, Long> d : occurenceCount.entrySet())
-                    res += d.getKey() * d.getValue();
-                return res;
+                for (Map.Entry<Integer, Long> d : 
+                     occurenceCount.entrySet())
+                    total += d.getKey() * d.getValue();
+                return total;
             }
             case FOUR_OF_A_KIND -> {
-                if (occurenceCount.isEmpty() || occurenceCount.size() >= 3) {
+                if (occurenceCount.size() >= 3) {
                     return 0;
                 } else {
-                    return occurenceCount
-                           .entrySet()
-                           .stream()
-                           .filter(d -> d.getValue() > 3)
-                           .map(Entry::getKey)
-                           .reduce((d1, d2) -> d1)
-                           .orElse(0) * 4;
+                    return 4 * occurenceCount
+                               .entrySet()
+                               .stream()
+                               .filter(d -> 
+                                       d.getValue() > 3)
+                               .map(Entry::getKey)
+                               .reduce((d1, d2) -> d1)
+                               .orElse(0);
                 }
             }
             case LITTLE_STRAIGHT -> {
-                if (occurenceCount.isEmpty() || occurenceCount.size() <= 4 ||
+                if (occurenceCount.size() <= 4 ||
                     occurenceCount.containsKey(6)) {
                         return 0;
                     }  else {
@@ -94,15 +96,15 @@ class Yacht {
                     }
             }
             case BIG_STRAIGHT -> {
-                if (occurenceCount.isEmpty() || occurenceCount.size() <= 4 ||
-                occurenceCount.containsKey(1)) {
+                if (occurenceCount.size() <= 4 ||
+                    occurenceCount.containsKey(1)) {
                     return 0;
                 }  else {
                     return 30;
                 }
             }
             case YACHT -> {
-                if (occurenceCount.isEmpty() || occurenceCount.size() >= 2) {
+                if (occurenceCount.size() >= 2) {
                     return 0;
                 }  else {
                     return 50;
