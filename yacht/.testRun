@@ -71,3 +71,79 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 
 BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+YachtTest > bigStraightAsLittleStraight PASSED
+
+YachtTest > onesOutOfOrder PASSED
+
+YachtTest > yachtCanBeScoredAsFourOfAKind PASSED
+
+YachtTest > yachtCountedAsThrees PASSED
+
+YachtTest > choice PASSED
+
+YachtTest > noPairsButNotABigStraight PASSED
+
+YachtTest > fullHouseTwoSmallThreeBig PASSED
+
+YachtTest > yachtOfThreesCountedAsFives PASSED
+
+YachtTest > noOnes PASSED
+
+YachtTest > noPairsButNotALittleStraight PASSED
+
+YachtTest > littleStraightAsBigStraight PASSED
+
+YachtTest > fourOfAKindIsNotAFullHouse PASSED
+
+YachtTest > ones PASSED
+
+YachtTest > twos PASSED
+
+YachtTest > fours PASSED
+
+YachtTest > sixes PASSED
+
+YachtTest > yacht PASSED
+
+YachtTest > littleStraight PASSED
+
+YachtTest > yachtIsNotAFullHouse PASSED
+
+YachtTest > fullHouseIsNotFourOfAKind PASSED
+
+YachtTest > twoPairIsNotAFullHouse PASSED
+
+YachtTest > yachtAsChoice PASSED
+
+YachtTest > bigStraight PASSED
+
+YachtTest > fourOfAKind PASSED
+
+YachtTest > notYacht PASSED
+
+YachtTest > fourInOrderButNotALittleStraight PASSED
+
+YachtTest > fullHouseThreeSmallTwoBig PASSED
+
+YachtTest > minimumIs1MaximumIs5ButNotALittleStraight PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
