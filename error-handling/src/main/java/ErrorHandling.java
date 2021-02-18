@@ -1,5 +1,6 @@
 import java.util.Optional;
 
+
 class ErrorHandling {
 
     void handleErrorByThrowingIllegalArgumentException() {
@@ -45,8 +46,9 @@ class ErrorHandling {
     Optional<Integer> handleErrorByReturningOptionalInstance(String integer) {
         try {
             return Optional.of(Integer.parseInt(integer));
-         } catch (NumberFormatException e) {
-            return Optional.empty();
-         }
+        } catch (Exception e) {
+            System.out.print("Exception thrown: " + e);
+        }
+        return Optional.empty();
     }
 }
