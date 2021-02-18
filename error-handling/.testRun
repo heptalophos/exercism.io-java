@@ -31,3 +31,45 @@ ErrorHandlingTest > testThrowCustomCheckedException PASSED
 BUILD SUCCESSFUL
 
 Total time: 28.923 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+ErrorHandlingTest > testThrowIllegalArgumentExceptionWithDetailMessage PASSED
+
+ErrorHandlingTest > testReturnOptionalInstance PASSED
+
+ErrorHandlingTest > testThrowCustomUncheckedException PASSED
+
+ErrorHandlingTest > testThrowCustomCheckedExceptionWithDetailMessage PASSED
+
+ErrorHandlingTest > testThrowCustomUncheckedExceptionWithDetailMessage PASSED
+
+ErrorHandlingTest > testThrowIllegalArgumentException PASSED
+
+ErrorHandlingTest > testThrowAnyUncheckedException PASSED
+
+ErrorHandlingTest > testThrowAnyCheckedExceptionWithDetailMessage PASSED
+
+ErrorHandlingTest > testThrowAnyCheckedException PASSED
+
+ErrorHandlingTest > testThrowAnyUncheckedExceptionWithDetailMessage PASSED
+
+ErrorHandlingTest > testThrowCustomCheckedException PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 6s
+3 actionable tasks: 3 executed
