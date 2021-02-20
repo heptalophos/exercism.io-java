@@ -24,6 +24,16 @@ public class FoodChain {
         { "I don't know why she swallowed the fly. Perhaps she'll die.", 
           "I know an old lady who swallowed a horse.\nShe's dead, of course!" };
 
+
+    private boolean validVerseNum (int verseNum) {
+        return verseNum >= 1 && verseNum <= 8;
+    }
+    
+    private boolean validVerseRange (int start, int end) {
+        return start <= end && end >= 1 && end <= 8  &&
+               start >= 1 && start <= 8;
+    }
+
     private String firstLine(int verseNum) {
         String line = "";
         if (verseNum >= 1 && verseNum < 8) {
@@ -42,10 +52,18 @@ public class FoodChain {
     }
 
     private String secondLine(int verseNum) {
+        String line = "";
         if (verseNum <= 2 || verseNum >= 8) {
-            return "";
+            return line;
         }
-        return PERPLEXITIES[verseNum - 3] + "\n";
+        if (validVerseNum(verseNum)) {
+            line += PERPLEXITIES[verseNum - 3] + "\n";
+        } else {
+            throw new IllegalArgumentException(
+                "invalid second line"
+            );
+        }
+        return line;
     }
 
     private String stemLines(int verseNum) {
@@ -76,15 +94,6 @@ public class FoodChain {
             throw new IllegalArgumentException(
                     "invalid closing line"
             );
-    }
-
-    private boolean validVerseNum (int verseNum) {
-        return verseNum >= 1 && verseNum <= 8;
-    }
-
-    private boolean validVerseRange (int start, int end) {
-        return start <= end && end >= 1 && end <= 8  &&
-               start >= 1 && start <= 8;
     }
 
     public String verse(int verseNum) {
