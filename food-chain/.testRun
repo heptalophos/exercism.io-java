@@ -75,3 +75,43 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 
 BUILD SUCCESSFUL in 5s
 3 actionable tasks: 2 executed, 1 up-to-date
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+FoodChainTest > spider PASSED
+
+FoodChainTest > wholeSong PASSED
+
+FoodChainTest > cat PASSED
+
+FoodChainTest > cow PASSED
+
+FoodChainTest > dog PASSED
+
+FoodChainTest > fly PASSED
+
+FoodChainTest > bird PASSED
+
+FoodChainTest > goat PASSED
+
+FoodChainTest > horse PASSED
+
+FoodChainTest > multipleVerses PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 9s
+3 actionable tasks: 3 executed
