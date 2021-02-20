@@ -3,7 +3,7 @@ public class FoodChain {
     private static final String SPIDER = 
         "wriggled and jiggled and tickled inside her";
 
-    private static final String[] ANIMALS = 
+    private static final String[] EDIBLES = 
         {"fly", "spider", "bird", "cat", "dog", "goat", "cow"};
 
     private static final String PROLOGUE =
@@ -21,25 +21,28 @@ public class FoodChain {
     private static final String CONCLUSION = " to catch the "; 
     
     private static final String[] EPILOGUE = 
-        {"I don't know why she swallowed the fly. Perhaps she'll die.", 
-         "I know an old lady who swallowed a horse.\nShe's dead, of course!"};
+        { "I don't know why she swallowed the fly. Perhaps she'll die.", 
+          "I know an old lady who swallowed a horse.\nShe's dead, of course!" };
 
     private String firstLine(int verseNum) {
         String line = "";
         if (verseNum >= 1 && verseNum < 8) {
-            line += PROLOGUE + " " + ANIMALS[verseNum - 1] + ".\n";
+            line += 
+                PROLOGUE + " " + EDIBLES[verseNum - 1] + ".\n";
             if (verseNum == 2)
                 line += "It " + SPIDER + ".\n";
         } else if (verseNum == 8) {
             line = "";
         } else {
-            throw new IllegalArgumentException("invalid first line");
+            throw new IllegalArgumentException(
+                "invalid first line"
+            );
         }
         return line;
     }
 
     private String secondLine(int verseNum) {
-        if (verseNum <= 1 || verseNum == 2 || verseNum >= 8) {
+        if (verseNum <= 2 || verseNum >= 8) {
             return "";
         }
         return PERPLEXITIES[verseNum - 3] + "\n";
@@ -48,17 +51,19 @@ public class FoodChain {
     private String stemLines(int verseNum) {
         String lines = "";
         if (verseNum >= 2 && verseNum <= 7)
-            for (int i = verseNum; i > 1; i--) {
-                lines += PREMISE + ANIMALS[i - 1] + 
-                         CONCLUSION + ANIMALS[i - 2];
-                if (i == 3)
+            while (verseNum-- > 1) {
+                lines += PREMISE + EDIBLES[verseNum] + 
+                         CONCLUSION + EDIBLES[verseNum - 1];
+                if (verseNum == 2)
                     lines += " that " + SPIDER;                
                 lines += ".\n";
             }
         else if (verseNum <= 1 || verseNum >= 8)
             lines = "";
         else
-            throw new IllegalArgumentException("invalid stem lines");
+            throw new IllegalArgumentException(
+                "invalid stem lines"
+            );
         return lines;
     }
 
@@ -68,7 +73,9 @@ public class FoodChain {
         else if (verseNum == 8) 
             return EPILOGUE[1];
         else
-            throw new IllegalArgumentException("invalid closing line");
+            throw new IllegalArgumentException(
+                    "invalid closing line"
+            );
     }
 
     private boolean validVerseNum (int verseNum) {
@@ -83,10 +90,13 @@ public class FoodChain {
     public String verse(int verseNum) {
         String recite = "";
         if (validVerseNum(verseNum))
-            recite += firstLine(verseNum) + secondLine(verseNum) +
-                      stemLines(verseNum) + closingLine(verseNum);
+            recite += 
+                firstLine(verseNum) + secondLine(verseNum) +
+                stemLines(verseNum) + closingLine(verseNum);
         else
-            throw new IllegalArgumentException("invalid verse Num");
+            throw new IllegalArgumentException(
+                    "invalid verse"
+            );
         return recite.trim();
     }
 
@@ -96,7 +106,9 @@ public class FoodChain {
             while (start++ <= end) 
                 recite += verse(start - 1) + "\n\n";
         else
-            throw new IllegalArgumentException("invalid verse range");
+            throw new IllegalArgumentException(
+                    "invalid verse range"
+            );
         return recite.trim();
     }
 
