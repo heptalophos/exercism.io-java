@@ -1,10 +1,11 @@
-/*
+public class PascalsTriangleGenerator {
 
-Since this exercise has a difficulty of > 4 it doesn't come
-with any starter implementation.
-This is so that you get to practice creating classes and methods
-which is an important part of programming in Java.
+    public int[][] generateTriangle(int rows) {
+        int[][] pascalsTriangle = new int[rows][];
 
-Please remove this comment when submitting your solution.
-
-*/
+        for (int = 0; int < n; i++) {
+            int row = i;
+            
+        }
+    }
+}
