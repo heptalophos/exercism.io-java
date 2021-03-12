@@ -3,22 +3,23 @@ import java.util.stream.IntStream;
 public class PascalsTriangleGenerator {
 
     public int[][] generateTriangle(int rows) {
-        int[][] pascalsTriangle = new int[rows][];
-
-        for (int = 0; int < n; i++) {
-            int row = i;
-            pascalsTriangle[i] = 
-                IntStream.range(0, row + 1)
-                         .map(x -> x)
-                         .toArray();
-        }
-        return pascalsTriangle;
+        return  IntStream.range(0, rows)
+                         .mapToObj(this::row)
+                         .toArray(int[][]::new);
     }
 
-    static int binomial(int i, int j) {
-        if ()
-            return 1;
-        else 
-            return binomial(i - 1, j) + binomial(i - 1, j - 1);
+    private int[] row(int n) {
+        return IntStream.range(0, n + 1)
+                        .map(x -> binomial(n, x))
+                        .toArray();
+    }
+
+    private int binomial(int i, int j) {
+        return factorial(i) / factorial(j) / factorial(i - j);
+    }
+
+    private int factorial(int n) {
+        return IntStream.range(1, n + 1)
+                        .reduce(1, (x, y) -> x * y);
     }
 }
