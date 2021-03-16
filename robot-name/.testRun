@@ -21,3 +21,34 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 
 BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+Τρίτη, 16 Μαρτίου 2021 23:06:26
+-------------------------------
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+RobotTest > differentRobotsHaveDifferentNames PASSED
+
+RobotTest > hasName PASSED
+
+RobotTest > resetName PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 11s
+3 actionable tasks: 3 executed
+
+Τρίτη, 16 Μαρτίου 2021 23:06:54
+-------------------------------

@@ -1,7 +1,6 @@
-import java.util.HashMap;
+import java.util.Set;
 import java.util.HashSet;
 import java.util.Random;
-import java.util.Set;
 
 import static java.lang.String.format;
 
