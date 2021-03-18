@@ -1,10 +1,13 @@
-/*
+public class Meetup {
 
-Since this exercise has a difficulty of > 4 it doesn't come
-with any starter implementation.
-This is so that you get to practice creating classes and methods
-which is an important part of programming in Java.
+    private final int month;
+    private final int year;
 
-Please remove this comment when submitting your solution.
+    public Meetup(int month, int year) {
+        this.month = month;
+        this.year = year;
+    }
 
-*/
+    
+
+}
