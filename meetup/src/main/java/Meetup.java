@@ -42,10 +42,9 @@ public class Meetup {
             case TEENTH: 
                 return scheduled(wday.getValue(), 13, 19);
             default:
-                throw 
-                    new IllegalArgumentException(
-                        "something went wrong"
-                    );
+                throw new IllegalArgumentException(
+                                "something went wrong"
+                          );
         }
     }
 
