@@ -11,10 +11,11 @@ public class Meetup {
         this.year = year;
     }
 
-    private LocalDate scheduled(int wday, int first, int last) {
-        LocalDate day = LocalDate.of(year, month, first);
+    private LocalDate scheduled(int wday, int fst, int last) {
+        LocalDate day = LocalDate.of(year, month, fst);
         while (day.getDayOfMonth() != last + 1) {
-            if (day.getDayOfWeek().getValue() == wday) break;
+            if (day.getDayOfWeek().getValue() == wday) 
+                break;
             day = day.plusDays(1);
         }
         return day;
@@ -34,13 +35,17 @@ public class Meetup {
             case LAST:
                 int lastDay =   
                     LocalDate.of(year, month, 1)
-                    .lengthOfMonth();
-                return scheduled(wday.getValue(), lastDay - 6, lastDay);
+                             .lengthOfMonth();
+                return scheduled(wday.getValue(), 
+                                 lastDay - 6, 
+                                 lastDay);
             case TEENTH: 
                 return scheduled(wday.getValue(), 13, 19);
             default:
                 throw 
-                    new IllegalArgumentException("something went wrong");
+                    new IllegalArgumentException(
+                        "something went wrong"
+                    );
         }
     }
 
