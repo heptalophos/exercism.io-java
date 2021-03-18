@@ -1,0 +1,207 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+MeetupTest > testLastThursdayOfOctober2013 PASSED
+
+MeetupTest > testSecondFridayOfDecember2013 PASSED
+
+MeetupTest > testFourthFridayOfDecember2013 PASSED
+
+MeetupTest > testFriteenthOfAugust2013 PASSED
+
+MeetupTest > testSecondSaturdayOfJanuary2013 PASSED
+
+MeetupTest > testLastWednesdayOfJuly2013 PASSED
+
+MeetupTest > testLastThursdayOfSeptember2013 PASSED
+
+MeetupTest > testFirstThursdayOfSeptember2013 PASSED
+
+MeetupTest > testFourthSundayOfApril2013 PASSED
+
+MeetupTest > testSaturteenthOfApril2013 PASSED
+
+MeetupTest > testSecondSundayOfApril2013 PASSED
+
+MeetupTest > testLastWednesdayOfAugust2013 PASSED
+
+MeetupTest > testFirstFridayOfDecember2012 PASSED
+
+MeetupTest > testFirstFridayOfDecember2013 PASSED
+
+MeetupTest > testMonteenthOfSeptember2013 PASSED
+
+MeetupTest > testWednesteenthOfJanuary2013 PASSED
+
+MeetupTest > testSecondSaturdayOfFebruary2013 PASSED
+
+MeetupTest > testSecondThursdayOfOctober2013 PASSED
+
+MeetupTest > testFirstTuesdayOfJune2013 PASSED
+
+MeetupTest > testSecondFridayOfNovember2013 PASSED
+
+MeetupTest > testLastWednesdayOfFebruary2012 PASSED
+
+MeetupTest > testFirstMondayOfMarch2013 PASSED
+
+MeetupTest > testFourthFridayOfNovember2013 PASSED
+
+MeetupTest > testTuesteenthOfMarch2013 PASSED
+
+MeetupTest > testWednesteenthOfJune2013 PASSED
+
+MeetupTest > testFourthSaturdayOfJanuary2013 PASSED
+
+MeetupTest > testThirdTuesdayOfJune2013 PASSED
+
+MeetupTest > testSaturteenthOfFebruary2013 PASSED
+
+MeetupTest > testSecondWednesdayOfAugust2013 PASSED
+
+MeetupTest > testThirdMondayOfMarch2013 PASSED
+
+MeetupTest > testMonteenthOfMay2013 PASSED
+
+MeetupTest > testFirstFridayOfNovember2013 PASSED
+
+MeetupTest > testSecondThursdayOfSeptember2013 PASSED
+
+MeetupTest > testThursteenthOfMay2013 PASSED
+
+MeetupTest > testLastTuesdayOfJune2013 PASSED
+
+MeetupTest > testFirstSundayOfMarch2013 PASSED
+
+MeetupTest > testFirstMondayOfApril2013 PASSED
+
+MeetupTest > testSunteenthOfOctober2013 PASSED
+
+MeetupTest > testTuesteenthOfApril2013 PASSED
+
+MeetupTest > testLastSundayOfFebruary2015 PASSED
+
+MeetupTest > testLastMondayOfMarch2013 PASSED
+
+MeetupTest > testLastSaturdayOfFebruary2013 PASSED
+
+MeetupTest > testFourthThursdayOfOctober2013 PASSED
+
+MeetupTest > testThirdFridayOfDecember2013 PASSED
+
+MeetupTest > testFirstWednesdayOfJuly2013 PASSED
+
+MeetupTest > testFirstSaturdayOfJanuary2013 PASSED
+
+MeetupTest > testLastWednesdayOfDecember2014 PASSED
+
+MeetupTest > testFourthWednesdayOfJuly2013 PASSED
+
+MeetupTest > testThirdSaturdayOfJanuary2013 PASSED
+
+MeetupTest > testThirdSundayOfMarch2013 PASSED
+
+MeetupTest > testThirdMondayOfApril2013 PASSED
+
+MeetupTest > testWednesteenthOfFebruary2013 PASSED
+
+MeetupTest > testFriteenthOfApril2013 PASSED
+
+MeetupTest > testFriteenthOfSeptember2013 PASSED
+
+MeetupTest > testSecondTuesdayOfMay2013 PASSED
+
+MeetupTest > testFourthWednesdayOfAugust2013 PASSED
+
+MeetupTest > testLastTuesdayOfMay2013 PASSED
+
+MeetupTest > testFirstSundayOfApril2013 PASSED
+
+MeetupTest > testSunteenthOfJune2013 PASSED
+
+MeetupTest > testLastSundayOfMarch2013 PASSED
+
+MeetupTest > testLastMondayOfApril2013 PASSED
+
+MeetupTest > testThirdSaturdayOfFebruary2013 PASSED
+
+MeetupTest > testFirstThursdayOfOctober2013 PASSED
+
+MeetupTest > testSecondWednesdayOfJuly2013 PASSED
+
+MeetupTest > testLastFridayOfDecember2013 PASSED
+
+MeetupTest > testThirdThursdayOfOctober2013 PASSED
+
+MeetupTest > testThirdTuesdayOfMay2013 PASSED
+
+MeetupTest > testThursteenthOfSeptember2013 PASSED
+
+MeetupTest > testMonteenthOfAugust2013 PASSED
+
+MeetupTest > testFourthTuesdayOfJune2013 PASSED
+
+MeetupTest > testThirdSundayOfApril2013 PASSED
+
+MeetupTest > testThirdThursdayOfSeptember2013 PASSED
+
+MeetupTest > testSecondTuesdayOfJune2013 PASSED
+
+MeetupTest > testThirdWednesdayOfJuly2013 PASSED
+
+MeetupTest > testThirdFridayOfNovember2013 PASSED
+
+MeetupTest > testFourthMondayOfMarch2013 PASSED
+
+MeetupTest > testSecondMondayOfMarch2013 PASSED
+
+MeetupTest > testThursteenthOfJune2013 PASSED
+
+MeetupTest > testFirstWednesdayOfAugust2013 PASSED
+
+MeetupTest > testFirstSaturdayOfFebruary2013 PASSED
+
+MeetupTest > testFourthTuesdayOfMay2013 PASSED
+
+MeetupTest > testThirdWednesdayOfAugust2013 PASSED
+
+MeetupTest > testFourthThursdayOfSeptember2013 PASSED
+
+MeetupTest > testLastSundayOfApril2013 PASSED
+
+MeetupTest > testLastSaturdayOfJanuary2013 PASSED
+
+MeetupTest > testSunteenthOfMay2013 PASSED
+
+MeetupTest > testSaturteenthOfOctober2013 PASSED
+
+MeetupTest > testFourthSundayOfMarch2013 PASSED
+
+MeetupTest > testFourthMondayOfApril2013 PASSED
+
+MeetupTest > testSecondSundayOfMarch2013 PASSED
+
+MeetupTest > testSecondMondayOfApril2013 PASSED
+
+MeetupTest > testLastFridayOfNovember2013 PASSED
+
+MeetupTest > testFirstTuesdayOfMay2013 PASSED
+
+MeetupTest > testFourthSaturdayOfFebruary2013 PASSED
+
+MeetupTest > testTuesteenthOfAugust2013 PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 11s
+3 actionable tasks: 3 executed
