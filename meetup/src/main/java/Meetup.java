@@ -1,3 +1,10 @@
+import java.util.stream.Stream;
+import java.time.LocalDate;
+import java.time.DayOfWeek;
+
+import static java.util.stream.IntStream.rangeClosed;
+import static java.util.stream.Collectors.toList;
+
 public class Meetup {
 
     private final int month;
@@ -8,6 +15,6 @@ public class Meetup {
         this.year = year;
     }
 
-    
+
 
 }
