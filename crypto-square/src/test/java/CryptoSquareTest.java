@@ -58,7 +58,7 @@ public class CryptoSquareTest {
         assertEquals(expectedOutput, cryptoSquare.getCiphertext());
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void fiftyFourCharacterPlaintextResultsInSevenChunksWithTrailingSpaces() {
         CryptoSquare cryptoSquare = new CryptoSquare("If man was meant to stay on the ground, god would have " +
