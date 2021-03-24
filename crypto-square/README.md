@@ -94,7 +94,6 @@ Once you get a test passing, you can enable the next one by removing the
 `@Ignore("Remove to run test")` annotation.
 
 ## Source
-
 J Dalbey's Programming Practice problems [http://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html](http://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html)
 
 ## Submitting Incomplete Solutions
