@@ -1,7 +1,7 @@
 public class Robot {
 
-    public Robot() {
-
+    public Robot(GridPosition position, Orientation orientation) {
+        
     }
 
     public getOrientation() {
@@ -9,7 +9,7 @@ public class Robot {
     }
 
     public getGridPosition() {
-        
+
     }
     
 } 
