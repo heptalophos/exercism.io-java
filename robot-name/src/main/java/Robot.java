@@ -7,10 +7,8 @@ import static java.lang.String.format;
 class Robot {
     
     private String name;
-    private static final Set<String> used = 
-                                new HashSet<>();
-    private static final Random random = 
-                                new Random();
+    private static final Set<String> used = new HashSet<>();
+    private static final Random random = new Random();
 
     String getName() {
         if (name == null) {
@@ -23,15 +21,12 @@ class Robot {
         name = null;
     }
 
-    private static String generateName() {
-        String newName = null;
-        while (newName == null) {
-            newName = 
-                format("%s%3d", randomAlpha(2), 
-                                random.nextInt(1000));
-            if (used.contains(newName)) {
-                newName = null;
-            }
+    private String generateName() {
+        String newName = 
+            format("%s%3d", randomAlpha(2), 
+                            random.nextInt(1000));
+        if (used.contains(newName)) {
+            newName = generateName();
         }
         used.add(newName);
         return newName;
