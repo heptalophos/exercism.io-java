@@ -23,14 +23,14 @@ class Robot {
         name = null;
     }
 
-    private static String generateName() {
+    private String generateName() {
         String newName = null;
         while (newName == null) {
             newName = 
                 format("%s%3d", randomAlpha(2), 
                                 random.nextInt(1000));
             if (used.contains(newName)) {
-                newName = null;
+                newName = generateName();
             }
         }
         used.add(newName);
