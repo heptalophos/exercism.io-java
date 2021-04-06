@@ -17,11 +17,11 @@ public class Robot {
     }
 
     public void turnRight() {
-        orientation = orientation.clockwise();
+        orientation = orientation.minusHalfPi();
     }
 
     public void turnLeft() {
-        orientation = orientation.counterClockwise();
+        orientation = orientation.plusHalfPi();
     }
 
     public void advance() {
