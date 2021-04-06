@@ -9,14 +9,14 @@ class GridPosition {
         this.y = y;
     }
 
-    GridPosition change(Orientation orientation) {
+    GridPosition change(Orientation orientation, int steps) {
         int x = this.x;
         int y = this.y;
         switch (orientation) {
-            case NORTH : y += 1; break;
-            case EAST :  x += 1; break;
-            case SOUTH : y -= 1; break;
-            case WEST :  x -= 1; break;
+            case NORTH : y += steps; break;
+            case EAST :  x += steps; break;
+            case SOUTH : y -= steps; break;
+            case WEST :  x -= steps; break;
         }
         return new GridPosition(x, y);
     }
