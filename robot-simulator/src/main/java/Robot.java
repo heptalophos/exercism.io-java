@@ -25,24 +25,7 @@ public class Robot {
     }
 
     public void advance() {
-        switch (orientation) {
-            case NORTH : 
-                position = 
-                    position.change(Orientation.NORTH);
-                break;
-            case EAST  : 
-                position = 
-                    position.change(Orientation.EAST);
-                break;
-            case SOUTH : 
-                position = 
-                    position.change(Orientation.SOUTH);
-                break;
-            case WEST  : 
-                position = 
-                    position.change(Orientation.WEST);
-                break;
-        } 
+        position = position.change(orientation); 
     }
 
     public void simulate(String commands) {
