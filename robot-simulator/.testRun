@@ -51,3 +51,59 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 
 BUILD SUCCESSFUL in 5s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+RobotTest > movingWestAndNorth PASSED
+
+RobotTest > movingWestAndSouth PASSED
+
+RobotTest > atNegativePositionFacingSouth PASSED
+
+RobotTest > movingEastAndNorth PASSED
+
+RobotTest > changesNorthToEast PASSED
+
+RobotTest > changesNorthToWest PASSED
+
+RobotTest > changesEastToNorth PASSED
+
+RobotTest > changesEastToSouth PASSED
+
+RobotTest > facingWestDecrementsX PASSED
+
+RobotTest > atOriginFacingNorth PASSED
+
+RobotTest > facingSouthDecrementsY PASSED
+
+RobotTest > movingEastAndNorthFromReadme PASSED
+
+RobotTest > changesWestToNorth PASSED
+
+RobotTest > changesWestToSouth PASSED
+
+RobotTest > facingNorthIncrementsY PASSED
+
+RobotTest > changesSouthToEast PASSED
+
+RobotTest > changesSouthToWest PASSED
+
+RobotTest > facingEastIncrementsX PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 10s
+3 actionable tasks: 3 executed
