@@ -25,7 +25,7 @@ public class Robot {
     }
 
     public void advance() {
-        position = position.change(orientation); 
+        position = position.change(orientation, 1); 
     }
 
     public void simulate(String commands) {
