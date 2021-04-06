@@ -9,6 +9,18 @@ class GridPosition {
         this.y = y;
     }
 
+    GridPosition change(Orientation orientation) {
+        int x = this.x;
+        int y = this.y;
+        switch (orientation) {
+            case NORTH : y += 1; break;
+            case EAST :  x += 1; break;
+            case SOUTH : y -= 1; break;
+            case WEST :  x -= 1; break;
+        }
+        return new GridPosition(x, y);
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
