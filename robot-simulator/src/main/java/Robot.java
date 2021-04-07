@@ -31,15 +31,9 @@ public class Robot {
     public void simulate(String commands) {
         for (char command: commands.toCharArray()) {
             switch (command) {
-                case 'R' : 
-                    turnRight();
-                    break;
-                case 'L' :
-                    turnLeft();
-                    break;
-                case 'A' : 
-                    advance();
-                    break;
+                case 'R' : turnRight(); break;
+                case 'L' : turnLeft(); break;
+                case 'A' : advance(); break;
                 default : throw 
                     new IllegalArgumentException(
                         "unknown command"
