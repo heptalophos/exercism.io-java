@@ -1,15 +1,15 @@
 public class Robot {
 
     private GridPosition position;
-    private Orientation orientation;
+    private Orientation direction;
 
-    public Robot(GridPosition position, Orientation orientation) {
+    Robot(GridPosition position, Orientation orientation) {
         this.position = position;
-        this.orientation = orientation;
+        this.direction = orientation;
     }
 
     public Orientation getOrientation() {
-        return this.orientation;
+        return this.direction;
     }
 
     public GridPosition getGridPosition() {
@@ -17,20 +17,20 @@ public class Robot {
     }
 
     public void turnRight() {
-        orientation = orientation.minusHalfPi();
+        direction = direction.minusHalfPi();
     }
 
     public void turnLeft() {
-        orientation = orientation.plusHalfPi();
+        direction = direction.plusHalfPi();
     }
 
     public void advance() {
-        position = position.change(orientation, 1); 
+        position = position.change(direction, 1); 
     }
 
     public void simulate(String commands) {
-        for (char c: commands.toCharArray()) {
-            switch (c) {
+        for (char command: commands.toCharArray()) {
+            switch (command) {
                 case 'R' : 
                     turnRight();
                     break;
