@@ -20,15 +20,5 @@ enum Orientation {
             case EAST  : return NORTH;
         }
         return this;
-    }
-
-    Orientation plusPi() {
-        switch (this) {
-            case NORTH : return SOUTH;
-            case WEST  : return EAST;
-            case SOUTH : return NORTH; 
-            case EAST  : return WEST;
-        }
-        return this;
-    }     
+    }  
 }
