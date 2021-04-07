@@ -2,7 +2,7 @@ enum Orientation {
 
     NORTH, EAST, SOUTH, WEST;
 
-    Orientation clockwise() {
+    Orientation minusHalfPi() {
         switch (this) {
             case NORTH : return EAST;
             case EAST  : return SOUTH;
@@ -12,7 +12,7 @@ enum Orientation {
         return this;
     }
 
-    Orientation counterClockwise() {
+    Orientation plusHalfPi() {
         switch (this) {
             case NORTH : return WEST;
             case WEST  : return SOUTH;
@@ -20,5 +20,5 @@ enum Orientation {
             case EAST  : return NORTH;
         }
         return this;
-    }
+    }  
 }

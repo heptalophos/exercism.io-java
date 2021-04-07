@@ -9,14 +9,14 @@ class GridPosition {
         this.y = y;
     }
 
-    GridPosition change(Orientation orientation) {
+    GridPosition change(Orientation direction, int steps) {
         int x = this.x;
         int y = this.y;
-        switch (orientation) {
-            case NORTH : y += 1; break;
-            case EAST :  x += 1; break;
-            case SOUTH : y -= 1; break;
-            case WEST :  x -= 1; break;
+        switch (direction) {
+            case NORTH : y += steps; break;
+            case EAST :  x += steps; break;
+            case SOUTH : y -= steps; break;
+            case WEST :  x -= steps; break;
         }
         return new GridPosition(x, y);
     }
@@ -32,14 +32,12 @@ class GridPosition {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
+        if (this == obj)
             return true;
-        } else if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        } else if (x != ((GridPosition) obj).x || y != ((GridPosition) obj).y) {
-            return false;
-        } else {
-            return true;
-        }
+        if (obj == null || getClass() != obj.getClass()) 
+            return false; 
+        if (x != ((GridPosition) obj).x || y != ((GridPosition) obj).y)
+            return false; 
+        return true;
     }
 }

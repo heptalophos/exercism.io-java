@@ -1,15 +1,15 @@
 public class Robot {
 
     private GridPosition position;
-    private Orientation orientation;
+    private Orientation direction;
 
-    public Robot(GridPosition position, Orientation orientation) {
+    Robot(GridPosition position, Orientation orientation) {
         this.position = position;
-        this.orientation = orientation;
+        this.direction = orientation;
     }
 
     public Orientation getOrientation() {
-        return this.orientation;
+        return this.direction;
     }
 
     public GridPosition getGridPosition() {
@@ -17,46 +17,23 @@ public class Robot {
     }
 
     public void turnRight() {
-        orientation = orientation.clockwise();
+        direction = direction.minusHalfPi();
     }
 
     public void turnLeft() {
-        orientation = orientation.counterClockwise();
+        direction = direction.plusHalfPi();
     }
 
     public void advance() {
-        switch (orientation) {
-            case NORTH : 
-                position = 
-                    position.change(Orientation.NORTH);
-                break;
-            case EAST  : 
-                position = 
-                    position.change(Orientation.EAST);
-                break;
-            case SOUTH : 
-                position = 
-                    position.change(Orientation.SOUTH);
-                break;
-            case WEST  : 
-                position = 
-                    position.change(Orientation.WEST);
-                break;
-        } 
+        position = position.change(direction, 1); 
     }
 
     public void simulate(String commands) {
-        for (char c: commands.toCharArray()) {
-            switch (c) {
-                case 'R' : 
-                    turnRight();
-                    break;
-                case 'L' :
-                    turnLeft();
-                    break;
-                case 'A' : 
-                    advance();
-                    break;
+        for (char command: commands.toCharArray()) {
+            switch (command) {
+                case 'R' : turnRight(); break;
+                case 'L' : turnLeft(); break;
+                case 'A' : advance(); break;
                 default : throw 
                     new IllegalArgumentException(
                         "unknown command"
