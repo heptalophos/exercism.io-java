@@ -27,10 +27,6 @@ class KindergartenGarden {
                  .collect(Collectors.toList());    
     }
 
-    // KindergartenGarden(String garden, String student) {
-        
-    // }
-
     List<Plant> getPlantsOfStudent(String student) {
         var idx = 2 * _KIDS.indexOf(student);
         return plants.stream()
