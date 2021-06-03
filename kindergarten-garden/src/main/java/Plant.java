@@ -1,8 +1,10 @@
 enum Plant {
+    
     VIOLETS,
     RADISHES,
     CLOVER,
     GRASS;
+
     static Plant getPlant(char plantCode) {
         switch (plantCode) {
             case 'G':
@@ -14,6 +16,7 @@ enum Plant {
             case 'V':
                 return VIOLETS;
         }
+
         return null;
     }
 }
