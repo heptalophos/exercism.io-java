@@ -1,5 +1,8 @@
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import java.util.Arrays;
 
 class KindergartenGarden {
 
@@ -22,22 +25,21 @@ class KindergartenGarden {
         );
 
     KindergartenGarden(String garden) {
-        plants = stream(garden.split("\n"))
-                 .map(KindergartenGarden::row)
+        plants = Arrays
+                 .stream(garden.split("\n"))
+                 .map(row -> row.chars()
+                                .mapToObj(p -> 
+                                    Plant.getPlant((char) p))
+                                .collect(Collectors.toList()))
                  .collect(Collectors.toList());    
     }
 
-    List<Plant> getPlantsOfStudent(String student) {
-        var idx = 2 * _KIDS.indexOf(student);
+    List<Plant> getPlantsOfStudent(String kid) {
+        int idx = 2 * _KIDS.indexOf(kid);
         return plants.stream()
-                     .flatMap(x -> x.stream().skip(idx).limit(2))
+                     .flatMap(x -> x.stream()
+                                    .skip(idx)
+                                    .limit(2))
                      .collect(Collectors.toList()); 
     }
-
-    private static List<Plant> row(String plants) {
-        return plants.chars()
-                     .mapToObj(x -> Plant.getPlant((char) x))
-                     .collect(Collectors.toList());
-    } 
-
 }
