@@ -28,8 +28,8 @@ class KindergartenGarden {
         plants = Arrays
                  .stream(garden.split("\n"))
                  .map(row -> row.chars()
-                                .mapToObj(p -> 
-                                    Plant.getPlant((char) p))
+                                .mapToObj(p -> ((char) p))
+                                .map(Plant::getPlant)
                                 .collect(Collectors.toList()))
                  .collect(Collectors.toList());    
     }
