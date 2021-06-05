@@ -27,19 +27,23 @@ class KindergartenGarden {
     KindergartenGarden(String garden) {
         plants = Arrays
                  .stream(garden.split("\n"))
-                 .map(row -> row.chars()
-                                .mapToObj(p -> ((char) p))
-                                .map(Plant::getPlant)
-                                .collect(Collectors.toList()))
+                 .map(this::row)
                  .collect(Collectors.toList());    
     }
 
     List<Plant> getPlantsOfStudent(String kid) {
         int idx = 2 * _KIDS.indexOf(kid);
         return plants.stream()
-                     .flatMap(x -> x.stream()
-                                    .skip(idx)
-                                    .limit(2))
+                     .flatMap(row -> row.stream()
+                                        .skip(idx)
+                                        .limit(2))
                      .collect(Collectors.toList()); 
+    }
+
+    private List<Plant> row(String row) {
+        return row.chars()
+                  .mapToObj(p -> ((char) p))
+                  .map(Plant::getPlant)
+                  .collect(Collectors.toList());
     }
 }
