@@ -33,3 +33,60 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 
 BUILD SUCCESSFUL in 4s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+KindergartenGardenTest > singleStudent2 PASSED
+
+KindergartenGardenTest > fullGardenFirstStudent PASSED
+
+KindergartenGardenTest > twoStudents PASSED
+
+KindergartenGardenTest > fullGardenSecondToLastStudent PASSED
+
+KindergartenGardenTest > singleStudent PASSED
+
+KindergartenGardenTest > oneGardenThirdStudent PASSED
+
+KindergartenGardenTest > fullGardenSecondStudent PASSED
+
+KindergartenGardenTest > oneGardenSecondStudent PASSED
+
+KindergartenGardenTest > fullGardenLastStudent PASSED
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test UP-TO-DATE
+
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 up-to-date
