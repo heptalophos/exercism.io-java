@@ -1,7 +1,11 @@
 import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Collections;
 
 class Triangle {
 
+    private final List<Double> sides;
     private final long uniqSides;
     private final long EQUILATERAL = 1;
     private final long ISOSCELES = 2;
@@ -17,20 +21,20 @@ class Triangle {
     Triangle(double s1, double s2, double s3) 
         throws TriangleException {
         
-        boolean positiveSides = 
-                s1 > 0 && s2 > 0 && s3 > 0;
+        this.sides = Arrays.asList(s1, s2, s3);
+        
+        boolean anySideZero = 
+            sides.stream().anyMatch(x -> x <= 0);
 
         boolean triangleInequality = 
-                s1 + s2 >= s3 && 
-                s2 + s3 >= s1 && 
-                s1 + s3 >= s2;  
+            2 * Collections.max(sides, null) < 
+            sides.stream().reduce(0.0, Double::sum);   
         
         boolean degenerate = 
-                s1 + s2 == s3 || 
-                s2 + s3 == s1 || 
-                s1 + s3 == s2;
+            2 * Collections.max(sides, null) == 
+            sides.stream().reduce(0.0, Double::sum);
 
-        if (!positiveSides) 
+        if (anySideZero) 
             throw new TriangleException(Errors[0]);
         if (!triangleInequality)  
             throw new TriangleException(Errors[1]);
