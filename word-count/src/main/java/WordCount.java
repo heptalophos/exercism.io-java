@@ -26,7 +26,6 @@ public class WordCount {
               .collect(
                   groupingBy(identity(), 
                              collectingAndThen(
-                                counting(), 
-                                Long::intValue)));
+                                counting(), Long::intValue)));
     }
 }
