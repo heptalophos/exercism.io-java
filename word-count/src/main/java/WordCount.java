@@ -1,9 +1,11 @@
 import java.util.Collections;
 import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.collectingAndThen;
+import static java.util.stream.Collectors.counting;
+import static java.util.function.Function.identity;
 
 public class WordCount {
 
@@ -21,10 +23,10 @@ public class WordCount {
               .map(w -> 
                    w.replaceAll("^\\p{Punct}+|\\p{Punct}+$", 
                                 ""))
-              .collect(Collectors.groupingBy(
-                                Function.identity(), 
-                                Collectors.collectingAndThen(
-                                Collectors.counting(), 
+              .collect(
+                  groupingBy(identity(), 
+                             collectingAndThen(
+                                counting(), 
                                 Long::intValue)));
     }
 }
