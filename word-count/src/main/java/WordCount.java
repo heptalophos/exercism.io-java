@@ -1,11 +1,12 @@
 import java.util.Collections;
 import java.util.Map;
 import java.util.stream.Stream;
+import java.util.function.Function;
 
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.counting;
-import static java.util.function.Function.identity;
+
 
 public class WordCount {
 
@@ -24,7 +25,7 @@ public class WordCount {
                    w.replaceAll("^\\p{Punct}+|\\p{Punct}+$", 
                                 ""))
               .collect(
-                  groupingBy(identity(), 
+                  groupingBy(Function.identity(), 
                              collectingAndThen(
                                 counting(), Long::intValue)));
     }
