@@ -34,9 +34,11 @@ class GridPosition {
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
-        if (obj == null || getClass() != obj.getClass()) 
+        if (obj == null || 
+            getClass() != obj.getClass()) 
             return false; 
-        if (x != ((GridPosition) obj).x || y != ((GridPosition) obj).y)
+        if (x != ((GridPosition) obj).x || 
+            y != ((GridPosition) obj).y)
             return false; 
         return true;
     }
