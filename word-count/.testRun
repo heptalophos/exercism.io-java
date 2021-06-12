@@ -127,7 +127,7 @@ Deprecated Gradle features were used in this build,
 making it incompatible with Gradle 7.0.
 Use '--warning-mode all' to show the individual deprecation warnings.
 
-BUILD SUCCESSFUL in 6s
+BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
 
 
@@ -169,9 +169,9 @@ WordCountTest > includeNumbers PASSED
 
 WordCountTest > ignorePunctuation PASSED
 
-Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Deprecated Gradle features were used in this build, 
+making it incompatible with Gradle 7.0.
 Use '--warning-mode all' to show the individual deprecation warnings.
-See https://docs.gradle.org/6.6.1/userguide/command_line_interface.html#sec:command_line_warnings
 
-BUILD SUCCESSFUL in 3s
+BUILD SUCCESSFUL in 6s
 3 actionable tasks: 3 executed
