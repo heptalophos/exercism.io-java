@@ -2,7 +2,7 @@ import java.util.stream.IntStream;
 
 class PrimeCalculator {
 
-    private static boolean isPrime(int n) {
+    private boolean isPrime(int n) {
 
         return IntStream
                .rangeClosed(2, (int) Math.sqrt(n))
@@ -13,7 +13,7 @@ class PrimeCalculator {
         
         return IntStream
                .iterate(2, i -> i + 1)
-               .filter(PrimeCalculator::isPrime)
+               .filter(this::isPrime)
                .limit(nth)
                .max()
                .orElseThrow(() -> 

@@ -16,7 +16,7 @@ class Sieve {
                  .flatMap(x -> IntStream
                                .iterate(x * 2, m -> m + x)
                                .takeWhile(m -> m <= limit)) 
-                 // or:
+                 // or (for java 8):
                  // .flatMap(x -> IntStream
                  //               .iterate(x * x, 
                  //                        m -> m <= limit, 
