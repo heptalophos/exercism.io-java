@@ -8,8 +8,8 @@ import java.util.stream.IntStream;
 
 public class Transpose {
 
-	private static List<String> normalize(List<String> strings, 
-										  int match) {
+	private List<String> normalize(List<String> strings, 
+								   int match) {
 
 		int i = strings.size() - 1;
 
@@ -47,13 +47,14 @@ public class Transpose {
 					.mapToObj(i -> 
 							  rows
 					          .stream()
-							  .map(
-							   row -> 
-							   i >= row.length() ? 
-							   " " :
-							   Character
-							   .toString(row.charAt(i)))
-						       .collect(Collectors.joining(""))
+							  .map(row -> 
+							   	   i >= row.length() ? 
+							   	   " " :
+							   	   Character
+							   	   .toString(row.charAt(i)))
+						       	   .collect(
+										Collectors.joining("")
+									)
 							  )
 					.collect(Collectors.toList());
 							 
