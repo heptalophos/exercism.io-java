@@ -4,7 +4,8 @@ public class FoodChain {
         "wriggled and jiggled and tickled inside her";
 
     private static final String[] EDIBLES = 
-        {"fly", "spider", "bird", "cat", "dog", "goat", "cow"};
+        {"fly", "spider", "bird", 
+         "cat", "dog", "goat", "cow"};
 
     private static final String PROLOGUE =
         "I know an old lady who swallowed a";
@@ -16,13 +17,17 @@ public class FoodChain {
           "Just opened her throat and swallowed a goat!",
           "I don\'t know how she swallowed a cow!" };
 
-    private static final String PREMISE = "She swallowed the ";
+    private static final String PREMISE = 
+                        "She swallowed the ";
 
-    private static final String CONCLUSION = " to catch the "; 
+    private static final String CONCLUSION = 
+                                " to catch the "; 
     
     private static final String[] EPILOGUE = 
-        { "I don't know why she swallowed the fly. Perhaps she'll die.", 
-          "I know an old lady who swallowed a horse.\nShe's dead, of course!" };
+        { "I don't know why she swallowed the " + 
+          "fly. Perhaps she'll die.", 
+          "I know an old lady who swallowed " +
+          "a horse.\nShe's dead, of course!" };
 
 
     private boolean validVerseNum (int verseNum) {
@@ -38,7 +43,8 @@ public class FoodChain {
         String line = "";
         if (verseNum >= 1 && verseNum < 8) {
             line += 
-                PROLOGUE + " " + EDIBLES[verseNum - 1] + ".\n";
+                PROLOGUE + " " + 
+                EDIBLES[verseNum - 1] + ".\n";
             if (verseNum == 2)
                 line += "It " + SPIDER + ".\n";
         } else if (verseNum == 8) {
@@ -70,8 +76,10 @@ public class FoodChain {
         String lines = "";
         if (verseNum >= 2 && verseNum <= 7)
             while (verseNum-- > 1) {
-                lines += PREMISE + EDIBLES[verseNum] + 
-                         CONCLUSION + EDIBLES[verseNum - 1];
+                lines += PREMISE + 
+                         EDIBLES[verseNum] + 
+                         CONCLUSION + 
+                         EDIBLES[verseNum - 1];
                 if (verseNum == 2)
                     lines += " that " + SPIDER;                
                 lines += ".\n";
@@ -100,8 +108,10 @@ public class FoodChain {
         String recite = "";
         if (validVerseNum(verseNum))
             recite += 
-                firstLine(verseNum) + secondLine(verseNum) +
-                stemLines(verseNum) + closingLine(verseNum);
+                firstLine(verseNum) + 
+                secondLine(verseNum) +
+                stemLines(verseNum) + 
+                closingLine(verseNum);
         else
             throw new IllegalArgumentException(
                     "invalid verse"
