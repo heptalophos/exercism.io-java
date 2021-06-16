@@ -6,17 +6,17 @@ public class BeerSong {
         
         switch (bottles) {
             case 0:
-                return "No more bottles of beer on the wall,"+
+                return "No more bottles of beer " + 
+                       "on the wall,"+
                        " no more bottles of beer.";
             case 1:
                 return "1 bottle of beer on the wall,"+
                        " 1 bottle of beer.";
             default:
                 return format(
-                            "%1$d bottles of beer on the wall,"+
-                            " %1$d bottles of beer.", 
-                            bottles
-                        );
+                        "%1$d bottles of beer on the wall,"+
+                        " %1$d bottles of beer.", 
+                        bottles);
         }
     }
 
@@ -31,10 +31,9 @@ public class BeerSong {
                        " no more bottles of beer on the wall.";
             default:
                 return format(
-                        "Take one down and pass it around,"+
+                    "Take one down and pass it around,"+
                     " %1$d bottle%2$s of beer on the wall.", 
-                        bottles - 1, bottles != 2 ? "s" : ""
-                        );
+                    bottles - 1, bottles != 2 ? "s" : "");
         }
     }
 
@@ -48,15 +47,15 @@ public class BeerSong {
         
         StringBuilder verses = new StringBuilder();
         
-        for (int i = bottles; i > bottles - howManyDown; i--) {
+        for (int i = bottles; i > bottles - howManyDown; i--) 
+        {
             verses.append(verse(i));
         }
         
         return verses.toString();
     }
 
-    public String singSong() {
-        
+    public String singSong() {    
         return sing(99, 100);
     }
 }
