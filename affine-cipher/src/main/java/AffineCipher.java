@@ -12,9 +12,9 @@ class AffineCipher {
                .toLowerCase()
                .codePoints()
                .filter(Character::isLetterOrDigit)
-               .map(ch -> Character.isDigit(ch) ? 
-                          ch                    :
-                          (a * (ch - A) + b) % EM + A)
+               .map(c -> Character.isDigit(c) ? 
+                         c                    :
+                         (a * (c - A) + b) % EM + A)
                 .collect(StringBuilder::new,
                          StringBuilder::appendCodePoint,
                          StringBuilder::append)
@@ -29,9 +29,9 @@ class AffineCipher {
                .toLowerCase()
                .codePoints()
                .filter(Character::isLetterOrDigit)
-               .map(ch -> Character.isDigit(ch) ? 
-                          ch                    :
-                          mmi * (ch - A + (EM * b) - b) % EM + A)
+               .map(c -> Character.isDigit(c) ? 
+                         c                    :
+                         mmi * (c - A + (EM * b) - b) % EM + A)
                 .collect(StringBuilder::new,
                          StringBuilder::appendCodePoint,
                          StringBuilder::append)
