@@ -1,11 +1,10 @@
 class AffineCipher {
 
     private static final int EM = 26;
+    private static final char A = 'a';
 
-    private final String NOT_COPRIME =
+    private static final String NOT_COPRIME =
         "Error: keyA and alphabet size must be coprime.";
-
-    
 
     String encode(String plaintext, int a, int b) {
         mmi(a, EM);
@@ -15,7 +14,7 @@ class AffineCipher {
                .filter(Character::isLetterOrDigit)
                .map(ch -> Character.isDigit(ch) ? 
                           ch                    :
-                          (a * (ch - 'a') + b) % EM + 'a')
+                          (a * (ch - A) + b) % EM + A)
                 .collect(StringBuilder::new,
                          StringBuilder::appendCodePoint,
                          StringBuilder::append)
@@ -32,7 +31,7 @@ class AffineCipher {
                .filter(Character::isLetterOrDigit)
                .map(ch -> Character.isDigit(ch) ? 
                           ch                    :
-                          mmi * (ch - 'a' + (EM * b) - b) % EM + 'a')
+                          mmi * (ch - A + (EM * b) - b) % EM + A)
                 .collect(StringBuilder::new,
                          StringBuilder::appendCodePoint,
                          StringBuilder::append)
