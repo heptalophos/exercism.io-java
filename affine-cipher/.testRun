@@ -68,3 +68,52 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 
 BUILD SUCCESSFUL in 1s
 3 actionable tasks: 3 up-to-date
+
+
+
+>gradle test
+
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+AffineCipherTest > testEncodeOMG PASSED
+
+AffineCipherTest > testEncodeYes PASSED
+
+AffineCipherTest > testDecodeWithNoSpaces PASSED
+
+AffineCipherTest > testEncodeMindBlowingly PASSED
+
+AffineCipherTest > testEncodeNo PASSED
+
+AffineCipherTest > testDecodeWithTooManySpaces PASSED
+
+AffineCipherTest > testDecodeSentence PASSED
+
+AffineCipherTest > testEncodeAllTheLetters PASSED
+
+AffineCipherTest > testDecodeNumbers PASSED
+
+AffineCipherTest > testDecodeExercism PASSED
+
+AffineCipherTest > testEncodeDeepThought PASSED
+
+AffineCipherTest > testDecodeThrowsMeaningfulException PASSED
+
+AffineCipherTest > testDecodeAllTheLetters PASSED
+
+AffineCipherTest > testEncodeNumbers PASSED
+
+AffineCipherTest > testEncodeThrowsMeaningfulException PASSED
+
+AffineCipherTest > testEncodeO_M_G PASSED
+
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 2 executed, 1 up-to-date
