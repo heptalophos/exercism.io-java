@@ -1,46 +1,40 @@
+import java.util.stream.IntStream;
+
 class AffineCipher {
 
-    private static final int EM = 26;
-    private static final char A = 'a';
+    private static final int EM = 26;   //universe->size
+    private static final char A = 'a';  //universe->head
 
     private static final String NOT_COPRIME =
         "Error: keyA and alphabet size must be coprime.";
 
-    String encode(String plaintext, int a, int b) {
-        mmi(a, EM);
-        return plaintext
-               .toLowerCase()
-               .codePoints()
-               .filter(Character::isLetterOrDigit)
-               .map(c -> Character.isDigit(c) ? 
-                         c                    :
-                         (a * (c - A) + b) % EM + A)
-                .collect(StringBuilder::new,
-                         StringBuilder::appendCodePoint,
-                         StringBuilder::append)
-                .toString()
-                .replaceAll("(?<=\\G.{5})", " $0")
-                .trim();
+    String encode(String plaintext, int k1, int k2) {
+        mmi(k1, EM);
+        return streamed(plaintext)
+               .map(x -> Character.isDigit(x) ? x :
+                         (k1 * (x - A) + k2) % EM + A)
+               .collect(StringBuilder::new,
+                        StringBuilder::appendCodePoint,
+                        StringBuilder::append)
+               .toString()
+               .replaceAll("\\G.{0,5}", " $0")
+               .trim();
     }
 
-    String decode(String ciphertext, int a, int b) {
-        int mmi = mmi(a, EM);
-        return ciphertext
-               .toLowerCase()
-               .codePoints()
-               .filter(Character::isLetterOrDigit)
-               .map(c -> Character.isDigit(c) ? 
-                         c                    :
-                         mmi * (c - A + (EM * b) - b) % EM + A)
-                .collect(StringBuilder::new,
-                         StringBuilder::appendCodePoint,
-                         StringBuilder::append)
-                .toString();
+    String decode(String ciphertext, int k1, int k2) {
+        int mmi = mmi(k1, EM);
+        return streamed(ciphertext)
+               .map(x -> Character.isDigit(x) ? x :
+                    mmi * (x - A + (EM * k2) - k2) % EM + A)
+               .collect(StringBuilder::new,
+                        StringBuilder::appendCodePoint,
+                        StringBuilder::append)
+               .toString();
     }
 
-    private int mmi(int a, int n) {
+    private static int mmi(int x, int n) {
         int r0 = n; 
-        int r1 = a; 
+        int r1 = x; 
         int t0 = 0; 
         int t1 = 1;
         while (r1 != 0) {
@@ -49,12 +43,19 @@ class AffineCipher {
             int q = r0 / r1; 
             r1 = r0 - r * q; 
             t1 = t0 - t * q; 
-            r0 = r; t0 = t;
+            r0 = r; 
+            t0 = t;
         }
-        if (r0 > 1)
-            throw new IllegalArgumentException(NOT_COPRIME);
-        if (t0 < 0)
-            t0 += n;
+        if (t0 < 0) t0 += n;
+        if (r0 > 1) throw 
+            new IllegalArgumentException(NOT_COPRIME);
         return t0;
+    }
+
+    private static IntStream streamed(String text) {
+        return text
+               .toLowerCase()
+               .codePoints()
+               .filter(Character::isLetterOrDigit);
     }
 }
