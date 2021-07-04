@@ -1,0 +1,25 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+RailFenceCipherTest > encodeWithTwoRails PASSED
+
+RailFenceCipherTest > encodeWithEndingInTheMiddle PASSED
+
+RailFenceCipherTest > decodeWithSixRails PASSED
+
+RailFenceCipherTest > decodeWithThreeRails PASSED
+
+RailFenceCipherTest > encodeWithThreeRails PASSED
+
+RailFenceCipherTest > decodeWithFiveRails PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
