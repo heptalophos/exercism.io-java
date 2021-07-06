@@ -12,13 +12,10 @@ public class Transpose {
 								   int match) {
 
 		int i = strings.size() - 1;
-
         for (; i >= 0; --i) {
-
 			String str = strings.get(i);
 			Matcher m = 
 				Pattern.compile("\\s+$").matcher(str);
-	
 			if (m.find(match)) {
 				match = m.start();
 				strings.set(i, str.substring(0, match));
@@ -30,17 +27,14 @@ public class Transpose {
     }
 
     public String transpose(final String input) {
-
 		List<String> rows = 
 			Arrays.stream(input.split("\n"))
 				  .collect(Collectors.toList());
-
 		int maxRowLen = 
 			rows.stream()
 				.mapToInt(String::length)
 				.max()
 				.orElse(0);
-
 		List<String> transposedRows = 
 					IntStream
 					.range(0, maxRowLen)
@@ -57,7 +51,6 @@ public class Transpose {
 									)
 							  )
 					.collect(Collectors.toList());
-							 
 		return String.join("\n", normalize(transposedRows, 0));
     }
 }
