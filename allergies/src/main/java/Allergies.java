@@ -8,10 +8,11 @@ public class Allergies {
 
     public Allergies (int score) {
         allergies = 
-            Stream.of(Allergen.values())
-                  .filter(allergen -> 
-                            (score & allergen.getScore()) > 0)
-                  .collect(Collectors.toList());
+            Stream
+            .of(Allergen.values())
+            .filter(allergen -> 
+                    (score & allergen.getScore()) > 0)
+            .collect(Collectors.toList());
     }
 
     public boolean isAllergicTo(Allergen allergen) {
