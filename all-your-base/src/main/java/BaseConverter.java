@@ -5,11 +5,11 @@ public class BaseConverter {
     private int inputNumber;
 
     private final String BASE_INVALID =
-                    "Bases must be at least 2.";
+                        "Bases must be at least 2.";
     private final String DIGIT_OVER_BASE =
-        "All digits must be strictly less than the base.";
+            "All digits must be strictly less than the base.";
     private final String DIGIT_BELOW_ZERO =
-                    "Digits may not be negative.";
+                        "Digits may not be negative.";
     
 
     BaseConverter(int inBase, int[] digits) {
@@ -44,7 +44,7 @@ public class BaseConverter {
         int numDigits = 0;
         while (number > 0) {
             number /= outBase;
-            numDigits++;
+            numDigits += 1;
         }
         number = this.inputNumber;
         int[] representation = 
