@@ -1,4 +1,4 @@
-class ArmstrongNumbers2 {
+public class ArmstrongNumbers2 {
 
 	boolean isArmstrongNumber(int numberToCheck) {
 

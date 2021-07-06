@@ -163,3 +163,47 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 
 BUILD SUCCESSFUL in 6s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+AnagramTest > testCaseInsensitiveWhenBothAnagramAndSubjectStartWithUpperCaseLetter PASSED
+
+AnagramTest > testEliminateAnagramSubsets PASSED
+
+AnagramTest > testAnagramMustUseAllLettersExactlyOnce PASSED
+
+AnagramTest > testIdenticalWordRepeatedIsNotAnagram PASSED
+
+AnagramTest > testDetectsMultipleAnagramsWithDifferentCase PASSED
+
+AnagramTest > testWordsOtherThanThemselvesCanBeAnagrams PASSED
+
+AnagramTest > testDetectMultipleAnagramsForLongerWord PASSED
+
+AnagramTest > testDetectMultipleAnagrams PASSED
+
+AnagramTest > testWordsAreNotAnagramsOfThemselvesCaseInsensitive PASSED
+
+AnagramTest > testCaseInsensitiveWhenSubjectStartsWithUpperCaseLetter PASSED
+
+AnagramTest > testCaseInsensitiveWhenAnagramStartsWithUpperCaseLetter PASSED
+
+AnagramTest > testDetectLongerAnagram PASSED
+
+AnagramTest > testNoMatches PASSED
+
+AnagramTest > testEliminateAnagramsWithSameChecksum PASSED
+
+BUILD SUCCESSFUL in 6s
+3 actionable tasks: 3 executed

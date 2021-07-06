@@ -1,5 +1,4 @@
 import org.junit.Before;
-// import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
@@ -31,7 +30,7 @@ public class ArmstrongNumbersTest2 {
 
     // @Ignore("Remove to run test")
     @Test
-    public void threeDigitNumberIsArmstrongNumber() {
+    public void threeDigitNumberIsArmstrongNumber2() {
         int input = 153;
         
         assertTrue(armstrongNumbers.isArmstrongNumber(input));
@@ -39,7 +38,7 @@ public class ArmstrongNumbersTest2 {
 
     // @Ignore("Remove to run test")
     @Test
-    public void threeDigitNumberIsNotArmstrongNumber() {
+    public void threeDigitNumberIsNotArmstrongNumber2() {
         int input = 100;
         
         assertFalse(armstrongNumbers.isArmstrongNumber(input));
@@ -47,7 +46,7 @@ public class ArmstrongNumbersTest2 {
 
     // @Ignore("Remove to run test")
     @Test
-    public void fourDigitNumberIsArmstrongNumber() {
+    public void fourDigitNumberIsArmstrongNumber2() {
         int input = 9474;
         
         assertTrue(armstrongNumbers.isArmstrongNumber(input));
@@ -55,7 +54,7 @@ public class ArmstrongNumbersTest2 {
 
     // @Ignore("Remove to run test")
     @Test
-    public void fourDigitNumberIsNotArmstrongNumber() {
+    public void fourDigitNumberIsNotArmstrongNumber2() {
         int input = 9475;
         
         assertFalse(armstrongNumbers.isArmstrongNumber(input));
@@ -63,7 +62,7 @@ public class ArmstrongNumbersTest2 {
 
     // @Ignore("Remove to run test")
     @Test
-    public void sevenDigitNumberIsArmstrongNumber() {
+    public void sevenDigitNumberIsArmstrongNumber2() {
         int input = 9926315;
         
         assertTrue(armstrongNumbers.isArmstrongNumber(input));
@@ -71,7 +70,7 @@ public class ArmstrongNumbersTest2 {
 
     // @Ignore("Remove to run test")
     @Test
-    public void sevenDigitNumberIsNotArmstrongNumber() {
+    public void sevenDigitNumberIsNotArmstrongNumber2() {
         int input = 9926314;
         
         assertFalse(armstrongNumbers.isArmstrongNumber(input));
