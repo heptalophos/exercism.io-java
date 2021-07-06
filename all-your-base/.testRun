@@ -51,3 +51,59 @@ BaseConverterTest > testSecondBaseIsOne PASSED
 BUILD SUCCESSFUL
 
 Total time: 4.398 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+BaseConverterTest > testSingleDecimalToBinary PASSED
+
+BaseConverterTest > testDecimalToBinary PASSED
+
+BaseConverterTest > testFirstBaseIsOne PASSED
+
+BaseConverterTest > testBinaryToSingleDecimal PASSED
+
+BaseConverterTest > testFirstBaseIsZero PASSED
+
+BaseConverterTest > testLeadingZeros PASSED
+
+BaseConverterTest > testTrinaryToHexadecimal PASSED
+
+BaseConverterTest > testHexadecimalToTrinary PASSED
+
+BaseConverterTest > testSecondBaseIsZero PASSED
+
+BaseConverterTest > testEmptyDigits PASSED
+
+BaseConverterTest > testSingleZero PASSED
+
+BaseConverterTest > testBinaryToMultipleDecimal PASSED
+
+BaseConverterTest > testSecondBaseIsNegative PASSED
+
+BaseConverterTest > test15BitInteger PASSED
+
+BaseConverterTest > testSingleBitOneToDecimal PASSED
+
+BaseConverterTest > testInvalidPositiveDigit PASSED
+
+BaseConverterTest > testMultipleZeros PASSED
+
+BaseConverterTest > testNegativeDigit PASSED
+
+BaseConverterTest > testFirstBaseIsNegative PASSED
+
+BaseConverterTest > testSecondBaseIsOne PASSED
+
+BUILD SUCCESSFUL in 25s
+3 actionable tasks: 3 executed
