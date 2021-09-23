@@ -1,0 +1,25 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+LasagnaTest > total_time_in_minutes_for_multiple_layers PASSED
+
+LasagnaTest > total_time_in_minutes_for_one_layer PASSED
+
+LasagnaTest > remaining_minutes_in_oven PASSED
+
+LasagnaTest > preparation_time_in_minutes_for_one_layer PASSED
+
+LasagnaTest > expected_minutes_in_oven PASSED
+
+LasagnaTest > preparation_time_in_minutes_for_multiple_layers PASSED
+
+BUILD SUCCESSFUL in 5s
+3 actionable tasks: 3 executed
