@@ -1,17 +1,22 @@
 class AnnalynsInfiltration {
     public static boolean canFastAttack(boolean knightIsAwake) {
-        throw new UnsupportedOperationException("Please implement the (static) QuestLogic.canFastAttack() method");
+        return knightIsAwake ? false : true;
     }
 
     public static boolean canSpy(boolean knightIsAwake, boolean archerIsAwake, boolean prisonerIsAwake) {
-        throw new UnsupportedOperationException("Please implement the (static) QuestLogic.canSpy() method");
+        return knightIsAwake ? true : (archerIsAwake ? true : prisonerIsAwake);
     }
 
     public static boolean canSignalPrisoner(boolean archerIsAwake, boolean prisonerIsAwake) {
-        throw new UnsupportedOperationException("Please implement the (static) QuestLogic.canSignalPrisoner() method");
+        boolean archerSleeping = !archerIsAwake;
+        return prisonerIsAwake ? archerSleeping : false;
     }
 
     public static boolean canFreePrisoner(boolean knightIsAwake, boolean archerIsAwake, boolean prisonerIsAwake, boolean petDogIsPresent) {
-        throw new UnsupportedOperationException("Please implement the (static) QuestLogic.canFreePrisoner() method");
+        boolean archerSleeping = !archerIsAwake;
+        boolean knightSleeping = !knightIsAwake;
+        return  archerSleeping ? 
+                (petDogIsPresent ? true : (prisonerIsAwake ? knightSleeping : false)) : 
+                false;
     }
 }
