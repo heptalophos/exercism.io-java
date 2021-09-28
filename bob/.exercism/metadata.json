@@ -1,9 +1,1 @@
-{
-    "track": "java",
-    "exercise": "bob",
-    "id": "d58a2bdd0c7b4ee6af8fa554bea415cd",
-    "url": "https://exercism.io/tracks/java/exercises/bob/solutions/d58a2bdd0c7b4ee6af8fa554bea415cd",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"java","exercise":"bob","id":"d58a2bdd0c7b4ee6af8fa554bea415cd","url":"https://exercism.org/tracks/java/exercises/bob","handle":"heptalophos","is_requester":true,"auto_approve":false}
