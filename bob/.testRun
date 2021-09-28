@@ -193,3 +193,69 @@ See https://docs.gradle.org/6.6.1/userguide/command_line_interface.html#sec:comm
 
 BUILD SUCCESSFUL in 4s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+BobTest > forcefulQuestions PASSED
+
+BobTest > shoutingWithSpecialCharacters PASSED
+
+BobTest > saySomething PASSED
+
+BobTest > statementContainingQuestionMark PASSED
+
+BobTest > nonLettersWithQuestion PASSED
+
+BobTest > nonQuestionEndingWithWhiteSpace PASSED
+
+BobTest > askingANumericQuestion PASSED
+
+BobTest > shoutingWithNoExclamationMark PASSED
+
+BobTest > endingWithWhiteSpace PASSED
+
+BobTest > prolongedSilence PASSED
+
+BobTest > startingWithWhitespace PASSED
+
+BobTest > alternateSilence PASSED
+
+BobTest > questionWithOnlyNumbers PASSED
+
+BobTest > talkingForcefully PASSED
+
+BobTest > multipleLineQuestion PASSED
+
+BobTest > prattlingOn PASSED
+
+BobTest > shouting PASSED
+
+BobTest > askingAQuestion PASSED
+
+BobTest > otherWhiteSpace PASSED
+
+BobTest > onlyNumbers PASSED
+
+BobTest > shoutingNumbers PASSED
+
+BobTest > shoutingGibberish PASSED
+
+BobTest > askingGibberish PASSED
+
+BobTest > usingAcronymsInRegularSpeech PASSED
+
+BobTest > silence PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
