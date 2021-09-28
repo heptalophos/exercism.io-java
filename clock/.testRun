@@ -115,3 +115,9 @@ ClockEqualTest > clocksWithSameTimeAreEqual PASSED
 BUILD SUCCESSFUL
 
 Total time: 6.536 secs
+
+
+
+>gradle test
+
+Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
