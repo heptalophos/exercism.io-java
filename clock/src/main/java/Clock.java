@@ -3,9 +3,9 @@ public class Clock {
     private int hours;
     private int minutes;
 
-    private void normalize(int mins) {
-        this.hours = (int)((mins/60.0) % 24 + 24) % 24;
-        this.minutes = (mins % 60 + 60) % 60;
+    private void normalize(int minutes) {
+        this.hours = (int)((minutes / 60) % 24 + 24) % 24;
+        this.minutes = (minutes % 60 + 60) % 60;
     }
 
     public Clock(int hours, int minutes) {
@@ -25,8 +25,7 @@ public class Clock {
 	public boolean equals(Object o) {
 		if (o != null && getClass() == o.getClass()) {
             final Clock c = (Clock) o;
-            return  hours == c.hours && 
-                    minutes == c.minutes;
+            return  hours == c.hours && minutes == c.minutes;
 		}
 		return false;
 	}
