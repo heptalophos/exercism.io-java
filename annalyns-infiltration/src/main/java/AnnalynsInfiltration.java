@@ -8,15 +8,14 @@ class AnnalynsInfiltration {
     }
 
     public static boolean canSignalPrisoner(boolean archerIsAwake, boolean prisonerIsAwake) {
-        boolean archerSleeping = !archerIsAwake;
-        return prisonerIsAwake ? archerSleeping : false;
+        boolean archerIsSleeping = !archerIsAwake;
+         return prisonerIsAwake ? archerIsSleeping : false;
     }
 
     public static boolean canFreePrisoner(boolean knightIsAwake, boolean archerIsAwake, boolean prisonerIsAwake, boolean petDogIsPresent) {
-        boolean archerSleeping = !archerIsAwake;
-        boolean knightSleeping = !knightIsAwake;
-        return  archerSleeping ? 
-                (petDogIsPresent ? true : (prisonerIsAwake ? knightSleeping : false)) : 
-                false;
+        boolean archerIsSleeping = !archerIsAwake;
+        boolean knightIsSleeping = !knightIsAwake;
+
+        return  archerIsSleeping && (petDogIsPresent || (prisonerIsAwake && knightIsSleeping));
     }
 }
