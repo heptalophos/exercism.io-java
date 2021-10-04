@@ -1,9 +1,1 @@
-{
-    "track": "java",
-    "exercise": "atbash-cipher",
-    "id": "8b1b3a4a1db74043b824597c57ab7a9c",
-    "url": "https://exercism.io/tracks/java/exercises/atbash-cipher/solutions/8b1b3a4a1db74043b824597c57ab7a9c",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"java","exercise":"atbash-cipher","id":"8b1b3a4a1db74043b824597c57ab7a9c","url":"https://exercism.org/tracks/java/exercises/atbash-cipher","handle":"heptalophos","is_requester":true,"auto_approve":false}
