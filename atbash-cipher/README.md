@@ -1,5 +1,10 @@
 # Atbash Cipher
 
+Welcome to Atbash Cipher on Exercism's Java Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+
+## Instructions
+
 Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.
 
 The Atbash cipher is a simple substitution cipher that relies on
@@ -27,8 +32,6 @@ things based on word boundaries.
 - Encoding `test` gives `gvhg`
 - Decoding `gvhg` gives `test`
 - Decoding `gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt` gives `thequickbrownfoxjumpsoverthelazydog`
-
-# Tips
 
 Since this exercise has difficulty 5 it doesn't come with any starter implementation.
 This is so that you get to practice creating classes and methods which is an important part of programming in Java.
@@ -89,34 +92,34 @@ The new error should tell you which type it's expecting.
 
 After having resolved these errors you should be ready to start making the tests pass!
 
-
-## Setup
-
-Go through the setup instructions for Java to install the necessary
-dependencies:
-
-[https://exercism.io/tracks/java/installation](https://exercism.io/tracks/java/installation)
-
-# Running the tests
-
-You can run all the tests for an exercise by entering the following in your
-terminal:
-
-```sh
-$ gradle test
-```
-
-> Use `gradlew.bat` if you're on Windows
-
-In the test suites all tests but the first have been skipped.
-
-Once you get a test passing, you can enable the next one by removing the
-`@Ignore("Remove to run test")` annotation.
-
 ## Source
 
-Wikipedia [http://en.wikipedia.org/wiki/Atbash](http://en.wikipedia.org/wiki/Atbash)
+### Contributed to by
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have
-completed the exercise.
+- @c-thornton
+- @FridaTveit
+- @jackattack24
+- @jmluy
+- @jmrunkle
+- @jtigger
+- @kytrinyx
+- @lemoncurry
+- @LuLechuan
+- @matthewmorgan
+- @mirkoperillo
+- @msomji
+- @muzimuzhi
+- @PaulNoth
+- @rohit1104
+- @sjwarner-bp
+- @SleeplessByte
+- @Smarticles101
+- @sshine
+- @stkent
+- @vdemeester
+- @Zaldrick
+- @Zhiyuan-Amos
+
+### Based on
+
+Wikipedia - http://en.wikipedia.org/wiki/Atbash
