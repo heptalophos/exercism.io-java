@@ -120,4 +120,118 @@ Total time: 6.536 secs
 
 >gradle test
 
-Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+ClockAddTest > subtractMoreThanAnHour PASSED
+
+ClockAddTest > subtractMoreThanTwoHoursWithBorrow PASSED
+
+ClockAddTest > addMoreThanTwoHoursWithCarry PASSED
+
+ClockAddTest > subtractAcrossMidnight PASSED
+
+ClockAddTest > subtractMoreThanOneDay PASSED
+
+ClockAddTest > addMinutes PASSED
+
+ClockAddTest > subtractMoreThanTwoHours PASSED
+
+ClockAddTest > subtractMinutes PASSED
+
+ClockAddTest > addMoreThanOneHour PASSED
+
+ClockAddTest > addAcrossMidnight PASSED
+
+ClockAddTest > addToNextHour PASSED
+
+ClockAddTest > addMoreThanOneDay PASSED
+
+ClockAddTest > addNoMinutes PASSED
+
+ClockAddTest > subtractMoreThanTwoDays PASSED
+
+ClockAddTest > addMoreThanTwoDays PASSED
+
+ClockAddTest > subtractToPreviousHour PASSED
+
+ClockCreationTest > sixtyMinutesIsNextHour PASSED
+
+ClockCreationTest > hourRollsOver PASSED
+
+ClockCreationTest > hourAndMinutesRollOverContinuously PASSED
+
+ClockCreationTest > midnightPrintsAsZero PASSED
+
+ClockCreationTest > negativeMinutesRollOver PASSED
+
+ClockCreationTest > negativeSixtyMinutesIsPreviousHour PASSED
+
+ClockCreationTest > negativeHourRollsOverContinuously PASSED
+
+ClockCreationTest > minutesRollOverContinuously PASSED
+
+ClockCreationTest > canPrintTimeWithMinutes PASSED
+
+ClockCreationTest > negativeHour PASSED
+
+ClockCreationTest > negativeMinutesRollOverContinuously PASSED
+
+ClockCreationTest > negativeMinutes PASSED
+
+ClockCreationTest > negativeHourAndMinutesBothRollOver PASSED
+
+ClockCreationTest > minutesRollOver PASSED
+
+ClockCreationTest > negativeHourAndMinutesBothRollOverContinuously PASSED
+
+ClockCreationTest > hourAndMinutesRollOver PASSED
+
+ClockCreationTest > hourAndMinutesRollOverToExactlyMidnight PASSED
+
+ClockCreationTest > hourRollsOverContinuously PASSED
+
+ClockCreationTest > negativeHourRollsOver PASSED
+
+ClockCreationTest > canPrintTimeOnTheHour PASSED
+
+ClockEqualTest > clocksWithNegateHour PASSED
+
+ClockEqualTest > clocksWithHourOverflowBySeveralDays PASSED
+
+ClockEqualTest > clocksWithNegativeMinutes PASSED
+
+ClockEqualTest > clocksWithNegativeMinutesThatWraps PASSED
+
+ClockEqualTest > clocksWithNegativeHourThatWraps PASSED
+
+ClockEqualTest > clocksAMinuteApartAreNotEqual PASSED
+
+ClockEqualTest > clocksWithNegativeHoursAndMinutesThatWrap PASSED
+
+ClockEqualTest > clocksAnHourApartAreNotEqual PASSED
+
+ClockEqualTest > clocksWithFullClockAndZeroedClockAreEqual PASSED
+
+ClockEqualTest > clocksWithHourOverflow PASSED
+
+ClockEqualTest > clocksWithNegativeMinutesThatWrapsMultipleTimes PASSED
+
+ClockEqualTest > clocksWithNegativeHourThatWrapsMultipleTimes PASSED
+
+ClockEqualTest > clocksWithMinuteOverflowBySeveralDays PASSED
+
+ClockEqualTest > clocksWithMinuteOverflow PASSED
+
+ClockEqualTest > clocksWithNegativeHoursAndMinutes PASSED
+
+ClockEqualTest > clocksWithSameTimeAreEqual PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
