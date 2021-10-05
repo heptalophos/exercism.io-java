@@ -80,3 +80,26 @@ Total time: 6.652 secs
 
 >gradle test
 
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+RnaTranscriptionTest > testRnaTranscriptionOfThymineIsAdenine PASSED
+
+RnaTranscriptionTest > testRnaTranscription PASSED
+
+RnaTranscriptionTest > testRnaTranscriptionOfCytosineIsGuanine PASSED
+
+RnaTranscriptionTest > testEmptyRnaSequence PASSED
+
+RnaTranscriptionTest > testRnaTranscriptionOfGuanineIsCytosine PASSED
+
+RnaTranscriptionTest > testRnaTranscriptionOfAdenineIsUracil PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
