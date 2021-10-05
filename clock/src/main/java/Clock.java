@@ -4,7 +4,7 @@ public class Clock {
     private int minutes;
 
     private void normalize(int minutes) {
-        this.hours = (int)((minutes / 60) % 24 + 24) % 24;
+        this.hours = (int) ((minutes / 60.0) % 24 + 24) % 24;
         this.minutes = (minutes % 60 + 60) % 60;
     }
 
