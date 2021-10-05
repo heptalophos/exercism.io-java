@@ -75,3 +75,8 @@ RnaTranscriptionTest > testRnaTranscriptionOfAdenineIsUracil PASSED
 BUILD SUCCESSFUL
 
 Total time: 6.652 secs
+
+
+
+>gradle test
+
