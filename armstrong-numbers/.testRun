@@ -121,3 +121,53 @@ ArmstrongNumbersTest2 > sevenDigitNumberIsNotArmstrongNumber2 PASSED
 
 BUILD SUCCESSFUL in 5s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+ArmstrongNumbersTest > threeDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest > sevenDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest > noTwoDigitArmstrongNumbers PASSED
+
+ArmstrongNumbersTest > singleDigitsAreArmstrongNumbers PASSED
+
+ArmstrongNumbersTest > zeroIsArmstrongNumber PASSED
+
+ArmstrongNumbersTest > sevenDigitNumberIsArmstrongNumber PASSED
+
+ArmstrongNumbersTest > fourDigitNumberIsNotArmstrongNumber PASSED
+
+ArmstrongNumbersTest > fourDigitNumberIsArmstrongNumber PASSED
+
+ArmstrongNumbersTest > threeDigitNumberIsArmstrongNumber PASSED
+
+ArmstrongNumbersTest2 > noTwoDigitArmstrongNumbers2 PASSED
+
+ArmstrongNumbersTest2 > sevenDigitNumberIsArmstrongNumber2 PASSED
+
+ArmstrongNumbersTest2 > threeDigitNumberIsNotArmstrongNumber2 PASSED
+
+ArmstrongNumbersTest2 > singleDigitsAreArmstrongNumbers2 PASSED
+
+ArmstrongNumbersTest2 > fourDigitNumberIsNotArmstrongNumber2 PASSED
+
+ArmstrongNumbersTest2 > threeDigitNumberIsArmstrongNumber2 PASSED
+
+ArmstrongNumbersTest2 > fourDigitNumberIsArmstrongNumber2 PASSED
+
+ArmstrongNumbersTest2 > sevenDigitNumberIsNotArmstrongNumber2 PASSED
+
+BUILD SUCCESSFUL in 6s
+3 actionable tasks: 3 executed

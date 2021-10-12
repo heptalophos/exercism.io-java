@@ -85,3 +85,37 @@ AcronymTest > punctuation PASSED
 
 BUILD SUCCESSFUL in 4s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+AcronymTest > underscoreEmphasis PASSED
+
+AcronymTest > lowercaseWords PASSED
+
+AcronymTest > apostrophes PASSED
+
+AcronymTest > basic PASSED
+
+AcronymTest > veryLongAbbreviation PASSED
+
+AcronymTest > nonAcronymAllCapsWord PASSED
+
+AcronymTest > consecutiveDelimiters PASSED
+
+AcronymTest > punctuationWithoutWhitespace PASSED
+
+AcronymTest > punctuation PASSED
+
+BUILD SUCCESSFUL in 6s
+3 actionable tasks: 3 executed
