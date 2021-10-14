@@ -1,0 +1,27 @@
+{
+  "blurb": "Create an implementation of the Affine cipher, an ancient encryption algorithm from the Middle East.",
+  "authors": [
+    "lemoncurry"
+  ],
+  "contributors": [
+    "FridaTveit",
+    "jmrunkle",
+    "msomji",
+    "muzimuzhi",
+    "SleeplessByte",
+    "sshine"
+  ],
+  "files": {
+    "solution": [
+      "src/main/java/AffineCipher.java"
+    ],
+    "test": [
+      "src/test/java/AffineCipherTest.java"
+    ],
+    "example": [
+      ".meta/src/reference/java/AffineCipher.java"
+    ]
+  },
+  "source": "Wikipedia",
+  "source_url": "http://en.wikipedia.org/wiki/Affine_cipher"
+}
