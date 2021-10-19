@@ -4,26 +4,21 @@ public class BaseConverter {
 
     private int inputNumber;
 
-    private final String BASE_INVALID =
-                        "Bases must be at least 2.";
+    private final String BASE_INVALID = "Bases must be at least 2.";
     private final String DIGIT_OVER_BASE =
-            "All digits must be strictly less than the base.";
-    private final String DIGIT_BELOW_ZERO =
-                        "Digits may not be negative.";
+                        "All digits must be strictly less than the base.";
+    private final String DIGIT_BELOW_ZERO = "Digits may not be negative.";
     
 
     BaseConverter(int inBase, int[] digits) {
         if (inBase < 2) {
-            throw 
-                new IllegalArgumentException(BASE_INVALID);
+            throw new IllegalArgumentException(BASE_INVALID);
         }
         if (Arrays.stream(digits).anyMatch(d -> d >= inBase)) {
-            throw 
-                new IllegalArgumentException(DIGIT_OVER_BASE);
+            throw new IllegalArgumentException(DIGIT_OVER_BASE);
         }
         if (Arrays.stream(digits).anyMatch(d -> d < 0)) {
-            throw 
-                new IllegalArgumentException(DIGIT_BELOW_ZERO);
+            throw new IllegalArgumentException(DIGIT_BELOW_ZERO);
         }
         this.inputNumber = 0;
         int power = 1; 
@@ -35,8 +30,7 @@ public class BaseConverter {
 
     int[] convertToBase(int outBase) {
         if (outBase < 2) {
-            throw 
-                new IllegalArgumentException(BASE_INVALID);
+            throw new IllegalArgumentException(BASE_INVALID);
         }
         int number = this.inputNumber;
         if (number == 0)
@@ -44,16 +38,13 @@ public class BaseConverter {
         int numDigits = 0;
         while (number > 0) {
             number /= outBase;
-            numDigits += 1;
+            numDigits++;
         }
         number = this.inputNumber;
-        int[] representation = 
-            new int[numDigits];
-        int index = 
-            numDigits - 1;
+        int[] representation = new int[numDigits];
+        int index = numDigits - 1;
         while (number > 0) {
-            representation[index--] = 
-                number % outBase;
+            representation[index--] = number % outBase;
             number /= outBase;
         } 
         return representation;
