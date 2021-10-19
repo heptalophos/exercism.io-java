@@ -1,18 +1,15 @@
 import java.util.List;
 import java.util.stream.Stream;
-import java.util.stream.Collectors;
+import static java.util.stream.Collectors.toList;
 
 public class Allergies {
 
     private List<Allergen> allergies;
 
     public Allergies (int score) {
-        allergies = 
-            Stream
-            .of(Allergen.values())
-            .filter(allergen -> 
-                    (score & allergen.getScore()) > 0)
-            .collect(Collectors.toList());
+        allergies = Stream.of(Allergen.values())
+                    .filter(allergen -> (score & allergen.getScore()) > 0)
+                    .collect(toList());
     }
 
     public boolean isAllergicTo(Allergen allergen) {
