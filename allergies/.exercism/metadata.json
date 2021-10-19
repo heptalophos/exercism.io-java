@@ -1,9 +1,1 @@
-{
-  "track": "java",
-  "exercise": "allergies",
-  "id": "3fb1b4271049482a87cacb4f368f29cc",
-  "url": "https://exercism.io/tracks/java/exercises/allergies/solutions/3fb1b4271049482a87cacb4f368f29cc",
-  "handle": "heptalophos",
-  "is_requester": true,
-  "auto_approve": false
-}
+{"track":"java","exercise":"allergies","id":"3fb1b4271049482a87cacb4f368f29cc","url":"https://exercism.org/tracks/java/exercises/allergies","handle":"heptalophos","is_requester":true,"auto_approve":false}
