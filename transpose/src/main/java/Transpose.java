@@ -28,19 +28,14 @@ public class Transpose {
 				  				  .collect(Collectors.toList());
 		int maxRowLen = rows.stream().mapToInt(String::length)
 							.max().orElse(0);
-		List<String> transposedRows = IntStream.range(0, maxRowLen)
-									  .mapToObj(
-										  i -> rows.stream()
-							  				   .map(
-													 row -> i >= row.length() 
-													 		? " " 
-															: Character
-							   	   							  .toString(row.charAt(i)))
-						       	   							  .collect(
-																Collectors.joining("")
-													)
-							  		  )
-									  .collect(Collectors.toList());
+		List<String> transposedRows = 
+			IntStream.range(0, maxRowLen)
+			         .mapToObj( i -> rows.stream()
+							  	         .map( row -> i >= row.length() 
+													  ? " " 
+													  : Character.toString(row.charAt(i)))
+						       	   						.collect(Collectors.joining("")))
+					 .collect(Collectors.toList());
 		return String.join("\n", normalize(transposedRows, 0));
     }
 }
