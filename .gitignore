@@ -14,6 +14,7 @@
 .project
 HELP.md
 HINTS.md
+TUTORIAL.md
 cleanup.*
 .fake
 .ionide

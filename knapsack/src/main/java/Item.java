@@ -1,5 +1,4 @@
 public class Item {
-
     private final int value;
     private final int weight;
 
@@ -7,11 +6,9 @@ public class Item {
         this.weight = weight;
         this.value = value;
     }
-
     public int getValue() {
         return value;
     }
-
     public int getWeight() {
         return weight;
     }

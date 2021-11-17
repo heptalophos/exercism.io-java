@@ -91,3 +91,55 @@ IsbnVerifierTest > invalidCharactersAreNotIgnored PASSED
 BUILD SUCCESSFUL
 
 Total time: 3.56 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+IsbnVerifierTest > isbnWithoutCheckDigit PASSED
+
+IsbnVerifierTest > invalidCharacterInIsbn PASSED
+
+IsbnVerifierTest > emptyIsbn PASSED
+
+IsbnVerifierTest > validIsbnNumberWithCheckDigitOfTen PASSED
+
+IsbnVerifierTest > tooShortIsbn PASSED
+
+IsbnVerifierTest > checkDigitIsACharacterOtherThanX PASSED
+
+IsbnVerifierTest > tooLongIsbnAndNoDashes PASSED
+
+IsbnVerifierTest > xIsOnlyValidAsACheckDigit PASSED
+
+IsbnVerifierTest > inputIsNineCharacters PASSED
+
+IsbnVerifierTest > isbnWithoutSeparatingDashesAndXAsCheckDigit PASSED
+
+IsbnVerifierTest > validIsbnNumber PASSED
+
+IsbnVerifierTest > isbnWithoutCheckDigitAndDashes PASSED
+
+IsbnVerifierTest > validIsbnWithoutSeparatingDashes PASSED
+
+IsbnVerifierTest > inputIsTooLongButContainsAValidIsbn PASSED
+
+IsbnVerifierTest > checkDigitOfXShouldNotBeUsedForZero PASSED
+
+IsbnVerifierTest > validIsbnNumberWithCheckDigitPaddedWithLettersIsInvalid PASSED
+
+IsbnVerifierTest > invalidIsbnCheckDigit PASSED
+
+IsbnVerifierTest > invalidCharactersAreNotIgnored PASSED
+
+BUILD SUCCESSFUL in 6s
+3 actionable tasks: 3 executed

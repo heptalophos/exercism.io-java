@@ -9,3 +9,28 @@
 BUILD SUCCESSFUL
 
 Total time: 19.198 secs
+
+
+
+>gradle test
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+GreeterTest > testThatGreeterReturnsTheCorrectGreeting PASSED
+
+HelloWorldTest > helloSampleName PASSED
+
+HelloWorldTest > helloNoName PASSED
+
+HelloWorldTest > helloAnotherSampleName PASSED
+
+BUILD SUCCESSFUL in 1m 1s
+3 actionable tasks: 3 executed
