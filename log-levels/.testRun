@@ -1,0 +1,35 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+LogLevelsTest > message_with_leading_and_trailing_white_space PASSED
+
+LogLevelsTest > info_message PASSED
+
+LogLevelsTest > error_message PASSED
+
+LogLevelsTest > reformat_with_leading_and_trailing_white_space PASSED
+
+LogLevelsTest > info_log_level PASSED
+
+LogLevelsTest > error_reformat PASSED
+
+LogLevelsTest > error_log_level PASSED
+
+LogLevelsTest > info_reformat PASSED
+
+LogLevelsTest > warning_reformat PASSED
+
+LogLevelsTest > warning_log_level PASSED
+
+LogLevelsTest > warning_message PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
