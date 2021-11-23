@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class LogLevels {
 
     private static Map<String, String> logLineParts(String logLine) {
-        Pattern pattern = Pattern.compile("\\[(\\w+)\\]:\\s*(.+)");
+        Pattern pattern = Pattern.compile("\\[(\\w+)\\]\\s*:\\s*(.+)");
         Matcher matcher = pattern.matcher(logLine);
         matcher.find();
         return Map.of(":message", matcher.group(2), ":log-level", matcher.group(1));

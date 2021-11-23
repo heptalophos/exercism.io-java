@@ -1,0 +1,37 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+CarsAssembleTest > workingItemsPerMinuteForSpeedFive PASSED
+
+CarsAssembleTest > workingItemsPerMinuteForSpeedNine PASSED
+
+CarsAssembleTest > workingItemsPerMinuteForSpeedZero PASSED
+
+CarsAssembleTest > workingItemsPerMinuteForSpeedEight PASSED
+
+CarsAssembleTest > productionRatePerHourForSpeedSeven PASSED
+
+CarsAssembleTest > workingItemsPerMinuteForSpeedOne PASSED
+
+CarsAssembleTest > workingItemsPerMinuteForSpeedTen PASSED
+
+CarsAssembleTest > productionRatePerHourForSpeedOne PASSED
+
+CarsAssembleTest > productionRatePerHourForSpeedTen PASSED
+
+CarsAssembleTest > productionRatePerHourForSpeedFour PASSED
+
+CarsAssembleTest > productionRatePerHourForSpeedNine PASSED
+
+CarsAssembleTest > productionRatePerHourForSpeedZero PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
