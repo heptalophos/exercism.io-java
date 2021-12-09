@@ -1,26 +1,57 @@
 public class Blackjack {
 
-    
+    private static final int BLACKJACK = 21;
+    private static final String STAND = "S";
+    private static final String SPLIT = "P";
+    private static final String HIT   = "H";
+    private static final String WIN   = "W";
 
     public int parseCard(String card) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.parseCard method");
+        int cardScore = 
+            card.equalsIgnoreCase("ace")   ?
+            11 :
+            card.equalsIgnoreCase("two")   ?
+            2  :
+            card.equalsIgnoreCase("three") ?
+            3  :
+            card.equalsIgnoreCase("four")  ?
+            4  :
+            card.equalsIgnoreCase("five")  ?
+            5  :
+            card.equalsIgnoreCase("six")   ?
+            6  :
+            card.equalsIgnoreCase("seven") ?
+            7  :
+            card.equalsIgnoreCase("eight") ?
+            8  :
+            card.equalsIgnoreCase("nine")  ?
+            9  :
+            card.equalsIgnoreCase("ten")   ?
+            10 :
+            card.equalsIgnoreCase("jack")  ?
+            10 :
+            card.equalsIgnoreCase("queen") ?
+            10 :
+            card.equalsIgnoreCase("king")  ?
+            10 : 0;
+        return cardScore;                
     }
 
     public boolean isBlackjack(String card1, String card2) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.isBlackjack method");
+        return parseCard(card1) + parseCard(card2) == BLACKJACK;
     }
 
     public String largeHand(boolean isBlackjack, int dealerScore) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.largeHand method");
+        return !isBlackjack     ? SPLIT : 
+               dealerScore < 10 ? WIN   : STAND;
     }
 
     public String smallHand(int handScore, int dealerScore) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.smallHand method");
+        return handScore >= 17  ? STAND : 
+               handScore <= 11  ? HIT   :
+               dealerScore >= 7 ? HIT   : STAND;
     }
 
-    // FirstTurn returns the semi-optimal decision for the first turn, given the cards of the player and the dealer.
-    // This function is already implemented and does not need to be edited. It pulls the other functions together in a
-    // complete decision tree for the first turn.
     public String firstTurn(String card1, String card2, String dealerCard) {
         int handScore = parseCard(card1) + parseCard(card2);
         int dealerScore = parseCard(dealerCard);
