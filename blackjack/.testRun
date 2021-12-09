@@ -1,0 +1,123 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+BlackjackTest > blackjackWithKingAceSecond PASSED
+
+BlackjackTest > firstTurnWithAceAceAndDealerAce PASSED
+
+BlackjackTest > firstTurnWithTwoNineAndDealerQueen PASSED
+
+BlackjackTest > firstTurnWithKingSevenAndDealerAce PASSED
+
+BlackjackTest > firstTurnWithTwoTenAndDealerQueen PASSED
+
+BlackjackTest > firstTurnWithTwoTenAndDealerSeven PASSED
+
+BlackjackTest > firstTurnWithKingTenAndDealerAce PASSED
+
+BlackjackTest > firstTurnWithFourTenAndDealerQueen PASSED
+
+BlackjackTest > firstTurnWithFourTenAndDealerSeven PASSED
+
+BlackjackTest > correctParsesEight PASSED
+
+BlackjackTest > correctParsesQueen PASSED
+
+BlackjackTest > correctParsesSeven PASSED
+
+BlackjackTest > correctParsesThree PASSED
+
+BlackjackTest > firstTurnWithJackJackAndDealerAce PASSED
+
+BlackjackTest > firstTurnWithFiveTenAndDealerKing PASSED
+
+BlackjackTest > firstTurnWithEightTenAndDealerAce PASSED
+
+BlackjackTest > blackjackWithJackAceSecond PASSED
+
+BlackjackTest > firstTurnWithSixTenAndDealerAce PASSED
+
+BlackjackTest > firstTurnWithSixTenAndDealerSix PASSED
+
+BlackjackTest > firstTurnWithThreeTenAndDealerSix PASSED
+
+BlackjackTest > noBlackjackWithTwoFigures PASSED
+
+BlackjackTest > firstTurnWithTwoTwoAndDealerAce PASSED
+
+BlackjackTest > firstTurnWithAceKingAndDealerQueen PASSED
+
+BlackjackTest > firstTurnWithTwoEightAndDealerTwo PASSED
+
+BlackjackTest > firstTurnWithKingKingAndDealerAce PASSED
+
+BlackjackTest > firstTurnWithJackAceAndDealerAce PASSED
+
+BlackjackTest > firstTurnWithFiveFiveAndAce PASSED
+
+BlackjackTest > noBlackjackWithKingAndFive PASSED
+
+BlackjackTest > firstTurnWithTwoTenAndDealerSix PASSED
+
+BlackjackTest > firstTurnWithFiveTenAndDealerSeven PASSED
+
+BlackjackTest > blackjackWithTenAceSecond PASSED
+
+BlackjackTest > firstTurnWithTwoTwoAndDealerFive PASSED
+
+BlackjackTest > firstTurnWithFourTenAndDealerSix PASSED
+
+BlackjackTest > noBlackjackWithTwoAces PASSED
+
+BlackjackTest > correctParsesAce PASSED
+
+BlackjackTest > correctParsesSix PASSED
+
+BlackjackTest > correctParsesTen PASSED
+
+BlackjackTest > correctParsesTwo PASSED
+
+BlackjackTest > firstTurnWithNineTenAndDealerAce PASSED
+
+BlackjackTest > firstTurnWithKingAceAndDealerNine PASSED
+
+BlackjackTest > blackjackWithQueenAceSecond PASSED
+
+BlackjackTest > correctParsesFive PASSED
+
+BlackjackTest > correctParsesFour PASSED
+
+BlackjackTest > correctParsesJack PASSED
+
+BlackjackTest > correctParsesKing PASSED
+
+BlackjackTest > correctParsesNine PASSED
+
+BlackjackTest > firstTurnWithSixTenAndDealerSeven PASSED
+
+BlackjackTest > firstTurnWithTenAceAndDealerFive PASSED
+
+BlackjackTest > firstTurnWithFiveTenAndDealerSix PASSED
+
+BlackjackTest > firstTurnWithTwoThreeAndDealerQueen PASSED
+
+BlackjackTest > noBlackjackWithEightAndFive PASSED
+
+BlackjackTest > firstTurnWithThreeTenAndDealerQueen PASSED
+
+BlackjackTest > firstTurnWithThreeTenAndDealerSeven PASSED
+
+BlackjackTest > noBlackjackWithFive PASSED
+
+BlackjackTest > noBlackjackWithNine PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
