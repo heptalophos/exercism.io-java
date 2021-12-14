@@ -1,0 +1,33 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+ElonsToyCarTest > buy_new_car_returns_instance PASSED
+
+ElonsToyCarTest > new_car_distance_display PASSED
+
+ElonsToyCarTest > distance_display_after_driving_once PASSED
+
+ElonsToyCarTest > battery_display_after_driving_once PASSED
+
+ElonsToyCarTest > distance_display_when_battery_empty PASSED
+
+ElonsToyCarTest > battery_display_when_battery_empty PASSED
+
+ElonsToyCarTest > battery_display_after_driving_multiple_times PASSED
+
+ElonsToyCarTest > buy_new_car_returns_new_car_each_time PASSED
+
+ElonsToyCarTest > distance_display_after_driving_multiple_times PASSED
+
+ElonsToyCarTest > new_car_battery_display PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
