@@ -1,0 +1,35 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+LanguageListTest > addMultipleLanguages PASSED
+
+LanguageListTest > countEmpty PASSED
+
+LanguageListTest > countThree PASSED
+
+LanguageListTest > excitingLanguageListWithKotlin PASSED
+
+LanguageListTest > addOneLanguage PASSED
+
+LanguageListTest > empty PASSED
+
+LanguageListTest > firstLanguage PASSED
+
+LanguageListTest > boringLanguageList PASSED
+
+LanguageListTest > excitingLanguageListWithJava PASSED
+
+LanguageListTest > removeLanguage PASSED
+
+LanguageListTest > nonEmpty PASSED
+
+BUILD SUCCESSFUL in 9s
+3 actionable tasks: 3 executed
