@@ -80,3 +80,41 @@ BinarySearchTest > findsAValueInTheMiddleOfAnArray PASSED
 
 BUILD SUCCESSFUL in 29s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :test
+
+BinarySearchTest > identifiesThatAValueIsNotFoundInTheArray PASSED
+
+BinarySearchTest > nothingIsFoundWhenTheLeftAndRightBoundCross PASSED
+
+BinarySearchTest > findsAValueInAnArrayWithOneElement PASSED
+
+BinarySearchTest > aValueLargerThanTheArraysSmallestValueIsNotFound PASSED
+
+BinarySearchTest > findsAValueInAnArrayOfOddLength PASSED
+
+BinarySearchTest > findsAValueAtTheEndOfAnArray PASSED
+
+BinarySearchTest > aValueSmallerThanTheArraysSmallestValueIsNotFound PASSED
+
+BinarySearchTest > findsAValueInAnArrayOfEvenLength PASSED
+
+BinarySearchTest > findsAValueAtTheBeginningOfAnArray PASSED
+
+BinarySearchTest > nothingIsFoundInAnEmptyArray PASSED
+
+BinarySearchTest > findsAValueInTheMiddleOfAnArray PASSED
+
+BUILD SUCCESSFUL in 5s
+3 actionable tasks: 2 executed, 1 up-to-date

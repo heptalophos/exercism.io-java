@@ -12,7 +12,7 @@ public class BinarySearch <T extends Comparable<T>> {
         int min = 0; 
         int max = list.size() - 1;
         while (min <= max) {
-            int mid = (min + max) / 2;
+            int mid = (min + max) >> 1;
             int diff = value.compareTo(list.get(mid));
             if (diff < 0) max = mid - 1;
             if (diff > 0) min = mid + 1;
