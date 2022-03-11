@@ -1,0 +1,35 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+SalaryCalculatorTest > soldAboveThreshold PASSED
+
+SalaryCalculatorTest > skippedBelowThresholdAndSoldAboveThreshold PASSED
+
+SalaryCalculatorTest > salaryRespectMaximum PASSED
+
+SalaryCalculatorTest > regularSalary PASSED
+
+SalaryCalculatorTest > salaryCanReachCloseToMaximum PASSED
+
+SalaryCalculatorTest > skippedAboveThresholdAndSoldBelowThreshold PASSED
+
+SalaryCalculatorTest > skippedBelowThreshold PASSED
+
+SalaryCalculatorTest > skippedAboveThresholdAndSoldAboveThreshold PASSED
+
+SalaryCalculatorTest > skippedAboveThreshold PASSED
+
+SalaryCalculatorTest > soldBelowThreshold PASSED
+
+SalaryCalculatorTest > skippedBelowThresholdAndSoldBelowThreshold PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
