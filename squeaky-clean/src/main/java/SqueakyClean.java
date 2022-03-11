@@ -1,5 +1,3 @@
-import javax.lang.model.util.ElementScanner14;
-
 class SqueakyClean {
     static String clean(String identifier) {
         StringBuilder cleaned = new StringBuilder(identifier.length());
@@ -9,14 +7,14 @@ class SqueakyClean {
                 if (wordBoundary) {
                     cleaned.append(Character.toUpperCase(ch));
                 } else
+                if (Character.isLetter(ch)) {
+                    cleaned.append(ch);
+                } else 
                 if (Character.isWhitespace(ch)) {
                     cleaned.append('_');
                 } else 
                 if (Character.isISOControl(ch)) {
                     cleaned.append("CTRL");
-                } else 
-                if (Character.isLetter(ch)) {
-                    cleaned.append(ch);
                 }
                 wordBoundary = (ch == '-');
             }
@@ -26,6 +24,6 @@ class SqueakyClean {
     }
 
     private static boolean isNotGreek(char ch) {
-        return (ch < 'α' && 'ω' < ch);
+        return (ch < 'α' || 'ω' < ch);
     }
 }
