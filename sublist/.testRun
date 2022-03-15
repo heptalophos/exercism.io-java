@@ -1,0 +1,47 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+RelationshipComputerTest > testEmptyListIsSublistOfNonEmptyList PASSED
+
+RelationshipComputerTest > testThatListsWithSameDigitsButDifferentNumbersAreUnequal PASSED
+
+RelationshipComputerTest > testSublistCheckDoesNotAbortAfterFalseStart PASSED
+
+RelationshipComputerTest > testInMiddleOfSuperlist PASSED
+
+RelationshipComputerTest > testListIsEqualToItself PASSED
+
+RelationshipComputerTest > testDifferentListsOfTheSameLengthAreUnequal PASSED
+
+RelationshipComputerTest > testSublistAtEnd PASSED
+
+RelationshipComputerTest > testAtEndOfSuperlist PASSED
+
+RelationshipComputerTest > testSublistInMiddle PASSED
+
+RelationshipComputerTest > testSublistAtStart PASSED
+
+RelationshipComputerTest > testFirstListMissingElementFromSecondList PASSED
+
+RelationshipComputerTest > testSecondListMissingElementFromFirstList PASSED
+
+RelationshipComputerTest > testThatListOrderingIsAccountedFor PASSED
+
+RelationshipComputerTest > testSublistCheckHandlesExtraneousRepeatsOfFirstEntry PASSED
+
+RelationshipComputerTest > testNonEmptyListIsSuperlistOfEmptyList PASSED
+
+RelationshipComputerTest > testThatTwoEmptyListsAreConsideredEqual PASSED
+
+RelationshipComputerTest > testAtStartOfSuperlist PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
