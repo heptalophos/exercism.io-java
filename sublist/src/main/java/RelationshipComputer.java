@@ -1,10 +1,18 @@
-/*
+import java.util.List;
+import java.util.Collections;
 
-Since this exercise has a difficulty of > 4 it doesn't come
-with any starter implementation.
-This is so that you get to practice creating classes and methods
-which is an important part of programming in Java.
+class RelationshipComputer<T> {
 
-Please remove this comment when submitting your solution.
-
-*/
+    public Relationship computeRelationship(List<T> a, List<T> b) {
+        if (a.size() == b.size())
+            if (Collections.indexOfSubList(a, b) == 0) 
+                return Relationship.EQUAL;
+        if (a.size() > b.size())
+            if (Collections.indexOfSubList(a, b) >= 0) 
+                return Relationship.SUPERLIST;
+        if (a.size() < b.size())
+            if (Collections.indexOfSubList(b, a) >= 0) 
+                return Relationship.SUBLIST;
+        return Relationship.UNEQUAL;
+    }
+}
