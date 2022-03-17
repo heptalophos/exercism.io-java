@@ -3,7 +3,7 @@ public class ElonsToyCar {
     private int battery = 100;
 
     public static ElonsToyCar buy() {
-        return new ElonsToyCar();    
+        return new ElonsToyCar(); 
     }
 
     public String distanceDisplay() {
