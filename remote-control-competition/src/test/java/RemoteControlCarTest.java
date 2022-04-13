@@ -5,7 +5,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class RemoteControlCarTest {
-    @Ignore
+    
     @Test
     public void race() {
         ProductionRemoteControlCar productionCar = new ProductionRemoteControlCar();
@@ -16,7 +16,7 @@ public class RemoteControlCarTest {
         TestTrack.race((RemoteControlCar) experimentalCar);
         assertThat(experimentalCar.getDistanceTravelled() - productionCar.getDistanceTravelled()).isEqualTo(20);
     }
-    @Ignore
+    
     @Test
     public void rankCars() {
         ProductionRemoteControlCar prc1 = new ProductionRemoteControlCar();
@@ -26,7 +26,7 @@ public class RemoteControlCarTest {
         List<ProductionRemoteControlCar> rankings = TestTrack.getRankedCars(prc1, prc2);
         assertThat(rankings.get(1)).isEqualTo(prc1);
     }
-    @Ignore
+    
     @Test
     public void ensureCarsAreComparables() {
         assertThat(RemoteControlCar.class).isAssignableFrom(ProductionRemoteControlCar.class);
