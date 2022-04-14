@@ -1,6 +1,6 @@
 import java.util.List;
 import java.util.stream.Stream;
-import java.util.stream.Collectors;
+import static java.util.stream.Collectors.toList;
 import static java.util.Comparator.comparingInt;
 
 public class TestTrack {
@@ -17,6 +17,6 @@ public class TestTrack {
                             ProductionRemoteControlCar::getNumberOfVictories
                          )
                       )
-                     .collect(Collectors::toList);
+                     .collect(toList());
     }
 }
