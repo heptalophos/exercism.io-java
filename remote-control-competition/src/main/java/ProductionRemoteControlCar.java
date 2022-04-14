@@ -1,18 +1,16 @@
 class ProductionRemoteControlCar implements RemoteControlCar {
-
+    private int distance  = 0;
+    private int victories = 0;
     public void drive() {
-        throw new UnsupportedOperationException("");
+        distance += 10;
     }
-
     public int getDistanceTravelled() {
-        throw new UnsupportedOperationException("");
+        return distance;
     }
-
     public int getNumberOfVictories() {
-        throw new UnsupportedOperationException("");
+        return victories;
     }
-
     public void setNumberOfVictories(int numberofVictories) {
-        throw new UnsupportedOperationException("");
+        victories = numberofVictories;
     }
 }
