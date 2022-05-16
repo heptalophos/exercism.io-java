@@ -6,7 +6,6 @@ abstract class Fighter {
 
     abstract int damagePoints(Fighter fighter);
 
-    // @Override
     public String toString() {
         return "Fighter is a " + getClass().getSimpleName();
     }
