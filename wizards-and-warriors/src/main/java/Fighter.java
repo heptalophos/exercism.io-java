@@ -25,7 +25,7 @@ class Wizard extends Fighter {
 
     @Override
     boolean isVulnerable() {
-        return spellReady == false;
+        return !spellReady;
     }
 
     @Override
