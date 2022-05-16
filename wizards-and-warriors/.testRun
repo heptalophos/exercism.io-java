@@ -1,0 +1,23 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+FighterTest > testFighterVulnerableByDefault PASSED
+
+FighterTest > testToString PASSED
+
+FighterTest > testWarriorsDamagePoints PASSED
+
+FighterTest > testWizardsDamagePoints PASSED
+
+FighterTest > testWizardVulnerable PASSED
+
+BUILD SUCCESSFUL in 11s
+3 actionable tasks: 3 executed
