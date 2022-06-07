@@ -1,0 +1,33 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+FootballMatchReportsTest > test_goal PASSED
+
+FootballMatchReportsTest > test_exception_negative_number PASSED
+
+FootballMatchReportsTest > test_midfielder PASSED
+
+FootballMatchReportsTest > test_striker PASSED
+
+FootballMatchReportsTest > test_exception PASSED
+
+FootballMatchReportsTest > test_right_back PASSED
+
+FootballMatchReportsTest > test_right_wing PASSED
+
+FootballMatchReportsTest > test_left_back PASSED
+
+FootballMatchReportsTest > test_left_wing PASSED
+
+FootballMatchReportsTest > test_center_back PASSED
+
+BUILD SUCCESSFUL in 6s
+3 actionable tasks: 3 executed
