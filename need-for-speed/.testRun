@@ -39,3 +39,47 @@ NeedForSpeedTest > drive_to_almost_drain_battery PASSED
 
 BUILD SUCCESSFUL in 6s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+NeedForSpeedTest > new_remote_control_car_has_not_driven_any_distance PASSED
+
+NeedForSpeedTest > drive_until_battery_is_drained PASSED
+
+NeedForSpeedTest > nitro_car_has_battery_not_drained PASSED
+
+NeedForSpeedTest > new_remote_control_car_battery_is_not_drained PASSED
+
+NeedForSpeedTest > car_can_finish_with_car_that_just_cannot_finish PASSED
+
+NeedForSpeedTest > drive_increases_distance_driven_with_speed PASSED
+
+NeedForSpeedTest > car_can_finish_with_car_that_can_easily_finish PASSED
+
+NeedForSpeedTest > drive_does_not_increase_distance_driven_when_battery_drained PASSED
+
+NeedForSpeedTest > nitro_has_correct_battery_drain PASSED
+
+NeedForSpeedTest > car_can_finish_with_car_that_can_just_finish PASSED
+
+NeedForSpeedTest > nitro_car_has_correct_speed PASSED
+
+NeedForSpeedTest > nitro_car_has_not_driven_any_distance PASSED
+
+NeedForSpeedTest > car_can_finish_with_car_that_cannot_finish PASSED
+
+NeedForSpeedTest > drive_to_almost_drain_battery PASSED
+
+BUILD SUCCESSFUL in 7s
+3 actionable tasks: 3 executed
