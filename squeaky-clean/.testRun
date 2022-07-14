@@ -31,3 +31,43 @@ SqueakyCleanTest > single_letter PASSED
 
 BUILD SUCCESSFUL in 5s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+SqueakyCleanTest > keep_only_letters PASSED
+
+SqueakyCleanTest > omit_lower_case_greek_letters PASSED
+
+SqueakyCleanTest > spaces PASSED
+
+SqueakyCleanTest > string PASSED
+
+SqueakyCleanTest > kebab_to_camel_case_no_letter PASSED
+
+SqueakyCleanTest > string_with_no_letters PASSED
+
+SqueakyCleanTest > ctrl PASSED
+
+SqueakyCleanTest > empty PASSED
+
+SqueakyCleanTest > leading_and_trailing_spaces PASSED
+
+SqueakyCleanTest > combine_conversions PASSED
+
+SqueakyCleanTest > kebab_to_camel_case PASSED
+
+SqueakyCleanTest > single_letter PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
