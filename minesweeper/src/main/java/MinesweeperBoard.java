@@ -11,10 +11,8 @@ public class MinesweeperBoard {
     
     public MinesweeperBoard(List<String> inputBoard) {
         this.board = inputBoard;
-        this.rows = this.board.size();
-        this.cols = this.rows == 0 
-                    ? 0 
-                    : board.get(0).length();
+        this.rows  = this.board.size();
+        this.cols  = this.rows == 0 ? 0 : board.get(0).length();
     }
 
     public List<String> withNumbers() {
@@ -42,9 +40,7 @@ public class MinesweeperBoard {
                 }
             }
         }
-        return mineCount == 0 
-               ? " " 
-               : String.valueOf(mineCount);
+        return mineCount == 0 ? " " : String.valueOf(mineCount);
     }
     
     private char tile(int r, int c) {
