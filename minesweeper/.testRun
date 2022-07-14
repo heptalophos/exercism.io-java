@@ -35,3 +35,43 @@ MinesweeperBoardTest > testInputBoardWithSingleRowAndTwoMines PASSED
 
 BUILD SUCCESSFUL in 4s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+MinesweeperBoardTest > testInputBoardWithNoRowsAndNoColumns PASSED
+
+MinesweeperBoardTest > testInputBoardWithSingleColumnAndTwoMinesAtEdges PASSED
+
+MinesweeperBoardTest > testInputBoardWithSingleColumnAndTwoMines PASSED
+
+MinesweeperBoardTest > testInputBoardWithOnlyMines PASSED
+
+MinesweeperBoardTest > testInputBoardWithMinesInCross PASSED
+
+MinesweeperBoardTest > testInputBoardWithMinesAroundPerimeter PASSED
+
+MinesweeperBoardTest > testInputBoardWithSingleMineAtCenter PASSED
+
+MinesweeperBoardTest > testInputBoardWithNoMines PASSED
+
+MinesweeperBoardTest > testInputBoardWithOneRowAndNoColumns PASSED
+
+MinesweeperBoardTest > testLargeInputBoard PASSED
+
+MinesweeperBoardTest > testInputBoardWithSingleRowAndTwoMinesAtEdges PASSED
+
+MinesweeperBoardTest > testInputBoardWithSingleRowAndTwoMines PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed

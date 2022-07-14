@@ -10,17 +10,17 @@ class SqueakyClean {
                 if (Character.isLetter(ch)) {
                     cleaned.append(ch);
                 } else 
-                if (Character.isWhitespace(ch)) {
-                    cleaned.append('_');
-                } else 
                 if (Character.isISOControl(ch)) {
                     cleaned.append("CTRL");
+                } else 
+                if (Character.isWhitespace(ch)) {
+                    cleaned.append('_');
                 }
                 wordBoundary = (ch == '-');
             }
             else continue;
         }
-        return cleaned.toString();
+        return cleaned.toString().replaceAll("\\d", "");
     }
 
     private static boolean isNotGreek(char ch) {
