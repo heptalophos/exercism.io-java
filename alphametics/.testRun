@@ -1,0 +1,33 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+AlphameticsTest > testFourLetters PASSED
+
+AlphameticsTest > testSevenLetters PASSED
+
+AlphameticsTest > testThreeLetters PASSED
+
+AlphameticsTest > testTwoDigitsFinalCarry PASSED
+
+AlphameticsTest > testTenLetters41Addends PASSED
+
+AlphameticsTest > testTenLetters PASSED
+
+AlphameticsTest > testLeadingZero PASSED
+
+AlphameticsTest > testEightLetters PASSED
+
+AlphameticsTest > testUniqueValue PASSED
+
+AlphameticsTest > testSixLetters PASSED
+
+BUILD SUCCESSFUL in 19s
+3 actionable tasks: 3 executed
