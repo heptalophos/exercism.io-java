@@ -37,9 +37,11 @@ public class Team implements Comparable<Team> {
         losses += 1;
     }
 
-    private int compare(Team this, Team that) {
+    public int compareTo(Team this, Team that) {
         int rank = Integer.compare(that.getPoints(), this.getPoints());
-        return rank == 0 ? this.getTeam().compareTo(that.getTeam())
-                         : rank;
+        // if teams' ranks are the same, sort them alphabetically 
+        return rank != 0 
+               ? rank 
+               : this.getTeam().compareTo(that.getTeam());
     }
 }
