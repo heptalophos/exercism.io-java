@@ -28,5 +28,24 @@ public class Tournament {
         }
     }
     
+    String printTable() {
+        String header = 
+            String.format(MATCHES_FORMAT, "Team", "MP", "W", "D", "L", "P");
+        StringBuilder table = new StringBuilder();
+        table.append(header);
+        List<Team> teamz = new ArrayList<>(teams.values());
+        Collections.sort(teamz);
+        for (Team t: teamz) {
+            String teamRow = String.format( MATCHES_FORMAT, 
+                                            t.getTeam(), 
+                                            t.getMatches(),
+                                            t.getWins(), 
+                                            t.getDraws(),
+                                            t.getLosses(), 
+                                            t.getPoints() );
+            table.append(teamRow);
+        } 
+        return table.toString();
 
+    }
 }
