@@ -38,10 +38,10 @@ public class Team implements Comparable<Team> {
     }
 
     public int compareTo(Team this, Team that) {
-        int rank = Integer.compare(that.getPoints(), this.getPoints());
-        // if teams' ranks are the same, sort them alphabetically 
-        return rank != 0 
-               ? rank 
-               : this.getTeam().compareTo(that.getTeam());
-    }
+        int rankdiff = Integer.compare(that.getPoints(), this.getPoints());
+        // if teams' points are the same, sort them alphabetically 
+        return rankdiff == 0 
+               ? this.getTeam().compareTo(that.getTeam())
+               : rankdiff;
+        }   
 }
