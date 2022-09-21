@@ -3,8 +3,8 @@ public class Team implements Comparable<Team> {
     private final String teamName;
 
     Team (String name) {
-        this.teamName = name;
-        this. wins = this.draws = this.losses = 0;
+        teamName = name;
+        wins = draws = losses = 0;
     }
 
     String getTeam() { 
@@ -38,10 +38,11 @@ public class Team implements Comparable<Team> {
     }
 
     public int compareTo(Team this, Team that) {
-        int rankdiff = Integer.compare(that.getPoints(), this.getPoints());
-        // if teams' points are the same, sort them alphabetically 
-        return rankdiff == 0 
+        int rankDiff = Integer.compare(that.getPoints(), this.getPoints());
+        // if 2 teams have the same points, sort them alphabetically, 
+        // else sort them by rank (descending points) 
+        return rankDiff == 0 
                ? this.getTeam().compareTo(that.getTeam())
-               : rankdiff;
+               : rankDiff;
         }   
 }
