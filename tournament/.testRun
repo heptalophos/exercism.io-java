@@ -1,0 +1,35 @@
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+TournamentTest > typicalInput PASSED
+
+TournamentTest > incompleteCompetition PASSED
+
+TournamentTest > justTheHeaderIfNoInput PASSED
+
+TournamentTest > aWinCanAlsoBeExpressedAsALoss PASSED
+
+TournamentTest > aDifferentTeamCanWin PASSED
+
+TournamentTest > tiesBrokenAlphabetically PASSED
+
+TournamentTest > aWinIsThreePointsALossIsZeroPoints PASSED
+
+TournamentTest > thereCanBeMoreThanTwoTeams PASSED
+
+TournamentTest > thereCanBeMoreThanOneMatch PASSED
+
+TournamentTest > thereCanBeMoreThanOneWinner PASSED
+
+TournamentTest > aDrawIsOnePointEach PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
