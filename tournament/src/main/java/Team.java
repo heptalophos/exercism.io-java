@@ -37,7 +37,7 @@ public class Team implements Comparable<Team> {
         losses += 1;
     }
 
-    public int compareTo(Team this, Team that) {
+    public int compareTo(Team that) {
         int rankDiff = Integer.compare(that.getPoints(), this.getPoints());
         // if 2 teams have the same points, sort them alphabetically, 
         // else sort them by rank (descending points) 
