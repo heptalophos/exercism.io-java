@@ -16,7 +16,7 @@ class CollatzCalculator {
             start += 1;
         }
         else {
-            start /= 2;
+            start >>= 1;
         }
         return computeStepCount(start, steps);
     }
