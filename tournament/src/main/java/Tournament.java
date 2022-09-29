@@ -40,9 +40,12 @@ public class Tournament {
 
         for (Team team: teams) {
             String teamLine = String.format(MATCHES_FORMAT, 
-                team.getTeam(), team.getMatches(), team.getWins(), 
-                team.getDraws(), team.getLosses(), team.getPoints()
-            );
+                                            team.getTeam(), 
+                                            team.getMatches(),
+                                            team.getWins(), 
+                                            team.getDraws(),
+                                            team.getLosses(), 
+                                            team.getPoints());
             table.append(teamLine);
         } 
         return table.toString();

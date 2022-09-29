@@ -12,7 +12,8 @@ public class Alphametics {
 
     public Alphametics(String puzzle) {
         letters = puzzle.chars().filter( Character::isAlphabetic )
-                        .mapToObj( c -> (char) c ).distinct()
+                        .mapToObj( c -> (char) c )
+                        .distinct()
                         .collect( toList() );
         words   = Arrays.asList( puzzle.split("\\W+") );
     }
