@@ -1,45 +1,36 @@
 import java.util.List;
-import java.util.stream.IntStream;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
 
 public class PythagoreanTripletGen {
-
     private int minFactor = 2;
     private int maxFactor;
     private int sumTo;
-
+    
+    public List<PythagoreanTriplet> build() {
+        List<PythagoreanTriplet> triplets = new ArrayList<>();
+        for (int x = 3; x <= maxFactor && x < sumTo / 3; x++) {
+            int y = ((sumTo * sumTo) - (2 * sumTo * x)) / (2 * (sumTo - x));
+            int r = ((sumTo * sumTo) - (2 * sumTo * x)) % (2 * (sumTo - x));
+            int z = sumTo - x - y;
+            if (y <= maxFactor && z <= maxFactor) {
+                if (r == 0 && x < y) {
+                    triplets.add(new PythagoreanTriplet(x, y, z));
+                }
+            }
+        }
+        return triplets;
+    }
+    
     PythagoreanTripletGen withFactorsLessThanOrEqualTo(int val){
         maxFactor = val;
         return this;
     }
-
+    
     PythagoreanTripletGen thatSumTo(int val) {
         sumTo = val;
+        if (maxFactor == 0) {
+            maxFactor = val;
+        }
         return this;
-    }
-
-    public List<PythagoreanTriplet> build() {
-        return IntStream
-              .rangeClosed(minFactor, maxFactor / 2)
-              .boxed()
-              .flatMap(sideA -> 
-                    IntStream
-                    .range(sideA + 1, maxFactor - sideA)
-                    .boxed()
-                    .flatMap(sideB -> 
-                        IntStream
-                        .of(sumTo - sideA - sideB)
-                        .boxed()
-                        .map(sideC -> 
-                             new PythagoreanTriplet(sideA, 
-                                                    sideB, 
-                                                    sideC))
-                        .filter(
-                            PythagoreanTriplet::isPythagorean)
-                        .filter(triplet -> 
-                                sumTo == triplet
-                                         .calculateSum() 
-                               || sumTo == 0)))
-              .collect(Collectors.toList());
     }
 }
