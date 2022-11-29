@@ -1,5 +1,4 @@
-public class MatrixCoordinate 
-             implements Comparable<MatrixCoordinate> {
+public class MatrixCoordinate implements Comparable<MatrixCoordinate> {
 
     private final int row;
     private final int col;
@@ -12,17 +11,17 @@ public class MatrixCoordinate
     // Modified MatrixCoordinate, 
     // define public getters for row and col
     
-    public int row() {
+    public int getRow() {
         return row;
     }
 
-    public int col() {
+    public int getCol() {
         return col;
     }
 
     @Override
     public String toString() {
-        return "Row: " + row + ", Column: " + col;
+        return "Row: " + getRow() + ", Column: " + getCol();
     }
 
     // Generated equals and hashcode.
@@ -38,23 +37,23 @@ public class MatrixCoordinate
         final MatrixCoordinate that = 
             (MatrixCoordinate) o;
 
-        return row == that.row 
-            && col == that.col;
+        return getRow() == that.getRow() 
+            && getCol() == that.getCol();
     }
 
     @Override
     public int hashCode() {
-        int result = row;
-        result = 31 * result + col;
+        int result = getRow();
+        result = 31 * result + getCol();
         return result;
     }
 
     @Override
     public int compareTo(MatrixCoordinate o) {
         int rowComparison = 
-            Integer.compare(row, o.row);
+            Integer.compare(getRow(), o.getRow());
         return (rowComparison == 0) ? 
-               Integer.compare(col, o.col) : 
+               Integer.compare(getCol(), o.getCol()) : 
                rowComparison;
     }
 }

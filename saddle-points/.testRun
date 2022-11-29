@@ -36,36 +36,6 @@ BUILD SUCCESSFUL
 Total time: 10.865 secs
 
 
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
-
-MatrixTest > testCanIdentifyMultipleSaddlePointsInAColumn PASSED
-
-MatrixTest > testCanIdentifyThatEmptyMatrixHasNoSaddlePoints PASSED
-
-MatrixTest > testCanIdentifySaddlePointInBottomRightCorner PASSED
-
-MatrixTest > testCanIdentifyMultipleSaddlePointsInARow PASSED
-
-MatrixTest > testCanIdentifySaddlePointsInANonSquareMatrix PASSED
-
-MatrixTest > testCanIdentifyThatSaddlePointsInASingleRowMatrixAreThoseWithMaximumValue PASSED
-
-MatrixTest > testCanIdentifyLackOfSaddlePointsWhenThereAreNone PASSED
-
-MatrixTest > testCanIdentifySingleSaddlePoint PASSED
-
-MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMinimumValue PASSED
-
-BUILD SUCCESSFUL
-
-Total time: 16.475 secs
-
 
 :compileJava
 :processResources NO-SOURCE
@@ -96,38 +66,6 @@ MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMin
 BUILD SUCCESSFUL
 
 Total time: 4.291 secs
-
-
-
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
-
-MatrixTest > testCanIdentifyMultipleSaddlePointsInAColumn PASSED
-
-MatrixTest > testCanIdentifyThatEmptyMatrixHasNoSaddlePoints PASSED
-
-MatrixTest > testCanIdentifySaddlePointInBottomRightCorner PASSED
-
-MatrixTest > testCanIdentifyMultipleSaddlePointsInARow PASSED
-
-MatrixTest > testCanIdentifySaddlePointsInANonSquareMatrix PASSED
-
-MatrixTest > testCanIdentifyThatSaddlePointsInASingleRowMatrixAreThoseWithMaximumValue PASSED
-
-MatrixTest > testCanIdentifyLackOfSaddlePointsWhenThereAreNone PASSED
-
-MatrixTest > testCanIdentifySingleSaddlePoint PASSED
-
-MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMinimumValue PASSED
-
-BUILD SUCCESSFUL
-
-Total time: 4.105 secs
 
 
 
@@ -194,3 +132,37 @@ MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMin
 BUILD SUCCESSFUL
 
 Total time: 7.086 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+MatrixTest > testCanIdentifyMultipleSaddlePointsInAColumn PASSED
+
+MatrixTest > testCanIdentifyThatEmptyMatrixHasNoSaddlePoints PASSED
+
+MatrixTest > testCanIdentifySaddlePointInBottomRightCorner PASSED
+
+MatrixTest > testCanIdentifyMultipleSaddlePointsInARow PASSED
+
+MatrixTest > testCanIdentifySaddlePointsInANonSquareMatrix PASSED
+
+MatrixTest > testCanIdentifyThatSaddlePointsInASingleRowMatrixAreThoseWithMaximumValue PASSED
+
+MatrixTest > testCanIdentifyLackOfSaddlePointsWhenThereAreNone PASSED
+
+MatrixTest > testCanIdentifySingleSaddlePoint PASSED
+
+MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMinimumValue PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed

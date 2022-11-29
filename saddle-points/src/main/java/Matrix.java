@@ -1,10 +1,12 @@
 import java.util.List;
 import java.util.Set;
-import java.util.Collections;
 import java.util.stream.IntStream;
-import java.util.stream.Collectors;
+import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toSet;
+import static java.util.Collections.emptyList;
+import static java.util.Collections.emptySet;
 
-class Matrix {
+public class Matrix {
 
     private final List<List<Integer>> matrix;
     private List<Integer> maxRow;
@@ -21,21 +23,21 @@ class Matrix {
                                  .stream()
                                  .max(Integer::compareTo)
                                  .get())
-                     .collect(Collectors.toList());
+                     .collect(toList());
             minCol = IntStream
                     .range(0, matrix.get(0).size())
                     .mapToObj(this::getRow)
-                    .collect(Collectors.toList())
+                    .collect(toList())
                     .stream()
                     .map(val -> val
                                 .stream()
                                 .min(Integer::compareTo)
                                 .get())
-                    .collect(Collectors.toList());
+                    .collect(toList());
         }
         else {
-            maxRow = Collections.emptyList();
-            minCol = Collections.emptyList();
+            maxRow = emptyList();
+            minCol = emptyList();
         }
     }
 
@@ -48,13 +50,12 @@ class Matrix {
                    .flatMap(r -> 
                             IntStream
                             .range(0, matrix.get(0).size())
-                            .mapToObj(x -> 
-                               new MatrixCoordinate(r + 1, 
-                                                    x + 1)))
+                            .mapToObj(c -> 
+                               new MatrixCoordinate(r + 1, c + 1)))
                    .filter(this::saddlePoint)
-                   .collect(Collectors.toSet());
+                   .collect(toSet());
         }
-        return Collections.emptySet();
+        return emptySet();
     }
 
     private List<Integer> getRow(int row) {
@@ -62,12 +63,12 @@ class Matrix {
         return matrix
                .stream()
                .map(r -> r.get(row))
-               .collect(Collectors.toList());
+               .collect(toList());
     }
 
     private boolean saddlePoint(MatrixCoordinate p) {
 
-        return maxRow.get(p.row()) == minCol.get(p.col());
+        return maxRow.get(p.getRow()) == minCol.get(p.getCol());
     } 
 }
 
