@@ -91,3 +91,37 @@ PythagoreanTripletTest > tripletsWhoseSumIs840_2 PASSED
 
 BUILD SUCCESSFUL in 4s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+PythagoreanTripletTest > tripletsWhoseSumIs30000_2 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs1000 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs1001 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs108 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs840 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs12 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs90 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs30000 PASSED
+
+PythagoreanTripletTest > tripletsWhoseSumIs840_2 PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
