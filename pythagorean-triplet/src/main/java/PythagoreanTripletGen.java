@@ -10,12 +10,12 @@ public class PythagoreanTripletGen {
         List<PythagoreanTriplet> triplets = new ArrayList<>();
         for (int x = 3; x <= maxFactor && x < sumTo / 3; x++) {
             int y = ((sumTo * sumTo) - (2 * sumTo * x)) / (2 * (sumTo - x));
+            if (y > maxFactor) continue;
             int r = ((sumTo * sumTo) - (2 * sumTo * x)) % (2 * (sumTo - x));
             int z = sumTo - x - y;
-            if (y <= maxFactor && z <= maxFactor) {
-                if (r == 0 && x < y) {
-                    triplets.add(new PythagoreanTriplet(x, y, z));
-                }
+            if (z > maxFactor) continue;
+            if (r == 0 && x < y) {
+                triplets.add(new PythagoreanTriplet(x, y, z));
             }
         }
         return triplets;
