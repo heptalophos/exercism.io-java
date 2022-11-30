@@ -1,5 +1,4 @@
 public class MatrixCoordinate implements Comparable<MatrixCoordinate> {
-
     private final int row;
     private final int col;
 
@@ -7,53 +6,43 @@ public class MatrixCoordinate implements Comparable<MatrixCoordinate> {
         this.row = row - 1;
         this.col = col - 1;
     }
-
-    // Modified MatrixCoordinate, 
-    // define public getters for row and col
-    
-    public int getRow() {
-        return row;
+  
+    public int row() {
+        return this.row;
     }
-
-    public int getCol() {
-        return col;
+  
+    public int col() {
+        return this.col;
     }
 
     @Override
     public String toString() {
-        return "Row: " + getRow() + ", Column: " + getCol();
+        return "Row: " + row() + ", Column: " + col();
     }
-
-    // Generated equals and hashcode.
-
+  
+  // Generated equals and hashcode.
     @Override
-    public boolean equals(final Object o) {
-        if (this == o) 
-            return true;
-        
-            if (o == null || getClass() != o.getClass()) 
-            return false;
-
-        final MatrixCoordinate that = 
-            (MatrixCoordinate) o;
-
-        return getRow() == that.getRow() 
-            && getCol() == that.getCol();
-    }
-
+        public boolean equals(final Object o) {
+            if (this == o) 
+                return true;
+            if (o == null || this.getClass() != o.getClass()) 
+                return false;
+            final MatrixCoordinate that = (MatrixCoordinate) o;
+            return this.row() == that.row() && this.col() == that.col();
+  }
+  
     @Override
     public int hashCode() {
-        int result = getRow();
-        result = 31 * result + getCol();
+        int result = row();
+        result = 31 * result + col();
         return result;
     }
 
     @Override
-    public int compareTo(MatrixCoordinate o) {
-        int rowComparison = 
-            Integer.compare(getRow(), o.getRow());
-        return (rowComparison == 0) ? 
-               Integer.compare(getCol(), o.getCol()) : 
-               rowComparison;
+        public int compareTo(MatrixCoordinate that) {
+            int rowComparison = Integer.compare(this.row(), that.row());
+            return  (rowComparison == 0) 
+                    ? Integer.compare(this.col(), that.col()) 
+                    : rowComparison;
     }
 }

@@ -1,8 +1,11 @@
-@SuppressWarnings("serial")
 class TriangleException extends Exception {
+    private static final long serialVersionUID = 12345678L;
 
-	public TriangleException(String string) {
-		
-		super(string);
-	}
+    public TriangleException() {
+        super();
+    }
+
+    public TriangleException(String message) {
+        super(message);
+    }
 }
