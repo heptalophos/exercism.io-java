@@ -166,3 +166,37 @@ MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMin
 
 BUILD SUCCESSFUL in 4s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+MatrixTest > testCanIdentifyMultipleSaddlePointsInAColumn PASSED
+
+MatrixTest > testCanIdentifyThatEmptyMatrixHasNoSaddlePoints PASSED
+
+MatrixTest > testCanIdentifySaddlePointInBottomRightCorner PASSED
+
+MatrixTest > testCanIdentifyMultipleSaddlePointsInARow PASSED
+
+MatrixTest > testCanIdentifySaddlePointsInANonSquareMatrix PASSED
+
+MatrixTest > testCanIdentifyThatSaddlePointsInASingleRowMatrixAreThoseWithMaximumValue PASSED
+
+MatrixTest > testCanIdentifyLackOfSaddlePointsWhenThereAreNone PASSED
+
+MatrixTest > testCanIdentifySingleSaddlePoint PASSED
+
+MatrixTest > testCanIdentifyThatSaddlePointsInASingleColumnMatrixAreThoseWithMinimumValue PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
