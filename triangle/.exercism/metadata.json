@@ -1,9 +1,1 @@
-{
-    "track": "java",
-    "exercise": "triangle",
-    "id": "0983614aee5846ffa7aed2100dfbed17",
-    "url": "https://exercism.io/tracks/java/exercises/triangle/solutions/0983614aee5846ffa7aed2100dfbed17",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"java","exercise":"triangle","id":"0983614aee5846ffa7aed2100dfbed17","url":"https://exercism.org/tracks/java/exercises/triangle","handle":"heptalophos","is_requester":true,"auto_approve":false}
