@@ -207,3 +207,57 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 
 BUILD SUCCESSFUL in 6s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+TriangleTest > verySmallTrianglesCanBeEquilateral PASSED
+
+TriangleTest > isoscelesTrianglesHaveLastTwoSidesEqual PASSED
+
+TriangleTest > trianglesWithOneUnequalSideAreNotEquilateral PASSED
+
+TriangleTest > scaleneTrianglesHaveNoEqualSides PASSED
+
+TriangleTest > trianglesWithNoEqualSidesAreNotEquilateral PASSED
+
+TriangleTest > isoscelesTrianglesHaveFirstAndLastSidesEqual PASSED
+
+TriangleTest > mayNotViolateTriangleInequality PASSED
+
+TriangleTest > firstTriangleInequalityViolation PASSED
+
+TriangleTest > twoSidesEqualAreNotScalene PASSED
+
+TriangleTest > thirdTriangleInequalityViolation PASSED
+
+TriangleTest > allSidesEqualAreNotScalene PASSED
+
+TriangleTest > equilateralTrianglesHaveEqualSides PASSED
+
+TriangleTest > trianglesWithNoSizeAreIllegal PASSED
+
+TriangleTest > isoscelesTrianglesHaveTwoFirstSidesEqual PASSED
+
+TriangleTest > equilateralTrianglesAreAlsoIsosceles PASSED
+
+TriangleTest > verySmallTrianglesCanBeIsosceles PASSED
+
+TriangleTest > noSidesAreEqualCantBeIsoceles PASSED
+
+TriangleTest > secondTriangleInequalityViolation PASSED
+
+TriangleTest > verySmallTrianglesCanBeScalene PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
