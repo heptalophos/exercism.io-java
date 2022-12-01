@@ -29,3 +29,33 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 
 BUILD SUCCESSFUL in 5s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+CryptoSquareTest > punctuationIsRemovedDuringEncryption PASSED
+
+CryptoSquareTest > fiftyFourCharacterPlaintextResultsInSevenChunksWithTrailingSpaces PASSED
+
+CryptoSquareTest > emptyPlaintextResultsInEmptyCiphertext PASSED
+
+CryptoSquareTest > nineCharacterPlaintextResultsInThreeChunksOfThreeCharacters PASSED
+
+CryptoSquareTest > spacesAreRemovedDuringEncryption PASSED
+
+CryptoSquareTest > lettersAreLowerCasedDuringEncryption PASSED
+
+CryptoSquareTest > eightCharacterPlaintextResultsInThreeChunksWithATrailingSpace PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
