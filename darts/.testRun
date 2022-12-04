@@ -64,3 +64,45 @@ DartsTest > justOutsideTheInnerCircle PASSED
 BUILD SUCCESSFUL
 
 Total time: 8.128 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+DartsTest > exactlyOnCentre PASSED
+
+DartsTest > onTheInnerCircle PASSED
+
+DartsTest > justWithinTheInnerCircle PASSED
+
+DartsTest > justWithinTheMiddleCircle PASSED
+
+DartsTest > asymmetricPositionBetweenTheInnerAndMiddleCircles PASSED
+
+DartsTest > nearTheCentre PASSED
+
+DartsTest > missedTarget PASSED
+
+DartsTest > justOutsideTheOuterCircle PASSED
+
+DartsTest > justOutsideTheMiddleCircle PASSED
+
+DartsTest > onTheMiddleCircle PASSED
+
+DartsTest > onTheOuterCircle PASSED
+
+DartsTest > justWithinTheOuterCircle PASSED
+
+DartsTest > justOutsideTheInnerCircle PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
