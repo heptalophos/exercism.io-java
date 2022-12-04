@@ -1,19 +1,12 @@
-class Darts {
-
-    private double x;
-    private double y;
-
-    Darts(double x, double y) {
-        this.x = x;
-        this.y = y;
+public class Darts {
+    public int score(double x, double y) {
+        double r = x*x + y*y;
+        return r <= 1 
+               ? 10 
+               : r <= 25 
+               ? 5 
+               : r <= 100 
+               ? 1 
+               : 0;
     }
-
-    int score() {
-        double r = Math.sqrt(x*x + y*y);
-        if (r <= 1) return 10;
-        if (r <= 5) return 5;
-        if (r <= 10) return 1;
-        return 0;
-    }
-
 }
