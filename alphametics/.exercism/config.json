@@ -1,5 +1,4 @@
 {
-  "blurb": "Write a function to solve alphametics puzzles.",
   "authors": [
     "Zhiyuan-Amos"
   ],
@@ -25,6 +24,13 @@
     ],
     "example": [
       ".meta/src/reference/java/Alphametics.java"
+    ],
+    "editor": [
+      "src/main/java/UnsolvablePuzzleException.java"
+    ],
+    "invalidator": [
+      "build.gradle"
     ]
-  }
+  },
+  "blurb": "Write a function to solve alphametics puzzles."
 }

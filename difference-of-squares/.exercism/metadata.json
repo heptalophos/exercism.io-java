@@ -1,9 +1,9 @@
 {
-    "track":"java",
-    "exercise":"difference-of-squares",
-    "id":"c545653f0bfa42428e4f28f57100cfe8",
-    "url":"https://exercism.io/tracks/java/exercises/difference-of-squares/solutions/c545653f0bfa42428e4f28f57100cfe8",
-    "handle":"heptalophos",
-    "is_requester":true,
-    "auto_approve":false
+    "track": "java",
+    "exercise": "difference-of-squares",
+    "id": "c545653f0bfa42428e4f28f57100cfe8",
+    "url": "https://exercism.org/tracks/java/exercises/difference-of-squares/solutions/c545653f0bfa42428e4f28f57100cfe8",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
 }
