@@ -32,8 +32,9 @@ public class Alphametics {
         } 
         if (depth == letters.size()) {
             Map<Character, Integer> mapping = 
-                range(0, letters.size()).boxed()
-                                        .collect( toMap(letters::get, numbers::get) );
+                range(0, letters.size())
+                .boxed()
+                .collect( toMap(letters::get, numbers::get) );
                 return isItASolution( mapping ) ? mapping : Map.of();
         }
         for (int i = depth; i < numbers.size(); i++) {
