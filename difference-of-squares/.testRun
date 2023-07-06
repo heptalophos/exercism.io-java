@@ -136,3 +136,37 @@ DifferenceOfSquaresCalculatorTest > testSumOfSquaresUpToFive PASSED
 BUILD SUCCESSFUL
 
 Total time: 5.724 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+DifferenceOfSquaresCalculatorTest > testDifferenceOfSquaresUpToHundred PASSED
+
+DifferenceOfSquaresCalculatorTest > testSquareOfSumUpToOne PASSED
+
+DifferenceOfSquaresCalculatorTest > testSquareOfSumUpToHundred PASSED
+
+DifferenceOfSquaresCalculatorTest > testDifferenceOfSquaresUpToOne PASSED
+
+DifferenceOfSquaresCalculatorTest > testSumOfSquaresUpToHundred PASSED
+
+DifferenceOfSquaresCalculatorTest > testSquareOfSumUpToFive PASSED
+
+DifferenceOfSquaresCalculatorTest > testDifferenceOfSquaresUpToFive PASSED
+
+DifferenceOfSquaresCalculatorTest > testSumOfSquaresUpToOne PASSED
+
+DifferenceOfSquaresCalculatorTest > testSumOfSquaresUpToFive PASSED
+
+BUILD SUCCESSFUL in 1s
+3 actionable tasks: 3 executed
