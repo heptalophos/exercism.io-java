@@ -65,3 +65,31 @@ FlattenerTest > testSixLevelsOfNestingWithNoNulls PASSED
 BUILD SUCCESSFUL
 
 Total time: 6.181 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+FlattenerTest > testSixLevelsOfNestingWithNulls PASSED
+
+FlattenerTest > testASingleLevelOfNestingWithNoNulls PASSED
+
+FlattenerTest > testFlatListIsPreserved PASSED
+
+FlattenerTest > testFiveLevelsOfNestingWithNoNulls PASSED
+
+FlattenerTest > testNestedListsFullOfNullsOnly PASSED
+
+FlattenerTest > testSixLevelsOfNestingWithNoNulls PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
