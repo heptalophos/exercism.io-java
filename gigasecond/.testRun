@@ -44,3 +44,29 @@ GigasecondTest > withFullTimeSpecifiedAndDayRollover PASSED
 BUILD SUCCESSFUL
 
 Total time: 11.587 secs
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+GigasecondTest > withFullTimeSpecified PASSED
+
+GigasecondTest > modernTime PASSED
+
+GigasecondTest > beforeEpochTime PASSED
+
+GigasecondTest > afterEpochTime PASSED
+
+GigasecondTest > withFullTimeSpecifiedAndDayRollover PASSED
+
+BUILD SUCCESSFUL in 1s
+3 actionable tasks: 3 executed
