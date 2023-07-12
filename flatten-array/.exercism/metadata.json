@@ -1,9 +1,9 @@
 {
-  "track": "java",
-  "exercise": "flatten-array",
-  "id": "22d96315b4ea45a093fac4a4b86fb10e",
-  "url": "https://exercism.io/tracks/java/exercises/flatten-array/solutions/22d96315b4ea45a093fac4a4b86fb10e",
-  "handle": "heptalophos",
-  "is_requester": true,
-  "auto_approve": false
+    "track": "java",
+    "exercise": "flatten-array",
+    "id": "22d96315b4ea45a093fac4a4b86fb10e",
+    "url": "https://exercism.org/tracks/java/exercises/flatten-array/solutions/22d96315b4ea45a093fac4a4b86fb10e",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
 }

@@ -1,9 +1,9 @@
 {
-  "track": "java",
-  "exercise": "gigasecond",
-  "id": "0f546194782b44a99266f720bac9c9fb",
-  "url": "https://exercism.io/tracks/java/exercises/gigasecond/solutions/0f546194782b44a99266f720bac9c9fb",
-  "handle": "heptalophos",
-  "is_requester": true,
-  "auto_approve": false
+    "track": "java",
+    "exercise": "gigasecond",
+    "id": "0f546194782b44a99266f720bac9c9fb",
+    "url": "https://exercism.org/tracks/java/exercises/gigasecond/solutions/0f546194782b44a99266f720bac9c9fb",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
 }

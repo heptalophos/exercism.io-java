@@ -6,16 +6,15 @@ import java.util.stream.Stream;
 public final class Flattener {
 
     public List <?> flatten(final List<?> elements) {
-        return elements
-               .stream()
-               .filter(Objects::nonNull)
-               .flatMap(this::flatten)
-               .collect(Collectors.toList());
+        return elements.stream()
+                       .filter(Objects::nonNull)
+                       .flatMap(this::flatten)
+                       .collect(Collectors.toList());
     }
 
     private Stream<?> flatten(final Object element) {
-        return (element instanceof List) ?
-               flatten((List<?>) element).stream() :
-               Stream.of(element);
+        return (element instanceof List) 
+               ? flatten((List<?>) element).stream() 
+               : Stream.of(element);
     }
 }

@@ -35,7 +35,7 @@ public class Alphametics {
                 range(0, letters.size())
                 .boxed()
                 .collect( toMap(letters::get, numbers::get) );
-                return isItASolution( mapping ) ? mapping : Map.of();
+            return isItASolution( mapping ) ? mapping : Map.of();
         }
         for (int i = depth; i < numbers.size(); i++) {
             exchange(numbers, i, depth);
