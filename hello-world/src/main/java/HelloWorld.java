@@ -5,7 +5,7 @@ public class HelloWorld {
         return "Hello, " + who + "!";
     }
 
-    public static boolean isBlank (String string) {
+    static boolean isBlank (String string) {
         return string == null || "".equals(string);
     }
 }
