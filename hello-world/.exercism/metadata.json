@@ -1,9 +1,1 @@
-{
-    "track": "java",
-    "exercise": "hello-world",
-    "id": "e7ef7630ce804f24b032a5f3cf6a5d9d",
-    "url": "https://exercism.org/tracks/java/exercises/hello-world/solutions/e7ef7630ce804f24b032a5f3cf6a5d9d",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"java","exercise":"hello-world","id":"e7ef7630ce804f24b032a5f3cf6a5d9d","url":"https://exercism.org/tracks/java/exercises/hello-world","handle":"heptalophos","is_requester":true,"auto_approve":false}
