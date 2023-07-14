@@ -42,71 +42,26 @@ Total time: 13.629 secs
 
 
 
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthThreeWithNumbersNotInOrder PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLength0ForEmptyStringToSearch PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfZeroIfAllDigitsAreZeroes PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductInLongStringToSearchV1 PASSED
-
-LargestSeriesProductCalculatorTest > testSeriesLengthLongerThanLengthOfStringToTestIsRejected PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLength0ForNonEmptyStringToSearch PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthThreeWithNumbersInOrder PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfZeroIfAllSeriesOfGivenLengthContainZero PASSED
-
-LargestSeriesProductCalculatorTest > testNegativeSeriesLengthIsRejected PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductWhenSeriesLengthEqualsStringToSearchLength PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthTwoWithNumbersInOrder PASSED
-
-LargestSeriesProductCalculatorTest > testEmptyStringToSearchAndSeriesOfNonZeroLengthIsRejected PASSED
-
-LargestSeriesProductCalculatorTest > testStringToSearchContainingNonDigitCharacterIsRejected PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthFiveWithNumbersInOrder PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthTwoWithNumbersNotInOrder PASSED
-
-BUILD SUCCESSFUL
-
-Total time: 3.655 secs
-
-
-
 >gradle test
 
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
 
 LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthThreeWithNumbersNotInOrder PASSED
 
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLength0ForEmptyStringToSearch PASSED
+LargestSeriesProductCalculatorTest > testForIntegerOverflow PASSED
 
 LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfZeroIfAllDigitsAreZeroes PASSED
 
 LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductInLongStringToSearchV1 PASSED
 
 LargestSeriesProductCalculatorTest > testSeriesLengthLongerThanLengthOfStringToTestIsRejected PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLength0ForNonEmptyStringToSearch PASSED
 
 LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthThreeWithNumbersInOrder PASSED
 
@@ -126,52 +81,5 @@ LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLeng
 
 LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthTwoWithNumbersNotInOrder PASSED
 
-BUILD SUCCESSFUL
-
-Total time: 3.884 secs
-
-
-
->gradle test
-
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthThreeWithNumbersNotInOrder PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLength0ForEmptyStringToSearch PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfZeroIfAllDigitsAreZeroes PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductInLongStringToSearchV1 PASSED
-
-LargestSeriesProductCalculatorTest > testSeriesLengthLongerThanLengthOfStringToTestIsRejected PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLength0ForNonEmptyStringToSearch PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthThreeWithNumbersInOrder PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfZeroIfAllSeriesOfGivenLengthContainZero PASSED
-
-LargestSeriesProductCalculatorTest > testNegativeSeriesLengthIsRejected PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductWhenSeriesLengthEqualsStringToSearchLength PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthTwoWithNumbersInOrder PASSED
-
-LargestSeriesProductCalculatorTest > testEmptyStringToSearchAndSeriesOfNonZeroLengthIsRejected PASSED
-
-LargestSeriesProductCalculatorTest > testStringToSearchContainingNonDigitCharacterIsRejected PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthFiveWithNumbersInOrder PASSED
-
-LargestSeriesProductCalculatorTest > testCorrectlyCalculatesLargestProductOfLengthTwoWithNumbersNotInOrder PASSED
-
-BUILD SUCCESSFUL
-
-Total time: 22.653 secs
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
