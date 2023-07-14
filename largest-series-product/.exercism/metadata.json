@@ -1,9 +1,9 @@
 {
-  "track": "java",
-  "exercise": "largest-series-product",
-  "id": "bed468e508b14013b06b777391000cd7",
-  "url": "https://exercism.io/tracks/java/exercises/largest-series-product/solutions/bed468e508b14013b06b777391000cd7",
-  "handle": "heptalophos",
-  "is_requester": true,
-  "auto_approve": false
+    "track": "java",
+    "exercise": "largest-series-product",
+    "id": "bed468e508b14013b06b777391000cd7",
+    "url": "https://exercism.org/tracks/java/exercises/largest-series-product/solutions/bed468e508b14013b06b777391000cd7",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
 }

@@ -34,3 +34,27 @@ HelloWorldTest > helloAnotherSampleName PASSED
 
 BUILD SUCCESSFUL in 1m 1s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+GreeterTest > testThatGreeterReturnsTheCorrectGreeting PASSED
+
+HelloWorldTest > helloSampleName PASSED
+
+HelloWorldTest > helloNoName PASSED
+
+HelloWorldTest > helloAnotherSampleName PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed

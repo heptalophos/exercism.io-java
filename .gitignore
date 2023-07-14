@@ -3,14 +3,14 @@
 .classpath
 .settings/
 .project/
-/*/.settings/
-/../../../.keep
-/*/.gradle/
-/*/build/
-/*/bin/
-/*/.classpath
-/*/.project
-/../.project
+/**/.settings/
+/**/.keep
+/**/.gradle/
+/**/build/
+/**/bin/
+/**/.classpath
+/**/.project
+# /../.project
 .project
 HELP.md
 HINTS.md

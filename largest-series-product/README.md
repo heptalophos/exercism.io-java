@@ -1,43 +1,70 @@
 # Largest Series Product
 
-Given a string of digits, calculate the largest product for a contiguous
-substring of digits of length n.
+Welcome to Largest Series Product on Exercism's Java Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
 
-For example, for the input `'1027839564'`, the largest product for a
-series of 3 digits is 270 (9 * 5 * 6), and the largest product for a
-series of 5 digits is 7560 (7 * 8 * 3 * 9 * 5).
+## Introduction
 
-Note that these series are only required to occupy *adjacent positions*
-in the input; the digits need not be *numerically consecutive*.
+You work for a government agency that has intercepted a series of encrypted communication signals from a group of bank robbers.
+The signals contain a long sequence of digits.
+Your team needs to use various digital signal processing techniques to analyze the signals and identify any patterns that may indicate the planning of a heist.
 
-For the input `'73167176531330624919225119674426574742355349194934'`,
-the largest product for a series of 6 digits is 23520.
+## Instructions
 
-## Setup
+Your task is to look for patterns in the long sequence of digits in the encrypted signal.
 
-Go through the setup instructions for Java to install the necessary
-dependencies:
+The technique you're going to use here is called the largest series product.
 
-[https://exercism.io/tracks/java/installation](https://exercism.io/tracks/java/installation)
+Let's define a few terms, first.
 
-# Running the tests
+- **input**: the sequence of digits that you need to analyze
+- **series**: a sequence of adjacent digits (those that are next to each other) that is contained within the input
+- **span**: how many digits long each series is
+- **product**: what you get when you multiply numbers together
 
-You can run all the tests for an exercise by entering the following in your
-terminal:
+Let's work through an example, with the input `"63915"`.
 
-```sh
-$ gradle test
-```
-
-In the test suites all tests but the first have been skipped.
-
-Once you get a test passing, you can enable the next one by removing the
-`@Ignore("Remove to run test")` annotation.
+- To form a series, take adjacent digits in the original input.
+- If you are working with a span of `3`, there will be three possible series:
+  - `"639"`
+  - `"391"`
+  - `"915"`
+- Then we need to calculate the product of each series:
+  - The product of the series `"639"` is 162 (`6 × 3 × 9 = 162`)
+  - The product of the series `"391"` is 27 (`3 × 9 × 1 = 27`)
+  - The product of the series `"915"` is 45 (`9 × 1 × 5 = 45`)
+- 162 is bigger than both 27 and 45, so the largest series product of `"63915"` is from the series `"639"`.
+  So the answer is **162**.
 
 ## Source
 
-A variation on Problem 8 at Project Euler [http://projecteuler.net/problem=8](http://projecteuler.net/problem=8)
+### Created by
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have
-completed the exercise.
+- @stkent
+
+### Contributed to by
+
+- @aadityakulkarni
+- @artamonovkirill
+- @aryasaatvik
+- @delbertlegg
+- @FridaTveit
+- @jmrunkle
+- @jsertel
+- @jtigger
+- @kytrinyx
+- @lemoncurry
+- @matthewstyler
+- @morrme
+- @msomji
+- @muzimuzhi
+- @sjwarner-bp
+- @SleeplessByte
+- @Smarticles101
+- @sonapraneeth-a
+- @sshine
+- @Zaldrick
+
+### Based on
+
+A variation on Problem 8 at Project Euler - https://projecteuler.net/problem=8
