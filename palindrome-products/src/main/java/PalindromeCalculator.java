@@ -1,6 +1,6 @@
 import java.util.*;
 import java.util.stream.*;
-import static java.util.stream.Collectors.toList;
+import java.util.stream.Collectors;
 
 public class PalindromeCalculator {
 
@@ -15,7 +15,7 @@ public class PalindromeCalculator {
         final List<Long> palindromes = 
                         palindromeProducts(min, max)
                         .stream()
-                        .collect(toList());
+                        .collect(Collectors.toList());
         
         if (palindromes.isEmpty()) { 
             return new TreeMap<>();
@@ -39,7 +39,7 @@ public class PalindromeCalculator {
                .distinct()
                .sorted()
                .boxed()
-               .collect(toList());
+               .collect(Collectors.toList());
     }
 
     private List<List<Integer>> 
@@ -53,9 +53,9 @@ public class PalindromeCalculator {
                    .boxed()
                    .map( x -> Stream.of(x, (int) num / x)
                                     .sorted()
-                                    .collect(toList()))
+                                    .collect(Collectors.toList()))
                    .distinct()
-                   .collect(toList());
+                   .collect(Collectors.toList());
     }
 
     private boolean isPalindrome(long num) {
