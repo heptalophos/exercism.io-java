@@ -123,3 +123,43 @@ PalindromeCalculatorTest > largestPalindromeFromDoubleDigitFactors PASSED
 
 BUILD SUCCESSFUL in 32s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+PalindromeCalculatorTest > largestPalindromeFromSingleDigitFactors PASSED
+
+PalindromeCalculatorTest > errorLargestMinIsMoreThanMax PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromTripleDigitFactors PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromQuadDigitFactors PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromTripleDigitFactors PASSED
+
+PalindromeCalculatorTest > errorSmallestMinIsMoreThanMax PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromDoubleDigitFactors PASSED
+
+PalindromeCalculatorTest > emtpyResultSmallestNoPalindromeInRange PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromQuadDigitFactors PASSED
+
+PalindromeCalculatorTest > emptyResultLargestNoPalindromeInRange PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromSingleDigitFactors PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromDoubleDigitFactors PASSED
+
+BUILD SUCCESSFUL in 17s
+3 actionable tasks: 3 executed
