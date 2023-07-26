@@ -1,6 +1,6 @@
 import java.util.*;
 import java.util.stream.*;
-import java.util.stream.Collectors;
+
 
 public class PalindromeCalculator {
 
@@ -59,8 +59,7 @@ public class PalindromeCalculator {
     }
 
     private boolean isPalindrome(long num) {
-        return String
-               .valueOf(num)
+        return String.valueOf(num)
                .equals(
                    new StringBuilder(String.valueOf(num)).reverse()
                                                          .toString()
