@@ -3,16 +3,15 @@ import java.util.stream.Stream;
 
 
 class Matrix {
-
     private final int matrix[][];
 
     Matrix(String matrixAsString) {
         matrix = 
             Stream.of(matrixAsString.split("\\n"))
-                  .map(row -> Stream
-                             .of(row.split("\\s"))
-                             .mapToInt(Integer::valueOf)
-                             .toArray())
+                  .map(row -> 
+                        Stream.of(row.split("\\s"))
+                              .mapToInt(Integer::valueOf)
+                              .toArray())
                   .toArray(int[][]::new);
     }
 
