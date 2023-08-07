@@ -7,8 +7,7 @@ public class DiffieHellman {
 
     public BigInteger privateKey(BigInteger p) {
         BigInteger key = BigInteger.ZERO;
-        while (key.compareTo(p) == 1 || 
-               key.compareTo(BigInteger.TWO) == -1 ) { 
+        while (key.compareTo(p) == 1 || key.compareTo(BigInteger.TWO) == -1 ) { 
             key = BigInteger.valueOf(random.longs(1, 1, p.longValue())
                                            .findFirst().orElseThrow());
         };
