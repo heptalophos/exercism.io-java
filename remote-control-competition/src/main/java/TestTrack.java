@@ -1,7 +1,8 @@
 import java.util.List;
 import java.util.stream.Stream;
 import static java.util.stream.Collectors.toList;
-import static java.util.Comparator.comparingInt;
+
+import java.util.Collections;
 
 public class TestTrack {
     public static void race(RemoteControlCar car) {
@@ -9,14 +10,9 @@ public class TestTrack {
         car.getDistanceTravelled();
     }
     public static List<ProductionRemoteControlCar> 
-                  getRankedCars(ProductionRemoteControlCar prc1,
-                                ProductionRemoteControlCar prc2) {
-        return Stream.of(prc1, prc2)
-                     .sorted(
-                         comparingInt(
-                            ProductionRemoteControlCar::getNumberOfVictories
-                         )
-                      )
-                     .collect(toList());
+                  getRankedCars(List<ProductionRemoteControlCar> cars) 
+    {
+        return cars.stream().sorted()
+                   .collect(toList());
     }
 }
