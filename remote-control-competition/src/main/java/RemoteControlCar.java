@@ -1,4 +1,4 @@
 public interface RemoteControlCar {
-    public void drive();
-    public int  getDistanceTravelled();
+    void drive();
+    int  getDistanceTravelled();
 }
