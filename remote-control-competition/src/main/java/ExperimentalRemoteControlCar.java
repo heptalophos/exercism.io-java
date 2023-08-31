@@ -3,6 +3,7 @@ public class ExperimentalRemoteControlCar implements RemoteControlCar {
     public void drive() {
         distance += 20;
     }
+    @Override
     public int getDistanceTravelled() {
         return distance;
     }
