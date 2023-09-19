@@ -35,6 +35,6 @@ class CalculatorConundrum {
     }
 
     private String calcStr(String binop, int arg1, int arg2, int eval) {
-        return String.format("%d %s %d = %d", op1, binop, op2, eval);
+        return String.format("%d %s %d = %d", arg1, binop, arg2, eval);
     }
 }
