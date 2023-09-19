@@ -1,0 +1,40 @@
+>gradle test
+
+> Task :compileJava FAILED
+1 actionable task: 1 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+CalculatorConundrumTest > throwExceptionForAnEmptyStringOperation PASSED
+
+CalculatorConundrumTest > divisionWithSmallOperands PASSED
+
+CalculatorConundrumTest > throwExceptionForNullAsOperation PASSED
+
+CalculatorConundrumTest > throwExceptionForDivisionByZero PASSED
+
+CalculatorConundrumTest > divisionWithLargeOperands PASSED
+
+CalculatorConundrumTest > additionWithSmallOperands PASSED
+
+CalculatorConundrumTest > throwExceptionForUnknownOperation PASSED
+
+CalculatorConundrumTest > additionWithLargeOperands PASSED
+
+CalculatorConundrumTest > multiplicationWithSmallOperands PASSED
+
+CalculatorConundrumTest > multiplicationWithLargeOperands PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
