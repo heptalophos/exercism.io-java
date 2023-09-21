@@ -53,3 +53,61 @@ ListOpsTest > testAppendingListToEmptyList PASSED
 
 BUILD SUCCESSFUL in 2s
 3 actionable tasks: 3 executed
+
+
+
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+ListOpsTest > testReversingNonEmptyList PASSED
+
+ListOpsTest > testFoldLeftEmptyList PASSED
+
+ListOpsTest > testFoldLeftDirectionDependentFunctionAppliedToNonEmptyList PASSED
+
+ListOpsTest > testTransformingNonEmptyList PASSED
+
+ListOpsTest > testReversingEmptyList PASSED
+
+ListOpsTest > testSizeOfNonEmptyList PASSED
+
+ListOpsTest > testFoldRightEmptyList PASSED
+
+ListOpsTest > testFilteringEmptyList PASSED
+
+ListOpsTest > testConcatListOfNestedLists PASSED
+
+ListOpsTest > testFoldLeftDirectionIndependentFunctionAppliedToNonEmptyList PASSED
+
+ListOpsTest > testAppendingEmptyLists PASSED
+
+ListOpsTest > testFoldRightDirectionIndependentFunctionAppliedToNonEmptyList PASSED
+
+ListOpsTest > testFilteringNonEmptyList PASSED
+
+ListOpsTest > testTransformingEmptyList PASSED
+
+ListOpsTest > testSizeOfEmptyList PASSED
+
+ListOpsTest > testAppendingNonEmptyLists PASSED
+
+ListOpsTest > testFoldRightDirectionDependentFunctionAppliedToNonEmptyList PASSED
+
+ListOpsTest > testReversingListOfListIsNotFlattened PASSED
+
+ListOpsTest > testConcatEmptyList PASSED
+
+ListOpsTest > testConcatListOfLists PASSED
+
+ListOpsTest > testAppendingListToEmptyList PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
