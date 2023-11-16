@@ -13,25 +13,25 @@ public class CollatzCalculatorTest {
         assertThat(collatzCalculator.computeStepCount(1)).isEqualTo(0);
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testCorrectNumberOfStepsWhenAllStepsAreDivisions() {
         assertThat(collatzCalculator.computeStepCount(16)).isEqualTo(4);
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testCorrectNumberOfStepsWhenBothStepTypesAreNeeded() {
         assertThat(collatzCalculator.computeStepCount(12)).isEqualTo(9);
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testAVeryLargeInput() {
         assertThat(collatzCalculator.computeStepCount(1000000)).isEqualTo(152);
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testZeroIsConsideredInvalidInput() {
         assertThatExceptionOfType(IllegalArgumentException.class)
@@ -39,7 +39,7 @@ public class CollatzCalculatorTest {
                 .withMessage("Only positive integers are allowed");
     }
 
-    @Ignore("Remove to run test")
+    // @Ignore("Remove to run test")
     @Test
     public void testNegativeIntegerIsConsideredInvalidInput() {
         assertThatExceptionOfType(IllegalArgumentException.class)
