@@ -93,3 +93,44 @@ FlattenerTest > testSixLevelsOfNestingWithNoNulls PASSED
 
 BUILD SUCCESSFUL in 2s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Fri Nov 17 01:42:10 GTBST 2023
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+FlattenerTest > testSixLevelsOfNestingWithNulls PASSED
+
+FlattenerTest > testNestedList PASSED
+
+FlattenerTest > testASingleLevelOfNestingWithNoNulls PASSED
+
+FlattenerTest > testFlatListIsPreserved PASSED
+
+FlattenerTest > testEmpty PASSED
+
+FlattenerTest > testFiveLevelsOfNestingWithNoNulls PASSED
+
+FlattenerTest > testConsecutiveNullValuesInMiddleOfListAreOmitted PASSED
+
+FlattenerTest > testNestedListsFullOfNullsOnly PASSED
+
+FlattenerTest > testNullValuesAreOmitted PASSED
+
+FlattenerTest > testConsecutiveNullValuesAtFrontOfListAreOmitted PASSED
+
+FlattenerTest > testSixLevelsOfNestingWithNoNulls PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
