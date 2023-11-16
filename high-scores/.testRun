@@ -1,0 +1,40 @@
+---------------------------------------
+Thu Nov 16 18:44:19 GTBST 2023
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+HighScoresTest > callingLatestAfterPersonalBest PASSED
+
+HighScoresTest > shouldReturnPersonalTopThreeFromListOfScores PASSED
+
+HighScoresTest > shouldReturnPersonalBest PASSED
+
+HighScoresTest > shouldReturnListOfScores PASSED
+
+HighScoresTest > shouldReturnLatestAddedScore PASSED
+
+HighScoresTest > callingLatestAfterPersonalTopThree PASSED
+
+HighScoresTest > callingScoresAfterPersonalTopThree PASSED
+
+HighScoresTest > shouldReturnPersonalTopWhenThereIsOnlyOneScore PASSED
+
+HighScoresTest > callingScoresAfterPersonalBest PASSED
+
+HighScoresTest > shouldReturnPersonalTopThreeWhenThereIsATie PASSED
+
+HighScoresTest > shouldReturnPersonalTopThreeSortedHighestToLowest PASSED
+
+HighScoresTest > shouldReturnPersonalTopWhenThereIsLessThanThreeScores PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
