@@ -121,3 +121,34 @@ CollatzCalculatorTest > testNegativeIntegerIsConsideredInvalidInput PASSED
 
 BUILD SUCCESSFUL in 9s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Thu Nov 16 19:09:38 GTBST 2023
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+CollatzCalculatorTest > testCorrectNumberOfStepsWhenBothStepTypesAreNeeded PASSED
+
+CollatzCalculatorTest > testAVeryLargeInput PASSED
+
+CollatzCalculatorTest > testZeroIsConsideredInvalidInput PASSED
+
+CollatzCalculatorTest > testCorrectNumberOfStepsWhenAllStepsAreDivisions PASSED
+
+CollatzCalculatorTest > testZeroStepsRequiredWhenStartingFrom1 PASSED
+
+CollatzCalculatorTest > testNegativeIntegerIsConsideredInvalidInput PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
