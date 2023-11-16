@@ -16,6 +16,8 @@ HELP.md
 HINTS.md
 TUTORIAL.md
 cleanup.*
+runTests.ps1
 .fake
 .ionide
 debug.log
+*.ps1
