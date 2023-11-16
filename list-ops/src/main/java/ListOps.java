@@ -10,18 +10,6 @@ import static java.util.Collections.enumeration;
 
 class ListOps {
 
-    // -- Auxiliary fcns
-    private static <T> T head(final List<T> list) {
-        return list.get(0);
-    }
-
-    private static <T> List<T> tail(final List<T> list) {
-        List<T> xs = new ArrayList<T>();
-        xs.addAll(0, list.subList(1, list.size()));
-        return unmodifiableList(xs);
-    }
-    // Auxiliary fcns -- 
-
     static <T, U> U foldLeft(List<T> list, U initial, BiFunction<U, T, U> f) {
         if (list.isEmpty()) { return initial; }
         return foldLeft(tail(list), f.apply(initial, head(list)), f);
@@ -31,7 +19,6 @@ class ListOps {
         if (list.isEmpty()) { return initial; }
         return f.apply(head(list), foldRight(tail(list), initial, f));
     }
-
     // ..and the rest in terms of the 2 folds
 
     static <T> List<T> append(List<T> list1, List<T> list2) {
@@ -58,12 +45,25 @@ class ListOps {
                                       return acc;
                                     });
     }
+    
     static <T> List<T> filter(List<T> list, Predicate<T> predicate) {
         return foldLeft(list, new ArrayList<T>(), 
                         (acc, x) -> { if (predicate.test(x)) acc.add(x);
                                       return acc;
                                     });
     }
+
+    // -- Auxiliary fcns
+    private static <T> T head(final List<T> list) {
+        return list.get(0);
+    }
+
+    private static <T> List<T> tail(final List<T> list) {
+        List<T> xs = new ArrayList<T>();
+        xs.addAll(0, list.subList(1, list.size()));
+        return unmodifiableList(xs);
+    }
+    // Auxiliary fcns -- 
 
     private ListOps() {
         // No instances.

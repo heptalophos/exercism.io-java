@@ -3,15 +3,15 @@ class CalculatorConundrum {
         if (operation != null) {
             switch (operation) {
                 case "+": 
-                    return calcStr( "+", operand1, operand2, 
-                                    operand1 + operand2 );
+                    return calculation( "+", operand1, operand2, 
+                                        operand1 + operand2 );
                 case "*": 
-                    return calcStr( "*", operand1, operand2, 
-                                    operand1 * operand2 );
+                    return calculation( "*", operand1, operand2, 
+                                        operand1 * operand2 );
                 case "/":
                     try {
-                        return calcStr( "/", operand1, operand2, 
-                                        operand1 / operand2 );
+                        return calculation( "/", operand1, operand2, 
+                                            operand1 / operand2 );
                     } catch (ArithmeticException aex) {
                         throw new IllegalOperationException(
                             "Division by zero is not allowed", aex
@@ -34,7 +34,7 @@ class CalculatorConundrum {
         );
     }
 
-    private String calcStr(String binop, int arg1, int arg2, int eval) {
+    private String calculation(String binop, int arg1, int arg2, int eval) {
         return String.format("%d %s %d = %d", arg1, binop, arg2, eval);
     }
 }
