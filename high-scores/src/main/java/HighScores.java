@@ -1,8 +1,7 @@
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 class HighScores {
-
     private final List<Integer> scores;
 
     public HighScores(List<Integer> highScores) {
@@ -14,7 +13,7 @@ class HighScores {
     }
 
     Integer latest() {
-        return scores.get(scores().size() - 1);    
+        return scores.get(scores().size() - 1);
     }
 
     Integer personalBest() {
@@ -24,7 +23,6 @@ class HighScores {
     List<Integer> personalTopThree() {
         List<Integer> tmp = new ArrayList<>(scores);
         tmp.sort((x, y) -> Integer.compare(y, x));
-        return tmp.subList(0, tmp.size() < 3 ? tmp.size() : 3);
+        return tmp.subList(0, Math.min(3, tmp.size()));
     }
-
 }

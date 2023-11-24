@@ -19,6 +19,7 @@ class ListOps {
         if (list.isEmpty()) { return initial; }
         return f.apply(head(list), foldRight(tail(list), initial, f));
     }
+    
     // ..and the rest in terms of the 2 folds
 
     static <T> List<T> append(List<T> list1, List<T> list2) {

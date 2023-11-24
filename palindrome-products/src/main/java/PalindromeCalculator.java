@@ -24,7 +24,7 @@ public class PalindromeCalculator {
         final long first = palindromes.get(0);
         final long last = palindromes.get(palindromes.size() - 1);
 
-        return new TreeMap<>(                       // doesn't work below java9
+        return new TreeMap<>( // doesn't work below java9
             Map.of(first, factors(first, min, max),
                    last, factors(last, min, max))
         );
@@ -61,8 +61,7 @@ public class PalindromeCalculator {
     private boolean isPalindrome(long num) {
         return String.valueOf(num)
                .equals(
-                   new StringBuilder(String.valueOf(num)).reverse()
-                                                         .toString()
+                   new StringBuilder(String.valueOf(num)).reverse().toString()
                 );
     }
 }
