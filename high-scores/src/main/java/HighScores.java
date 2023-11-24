@@ -1,25 +1,28 @@
 import java.util.List;
+import java.util.ArrayList;
 
 class HighScores {
+    private final List<Integer> scores;
 
     public HighScores(List<Integer> highScores) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        scores = highScores;
     }
 
     List<Integer> scores() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return this.scores;
     }
 
     Integer latest() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return scores.get(scores().size() - 1);
     }
 
     Integer personalBest() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return scores().stream().max(Integer::compareTo).orElse(0);
     }
 
     List<Integer> personalTopThree() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        List<Integer> tmp = new ArrayList<>(scores);
+        tmp.sort((x, y) -> Integer.compare(y, x));
+        return tmp.subList(0, Math.min(3, tmp.size()));
     }
-
 }
