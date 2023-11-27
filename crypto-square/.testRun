@@ -89,3 +89,38 @@ CryptoSquareTest > eightCharacterPlaintextResultsInThreeChunksWithATrailingSpace
 
 BUILD SUCCESSFUL in 2s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Mon Nov 27 02:41:58 GTBST 2023
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+CryptoSquareTest > punctuationIsRemovedDuringEncryption PASSED
+
+CryptoSquareTest > fiftyFourCharacterPlaintextResultsInSevenChunksWithTrailingSpaces PASSED
+
+CryptoSquareTest > emptyPlaintextResultsInEmptyCiphertext PASSED
+
+CryptoSquareTest > normalizationResultsInEmptyCiphertext PASSED
+
+CryptoSquareTest > nineCharacterPlaintextResultsInThreeChunksOfThreeCharacters PASSED
+
+CryptoSquareTest > spacesAreRemovedDuringEncryption PASSED
+
+CryptoSquareTest > lettersAreLowerCasedDuringEncryption PASSED
+
+CryptoSquareTest > eightCharacterPlaintextResultsInThreeChunksWithATrailingSpace PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
