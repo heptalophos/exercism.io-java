@@ -163,3 +163,58 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 
 BUILD SUCCESSFUL in 9s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Mon Nov 27 02:53:35 GTBST 2023
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+RobotTest > movingWestAndNorth PASSED
+
+RobotTest > movingWestAndSouth PASSED
+
+RobotTest > atNegativePositionFacingSouth PASSED
+
+RobotTest > movingEastAndNorth PASSED
+
+RobotTest > changesNorthToEast PASSED
+
+RobotTest > changesNorthToWest PASSED
+
+RobotTest > changesEastToNorth PASSED
+
+RobotTest > changesEastToSouth PASSED
+
+RobotTest > facingWestDecrementsX PASSED
+
+RobotTest > atOriginFacingNorth PASSED
+
+RobotTest > facingSouthDecrementsY PASSED
+
+RobotTest > movingEastAndNorthFromReadme PASSED
+
+RobotTest > changesWestToNorth PASSED
+
+RobotTest > changesWestToSouth PASSED
+
+RobotTest > facingNorthIncrementsY PASSED
+
+RobotTest > changesSouthToEast PASSED
+
+RobotTest > changesSouthToWest PASSED
+
+RobotTest > facingEastIncrementsX PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
