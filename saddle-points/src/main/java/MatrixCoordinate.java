@@ -14,7 +14,7 @@ class MatrixCoordinate {
     public int col() {
         return this.col;
     }
-  
+
     // Generated equals and hashcode.
   
     @Override
@@ -22,7 +22,7 @@ class MatrixCoordinate {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         final MatrixCoordinate that = (MatrixCoordinate) o;
-        return row == that.row && col == that.col;
+        return this.row == that.row && this.col == that.col;
     }
 
     @Override
