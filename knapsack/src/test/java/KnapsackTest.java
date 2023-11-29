@@ -22,6 +22,7 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(100, items)).isEqualTo(0);
     }
 
+    // @Ignore("Remove to run test")
     @Test
     public void testOneItemTooHeavy() {
         List<Item> items = List.of(
@@ -31,6 +32,7 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(0);
     }
 
+    // @Ignore("Remove to run test")
     @Test
     public void testFiveItemsCannotBeGreedyByWeight() {
         List<Item> items = List.of(
@@ -44,6 +46,7 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(21);
     }
 
+    // @Ignore("Remove to run test")
     @Test
     public void testFiveItemsCannotBeGreedyByValue() {
         List<Item> items = List.of(
@@ -57,6 +60,7 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(80);
     }
 
+    // @Ignore("Remove to run test")
     @Test
     public void testExampleKnapsack() {
         List<Item> items = List.of(
@@ -69,6 +73,7 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(90);
     }
 
+    // @Ignore("Remove to run test")
     @Test
     public void testEightItems() {
         List<Item> items = List.of(
@@ -85,6 +90,7 @@ public class KnapsackTest {
         assertThat(knapsack.maximumValue(104, items)).isEqualTo(900);
     }
 
+    // @Ignore("Remove to run test")
     @Test
     public void testFifteenItems() {
         List<Item> items = List.of(
