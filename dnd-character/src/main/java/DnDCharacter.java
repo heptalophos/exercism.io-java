@@ -1,6 +1,5 @@
-import java.util.Collections;
 import java.util.List;
-import java.util.Random;
+import java.util.Collections;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -16,12 +15,12 @@ class DnDCharacter {
     private int hitpoints;
 
     DnDCharacter() {
-        strength = ability(rollDice());
-        dexterity = ability(rollDice());
+        strength     = ability(rollDice());
+        dexterity    = ability(rollDice());
         constitution = ability(rollDice());
         intelligence = ability(rollDice());
-        charisma = ability(rollDice());
-        wisdom = ability(rollDice());
+        charisma     = ability(rollDice());
+        wisdom       = ability(rollDice());
         hitpoints = 10 + modifier(getConstitution());
     }
 
@@ -53,20 +52,15 @@ class DnDCharacter {
         return hitpoints;
     }
 
-    private List<Integer> rollDice() {
-        Random rand = new Random();
+    public List<Integer> rollDice() {
         return IntStream.range(0, 4)
-                        .map(x -> rand.nextInt(1, 7))
+                        .map(x -> (int) Math.floor(6 * Math.random()) + 1)
                         .boxed()
                         .collect(Collectors.toList());
     }
 
     public int ability(List<Integer> diceRolls) {
-        // return IntStream.range(1, 4)
-        //                 .map(x -> rollDice()).sorted()
-        //                 .limit(3).sum();
-        int sum = diceRolls.stream()
-                           .sorted()
+        int sum = diceRolls.stream().sorted()
                            .reduce(0, Integer::sum);
         return sum - Collections.min(diceRolls);
     }
