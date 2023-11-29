@@ -113,3 +113,48 @@ DominoesTest > threeElementsTest PASSED
 
 BUILD SUCCESSFUL in 4s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Wed Nov 29 20:52:20 GTBST 2023
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+DominoesTest > cantBeChainedTest PASSED
+
+DominoesTest > needBacktrackTest PASSED
+
+DominoesTest > singletonInputSingletonOutput PASSED
+
+DominoesTest > nineElementsTest PASSED
+
+DominoesTest > separateLoopsTest PASSED
+
+DominoesTest > disconnectedDoubleLoopTest PASSED
+
+DominoesTest > singletonCantBeChainedTest PASSED
+
+DominoesTest > disconnectedSingleIsolatedTest PASSED
+
+DominoesTest > separateThreeDominoLoopsTest PASSED
+
+DominoesTest > emtpyInputEmptyOutputTest PASSED
+
+DominoesTest > canReverseDominoesTest PASSED
+
+DominoesTest > disconnectedSimpleTest PASSED
+
+DominoesTest > threeElementsTest PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
