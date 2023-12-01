@@ -1,5 +1,6 @@
 public class PopCount {
     public int eggCount(int number) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        if (number == 0) return 0;
+        return number % 2 + eggCount(number / 2);
     }
 }
