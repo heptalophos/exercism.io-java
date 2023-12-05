@@ -1,0 +1,36 @@
+---------------------------------------
+Tue Dec  5 14:03:48 GTBST 2023
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+BinarySearchTreeTest > iteratesOverComplexTree PASSED
+
+BinarySearchTreeTest > dataIsRetained PASSED
+
+BinarySearchTreeTest > insertsLess PASSED
+
+BinarySearchTreeTest > insertsSame PASSED
+
+BinarySearchTreeTest > sortsSingleElement PASSED
+
+BinarySearchTreeTest > sortsCollectionOfTwoIfSecondInsertedIsSmallerThanFirst PASSED
+
+BinarySearchTreeTest > createsComplexTree PASSED
+
+BinarySearchTreeTest > insertsRight PASSED
+
+BinarySearchTreeTest > sortsCollectionOfTwoIfSecondNumberisSameAsFirst PASSED
+
+BinarySearchTreeTest > sortsCollectionOfTwoIfSecondInsertedIsBiggerThanFirst PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
