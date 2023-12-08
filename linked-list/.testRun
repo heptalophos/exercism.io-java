@@ -1,0 +1,34 @@
+---------------------------------------
+Fri Dec  8 17:09:38 GTBST 2023
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+DoublyLinkedListTest > testExample PASSED
+
+DoublyLinkedListTest > testPushPopShift PASSED
+
+DoublyLinkedListTest > testUnshiftShiftPop PASSED
+
+DoublyLinkedListTest > testPushPop PASSED
+
+DoublyLinkedListTest > testPushShift PASSED
+
+DoublyLinkedListTest > testUnshiftOnceShiftTwice PASSED
+
+DoublyLinkedListTest > testUnshiftPop PASSED
+
+DoublyLinkedListTest > testUnshiftShift PASSED
+
+DoublyLinkedListTest > testPushOncePopTwice PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
