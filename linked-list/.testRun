@@ -32,3 +32,38 @@ DoublyLinkedListTest > testPushOncePopTwice PASSED
 
 BUILD SUCCESSFUL in 2s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Mon Dec 11 16:37:48 GTBST 2023
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+DoublyLinkedListTest > unshiftAddsElementAtStartOfTheList PASSED
+
+DoublyLinkedListTest > pushAndPopRespectivelyAddsAndRemovesAtEndOfList PASSED
+
+DoublyLinkedListTest > popGetsElementFromTheList PASSED
+
+DoublyLinkedListTest > shiftingToEmptyDoesNotBreakTheList PASSED
+
+DoublyLinkedListTest > shiftGetsAnElementFromTheList PASSED
+
+DoublyLinkedListTest > popPushShiftUnshiftCanBeUsedInAnyOrder PASSED
+
+DoublyLinkedListTest > shiftGetsFirstElementFromTheList PASSED
+
+DoublyLinkedListTest > poppingToEmptyDoesNotBreakTheList PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
