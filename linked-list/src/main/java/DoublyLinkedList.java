@@ -1,4 +1,4 @@
-class DoublyLinkedList<T> {
+public class DoublyLinkedList<T> {
     private Element<T> head;
     private Element<T> tail;
 
@@ -49,4 +49,6 @@ class DoublyLinkedList<T> {
         }
         return curr.getValue();
     }
+
+
 }

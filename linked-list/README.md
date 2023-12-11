@@ -25,7 +25,7 @@ Sometimes a station gets closed down, and in that case the station needs to be r
 
 The size of a route is measured not by how far the train travels, but by how many stations it stops at.
 
-```exercism/note
+~~~~exercism/note
 The linked list is a fundamental data structure in computer science, often used in the implementation of other data structures.
 As the name suggests, it is a list of nodes that are linked together.
 It is a list of "nodes", where each node links to its neighbor or neighbors.
@@ -35,7 +35,7 @@ In a **doubly linked list** each node links to both the node that comes before, 
 If you want to dig deeper into linked lists, check out [this article][intro-linked-list] that explains it using nice drawings.
 
 [intro-linked-list]: https://medium.com/basecs/whats-a-linked-list-anyway-part-1-d8b7e6508b9d
-```
+~~~~
 
 This exercise introduces [generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html).
 To make the tests pass you need to construct your class such that it accepts any type of input, e.g. `Integer` or `String`.
@@ -85,6 +85,7 @@ It can help to look at an [example use case of generics](https://docs.oracle.com
 - @msomji
 - @muzimuzhi
 - @Ppapierski
+- @sanderploegsma
 - @SleeplessByte
 - @Smarticles101
 - @sshine
