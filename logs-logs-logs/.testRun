@@ -1,0 +1,49 @@
+
+
+
+---------------------------------------
+Mon Dec 11 19:17:58 GTBST 2023
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+LogsLogsLogsTest > Get short log output for log level INFO PASSED
+
+LogsLogsLogsTest > Parsing unknown log level ABC PASSED
+
+LogsLogsLogsTest > Parsing log level DBG PASSED
+
+LogsLogsLogsTest > Parsing log level ERR PASSED
+
+LogsLogsLogsTest > Parsing log level FTL PASSED
+
+LogsLogsLogsTest > Parsing log level INF PASSED
+
+LogsLogsLogsTest > Parsing log level WRN PASSED
+
+LogsLogsLogsTest > Parsing unknown log level XYZ PASSED
+
+LogsLogsLogsTest > Get short log output for log level WARNING PASSED
+
+LogsLogsLogsTest > Parsing log level TRC PASSED
+
+LogsLogsLogsTest > Get short log output for log level UNKNOWN PASSED
+
+LogsLogsLogsTest > Get short log output for log level DEBUG PASSED
+
+LogsLogsLogsTest > Get short log output for log level ERROR PASSED
+
+LogsLogsLogsTest > Get short log output for log level FATAL PASSED
+
+LogsLogsLogsTest > Get short log output for log level TRACE PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
