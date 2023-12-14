@@ -1,0 +1,78 @@
+---------------------------------------
+Thu Dec 14 18:14:56 GTBST 2023
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+BowlingGameTest > canNotRollAfterBonusRollForSpare PASSED
+
+BowlingGameTest > bonusRollForASpareInTheLastFrameMustBeRolledBeforeScoreCanBeCalculated PASSED
+
+BowlingGameTest > aStrikeInTheLastFrameGetsATwoRollBonusThatIsCountedOnce PASSED
+
+BowlingGameTest > twoRollsInAFrameCanNotScoreMoreThan10Points PASSED
+
+BowlingGameTest > lastTwoStrikesFollowedByOnlyLastBonusWithNonStrikePoints PASSED
+
+BowlingGameTest > twoBonusRollsAfterAStrikeInTheLastFrameCanNotScoreMoreThan10Points PASSED
+
+BowlingGameTest > pointsScoredInTheRollAfterASpareAreCountedTwice PASSED
+
+BowlingGameTest > bonusRollsForAStrikeInTheLastFrameMustBeRolledBeforeScoreCanBeCalculated PASSED
+
+BowlingGameTest > aSpareInTheLastFrameGetsAOneRollBonusThatIsCountedOnce PASSED
+
+BowlingGameTest > aStrikeEarnsTenPointsInFrameWithASingleRoll PASSED
+
+BowlingGameTest > secondBonusRollAfterAStrikeInTheLastFrameCanNotScoreMoreThan10Points PASSED
+
+BowlingGameTest > aSpareFollowedByZerosIsWorthTenPoints PASSED
+
+BowlingGameTest > consecutiveStrikesEachGetTheTwoRollBonus PASSED
+
+BowlingGameTest > anIncompleteGameCanNotBeScored PASSED
+
+BowlingGameTest > rollsCanNotScoreNegativePoints PASSED
+
+BowlingGameTest > bothBonusRollsForAStrikeInTheLastFrameMustBeRolledBeforeScoreCanBeCalculated PASSED
+
+BowlingGameTest > aStrikeWithTheOneRollBonusAfterASpareInTheLastFrameDoesNotGetABonus PASSED
+
+BowlingGameTest > anUnstartedGameCanNotBeScored PASSED
+
+BowlingGameTest > rollingASpareWithTheTwoRollBonusDoesNotGetABonusRoll PASSED
+
+BowlingGameTest > theSecondBonusRollsAfterAStrikeInTheLastFrameCanNotBeAStrikeIfTheFirstOneIsNotAStrike PASSED
+
+BowlingGameTest > canNotRollIfGameAlreadyHasTenFrames PASSED
+
+BowlingGameTest > bonusRollAfterAStrikeInTheLastFrameCanNotScoreMoreThan10Points PASSED
+
+BowlingGameTest > allStrikesIsAPerfectGame PASSED
+
+BowlingGameTest > canNotRollAfterBonusRollForStrike PASSED
+
+BowlingGameTest > aRollCanNotScoreMoreThan10Points PASSED
+
+BowlingGameTest > twoBonusRollsAfterAStrikeInTheLastFrameCanScoreMoreThan10PointsIfOneIsAStrike PASSED
+
+BowlingGameTest > shouldBeAbleToScoreAGameWithNoStrikesOrSpares PASSED
+
+BowlingGameTest > shouldBeAbleToScoreAGameWithAllZeros PASSED
+
+BowlingGameTest > strikesWithTheTwoRollBonusDoNotGetBonusRolls PASSED
+
+BowlingGameTest > consecutiveSparesEachGetAOneRollBonus PASSED
+
+BowlingGameTest > pointsScoredInTheTwoRollsAfterAStrikeAreCountedTwiceAsABonus PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
