@@ -14,16 +14,14 @@ public class CryptoSquare {
                          .filter(Character::isLetterOrDigit)
                          .map(Object::toString).collect(joining());
         squareSize = (int) Math.ceil((double) Math.sqrt(plaintext.length()));
-        chunks = Arrays.asList(plaintext.split("(?<=\\G.{" + 
-                                                squareSize + 
-                                               "})"));
+        chunks = Arrays.asList(plaintext.split("(?<=\\G.{" + squareSize + "})"));
     }
     public String getCiphertext() {
         return IntStream.range(0, squareSize)
                .mapToObj(x -> chunks.stream()
-                                    .map(s -> s.length() > x ? 
-                                              "" + s.charAt(x) : 
-                                              " ")
+                                    .map(s -> s.length() > x 
+                                              ? "" + s.charAt(x) 
+                                              : " ")
                                     .collect(joining()))
                .collect(joining(" "));       
     }
