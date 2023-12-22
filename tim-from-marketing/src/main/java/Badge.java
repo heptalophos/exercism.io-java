@@ -1,5 +1,10 @@
 class Badge {
     public String print(Integer id, String name, String department) {
-        throw new UnsupportedOperationException("Please implement the Badge.print() method");
+        return String.format(
+            "%s%s - %s",
+            id == null ? "" : String.format("[%d] - ", id),
+            name,
+            department == null ? "OWNER" : department.toUpperCase()                
+        );
     }
 }
