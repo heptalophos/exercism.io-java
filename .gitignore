@@ -3,6 +3,7 @@
 .classpath
 .settings/
 .project/
+/**/gradle/
 /**/.settings/
 /**/.keep
 /**/.gradle/
