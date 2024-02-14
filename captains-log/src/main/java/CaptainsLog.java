@@ -2,7 +2,8 @@ import java.util.Random;
 
 class CaptainsLog {
 
-    private static final char[] PLANET_CLASSES = new char[]{'D', 'H', 'J', 'K', 'L', 'M', 'N', 'R', 'T', 'Y'};
+    private static final char[] PLANET_CLASSES = 
+        new char[]{'D', 'H', 'J', 'K', 'L', 'M', 'N', 'R', 'T', 'Y'};
 
     private Random random;
 
@@ -11,14 +12,15 @@ class CaptainsLog {
     }
 
     char randomPlanetClass() {
-        throw new UnsupportedOperationException("Please implement the CaptainsLog.randomPlanetClass() method");
+        var randomPlanet = this.random.nextInt(PLANET_CLASSES.length);
+        return PLANET_CLASSES[randomPlanet];
     }
 
     String randomShipRegistryNumber() {
-        throw new UnsupportedOperationException("Please implement the CaptainsLog.randomShipRegistryNumber() method");
+        return String.format("NCC-%d", 1000 + random.nextInt(9000));
     }
 
     double randomStardate() {
-        throw new UnsupportedOperationException("Please implement the CaptainsLog.randomStardate() method");
+        return 41000D + 1000D * random.nextDouble();
     }
 }
