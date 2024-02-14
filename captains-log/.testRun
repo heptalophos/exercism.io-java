@@ -1,0 +1,28 @@
+---------------------------------------
+Wed Feb 14 08:54:36 GTBST 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+CaptainsLogTest > Generating a random stardate PASSED
+
+CaptainsLogTest > Generated stardates are valid PASSED
+
+CaptainsLogTest > Generated ship registry numbers are valid PASSED
+
+CaptainsLogTest > Generating a random ship registry number PASSED
+
+CaptainsLogTest > Generated planet classes are valid PASSED
+
+CaptainsLogTest > Generating a random planet class PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
