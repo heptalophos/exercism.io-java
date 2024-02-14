@@ -47,50 +47,6 @@ BUILD SUCCESSFUL in 4s
 > Task :compileJava
 > Task :processResources NO-SOURCE
 > Task :classes
-> Task :compileTestJava UP-TO-DATE
-> Task :processTestResources NO-SOURCE
-> Task :testClasses UP-TO-DATE
-
-> Task :test
-
-PalindromeCalculatorTest > largestPalindromeFromSingleDigitFactors PASSED
-
-PalindromeCalculatorTest > errorLargestMinIsMoreThanMax PASSED
-
-PalindromeCalculatorTest > smallestPalindromeFromTripleDigitFactors PASSED
-
-PalindromeCalculatorTest > smallestPalindromeFromQuadDigitFactors PASSED
-
-PalindromeCalculatorTest > largestPalindromeFromTripleDigitFactors PASSED
-
-PalindromeCalculatorTest > errorSmallestMinIsMoreThanMax PASSED
-
-PalindromeCalculatorTest > smallestPalindromeFromDoubleDigitFactors PASSED
-
-PalindromeCalculatorTest > emtpyResultSmallestNoPalindromeInRange PASSED
-
-PalindromeCalculatorTest > largestPalindromeFromQuadDigitFactors PASSED
-
-PalindromeCalculatorTest > emptyResultLargestNoPalindromeInRange PASSED
-
-PalindromeCalculatorTest > smallestPalindromeFromSingleDigitFactors PASSED
-
-PalindromeCalculatorTest > largestPalindromeFromDoubleDigitFactors PASSED
-
-Deprecated Gradle features were used in this build, 
-making it incompatible with Gradle 7.0.
-Use '--warning-mode all' to show the individual deprecation warnings.
-
-BUILD SUCCESSFUL in 31s
-3 actionable tasks: 2 executed, 1 up-to-date
-
-
-
->gradle test
-
-> Task :compileJava
-> Task :processResources NO-SOURCE
-> Task :classes
 > Task :compileTestJava
 > Task :processTestResources NO-SOURCE
 > Task :testClasses
@@ -133,36 +89,6 @@ BUILD SUCCESSFUL in 32s
 > Task :classes
 > Task :compileTestJava
 > Task :processTestResources NO-SOURCE
-> Task :testClasses
-
-> Task :test
-
-PalindromeCalculatorTest > largestPalindromeFromSingleDigitFactors PASSED
-
-PalindromeCalculatorTest > errorLargestMinIsMoreThanMax PASSED
-
-PalindromeCalculatorTest > smallestPalindromeFromTripleDigitFactors PASSED
-
-PalindromeCalculatorTest > smallestPalindromeFromQuadDigitFactors PASSED
-
-PalindromeCalculatorTest > largestPalindromeFromTripleDigitFactors PASSED
-
-PalindromeCalculatorTest > errorSmallestMinIsMoreThanMax PASSED
-
-PalindromeCalculatorTest > smallestPalindromeFromDoubleDigitFactors PASSED
-
-PalindromeCalculatorTest > emtpyResultSmallestNoPalindromeInRange PASSED
-
-PalindromeCalculatorTest > largestPalindromeFromQuadDigitFactors PASSED
-
-PalindromeCalculatorTest > emptyResultLargestNoPalindromeInRange PASSED
-
-PalindromeCalculatorTest > smallestPalindromeFromSingleDigitFactors PASSED
-
-PalindromeCalculatorTest > largestPalindromeFromDoubleDigitFactors PASSED
-
-BUILD SUCCESSFUL in 17s
-3 actionable tasks: 3 executed
 
 
 
@@ -205,4 +131,47 @@ PalindromeCalculatorTest > smallestPalindromeFromSingleDigitFactors PASSED
 PalindromeCalculatorTest > largestPalindromeFromDoubleDigitFactors PASSED
 
 BUILD SUCCESSFUL in 17s
+3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Wed Feb 14 08:25:27 GTBST 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+PalindromeCalculatorTest > largestPalindromeFromSingleDigitFactors PASSED
+
+PalindromeCalculatorTest > errorLargestMinIsMoreThanMax PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromTripleDigitFactors PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromQuadDigitFactors PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromTripleDigitFactors PASSED
+
+PalindromeCalculatorTest > errorSmallestMinIsMoreThanMax PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromDoubleDigitFactors PASSED
+
+PalindromeCalculatorTest > emtpyResultSmallestNoPalindromeInRange PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromQuadDigitFactors PASSED
+
+PalindromeCalculatorTest > emptyResultLargestNoPalindromeInRange PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromSingleDigitFactors PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromDoubleDigitFactors PASSED
+
+BUILD SUCCESSFUL in 18s
 3 actionable tasks: 3 executed
