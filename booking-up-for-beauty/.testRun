@@ -1,0 +1,62 @@
+---------------------------------------
+Mon Feb 19 12:22:51 GTBST 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+AppointmentSchedulerTest > Noon appointment is an afternoon appointment PASSED
+
+AppointmentSchedulerTest > Early evening appointment is not an afternoon appointment PASSED
+
+AppointmentSchedulerTest > Appointment hours from now has not passed PASSED
+
+AppointmentSchedulerTest > Appointment from hours ago has passed PASSED
+
+AppointmentSchedulerTest > Late evening appointment is not an afternoon appointment PASSED
+
+AppointmentSchedulerTest > Appointment days from now has not passed PASSED
+
+AppointmentSchedulerTest > Appointment from one minute ago has passed PASSED
+
+AppointmentSchedulerTest > Description on Friday afternoon PASSED
+
+AppointmentSchedulerTest > Appointment from days ago has passed PASSED
+
+AppointmentSchedulerTest > Early morning appointment is not an afternoon appointment PASSED
+
+AppointmentSchedulerTest > Appointment minutes from now has not passed PASSED
+
+AppointmentSchedulerTest > Appointment from months ago has passed PASSED
+
+AppointmentSchedulerTest > Description on Wednesday morning PASSED
+
+AppointmentSchedulerTest > Scheduling a date PASSED
+
+AppointmentSchedulerTest > Early afternoon appointment is an afternoon appointment PASSED
+
+AppointmentSchedulerTest > Late morning appointment is not an afternoon appointment PASSED
+
+AppointmentSchedulerTest > Late morning appointment is an afternoon appointment PASSED
+
+AppointmentSchedulerTest > Appointment from minutes ago has passed PASSED
+
+AppointmentSchedulerTest > Appointment years from now has not passed PASSED
+
+AppointmentSchedulerTest > The anniversary date PASSED
+
+AppointmentSchedulerTest > Description on Thursday afternoon PASSED
+
+AppointmentSchedulerTest > Appointment months from now has not passed PASSED
+
+AppointmentSchedulerTest > Appointment from one year ago has passed PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
