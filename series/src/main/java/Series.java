@@ -7,12 +7,19 @@ import java.util.stream.Collectors;
 public class Series {
 
     public final String numberString;
-    
-    private static final String TOO_SMALL = "Slice size is too small.";
 
-    private static final String TOO_LARGE = "Slice size is too big.";
+    private static final String EMPTY = 
+                        "series cannot be empty";
+    
+    private static final String TOO_SMALL = 
+                    "slice length cannot be negative or zero";
+
+    private static final String TOO_LARGE = 
+                    "slice length cannot be greater than series length";
 
     public Series(String numberString){
+        if (numberString == "")
+            throw new IllegalArgumentException(EMPTY);
         this.numberString = numberString;
     }
 
