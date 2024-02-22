@@ -105,3 +105,44 @@ See https://docs.gradle.org/6.5/userguide/command_line_interface.html#sec:comman
 
 BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Thu Feb 22 21:59:56 GTBST 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+SeriesTest > slicesOfTwo() PASSED
+
+SeriesTest > sliceLengthNegative() PASSED
+
+SeriesTest > slicesOfTwoOverlap() PASSED
+
+SeriesTest > slicesOfLongSeries() PASSED
+
+SeriesTest > slicesOfOneFromOne() PASSED
+
+SeriesTest > slicesOfOneFromTwo() PASSED
+
+SeriesTest > sliceLengthZero() PASSED
+
+SeriesTest > sliceLengthIsWayToolarge() PASSED
+
+SeriesTest > sliceLengthIsToolarge() PASSED
+
+SeriesTest > slicesIncludeDuplicates() PASSED
+
+SeriesTest > emptySeries() PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
