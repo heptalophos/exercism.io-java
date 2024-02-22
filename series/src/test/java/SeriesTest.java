@@ -1,13 +1,12 @@
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThrows;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import org.junit.Test;
-import org.junit.Ignore;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 public class SeriesTest {
 
@@ -16,37 +15,37 @@ public class SeriesTest {
         Series series = new Series("1");
         List<String> expected = Collections.singletonList("1");
         List<String> actual = series.slices(1);
-        assertEquals(expected, actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void slicesOfOneFromTwo() {
         Series series = new Series("12");
         List<String> expected = Arrays.asList("1", "2");
         List<String> actual = series.slices(1);
-        assertEquals(expected, actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void slicesOfTwo() {
         Series series = new Series("35");
         List<String> expected = Collections.singletonList("35");
         List<String> actual = series.slices(2);
-        assertEquals(expected, actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void slicesOfTwoOverlap() {
         Series series = new Series("9142");
         List<String> expected = Arrays.asList("91", "14", "42");
         List<String> actual = series.slices(2);
-        assertEquals(expected, actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void slicesIncludeDuplicates() {
         Series series = new Series("777777");
@@ -57,10 +56,10 @@ public class SeriesTest {
                 "777"
         );
         List<String> actual = series.slices(3);
-        assertEquals(expected, actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void slicesOfLongSeries() {
         Series series = new Series("918493904243");
@@ -75,63 +74,56 @@ public class SeriesTest {
                 "04243"
         );
         List<String> actual = series.slices(5);
-        assertEquals(expected, actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void sliceLengthIsToolarge() {
         Series series = new Series("12345");
 
-        IllegalArgumentException expected =
-            assertThrows(
-                IllegalArgumentException.class,
-                () -> series.slices(6));
-
-        assertThat(expected)
-            .hasMessage("Slice size is too big.");
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> series.slices(6))
+                .withMessage("slice length cannot be greater than series length");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
+    @Test
+    public void sliceLengthIsWayToolarge() {
+        Series series = new Series("12345");
+
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> series.slices(42))
+                .withMessage("slice length cannot be greater than series length");
+    }
+
+    // @Disabled("Remove to run test")
     @Test
     public void sliceLengthZero() {
         Series series = new Series("12345");
 
-        IllegalArgumentException expected =
-            assertThrows(
-                IllegalArgumentException.class,
-                () -> series.slices(0));
-
-        assertThat(expected)
-            .hasMessage("Slice size is too small.");
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> series.slices(0))
+                .withMessage("slice length cannot be negative or zero");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void sliceLengthNegative() {
         Series series = new Series("123");
 
-        IllegalArgumentException expected =
-            assertThrows(
-                IllegalArgumentException.class,
-                () -> series.slices(-1));
-
-        assertThat(expected)
-            .hasMessage("Slice size is too small.");
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> series.slices(-1))
+                .withMessage("slice length cannot be negative or zero");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void emptySeries() {
-        Series series = new Series("");
 
-        IllegalArgumentException expected =
-            assertThrows(
-                IllegalArgumentException.class,
-                () -> series.slices(1));
-
-        assertThat(expected)
-            .hasMessage("Slice size is too big.");
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> new Series(""))
+                .withMessage("series cannot be empty");
     }
 
 }
