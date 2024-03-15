@@ -28,7 +28,7 @@ public class GameMaster {
         return String.join(" ", describe(c), describe(tm), describe(d));
     }
 
-    public String describe(Character chrctr, Destination dst) {
-        return describe(chrctr, dst, TravelMethod.WALKING);
+    public String describe(Character character, Destination destination) {
+        return describe(character, destination, TravelMethod.WALKING);
     }
 }
