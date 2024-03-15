@@ -42,3 +42,50 @@ GameMasterTest > Describe a character by class: Warrior PASSED
 
 BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Fri Mar 15 03:39:01 GTBST 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :compileTestJava
+
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+GameMasterTest > Describe the travel method: walking PASSED
+
+GameMasterTest > Implemented the describeTravelMethod method PASSED
+
+GameMasterTest > Describe a character by class: Wizard PASSED
+
+GameMasterTest > Describe a character traveling to a destination PASSED
+
+GameMasterTest > Describe a destination: Tol Honeth PASSED
+
+GameMasterTest > Implemented the describeDestination method PASSED
+
+GameMasterTest > Implemented the describeCharacter method PASSED
+
+GameMasterTest > Describe the travel method: horseback PASSED
+
+GameMasterTest > Implemented the describeCharacterToDestination method PASSED
+
+GameMasterTest > Combined description should handle character and destination with default travel method PASSED
+
+GameMasterTest > Describe a destination: Ashaba PASSED
+
+GameMasterTest > Implemented the describeCharacterToDestinationByTravelMethod method PASSED
+
+GameMasterTest > Describe a character by class: Warrior PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
