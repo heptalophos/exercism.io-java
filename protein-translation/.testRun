@@ -1,123 +1,3 @@
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
-
-ProteinTranslatorTest > testTryptophanRnaSequence1 PASSED
-
-ProteinTranslatorTest > testTranslationOfRnaToProteinList PASSED
-
-ProteinTranslatorTest > testMethionineRnaSequence PASSED
-
-ProteinTranslatorTest > testTranslationStopsIfStopCodonInMiddle1 PASSED
-
-ProteinTranslatorTest > testTranslationStopsIfStopCodonInMiddle2 PASSED
-
-ProteinTranslatorTest > testTyrosineRnaSequence1 PASSED
-
-ProteinTranslatorTest > testTyrosineRnaSequence2 PASSED
-
-ProteinTranslatorTest > testTranslationStopsIfStopCodonAtEnd1 PASSED
-
-ProteinTranslatorTest > testTranslationStopsIfStopCodonAtEnd2 PASSED
-
-ProteinTranslatorTest > testLeucineRnaSequence1 PASSED
-
-ProteinTranslatorTest > testLeucineRnaSequence2 PASSED
-
-ProteinTranslatorTest > testStopRnaSequence1 PASSED
-
-ProteinTranslatorTest > testStopRnaSequence2 PASSED
-
-ProteinTranslatorTest > testStopRnaSequence3 PASSED
-
-ProteinTranslatorTest > testPhenylalanineRnaSequence1 PASSED
-
-ProteinTranslatorTest > testPhenylalanineRnaSequence2 PASSED
-
-ProteinTranslatorTest > testSerineRnaSequence1 PASSED
-
-ProteinTranslatorTest > testSerineRnaSequence2 PASSED
-
-ProteinTranslatorTest > testSerineRnaSequence3 PASSED
-
-ProteinTranslatorTest > testSerineRnaSequence4 PASSED
-
-ProteinTranslatorTest > testTranslationStopsIfStopCodonAtBeginning PASSED
-
-ProteinTranslatorTest > testCysteineRnaSequence1 PASSED
-
-ProteinTranslatorTest > testCysteineRnaSequence2 PASSED
-
-BUILD SUCCESSFUL
-
-Total time: 40.119 secs
-
-
-
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
-
-ProteinTranslatorTest > testTryptophanRnaSequence1 PASSED
-
-ProteinTranslatorTest > testTranslationOfRnaToProteinList PASSED
-
-ProteinTranslatorTest > testMethionineRnaSequence PASSED
-
-ProteinTranslatorTest > testTranslationStopsIfStopCodonInMiddle1 PASSED
-
-ProteinTranslatorTest > testTranslationStopsIfStopCodonInMiddle2 PASSED
-
-ProteinTranslatorTest > testTyrosineRnaSequence1 PASSED
-
-ProteinTranslatorTest > testTyrosineRnaSequence2 PASSED
-
-ProteinTranslatorTest > testTranslationStopsIfStopCodonAtEnd1 PASSED
-
-ProteinTranslatorTest > testTranslationStopsIfStopCodonAtEnd2 PASSED
-
-ProteinTranslatorTest > testLeucineRnaSequence1 PASSED
-
-ProteinTranslatorTest > testLeucineRnaSequence2 PASSED
-
-ProteinTranslatorTest > testStopRnaSequence1 PASSED
-
-ProteinTranslatorTest > testStopRnaSequence2 PASSED
-
-ProteinTranslatorTest > testStopRnaSequence3 PASSED
-
-ProteinTranslatorTest > testPhenylalanineRnaSequence1 PASSED
-
-ProteinTranslatorTest > testPhenylalanineRnaSequence2 PASSED
-
-ProteinTranslatorTest > testSerineRnaSequence1 PASSED
-
-ProteinTranslatorTest > testSerineRnaSequence2 PASSED
-
-ProteinTranslatorTest > testSerineRnaSequence3 PASSED
-
-ProteinTranslatorTest > testSerineRnaSequence4 PASSED
-
-ProteinTranslatorTest > testTranslationStopsIfStopCodonAtBeginning PASSED
-
-ProteinTranslatorTest > testCysteineRnaSequence1 PASSED
-
-ProteinTranslatorTest > testCysteineRnaSequence2 PASSED
-
-BUILD SUCCESSFUL
-
-Total time: 4.997 secs
-
-
-
 >gradle test
 
 :compileJava FAILED
@@ -187,3 +67,83 @@ ProteinTranslatorTest > testCysteineRnaSequence2 PASSED
 BUILD SUCCESSFUL
 
 Total time: 3.525 secs
+
+
+
+---------------------------------------
+Fri Mar 15 03:07:07 GTBST 2024
+---------------------------------------
+>gradle test
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+ProteinTranslatorTest > testTryptophanRnaSequence1() PASSED
+
+ProteinTranslatorTest > testTranslationOfRnaToProteinList() PASSED
+
+ProteinTranslatorTest > testSequenceOfTwoProteinCodonsTranslatesIntoProteins() PASSED
+
+ProteinTranslatorTest > testMethionineRnaSequence() PASSED
+
+ProteinTranslatorTest > testTranslationStopsIfStopCodonInMiddle1() PASSED
+
+ProteinTranslatorTest > testTranslationStopsIfStopCodonInMiddle2() PASSED
+
+ProteinTranslatorTest > testEmptyRnaSequenceResultInNoproteins() PASSED
+
+ProteinTranslatorTest > testSequenceOfTwoDifferentProteinCodonsTranslatesIntoProteins() PASSED
+
+ProteinTranslatorTest > testTyrosineRnaSequence1() PASSED
+
+ProteinTranslatorTest > testTyrosineRnaSequence2() PASSED
+
+ProteinTranslatorTest > testNonExistingCodonCantTranslate() PASSED
+
+ProteinTranslatorTest > testIncompleteRnaSequenceCanTranslateIfValidUntilAStopCodon() PASSED
+
+ProteinTranslatorTest > testTranslationStopsIfStopCodonAtEnd1() PASSED
+
+ProteinTranslatorTest > testTranslationStopsIfStopCodonAtEnd2() PASSED
+
+ProteinTranslatorTest > testLeucineRnaSequence1() PASSED
+
+ProteinTranslatorTest > testLeucineRnaSequence2() PASSED
+
+ProteinTranslatorTest > testStopRnaSequence1() PASSED
+
+ProteinTranslatorTest > testStopRnaSequence2() PASSED
+
+ProteinTranslatorTest > testStopRnaSequence3() PASSED
+
+ProteinTranslatorTest > testPhenylalanineRnaSequence1() PASSED
+
+ProteinTranslatorTest > testPhenylalanineRnaSequence2() PASSED
+
+ProteinTranslatorTest > testUnknownAminoAcidsNotPartOfACodonCantTranslate() PASSED
+
+ProteinTranslatorTest > testSerineRnaSequence1() PASSED
+
+ProteinTranslatorTest > testSerineRnaSequence2() PASSED
+
+ProteinTranslatorTest > testSerineRnaSequence3() PASSED
+
+ProteinTranslatorTest > testSerineRnaSequence4() PASSED
+
+ProteinTranslatorTest > testTranslationStopsIfStopCodonAtBeginning() PASSED
+
+ProteinTranslatorTest > testIncompleteRnaSequenceCantTranslate() PASSED
+
+ProteinTranslatorTest > testCysteineRnaSequence1() PASSED
+
+ProteinTranslatorTest > testCysteineRnaSequence2() PASSED
+
+BUILD SUCCESSFUL in 21s
+3 actionable tasks: 3 executed
