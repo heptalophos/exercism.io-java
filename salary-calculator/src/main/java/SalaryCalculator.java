@@ -9,13 +9,13 @@ public class SalaryCalculator {
     private static final int regularBonus = 10;
     
     public double salaryMultiplier(int daysSkipped) {
-        return daysSkipped > maxAllowedSkippedDays ? daysSkippedPenalty
-                                                   : regularSalary;
+        return daysSkipped >= maxAllowedSkippedDays ? daysSkippedPenalty
+                                                    : regularSalary;
     }
 
     public int bonusMultiplier(int productsSold) {
-        return productsSold > bonusActivator ? extraBonus
-                                             : regularBonus;
+        return productsSold >= bonusActivator ? extraBonus
+                                              : regularBonus;
     }
 
     public double bonusForProductsSold(int productsSold) {
