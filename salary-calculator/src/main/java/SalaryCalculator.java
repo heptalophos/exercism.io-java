@@ -8,26 +8,24 @@ public class SalaryCalculator {
     private static final int extraBonus = 13;
     private static final int regularBonus = 10;
     
-    public double multiplierPerDaysSkipped(int daysSkipped) {
-        return daysSkipped > maxAllowedSkippedDays
-               ? daysSkippedPenalty
-               : regularSalary;
+    public double salaryMultiplier(int daysSkipped) {
+        return daysSkipped >= maxAllowedSkippedDays ? daysSkippedPenalty
+                                                    : regularSalary;
     }
 
-    public int multiplierPerProductsSold(int productsSold) {
-        return productsSold > bonusActivator
-               ? extraBonus
-               : regularBonus;
+    public int bonusMultiplier(int productsSold) {
+        return productsSold >= bonusActivator ? extraBonus
+                                              : regularBonus;
     }
 
-    public double bonusForProductSold(int productsSold) {
-        return productsSold * multiplierPerProductsSold(productsSold);
+    public double bonusForProductsSold(int productsSold) {
+        return productsSold * bonusMultiplier(productsSold);
     }
 
     public double finalSalary(int daysSkipped, int productsSold) {
-        double finalSalary = 
-            baseSalary * multiplierPerDaysSkipped(daysSkipped) + 
-            bonusForProductSold(productsSold);
+        double baseS = baseSalary * salaryMultiplier(daysSkipped);
+        double bonus = bonusForProductsSold(productsSold); 
+        double finalSalary = baseS + bonus;
         return Math.min(finalSalary, maxSalary);
     } 
 }
