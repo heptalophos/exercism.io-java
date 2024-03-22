@@ -1,9 +1,1 @@
-{
-    "track": "java",
-    "exercise": "grade-school",
-    "id": "899a2e67e29d4f62b2509305c45e88d9",
-    "url": "https://exercism.io/tracks/java/exercises/grade-school/solutions/899a2e67e29d4f62b2509305c45e88d9",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"java","exercise":"grade-school","id":"899a2e67e29d4f62b2509305c45e88d9","url":"https://exercism.org/tracks/java/exercises/grade-school","handle":"heptalophos","is_requester":true,"auto_approve":false}
