@@ -63,3 +63,61 @@ Use '--warning-mode all' to show the individual deprecation warnings.
 
 BUILD SUCCESSFUL in 4s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Fri Mar 29 20:05:03 GTBST 2024
+---------------------------------------
+>gradle test
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+SchoolTest > gradeIsEmptyIfNoStudentsInThatGrade() PASSED
+
+SchoolTest > addingStudentsInMultipleGrades() PASSED
+
+SchoolTest > studentNotAddedToSameGradeInTheRosterMoreThanOnce() PASSED
+
+SchoolTest > studentsAreSortedByGradeInTheRoster() PASSED
+
+SchoolTest > addingMultipleStudentsInTheSameGrade() PASSED
+
+SchoolTest > cannotAddStudentsToSameGradeInTheRosterMoreThanOnce() PASSED
+
+SchoolTest > studentNotAddedToMultipleGrades() PASSED
+
+SchoolTest > addingStudentsToDifferentGradesAddsThemToTheSameSortedRoster() PASSED
+
+SchoolTest > addAStudent() PASSED
+
+SchoolTest > studentsAreSortedByNameInTheRoster() PASSED
+
+SchoolTest > gradeIsEmptyIfNoStudentsInTheRoster() PASSED
+
+SchoolTest > studentNotAddedToMultipleGradesInTheRoster() PASSED
+
+SchoolTest > addingMoreStudentsAddsThemToTheSameSortedRoster() PASSED
+
+SchoolTest > rosterReturnsAnEmptyListIfThereAreNoStudentsEnrolled() PASSED
+
+SchoolTest > addingAStudentAddsThemToTheSortedRoster() PASSED
+
+SchoolTest > studentNotAddedToTheSameGradeMoreThanOnce() PASSED
+
+SchoolTest > studentsAreSortedByNameInAGrade() PASSED
+
+SchoolTest > cannotAddSameStudentToMultipleGradesInTheRoster() PASSED
+
+SchoolTest > studentsAreSortedByGradeAndThenByNameInTheRoster() PASSED
+
+BUILD SUCCESSFUL in 22s
+3 actionable tasks: 3 executed
