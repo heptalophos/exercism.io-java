@@ -1,142 +1,190 @@
-import org.junit.Test;
-import org.junit.Ignore;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class RomanNumeralsTest {
 
-    private RomanNumeral romanNumeral;
+    private RomanNumerals romanNumerals;
 
     @Test
     public void test1ToRomanNumberI() {
-        romanNumeral = new RomanNumeral(1);
-        assertEquals("I", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(1);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("I");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test2ToRomanNumberII() {
-        romanNumeral = new RomanNumeral(2);
-        assertEquals("II", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(2);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("II");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test3ToRomanNumberIII() {
-        romanNumeral = new RomanNumeral(3);
-        assertEquals("III", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(3);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("III");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test4ToRomanNumberIV() {
-        romanNumeral = new RomanNumeral(4);
-        assertEquals("IV", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(4);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("IV");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test5ToRomanNumberV() {
-        romanNumeral = new RomanNumeral(5);
-        assertEquals("V", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(5);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("V");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test6ToRomanNumberVI() {
-        romanNumeral = new RomanNumeral(6);
-        assertEquals("VI", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(6);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("VI");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test9ToRomanNumberIX() {
-        romanNumeral = new RomanNumeral(9);
-        assertEquals("IX", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(9);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("IX");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
+    @Test
+    public void test16ToRomanNumberXVI() {
+        romanNumerals = new RomanNumerals(16);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("XVI");
+    }
+
+    // @Disabled("Remove to run test")
     @Test
     public void test27ToRomanNumberXXVII() {
-        romanNumeral = new RomanNumeral(27);
-        assertEquals("XXVII", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(27);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("XXVII");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test48ToRomanNumberXLVIII() {
-        romanNumeral = new RomanNumeral(48);
-        assertEquals("XLVIII", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(48);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("XLVIII");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test49ToRomanNumberXLIX() {
-        romanNumeral = new RomanNumeral(49);
-        assertEquals("XLIX", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(49);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("XLIX");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test59ToRomanNumberLIX() {
-        romanNumeral = new RomanNumeral(59);
-        assertEquals("LIX", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(59);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("LIX");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
+    @Test
+    public void test66ToRomanNumberLXVI() {
+        romanNumerals = new RomanNumerals(66);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("LXVI");
+    }
+
+    // @Disabled("Remove to run test")
     @Test
     public void test93ToRomanNumberXCIII() {
-        romanNumeral = new RomanNumeral(93);
-        assertEquals("XCIII", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(93);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("XCIII");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test141ToRomanNumberCXLI() {
-        romanNumeral = new RomanNumeral(141);
-        assertEquals("CXLI", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(141);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("CXLI");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test163ToRomanNumberCLXIII() {
-        romanNumeral = new RomanNumeral(163);
-        assertEquals("CLXIII", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(163);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("CLXIII");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
+    @Test
+    public void test166ToRomanNumberCLXVI() {
+        romanNumerals = new RomanNumerals(166);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("CLXVI");
+    }
+
+    // @Disabled("Remove to run test")
     @Test
     public void test402ToRomanNumberCDII() {
-        romanNumeral = new RomanNumeral(402);
-        assertEquals("CDII", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(402);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("CDII");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test575ToRomanNumberDLXXV() {
-        romanNumeral = new RomanNumeral(575);
-        assertEquals("DLXXV", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(575);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("DLXXV");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
+    @Test
+    public void test666ToRomanNumberDCLXVI() {
+        romanNumerals = new RomanNumerals(666);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("DCLXVI");
+    }
+
+    // @Disabled("Remove to run test")
     @Test
     public void test911ToRomanNumberCMXI() {
-        romanNumeral = new RomanNumeral(911);
-        assertEquals("CMXI", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(911);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("CMXI");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
     @Test
     public void test1024ToRomanNumberMXXIV() {
-        romanNumeral = new RomanNumeral(1024);
-        assertEquals("MXXIV", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(1024);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("MXXIV");
     }
 
-    // @Ignore("Remove to run test")
+    // @Disabled("Remove to run test")
+    @Test
+    public void test1666ToRomanNumberMDCLXVI() {
+        romanNumerals = new RomanNumerals(1666);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("MDCLXVI");
+    }
+
+    // @Disabled("Remove to run test")
     @Test
     public void test3000ToRomanNumberMMM() {
-        romanNumeral = new RomanNumeral(3000);
-        assertEquals("MMM", romanNumeral.getRomanNumeral());
+        romanNumerals = new RomanNumerals(3000);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("MMM");
     }
 
+    // @Disabled("Remove to run test")
+    @Test
+    public void test3001ToRomanNumberMMMI() {
+        romanNumerals = new RomanNumerals(3001);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("MMMI");
+    }
+
+    // @Disabled("Remove to run test")
+    @Test
+    public void test3999ToRomanNumberMMMCMXCIX() {
+        romanNumerals = new RomanNumerals(3999);
+        assertThat(romanNumerals.getRomanNumeral()).isEqualTo("MMMCMXCIX");
+    }
 }
