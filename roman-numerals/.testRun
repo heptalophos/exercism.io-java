@@ -103,3 +103,74 @@ RomanNumeralsTest > test402ToRomanNumberCDII PASSED
 BUILD SUCCESSFUL
 
 Total time: 6.462 secs
+
+
+
+---------------------------------------
+Fri Mar 29 20:24:36 GTBST 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+RomanNumeralsTest > test3000ToRomanNumberMMM() PASSED
+
+RomanNumeralsTest > test3001ToRomanNumberMMMI() PASSED
+
+RomanNumeralsTest > test666ToRomanNumberDCLXVI() PASSED
+
+RomanNumeralsTest > test9ToRomanNumberIX() PASSED
+
+RomanNumeralsTest > test575ToRomanNumberDLXXV() PASSED
+
+RomanNumeralsTest > test49ToRomanNumberXLIX() PASSED
+
+RomanNumeralsTest > test1ToRomanNumberI() PASSED
+
+RomanNumeralsTest > test48ToRomanNumberXLVIII() PASSED
+
+RomanNumeralsTest > test3ToRomanNumberIII() PASSED
+
+RomanNumeralsTest > test1666ToRomanNumberMDCLXVI() PASSED
+
+RomanNumeralsTest > test6ToRomanNumberVI() PASSED
+
+RomanNumeralsTest > test66ToRomanNumberLXVI() PASSED
+
+RomanNumeralsTest > test911ToRomanNumberCMXI() PASSED
+
+RomanNumeralsTest > test1024ToRomanNumberMXXIV() PASSED
+
+RomanNumeralsTest > test16ToRomanNumberXVI() PASSED
+
+RomanNumeralsTest > test59ToRomanNumberLIX() PASSED
+
+RomanNumeralsTest > test5ToRomanNumberV() PASSED
+
+RomanNumeralsTest > test27ToRomanNumberXXVII() PASSED
+
+RomanNumeralsTest > test141ToRomanNumberCXLI() PASSED
+
+RomanNumeralsTest > test4ToRomanNumberIV() PASSED
+
+RomanNumeralsTest > test3999ToRomanNumberMMMCMXCIX() PASSED
+
+RomanNumeralsTest > test163ToRomanNumberCLXIII() PASSED
+
+RomanNumeralsTest > test93ToRomanNumberXCIII() PASSED
+
+RomanNumeralsTest > test166ToRomanNumberCLXVI() PASSED
+
+RomanNumeralsTest > test2ToRomanNumberII() PASSED
+
+RomanNumeralsTest > test402ToRomanNumberCDII() PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
