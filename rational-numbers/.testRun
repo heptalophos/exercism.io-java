@@ -171,12 +171,14 @@ Deprecated Gradle features were used in this build,
 making it incompatible with Gradle 7.0.
 Use '--warning-mode all' to show the individual deprecation warnings.
 
-
-BUILD SUCCESSFUL in 6s
+BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
 
 
 
+---------------------------------------
+Fri Mar 29 20:17:35 GTBST 2024
+---------------------------------------
 >gradle test
 
 > Task :compileJava
@@ -188,81 +190,87 @@ BUILD SUCCESSFUL in 6s
 
 > Task :test
 
-RationalTest > testReduceARationalNumberWithANegativeDenominatorToLowestTerms PASSED
+RationalTest > testReduceARationalNumberWithANegativeDenominatorToLowestTerms() PASSED
 
-RationalTest > testSubtractTwoNegativeRationalNumbers PASSED
+RationalTest > testSubtractTwoNegativeRationalNumbers() PASSED
 
-RationalTest > testRaiseANegativeRationalNumberToAPositiveIntegerPower PASSED
+RationalTest > testRaiseANegativeRationalNumberToAPositiveIntegerPower() PASSED
 
-RationalTest > testMultiplyARationalNumberByZero PASSED
+RationalTest > testReducePlacesTheMinusSignOnTheNumerator() PASSED
 
-RationalTest > testAbsoluteValueOfAPositiveRationalNumberWithNegativeNumeratorAndDenominator PASSED
+RationalTest > testMultiplyARationalNumberByZero() PASSED
 
-RationalTest > testAbsoluteValueOfANegativeRationalNumber PASSED
+RationalTest > testAbsoluteValueOfAPositiveRationalNumberWithNegativeNumeratorAndDenominator() PASSED
 
-RationalTest > testAddARationalNumberToItsAdditiveInverse PASSED
+RationalTest > testAbsoluteValueOfANegativeRationalNumber() PASSED
 
-RationalTest > testRaiseZeroToAnIntegerPower PASSED
+RationalTest > testAddARationalNumberToItsAdditiveInverse() PASSED
 
-RationalTest > testReduceOneToLowestTerms PASSED
+RationalTest > testRaiseZeroToAnIntegerPower() PASSED
 
-RationalTest > testMultiplyARationalNumberByItsReciprocal PASSED
+RationalTest > testRaiseANegativeRationalNumberToAnEvenNegativeIntegerPower() PASSED
 
-RationalTest > testDivideAPositiveRationalNumberByANegativeRationalNumber PASSED
+RationalTest > testReduceOneToLowestTerms() PASSED
 
-RationalTest > testReduceANegativeRationalNumberToLowestTerms PASSED
+RationalTest > testMultiplyARationalNumberByItsReciprocal() PASSED
 
-RationalTest > testRaiseOneToAnIntegerPower PASSED
+RationalTest > testDivideAPositiveRationalNumberByANegativeRationalNumber() PASSED
 
-RationalTest > testAddTwoPositiveRationalNumbers PASSED
+RationalTest > testRaiseAPositiveRationalNumberToANegativeIntegerPower() PASSED
 
-RationalTest > testDivideTwoPositiveRationalNumbers PASSED
+RationalTest > testReduceANegativeRationalNumberToLowestTerms() PASSED
 
-RationalTest > testAddAPositiveRationalNumberAndANegativeRationalNumber PASSED
+RationalTest > testRaiseOneToAnIntegerPower() PASSED
 
-RationalTest > testRaiseARealNumberToAPositiveRationalNumber PASSED
+RationalTest > testRaiseANegativeRationalNumberToAnOddNegativeIntegerPower() PASSED
 
-RationalTest > testDivideARationalNumberByOne PASSED
+RationalTest > testAddTwoPositiveRationalNumbers() PASSED
 
-RationalTest > testSubtractARationalNumberFromItself PASSED
+RationalTest > testDivideTwoPositiveRationalNumbers() PASSED
 
-RationalTest > testMultiplyTwoPositiveRationalNumbers PASSED
+RationalTest > testAddAPositiveRationalNumberAndANegativeRationalNumber() PASSED
 
-RationalTest > testAbsoluteValueOfZero PASSED
+RationalTest > testRaiseARealNumberToAPositiveRationalNumber() PASSED
 
-RationalTest > testRaiseARealNumberToANegativeRationalNumber PASSED
+RationalTest > testDivideARationalNumberByOne() PASSED
 
-RationalTest > testReduceAPositiveRationalNumberToLowestTerms PASSED
+RationalTest > testSubtractARationalNumberFromItself() PASSED
 
-RationalTest > testMultiplyANegativeRationalNumberByAPositiveRationalNumber PASSED
+RationalTest > testMultiplyTwoPositiveRationalNumbers() PASSED
 
-RationalTest > testSubtractTwoPositiveRationalNumbers PASSED
+RationalTest > testAbsoluteValueOfZero() PASSED
 
-RationalTest > testMultiplyARationalNumberByOne PASSED
+RationalTest > testRaiseARealNumberToANegativeRationalNumber() PASSED
 
-RationalTest > testAbsoluteValueOfANegativeRationalNumberWithNegativeDenominator PASSED
+RationalTest > testReduceAPositiveRationalNumberToLowestTerms() PASSED
 
-RationalTest > testAddTwoNegativeRationalNumbers PASSED
+RationalTest > testMultiplyANegativeRationalNumberByAPositiveRationalNumber() PASSED
 
-RationalTest > testDivideTwoNegativeRationalNumbers PASSED
+RationalTest > testSubtractTwoPositiveRationalNumbers() PASSED
 
-RationalTest > testRaiseAPositiveRationalNumberToAPositiveIntegerPower PASSED
+RationalTest > testAbsoluteValueOfARationalNumberIsReducedToLowestTerms() PASSED
 
-RationalTest > testAbsoluteValueOfAPositiveRationalNumber PASSED
+RationalTest > testMultiplyARationalNumberByOne() PASSED
 
-RationalTest > testMultiplyTwoNegativeRationalNumbers PASSED
+RationalTest > testAbsoluteValueOfANegativeRationalNumberWithNegativeDenominator() PASSED
 
-RationalTest > testRaiseAPositiveRationalNumberToThePowerOfZero PASSED
+RationalTest > testAddTwoNegativeRationalNumbers() PASSED
 
-RationalTest > testReduceAnIntegerToLowestTerms PASSED
+RationalTest > testDivideTwoNegativeRationalNumbers() PASSED
 
-RationalTest > testSubtractAPositiveRationalNumberAndANegativeRationalNumber PASSED
+RationalTest > testRaiseAPositiveRationalNumberToAPositiveIntegerPower() PASSED
 
-RationalTest > testReduceZeroToLowestTerms PASSED
+RationalTest > testAbsoluteValueOfAPositiveRationalNumber() PASSED
 
-Deprecated Gradle features were used in this build, 
-making it incompatible with Gradle 7.0.
-Use '--warning-mode all' to show the individual deprecation warnings.
+RationalTest > testMultiplyTwoNegativeRationalNumbers() PASSED
+
+RationalTest > testRaiseAPositiveRationalNumberToThePowerOfZero() PASSED
+
+RationalTest > testReduceAnIntegerToLowestTerms() PASSED
+
+RationalTest > testSubtractAPositiveRationalNumberAndANegativeRationalNumber() PASSED
+
+RationalTest > testReduceZeroToLowestTerms() PASSED
 
 BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
