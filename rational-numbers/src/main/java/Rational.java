@@ -14,11 +14,11 @@ public class Rational {
 		}
     }
 
-    int getNumerator() {
+    public int getNumerator() {
         return this.numerator;
     }
 
-    int getDenominator() {
+    public int getDenominator() {
         return this.denominator;
     }
     
@@ -53,9 +53,15 @@ public class Rational {
     }
     
     public Rational pow(int exponent) {
+        int num = this.numerator;
+        int den = this.denominator;
+        if (exponent < 0) {
+            num = this.denominator;
+            den = this.numerator;
+        }
         return new Rational(
-            (int) Math.pow(this.numerator, Math.abs(exponent)), 
-            (int) Math.pow(this.denominator, Math.abs(exponent))
+            (int) Math.pow(num, Math.abs(exponent)), 
+            (int) Math.pow(den, Math.abs(exponent))
             );
     }
 
