@@ -20,14 +20,15 @@ class School {
         return students;
     }
 
-    public void add(String name, Integer grade) {
+    public boolean add(String name, Integer grade) {
         List<String> names = roster.containsKey(grade) 
                              ? roster.get(grade) 
                              : new ArrayList<>();
-        
+        if (roster().contains(name)) return false;
         names.add(name);
         names.sort(naturalOrder());
         roster.put(grade, names);
+        return true;
     }
 
     List<String> grade(Integer grade) {
