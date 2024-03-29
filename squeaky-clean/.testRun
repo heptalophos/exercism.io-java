@@ -71,3 +71,46 @@ SqueakyCleanTest > single_letter PASSED
 
 BUILD SUCCESSFUL in 4s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Fri Mar 29 20:48:17 GTBST 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+SqueakyCleanTest > The clean method converts leetspeak to normal text with spaces and special characters PASSED
+
+SqueakyCleanTest > The clean method converts leetspeak to normal text after replacing numbers with chars PASSED
+
+SqueakyCleanTest > The clean method replaces whitespaces with underscores in the middle of the string PASSED
+
+SqueakyCleanTest > The clean method returns the same string when invoked on a string of three letters PASSED
+
+SqueakyCleanTest > The clean method returns empty string when invoked on empty string PASSED
+
+SqueakyCleanTest > The clean method returns a string in camel case after removing a dash and replaces a whitespace PASSED
+
+SqueakyCleanTest > The clean method returns a string in camel case and replaces leading and trailing whitespaces PASSED
+
+SqueakyCleanTest > The clean method replaces leading and trailing whitespaces with underscores PASSED
+
+SqueakyCleanTest > The clean method removes all characters that are not letters PASSED
+
+SqueakyCleanTest > The clean method converts kebab to camel case after removing a dash PASSED
+
+SqueakyCleanTest > The clean method removes all characters that are not letters and replaces spaces PASSED
+
+SqueakyCleanTest > The clean method returns the same string when invoked on a single letter string PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
