@@ -41,3 +41,54 @@ SumOfMultiplesTest > testSolutionsUsingIncludeExcludeMustExtendToCardinalityGrea
 BUILD SUCCESSFUL
 
 Total time: 3.184 secs
+
+
+
+---------------------------------------
+Fri Mar 29 20:57:05 GTBST 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+SumOfMultiplesTest > testOneFactorIsAMultipleOfAnother PASSED
+
+SumOfMultiplesTest > testThreeFactors PASSED
+
+SumOfMultiplesTest > testMuchLargerFactors PASSED
+
+SumOfMultiplesTest > testNoMultiplesWithinLimit PASSED
+
+SumOfMultiplesTest > testSumOfMultiplesOfZeroIsZero PASSED
+
+SumOfMultiplesTest > testNoFactorsMeanAnEmptySum PASSED
+
+SumOfMultiplesTest > testMoreThanOneMultipleWithinLimit PASSED
+
+SumOfMultiplesTest > testFactorZeroDoesNotAffectTheSumOfMultiplesOfOtherFactors PASSED
+
+SumOfMultiplesTest > testAllNumbersAreMultiplesOf1 PASSED
+
+SumOfMultiplesTest > testMoreThanOneFactorWithMultiplesWithinLimit PASSED
+
+SumOfMultiplesTest > testOneFactorHasMultiplesWithinLimit PASSED
+
+SumOfMultiplesTest > testAMuchLargerLimit PASSED
+
+SumOfMultiplesTest > testEachMultipleIsOnlyCountedOnce PASSED
+
+SumOfMultiplesTest > testSomePairsOfFactorsRelativelyPrimeAndSomeNot PASSED
+
+SumOfMultiplesTest > testFactorsNotRelativelyPrime PASSED
+
+SumOfMultiplesTest > testSolutionsUsingIncludeExcludeMustExtendToCardinalityGreater3 PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
