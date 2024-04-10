@@ -5,8 +5,8 @@ public class PhoneNumber {
     private static final String[] errors = {
             "letters not permitted",
             "punctuations not permitted",
-            "incorrect number of digits",
-            "more than 11 digits",
+            "must not be fewer than 10 digits",
+            "must not be greater than 11 digits",
             "11 digits must start with 1",
             "area code cannot start with zero",
             "area code cannot start with one", 
@@ -15,14 +15,17 @@ public class PhoneNumber {
     };
 
     public PhoneNumber(String strNumber) {
+        
         this.phoneNumber = validate(strNumber);
     }
     
     public String getNumber() {
+        
         return phoneNumber;
     }
 
     private String validate(String number) {
+    
         if (number.codePoints()
                   .anyMatch(Character::isAlphabetic))
             throw new IllegalArgumentException(errors[0]);
