@@ -21,3 +21,66 @@ FighterTest > testWizardVulnerable PASSED
 
 BUILD SUCCESSFUL in 11s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Mon Apr 15 23:27:04 GTBDT 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :compileTestJava
+
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+FighterTest > A Wizard is vulnerable when not prepared with a spell PASSED
+
+FighterTest > The toString method of the Warrior returns the correct description of the fighter PASSED
+
+FighterTest > The Wizard class inherits from the Fighter class PASSED
+
+FighterTest > The Warrior class overrides the toString method PASSED
+
+FighterTest > The Wizard class overrides the isVulnerable method PASSED
+
+FighterTest > The Warrior class is defined PASSED
+
+FighterTest > A Warrior deals 10 damage to a vulnerable target PASSED
+
+FighterTest > The Fighter class does not contain the prepareSpell method PASSED
+
+FighterTest > A Wizard deals 12 damage after a spell has been prepared PASSED
+
+FighterTest > The Wizard class overrides the getDamagePoints(Fighter) method PASSED
+
+FighterTest > The toString method of the Wizard returns the correct description of the fighter PASSED
+
+FighterTest > A Wizard deals 3 damage when no spell has been prepared PASSED
+
+FighterTest > The Warrior class inherits from the Fighter class PASSED
+
+FighterTest > The Warrior class overrides the isVulnerable method PASSED
+
+FighterTest > A Wizard is not vulnerable when prepared with a spell PASSED
+
+FighterTest > The Wizard class overrides the toString method PASSED
+
+FighterTest > The Wizard class is defined PASSED
+
+FighterTest > The Wizard class contains the prepareSpell method PASSED
+
+FighterTest > The Warrior class overrides the getDamagePoints(Fighter) method PASSED
+
+FighterTest > A Warrior deals 6 damage to an invulnerable target PASSED
+
+FighterTest > A Warrior is never vulnerable PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
