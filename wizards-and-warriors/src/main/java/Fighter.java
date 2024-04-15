@@ -9,6 +9,7 @@ class Fighter {
 class Warrior extends Fighter {
     @Override
     boolean isVulnerable() { return false; }
+    @Override
     int getDamagePoints(Fighter wizard) { 
         return wizard.isVulnerable() ? 10 : 6;
     }
