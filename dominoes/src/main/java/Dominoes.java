@@ -33,18 +33,20 @@ public class Dominoes {
             || !dominoes.isEmpty())
             throw new ChainNotFoundException(NOT_FOUND);            
     }
-
     private List<Domino> candidates(int target, List<Domino> dominoes) 
     {
         List<Domino> candidates = new ArrayList<>();
         for (Domino candidate : dominoes) {
             if (candidate.getLeft() == target) 
                 candidates.add(candidate);
-            else if (candidate.getRight() == target) 
-                candidates.add(candidate.reversed());
+            else if (candidate.getRight() == target) {
+                candidate = candidate.getReversed();
+                candidates.add(candidate);
+            }
             else 
                 continue;
         }
         return candidates;
     }
 }
+
