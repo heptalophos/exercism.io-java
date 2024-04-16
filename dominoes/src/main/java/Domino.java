@@ -17,7 +17,7 @@ class Domino {
     	return this.right;
     }
 
-    Domino reversed() {
+    Domino getReversed() {
         return new Domino(right, left);
     }
     
