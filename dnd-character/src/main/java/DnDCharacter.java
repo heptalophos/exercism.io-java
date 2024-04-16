@@ -24,33 +24,13 @@ class DnDCharacter {
         hitpoints = 10 + modifier(getConstitution());
     }
 
-    public int getStrength() {
-        return strength;
-    }
-
-    public int getDexterity() {
-        return dexterity;
-    }
-
-    public int getConstitution() {
-        return constitution;
-    }
-
-    public int getIntelligence() {
-        return intelligence;
-    }
-
-    public int getCharisma() {
-        return charisma;
-    }
-
-    public int getWisdom() {
-        return wisdom;
-    }
-
-    public int getHitpoints() {
-        return hitpoints;
-    }
+    public int getStrength() { return strength; }
+    public int getDexterity() { return dexterity; }
+    public int getConstitution() { return constitution; }
+    public int getIntelligence() { return intelligence; }
+    public int getCharisma() { return charisma; }
+    public int getWisdom() { return wisdom; }
+    public int getHitpoints() { return hitpoints; }
 
     public List<Integer> rollDice() {
         return IntStream.range(0, 4)
