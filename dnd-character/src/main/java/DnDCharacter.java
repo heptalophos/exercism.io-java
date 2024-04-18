@@ -1,8 +1,7 @@
 import java.util.List;
-import java.util.Collections;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import static java.util.Collections.min;
+import static java.util.stream.Collectors.toList;
+import static java.util.stream.IntStream.range;
 
 class DnDCharacter {
 
@@ -21,28 +20,27 @@ class DnDCharacter {
         intelligence = ability(rollDice());
         charisma     = ability(rollDice());
         wisdom       = ability(rollDice());
-        hitpoints = 10 + modifier(getConstitution());
+        hitpoints    = modifier(getConstitution()) + 10;
     }
 
-    public int getStrength() { return strength; }
-    public int getDexterity() { return dexterity; }
+    public int getStrength()     { return strength; }
+    public int getDexterity()    { return dexterity; }
     public int getConstitution() { return constitution; }
     public int getIntelligence() { return intelligence; }
-    public int getCharisma() { return charisma; }
-    public int getWisdom() { return wisdom; }
-    public int getHitpoints() { return hitpoints; }
+    public int getCharisma()     { return charisma; }
+    public int getWisdom()       { return wisdom; }
+    public int getHitpoints()    { return hitpoints; }
 
     public List<Integer> rollDice() {
-        return IntStream.range(0, 4)
-                        .map(x -> (int) Math.floor(6 * Math.random()) + 1)
-                        .boxed()
-                        .collect(Collectors.toList());
+        return range(0, 4)
+               .map(x -> (int) Math.floor(6 * Math.random()) + 1)
+               .boxed()
+               .collect(toList());
     }
 
     public int ability(List<Integer> diceRolls) {
-        int sum = diceRolls.stream().sorted()
-                           .reduce(0, Integer::sum);
-        return sum - Collections.min(diceRolls);
+        int sum = diceRolls.stream().sorted().reduce(0, Integer::sum);
+        return sum - min(diceRolls);
     }
 
     public int modifier(int input) {
