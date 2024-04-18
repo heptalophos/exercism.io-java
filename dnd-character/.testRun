@@ -174,3 +174,94 @@ DnDCharacterTest > test4DiceWereUsedForRollingScores PASSED
 
 BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Tue Apr 16 19:59:28 GTBDT 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test UP-TO-DATE
+
+BUILD SUCCESSFUL in 1s
+3 actionable tasks: 3 up-to-date
+
+
+
+---------------------------------------
+Thu Apr 18 22:20:18 GTBDT 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+DnDCharacterTest > testAbilityCalculationsUses3LargestNumbersFromScoresInDescendingOrder PASSED
+
+DnDCharacterTest > testAbilityModifierForScore3IsNegative4 PASSED
+
+DnDCharacterTest > testAbilityCalculationsUses3LargestNumbersFromScoresInRandomOrder PASSED
+
+DnDCharacterTest > testAbilityModifierForScore4IsNegative3 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore5IsNegative3 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore10Is0 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore11Is0 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore12Is1 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore13Is1 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore14Is2 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore15Is2 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore16Is3 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore17Is3 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore18Is4 PASSED
+
+DnDCharacterTest > testEachAbilityIsOnlyCalculatedOnce PASSED
+
+DnDCharacterTest > testAbilityModifierForScore6IsNegative2 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore7IsNegative2 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore8IsNegative1 PASSED
+
+DnDCharacterTest > testAbilityModifierForScore9IsNegative1 PASSED
+
+DnDCharacterTest > testAbilityCalculationsUses3LargestNumbersFromFromScoresInAscendingOrder PASSED
+
+DnDCharacterTest > testUniqueCharacterIsCreated PASSED
+
+DnDCharacterTest > testAbilityCalculationDoesNotChangeInputScores PASSED
+
+DnDCharacterTest > testAbilityCalculationsWithLowestEqualNumbers PASSED
+
+DnDCharacterTest > testRandomCharacterIsValid PASSED
+
+DnDCharacterTest > testAbilityCalculationsWithHighestEqualNumbers PASSED
+
+DnDCharacterTest > testDiceValuesBetween1And6 PASSED
+
+DnDCharacterTest > test4DiceWereUsedForRollingScores PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
