@@ -38,46 +38,6 @@ Total time: 4.865 secs
 
 >gradle test
 
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
-
-DominoesTest > cantBeChainedTest PASSED
-
-DominoesTest > needBacktrackTest PASSED
-
-DominoesTest > singletonInputSingletonOutput PASSED
-
-DominoesTest > nineElementsTest PASSED
-
-DominoesTest > separateLoopsTest PASSED
-
-DominoesTest > disconnectedDoubleLoopTest PASSED
-
-DominoesTest > singletonCantBeChainedTest PASSED
-
-DominoesTest > disconnectedSingleIsolatedTest PASSED
-
-DominoesTest > emtpyInputEmptyOutputTest PASSED
-
-DominoesTest > canReverseDominoesTest PASSED
-
-DominoesTest > disconnectedSimpleTest PASSED
-
-DominoesTest > threeElementsTest PASSED
-
-BUILD SUCCESSFUL
-
-Total time: 10.97 secs
-
-
-
->gradle test
-
 > Task :compileJava
 > Task :processResources NO-SOURCE
 > Task :classes
@@ -157,4 +117,49 @@ DominoesTest > disconnectedSimpleTest PASSED
 DominoesTest > threeElementsTest PASSED
 
 BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Thu Apr 18 22:10:08 GTBDT 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+DominoesTest > cantBeChainedTest() PASSED
+
+DominoesTest > needBacktrackTest() PASSED
+
+DominoesTest > singletonInputSingletonOutput() PASSED
+
+DominoesTest > nineElementsTest() PASSED
+
+DominoesTest > separateLoopsTest() PASSED
+
+DominoesTest > disconnectedDoubleLoopTest() PASSED
+
+DominoesTest > singletonCantBeChainedTest() PASSED
+
+DominoesTest > disconnectedSingleIsolatedTest() PASSED
+
+DominoesTest > separateThreeDominoLoopsTest() PASSED
+
+DominoesTest > emtpyInputEmptyOutputTest() PASSED
+
+DominoesTest > canReverseDominoesTest() PASSED
+
+DominoesTest > disconnectedSimpleTest() PASSED
+
+DominoesTest > threeElementsTest() PASSED
+
+BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
