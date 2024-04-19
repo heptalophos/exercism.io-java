@@ -1,9 +1,1 @@
-{
-    "track": "java",
-    "exercise": "knapsack",
-    "id": "60b27c43bc46460a9b79625222b6593c",
-    "url": "https://exercism.org/tracks/java/exercises/knapsack/solutions/60b27c43bc46460a9b79625222b6593c",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"java","exercise":"knapsack","id":"60b27c43bc46460a9b79625222b6593c","url":"https://exercism.org/tracks/java/exercises/knapsack","handle":"heptalophos","is_requester":true,"auto_approve":false}
