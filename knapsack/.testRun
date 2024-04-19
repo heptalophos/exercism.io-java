@@ -23,67 +23,7 @@ KnapsackTest > testExampleKnapsack PASSED
 
 KnapsackTest > testFifteenItems PASSED
 
-BUILD SUCCESSFUL in 5s
-3 actionable tasks: 3 executed
-
-
-
->gradle test
-
-> Task :compileJava
-> Task :processResources NO-SOURCE
-> Task :classes
-> Task :compileTestJava
-> Task :processTestResources NO-SOURCE
-> Task :testClasses
-
-> Task :test
-
-KnapsackTest > testFiveItemsCannotBeGreedyByWeight PASSED
-
-KnapsackTest > testOneItemTooHeavy PASSED
-
-KnapsackTest > testEightItems PASSED
-
-KnapsackTest > testFiveItemsCannotBeGreedyByValue PASSED
-
-KnapsackTest > testNoItems PASSED
-
-KnapsackTest > testExampleKnapsack PASSED
-
-KnapsackTest > testFifteenItems PASSED
-
 BUILD SUCCESSFUL in 3s
-3 actionable tasks: 3 executed
-
-
-
->gradle test
-
-> Task :compileJava
-> Task :processResources NO-SOURCE
-> Task :classes
-> Task :compileTestJava
-> Task :processTestResources NO-SOURCE
-> Task :testClasses
-
-> Task :test
-
-KnapsackTest > testFiveItemsCannotBeGreedyByWeight PASSED
-
-KnapsackTest > testOneItemTooHeavy PASSED
-
-KnapsackTest > testEightItems PASSED
-
-KnapsackTest > testFiveItemsCannotBeGreedyByValue PASSED
-
-KnapsackTest > testNoItems PASSED
-
-KnapsackTest > testExampleKnapsack PASSED
-
-KnapsackTest > testFifteenItems PASSED
-
-BUILD SUCCESSFUL in 4s
 3 actionable tasks: 3 executed
 
 
@@ -117,4 +57,37 @@ KnapsackTest > testExampleKnapsack PASSED
 KnapsackTest > testFifteenItems PASSED
 
 BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Fri Apr 19 23:12:31 GTBDT 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+KnapsackTest > testFiveItemsCannotBeGreedyByWeight() PASSED
+
+KnapsackTest > testOneItemTooHeavy() PASSED
+
+KnapsackTest > testEightItems() PASSED
+
+KnapsackTest > testFiveItemsCannotBeGreedyByValue() PASSED
+
+KnapsackTest > testNoItems() PASSED
+
+KnapsackTest > testExampleKnapsack() PASSED
+
+KnapsackTest > testFifteenItems() PASSED
+
+BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
