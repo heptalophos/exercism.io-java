@@ -12,26 +12,11 @@ public class Knapsack {
                     int itemWeight = item.getWeight();
                     List<Item> remainingItems = 
                             items.subList(x + 1, items.size());
-                    return  itemValue + 
-                            maximumValue(capacity - itemWeight, remainingItems);
+                    return  itemValue + maximumValue(
+                                capacity - itemWeight, remainingItems
+                            );
                 })
                 .max()
                 .orElse(0);
-    }
-}
-
-public class Item {
-    private final int value;
-    private final int weight;
-
-    public Item(int weight, int value) {
-        this.weight = weight;
-        this.value = value;
-    }
-    public int getValue() {
-        return value;
-    }
-    public int getWeight() {
-        return weight;
     }
 }
