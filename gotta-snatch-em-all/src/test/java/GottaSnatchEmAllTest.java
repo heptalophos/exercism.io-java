@@ -200,6 +200,7 @@ class GottaSnatchEmAllTest {
         assertThat(GottaSnatchEmAll.allCards(collections)).isEqualTo(expected);
     }
 
+    
     @Test
     @Tag("task:5")
     @DisplayName("allCards returns a set with all cards when given multiple collections")
