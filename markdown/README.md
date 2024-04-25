@@ -1,41 +1,39 @@
 # Markdown
 
+Welcome to Markdown on Exercism's Java Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+
+## Instructions
+
 Refactor a Markdown parser.
 
-The markdown exercise is a refactoring exercise. There is code that parses a
-given string with [Markdown
-syntax](https://guides.github.com/features/mastering-markdown/) and returns the
-associated HTML for that string. Even though this code is confusingly written
-and hard to follow, somehow it works and all the tests are passing! Your
-challenge is to re-write this code to make it easier to read and maintain
-while still making sure that all the tests keep passing.
+The markdown exercise is a refactoring exercise.
+There is code that parses a given string with [Markdown syntax][markdown] and returns the associated HTML for that string.
+Even though this code is confusingly written and hard to follow, somehow it works and all the tests are passing!
+Your challenge is to re-write this code to make it easier to read and maintain while still making sure that all the tests keep passing.
 
-It would be helpful if you made notes of what you did in your refactoring in
-comments so reviewers can see that, but it isn't strictly necessary. The most
-important thing is to make the code better!
+It would be helpful if you made notes of what you did in your refactoring in comments so reviewers can see that, but it isn't strictly necessary.
+The most important thing is to make the code better!
 
-## Setup
+[markdown]: https://guides.github.com/features/mastering-markdown/
 
-Go through the setup instructions for Java to install the necessary
-dependencies:
+## Source
 
-[https://exercism.io/tracks/java/installation](https://exercism.io/tracks/java/installation)
+### Created by
 
-# Running the tests
+- @bmkiefer
 
-You can run all the tests for an exercise by entering the following in your
-terminal:
+### Contributed to by
 
-```sh
-$ gradle test
-```
-
-In the test suites all tests but the first have been skipped.
-
-Once you get a test passing, you can enable the next one by removing the
-`@Ignore("Remove to run test")` annotation.
-
-
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have
-completed the exercise.
+- @aadityakulkarni
+- @FridaTveit
+- @jmrunkle
+- @Kyle-Pu
+- @lemoncurry
+- @LukBukkit
+- @mirkoperillo
+- @msomji
+- @muzimuzhi
+- @SleeplessByte
+- @sshine
+- @stkent

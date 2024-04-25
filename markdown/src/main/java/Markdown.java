@@ -3,14 +3,11 @@ import static java.lang.String.format;
 public class Markdown {
 
     String parse(String input) {
-
         String[] lines = input.split("\n");
         String html = "";
         boolean inList = false;
-
         for (String line : lines) {
             line = header(line);
-
             if (line.matches("(<li>).+") && !inList) {
                 inList = true;
                 html += "<ul>" + line;
@@ -23,37 +20,30 @@ public class Markdown {
                 html += line;
             }
         }
-
         if (inList) {
             html += "</ul>";
         }
-
         return html;
     }
 
     private String header(String input) {
+        int count = 0;
         int headerTags = -1;
         String html = "";
-        while (input.charAt(++headerTags) == '#') {
-            continue;
-        } 
-        html = headerTags == 0          ?
-               listItem(input) :
-               format("<h%d>%s</h%d>", 
-                      headerTags, 
-                      input.substring(headerTags + 1), 
-                      headerTags);
+        while (input.charAt(++headerTags) == '#') ++count;
+        if (count > 6) return paragraph(input);
+        html = headerTags == 0 
+               ? listItem(input) 
+               : format("<h%d>%s</h%d>", headerTags, 
+                        input.substring(headerTags + 1), headerTags);
         return html;
     }
 
     private String listItem(String input) {
-        String html = input.startsWith("*") ?
-                      "<li>" + 
-                      modifiers(input.substring(2)) + 
-                      "</li>" :
-                      paragraph(input);
+        String html = input.startsWith("*") 
+                      ? "<li>" + modifiers(input.substring(2)) + "</li>" 
+                      : paragraph(input);
         return html;
-
     }
 
     private String paragraph(String input) {
@@ -62,11 +52,12 @@ public class Markdown {
     }
 
     private String modifiers(String input) {
-        String html = input
-                      .replaceAll("__(.+)__", 
-                                  "<strong>$1</strong>")
-                      .replaceAll("_(.+)_", 
-                                  "<em>$1</em>") ;
+        String html = input.replaceAll(
+                                "__(.+)__", "<strong>$1</strong>"
+                            )
+                           .replaceAll(
+                                "_(.+)_", "<em>$1</em>"
+                            ) ;
         return html;     
     }
 }
