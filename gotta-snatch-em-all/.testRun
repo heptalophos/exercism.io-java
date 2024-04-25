@@ -1,0 +1,58 @@
+---------------------------------------
+Thu Apr 25 15:58:04 GTBDT 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+GottaSnatchEmAllTest > allCards returns a set with all cards when given multiple collections PASSED
+
+GottaSnatchEmAllTest > canTrade returns false when their collections is empty PASSED
+
+GottaSnatchEmAllTest > newCollection returns a set with one card when given a list with one card PASSED
+
+GottaSnatchEmAllTest > commonCards returns a set with cards present in all given collections PASSED
+
+GottaSnatchEmAllTest > newCollection returns a set with two cards when given a list with two unique cards PASSED
+
+GottaSnatchEmAllTest > canTrade returns false when both collections have the same cards PASSED
+
+GottaSnatchEmAllTest > canTrade returns true when both collections have at least one card the other doesn't have PASSED
+
+GottaSnatchEmAllTest > canTrade returns true when my collection is a non-empty subset of their collection PASSED
+
+GottaSnatchEmAllTest > addCard returns true when the collection does not yet contain the new card PASSED
+
+GottaSnatchEmAllTest > commonCards returns an empty set when all cards are different PASSED
+
+GottaSnatchEmAllTest > canTrade returns false when both collections are empty PASSED
+
+GottaSnatchEmAllTest > canTrade returns false when my collections is empty PASSED
+
+GottaSnatchEmAllTest > canTrade returns true when both collections have unique cards PASSED
+
+GottaSnatchEmAllTest > canTrade returns false when their collection is a non-empty subset of my collection PASSED
+
+GottaSnatchEmAllTest > addCard doesn't add the card to the collection when it already contains the new card PASSED
+
+GottaSnatchEmAllTest > allCards returns a set with all cards when given a single collection PASSED
+
+GottaSnatchEmAllTest > addCard adds the card to the collection when it is a new card PASSED
+
+GottaSnatchEmAllTest > newCollection returns an empty set when given an empty list PASSED
+
+GottaSnatchEmAllTest > newCollection returns a set with one card when given a list with one repeated card PASSED
+
+GottaSnatchEmAllTest > addCard returns false when the collection already contains the new card PASSED
+
+GottaSnatchEmAllTest > commonCards returns a set with all cards when given a single collection PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
