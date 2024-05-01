@@ -26,3 +26,34 @@ SquareRootTest > Square root of 81 PASSED
 
 BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Tue Apr 30 17:46:58 GTBDT 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+SquareRootTest > Square root of 65025 PASSED
+
+SquareRootTest > Square root of 1 PASSED
+
+SquareRootTest > Square root of 4 PASSED
+
+SquareRootTest > Square root of 196 PASSED
+
+SquareRootTest > Square root of 25 PASSED
+
+SquareRootTest > Square root of 81 PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
