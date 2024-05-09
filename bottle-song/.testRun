@@ -1,0 +1,30 @@
+---------------------------------------
+Thu May  9 19:02:18 GTBDT 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+BottleSongTest > lastThreeVerses() PASSED
+
+BottleSongTest > lastGenericVerse() PASSED
+
+BottleSongTest > allVerses() PASSED
+
+BottleSongTest > verseWithOneBottle() PASSED
+
+BottleSongTest > verseWithTwoBottles() PASSED
+
+BottleSongTest > firstGenericVerse() PASSED
+
+BottleSongTest > firstTwoVerses() PASSED
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
