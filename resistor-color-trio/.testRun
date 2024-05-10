@@ -1,0 +1,36 @@
+---------------------------------------
+Fri May 10 22:58:48 GTBDT 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+ResistorColorTrioTest > testBlueAndVioletAndBlue() PASSED
+
+ResistorColorTrioTest > testOrangeAndOrangeAndBlack() PASSED
+
+ResistorColorTrioTest > testWhiteAndWhiteAndWhite() PASSED
+
+ResistorColorTrioTest > testYellowAndVioletAndYellow() PASSED
+
+ResistorColorTrioTest > testGreenAndBrownAndOrange() PASSED
+
+ResistorColorTrioTest > testRedAndBlackAndRed() PASSED
+
+ResistorColorTrioTest > testIgnoreExtraColors() PASSED
+
+ResistorColorTrioTest > testBlackAndBlackAndBlack() PASSED
+
+ResistorColorTrioTest > testFirstTwoColorsMakeAnInvalidOctalNumber() PASSED
+
+ResistorColorTrioTest > testBlueAndGreyAndBrown() PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
