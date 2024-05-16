@@ -3,9 +3,7 @@ public class Acronym {
     private final String phrase;
 
     Acronym(String phrase) {
-        this.phrase = phrase.replaceAll(
-                                "[^A-Za-z -]+", ""
-                            );
+        this.phrase = phrase.replaceAll("[^A-Za-z -]+", "");
     }
 
     public String get() {
