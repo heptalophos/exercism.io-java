@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 
 public final class Flattener {
 
-    public List <?> flatten(final List<?> elements) {
+    public List<? super Object> flatten(final List<?> elements) {
         return elements
                .stream()
                .filter(Objects::nonNull)
@@ -13,9 +13,9 @@ public final class Flattener {
                .collect(Collectors.toList());
     }
 
-    private Stream<?> flatten(final Object element) {
-        return (element instanceof List) 
-               ? flatten((List<?>) element).stream() 
-               : Stream.of(element);
+    private Stream<? super Object> flatten(final Object element) {
+        return (element instanceof List) ?
+               flatten((List<?>) element).stream() :
+               Stream.of(element);
     }
 }
