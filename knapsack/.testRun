@@ -1,33 +1,3 @@
->gradle test
-
-> Task :compileJava
-> Task :processResources NO-SOURCE
-> Task :classes
-> Task :compileTestJava
-> Task :processTestResources NO-SOURCE
-> Task :testClasses
-
-> Task :test
-
-KnapsackTest > testFiveItemsCannotBeGreedyByWeight PASSED
-
-KnapsackTest > testOneItemTooHeavy PASSED
-
-KnapsackTest > testEightItems PASSED
-
-KnapsackTest > testFiveItemsCannotBeGreedyByValue PASSED
-
-KnapsackTest > testNoItems PASSED
-
-KnapsackTest > testExampleKnapsack PASSED
-
-KnapsackTest > testFifteenItems PASSED
-
-BUILD SUCCESSFUL in 3s
-3 actionable tasks: 3 executed
-
-
-
 ---------------------------------------
 Thu Nov 30 01:29:25 GTBST 2023
 ---------------------------------------
@@ -63,6 +33,39 @@ BUILD SUCCESSFUL in 2s
 
 ---------------------------------------
 Fri Apr 19 23:12:31 GTBDT 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+KnapsackTest > testFiveItemsCannotBeGreedyByWeight() PASSED
+
+KnapsackTest > testOneItemTooHeavy() PASSED
+
+KnapsackTest > testEightItems() PASSED
+
+KnapsackTest > testFiveItemsCannotBeGreedyByValue() PASSED
+
+KnapsackTest > testNoItems() PASSED
+
+KnapsackTest > testExampleKnapsack() PASSED
+
+KnapsackTest > testFifteenItems() PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Tue May 21 01:49:41 GTBDT 2024
 ---------------------------------------
 >gradle test
 
