@@ -1,4 +1,4 @@
-enum Orientation {
+public enum Orientation {
 
     NORTH, EAST, SOUTH, WEST;
 
@@ -11,7 +11,6 @@ enum Orientation {
         }
         return this;
     }
-
     Orientation plusHalfPi() {
         switch (this) {
             case NORTH : return WEST;
