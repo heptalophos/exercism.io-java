@@ -1,7 +1,5 @@
-class GridPosition {
-
+public class GridPosition {
     final int x;
-
     final int y;
 
     GridPosition(final int x, final int y) {
@@ -20,7 +18,6 @@ class GridPosition {
         }
         return new GridPosition(x, y);
     }
-
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -29,7 +26,6 @@ class GridPosition {
         result = prime * result + y;
         return result;
     }
-
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
