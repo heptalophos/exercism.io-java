@@ -69,15 +69,19 @@ Total time: 4.423 secs
 
 
 
+---------------------------------------
+Fri May  3 19:24:57 GTBDT 2024
+---------------------------------------
 >gradle test
 
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
 
 HandshakeCalculatorTest > testReversingASingleActionYieldsTheSameAction PASSED
 
@@ -101,42 +105,23 @@ HandshakeCalculatorTest > testAnInputThatYieldsTwoActions PASSED
 
 HandshakeCalculatorTest > testThatInput0YieldsNoActions PASSED
 
-BUILD SUCCESSFUL
-
-Total time: 7.385 secs
-
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
 
 
-:compileJava
-:processResources NO-SOURCE
-:classes
-:compileTestJava
-:processTestResources NO-SOURCE
-:testClasses
-:test
 
-HandshakeCalculatorTest > testReversingASingleActionYieldsTheSameAction PASSED
+---------------------------------------
+Fri May 24 00:52:44 GTBDT 2024
+---------------------------------------
+>gradle test
 
-HandshakeCalculatorTest > testThatInput1YieldsAWink PASSED
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test UP-TO-DATE
 
-HandshakeCalculatorTest > testReversingNoActionsYieldsNoActions PASSED
-
-HandshakeCalculatorTest > testThatInput8YieldsAJump PASSED
-
-HandshakeCalculatorTest > testThatInput4YieldsACloseYourEyes PASSED
-
-HandshakeCalculatorTest > testInputThatYieldsAllActions PASSED
-
-HandshakeCalculatorTest > testThatInput2YieldsADoubleBlink PASSED
-
-HandshakeCalculatorTest > testInputThatYieldsAllActionsReversed PASSED
-
-HandshakeCalculatorTest > testAnInputThatYieldsTwoReversedActions PASSED
-
-HandshakeCalculatorTest > testAnInputThatYieldsTwoActions PASSED
-
-HandshakeCalculatorTest > testThatInput0YieldsNoActions PASSED
-
-BUILD SUCCESSFUL
-
-Total time: 8.144 secs
+BUILD SUCCESSFUL in 1s
+3 actionable tasks: 3 up-to-date
