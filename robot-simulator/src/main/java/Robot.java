@@ -1,5 +1,4 @@
 public class Robot {
-
     private GridPosition position;
     private Orientation direction;
 
@@ -9,25 +8,20 @@ public class Robot {
     }
 
     public Orientation getOrientation() {
-        return direction;
+        return this.direction;
     }
-
     public GridPosition getGridPosition() {
-        return position;
+        return this.position;
     }
-
     public void turnRight() {
         direction = direction.minusHalfPi();
     }
-
     public void turnLeft() {
         direction = direction.plusHalfPi();
     }
-
     public void advance() {
         position = position.change(direction, 1); 
     }
-
     public void simulate(String commands) {
         for (char command: commands.toCharArray()) {
             switch (command) {
