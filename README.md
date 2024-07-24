@@ -1,2 +1,2 @@
-Solutions to exercism.io exercises
-----------------------------------
+Solutions to exercism.io's code katas
+-------------------------------------
