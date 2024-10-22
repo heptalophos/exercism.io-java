@@ -1,0 +1,68 @@
+---------------------------------------
+Tue Oct 22 22:58:54 GTBDT 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+VariableLengthQuantityTest > testLargestDoubleByte PASSED
+
+VariableLengthQuantityTest > testLargestTripleByte PASSED
+
+VariableLengthQuantityTest > testLargestSingleByte PASSED
+
+VariableLengthQuantityTest > testArbitraryDoubleByte PASSED
+
+VariableLengthQuantityTest > testSmallestDoubleByte PASSED
+
+VariableLengthQuantityTest > testArbitraryTripleByte PASSED
+
+VariableLengthQuantityTest > testSmallestTripleByte PASSED
+
+VariableLengthQuantityTest > testArbitrarySingleByte PASSED
+
+VariableLengthQuantityTest > testMaximum32BitIntegerInput PASSED
+
+VariableLengthQuantityTest > testDecodeMultipleBytes PASSED
+
+VariableLengthQuantityTest > testTwoSingleByteValues PASSED
+
+VariableLengthQuantityTest > testZero PASSED
+
+VariableLengthQuantityTest > testDecodeFourBytes PASSED
+
+VariableLengthQuantityTest > testCannotDecodeIncompleteSequence PASSED
+
+VariableLengthQuantityTest > testDecodeTwoBytes PASSED
+
+VariableLengthQuantityTest > testManyMultiByteValues PASSED
+
+VariableLengthQuantityTest > testTwoMultiByteValues PASSED
+
+VariableLengthQuantityTest > testDecodeThreeBytes PASSED
+
+VariableLengthQuantityTest > testArbitraryQuadrupleByte PASSED
+
+VariableLengthQuantityTest > testSmallestQuadrupleByte PASSED
+
+VariableLengthQuantityTest > testDecodeOneByte PASSED
+
+VariableLengthQuantityTest > testCannotDecodeIncompleteSequenceEvenIfValueIsZero PASSED
+
+VariableLengthQuantityTest > testLargestQuadrupleByte PASSED
+
+VariableLengthQuantityTest > testDecodeMaximum32BitInteger PASSED
+
+VariableLengthQuantityTest > testArbitraryQuintupleByte PASSED
+
+VariableLengthQuantityTest > testSmallestQuintupleByte PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
