@@ -123,3 +123,47 @@ Total time: 5.522 secs
 BUILD SUCCESSFUL
 
 Total time: 8.359 secs
+
+
+
+---------------------------------------
+Sat Dec 28 16:46:37 GTBST 2024
+---------------------------------------
+>gradle test
+
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '~\exercism\java\grains\build.gradle' line: 10
+
+* What went wrong:
+A problem occurred evaluating root project 'grains'.
+> Could not find method testCompile() for arguments [junit:junit:4.13] on object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+
+
+
+---------------------------------------
+Sat Dec 28 16:48:51 GTBST 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test UP-TO-DATE
+
+BUILD SUCCESSFUL in 1s
+3 actionable tasks: 3 up-to-date
