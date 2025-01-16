@@ -181,3 +181,48 @@ PalindromeCalculatorTest > largestPalindromeFromDoubleDigitFactors() PASSED
 
 BUILD SUCCESSFUL in 37s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Thu Jan 16 14:28:52 GTBST 2025
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+PalindromeCalculatorTest > largestPalindromeFromSingleDigitFactors() PASSED
+
+PalindromeCalculatorTest > errorLargestMinIsMoreThanMax() PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromTripleDigitFactors() PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromQuadDigitFactors() PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromTripleDigitFactors() PASSED
+
+PalindromeCalculatorTest > smallestProductDoesNotUseTheSmallestFactor() PASSED
+
+PalindromeCalculatorTest > errorSmallestMinIsMoreThanMax() PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromDoubleDigitFactors() PASSED
+
+PalindromeCalculatorTest > emtpyResultSmallestNoPalindromeInRange() PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromQuadDigitFactors() PASSED
+
+PalindromeCalculatorTest > emptyResultLargestNoPalindromeInRange() PASSED
+
+PalindromeCalculatorTest > smallestPalindromeFromSingleDigitFactors() PASSED
+
+PalindromeCalculatorTest > largestPalindromeFromDoubleDigitFactors() PASSED
+
+BUILD SUCCESSFUL in 5s
+3 actionable tasks: 3 executed

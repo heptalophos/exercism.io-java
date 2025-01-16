@@ -48,8 +48,15 @@ public class PalindromeCalculator {
     }
 
     private boolean isPalindrome(long num) {
-        return  String.valueOf(num)
-                      .equals( new StringBuilder(String.valueOf(num))
-                      .reverse().toString());
+        if (num < 0 || (num % 10 == 0 && num != 0)) {
+            return false;
+        }
+        long reversed = 0;
+        while (num > reversed) {
+            reversed *= 10; 
+            reversed += num % 10;
+            num /= 10;
+        }
+        return num == reversed || num == reversed / 10;
     }
 }
