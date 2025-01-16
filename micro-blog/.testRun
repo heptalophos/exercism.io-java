@@ -38,3 +38,46 @@ MicroBlogTest > emojiLong PASSED
 
 BUILD SUCCESSFUL in 2s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Sat Dec 28 16:40:38 GTBST 2024
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+MicroBlogTest > germanLanguageShort_broth PASSED
+
+MicroBlogTest > bulgarianLanguageShort_good PASSED
+
+MicroBlogTest > mathsShort PASSED
+
+MicroBlogTest > englishLanguageShort PASSED
+
+MicroBlogTest > royalFlush PASSED
+
+MicroBlogTest > englishLanguageLong PASSED
+
+MicroBlogTest > germanLanguageLong_bearCarpet_to_beards PASSED
+
+MicroBlogTest > greekLanguageShort_health PASSED
+
+MicroBlogTest > emojiShort PASSED
+
+MicroBlogTest > mathsLong PASSED
+
+MicroBlogTest > englishAndEmojiShort PASSED
+
+MicroBlogTest > emojiLong PASSED
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
