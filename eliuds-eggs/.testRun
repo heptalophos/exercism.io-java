@@ -22,3 +22,30 @@ EliudsEggsTest > 13 eggs PASSED
 
 BUILD SUCCESSFUL in 3s
 3 actionable tasks: 3 executed
+
+
+
+---------------------------------------
+Tue Jan 21 19:48:14 GTBST 2025
+---------------------------------------
+>gradle test
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+EliudsEggsTest > 0 eggs PASSED
+
+EliudsEggsTest > 4 eggs PASSED
+
+EliudsEggsTest > 1 egg PASSED
+
+EliudsEggsTest > 13 eggs PASSED
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
