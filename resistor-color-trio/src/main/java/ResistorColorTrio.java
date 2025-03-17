@@ -36,6 +36,7 @@ class ResistorColorTrio {
         return String.format("%s %sohms", ohms, magn);
     }
 
+    // The value(..) method from resistor-color-duo
     private int value(final String[] colors) {
         if (colors.length < 2) {
             return 0;
@@ -53,6 +54,7 @@ class ResistorColorTrio {
         }
     }
 
+    // The colorCode(..) and colors() methods from resistor-color
     private int colorCode(final String color) {
         return  range(0, colors().length)
                .filter(i -> colors()[i].equals(color))
