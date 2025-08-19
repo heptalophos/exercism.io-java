@@ -1,1 +1,9 @@
-{"track":"java","exercise":"international-calling-connoisseur","id":"379c707495d54f909c93b75dd081a704","url":"https://exercism.org/tracks/java/exercises/international-calling-connoisseur","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "java",
+    "exercise": "international-calling-connoisseur",
+    "id": "379c707495d54f909c93b75dd081a704",
+    "url": "https://exercism.org/tracks/java/exercises/international-calling-connoisseur",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
