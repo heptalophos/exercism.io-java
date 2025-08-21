@@ -1,0 +1,41 @@
+---------------------------------------
+Thu Aug 21 23:07:25 GTBDT 2025
+---------------------------------------
+>gradle test
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+DialingCodesTest > addNewDialingCode leaves already added code PASSED
+
+DialingCodesTest > setDialingCode updates existing entry PASSED
+
+DialingCodesTest > getCountry returns a code's country PASSED
+
+DialingCodesTest > addNewDialingCode adds new codes PASSED
+
+DialingCodesTest > setDialingCode with multiple entries PASSED
+
+DialingCodesTest > findDialingCode returns null for country not yet added PASSED
+
+DialingCodesTest > updateDialingCode updates the map PASSED
+
+DialingCodesTest > getCodes initially returns an empty map PASSED
+
+DialingCodesTest > findDialingCode returns a country's dialing code PASSED
+
+DialingCodesTest > getCountry returns updated country PASSED
+
+DialingCodesTest > addNewDialingCode leaves already added country PASSED
+
+DialingCodesTest > setDialingCode adds new entry PASSED
+
+BUILD SUCCESSFUL in 32s
+3 actionable tasks: 3 executed
